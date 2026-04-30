@@ -34,7 +34,8 @@ const ui = {
   markConference: document.querySelector("#mark-conference"),
   markSpeaker: document.querySelector("#mark-speaker"),
   markTalk: document.querySelector("#mark-talk"),
-  markStudiedButton: document.querySelector("#mark-studied-button")
+  markStudiedButton: document.querySelector("#mark-studied-button"),
+  clearFiltersButton: document.querySelector("#clear-filters-button")
 };
 
 const talks = Array.isArray(window.TALKS) ? window.TALKS : [];
@@ -341,6 +342,14 @@ function renderMarkStudied() {
   populateMarkTalk();
 }
 
+function updateClearFiltersVisibility() {
+  const isFiltered =
+    state.selectedYear !== "all" ||
+    state.selectedConference !== "all" ||
+    state.selectedSpeaker !== "all";
+  ui.clearFiltersButton.classList.toggle("hidden", !isFiltered);
+}
+
 // ─── Counts and progress ──────────────────────────────────────────────────────
 
 function updateCounts() {
@@ -408,9 +417,17 @@ function renderCurrentTalk() {
   ui.talkReference.textContent = talk.reference;
   ui.talkLink.href = talk.url;
   ui.favoriteButton.disabled = false;
-  ui.favoriteButton.textContent = state.favoriteIds.includes(talk.id)
-    ? "Remove from favorites"
-    : "Add to favorites";
+  const isFav = state.favoriteIds.includes(talk.id);
+  ui.favoriteButton.innerHTML = `
+    <svg class="star-icon" viewBox="0 0 16 16"
+      fill="${isFav ? "var(--gold)" : "none"}"
+      stroke="${isFav ? "var(--gold)" : "currentColor"}"
+      stroke-width="1.5" stroke-linejoin="round">
+      <path d="M8 1.5l1.8 3.6 4 .58-2.9 2.83.68 3.99L8 10.5l-3.58 1.98.68-3.99L2.2 5.68l4-.58z"/>
+    </svg>
+    ${isFav ? "Remove from favorites" : "Add to favorites"}
+  `;
+  ui.favoriteButton.classList.toggle("btn-favorited", isFav);
 }
 
 function renderHistory() {
@@ -450,9 +467,17 @@ function renderHistory() {
     const favButton = document.createElement("button");
     favButton.type = "button";
     favButton.className = "secondary-button history-favorite-button";
-    favButton.textContent = state.favoriteIds.includes(talk.id)
-      ? "Remove from favorites"
-      : "Add to favorites";
+    const isHistFav = state.favoriteIds.includes(talk.id);
+    favButton.innerHTML = `
+      <svg class="star-icon" viewBox="0 0 16 16"
+        fill="${isHistFav ? "var(--gold)" : "none"}"
+        stroke="${isHistFav ? "var(--gold)" : "currentColor"}"
+        stroke-width="1.5" stroke-linejoin="round">
+        <path d="M8 1.5l1.8 3.6 4 .58-2.9 2.83.68 3.99L8 10.5l-3.58 1.98.68-3.99L2.2 5.68l4-.58z"/>
+      </svg>
+      ${isHistFav ? "Unfavorite" : "Favorite"}
+    `;
+    favButton.classList.toggle("btn-favorited", isHistFav);
     favButton.addEventListener("click", () => toggleFavoriteById(talk.id));
 
     listItem.appendChild(copy);
@@ -520,6 +545,7 @@ function render() {
   renderHistory();
   renderFavorites();
   renderMarkStudied();
+  updateClearFiltersVisibility();
 }
 
 // ─── Status messages ──────────────────────────────────────────────────────────
@@ -725,5 +751,14 @@ ui.markTalk.addEventListener("change", (event) => {
 });
 
 ui.markStudiedButton.addEventListener("click", markTalkAsStudied);
+
+ui.clearFiltersButton.addEventListener("click", () => {
+  state.selectedYear = "all";
+  state.selectedConference = "all";
+  state.selectedSpeaker = "all";
+  saveState();
+  render();
+  updateStatusMessage("Filters cleared. Drawing from all remaining talks.");
+});
 
 render();

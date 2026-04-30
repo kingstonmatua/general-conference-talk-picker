@@ -170,6 +170,46 @@ select {
   color: #15803d;
 }
 
+.star-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
+  margin-right: 0.4em;
+  flex-shrink: 0;
+}
+
+.favorite-button .star-icon,
+.history-favorite-button .star-icon {
+  transition: fill 160ms ease, stroke 160ms ease;
+}
+
+.btn-favorited {
+  background: linear-gradient(180deg, #fffdf6 0%, var(--gold-soft) 100%);
+  border-color: rgba(244, 180, 0, 0.35);
+  color: #92600a;
+}
+
+.clear-filters-button {
+  align-self: start;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--purple-dark);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 140ms ease, transform 0ms;
+}
+
+.clear-filters-button:hover {
+  color: var(--purple);
+  transform: none;
+}
+
 .secondary-button.reset-pending {
   background: linear-gradient(180deg, #fff8f0 0%, #ffe8cc 100%);
   border-color: rgba(180, 90, 0, 0.25);
