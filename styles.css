@@ -170,10 +170,10 @@ select {
   color: #15803d;
 }
 
-.reset-pending {
-  background: linear-gradient(180deg, #fff5f5 0%, #fee2e2 100%);
-  border-color: rgba(239, 68, 68, 0.3);
-  color: #dc2626;
+.secondary-button.reset-pending {
+  background: linear-gradient(180deg, #fff8f0 0%, #ffe8cc 100%);
+  border-color: rgba(180, 90, 0, 0.25);
+  color: #92400e;
 }
 
 .actions-panel {
