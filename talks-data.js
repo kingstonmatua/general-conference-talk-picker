@@ -41,7 +41,7 @@ window.TALKS = [
   },
   {
     "id": "5-1971-4-satan-the-great-deceiver",
-    "title": "Satan\u2014The Great Deceiver",
+    "title": "Satan—The Great Deceiver",
     "speaker": "Marion G. Romney",
     "year": "1971",
     "month": "April",
@@ -61,7 +61,7 @@ window.TALKS = [
   },
   {
     "id": "7-1971-4-when-thou-art-converted",
-    "title": "\u201cWhen Thou Art Converted\u201d",
+    "title": "“When Thou Art Converted”",
     "speaker": "S. Dilworth Young",
     "year": "1971",
     "month": "April",
@@ -71,7 +71,7 @@ window.TALKS = [
   },
   {
     "id": "8-1971-4-thou-shalt-not-commit-adultery",
-    "title": "\u201cThou Shalt Not Commit Adultery\u201d",
+    "title": "“Thou Shalt Not Commit Adultery”",
     "speaker": "Milton R. Hunter",
     "year": "1971",
     "month": "April",
@@ -131,7 +131,7 @@ window.TALKS = [
   },
   {
     "id": "14-1971-4-teach-one-another",
-    "title": "\u201cTeach One Another\u201d",
+    "title": "“Teach One Another”",
     "speaker": "David B. Haight",
     "year": "1971",
     "month": "April",
@@ -171,7 +171,7 @@ window.TALKS = [
   },
   {
     "id": "18-1971-4-today-s-young-people",
-    "title": "Today\u2019s Young People",
+    "title": "Today’s Young People",
     "speaker": "Harold B. Lee",
     "year": "1971",
     "month": "April",
@@ -181,7 +181,7 @@ window.TALKS = [
   },
   {
     "id": "19-1971-4-choose-you-this-day",
-    "title": "\u201cChoose You This Day\u201d",
+    "title": "“Choose You This Day”",
     "speaker": "N. Eldon Tanner",
     "year": "1971",
     "month": "April",
@@ -191,7 +191,7 @@ window.TALKS = [
   },
   {
     "id": "20-1971-4-my-brother-s-keeper",
-    "title": "My Brother\u2019s Keeper",
+    "title": "My Brother’s Keeper",
     "speaker": "John H. Vandenberg",
     "year": "1971",
     "month": "April",
@@ -211,7 +211,7 @@ window.TALKS = [
   },
   {
     "id": "22-1971-4-except-the-lord-build-the-house",
-    "title": "\u201cExcept the Lord Build the House \u2026\u201d",
+    "title": "“Except the Lord Build the House …”",
     "speaker": "Gordon B. Hinckley",
     "year": "1971",
     "month": "April",
@@ -251,7 +251,7 @@ window.TALKS = [
   },
   {
     "id": "26-1971-4-the-lord-s-people-receive-revelation",
-    "title": "The Lord\u2019s People Receive Revelation",
+    "title": "The Lord’s People Receive Revelation",
     "speaker": "Bruce R. McConkie",
     "year": "1971",
     "month": "April",
@@ -301,7 +301,7 @@ window.TALKS = [
   },
   {
     "id": "31-1971-4-the-spirit-beareth-record",
-    "title": "\u201cThe Spirit Beareth Record\u201d",
+    "title": "“The Spirit Beareth Record”",
     "speaker": "Boyd K. Packer",
     "year": "1971",
     "month": "April",
@@ -351,7 +351,7 @@ window.TALKS = [
   },
   {
     "id": "36-1971-4-in-the-mountain-of-the-lord-s-house",
-    "title": "In the Mountain of the Lord\u2019s House",
+    "title": "In the Mountain of the Lord’s House",
     "speaker": "LeGrand Richards",
     "year": "1971",
     "month": "April",
@@ -361,7 +361,7 @@ window.TALKS = [
   },
   {
     "id": "37-1971-4-all-may-share-in-adam-s-blessing",
-    "title": "All May Share in Adam\u2019s Blessing",
+    "title": "All May Share in Adam’s Blessing",
     "speaker": "Eldred G. Smith",
     "year": "1971",
     "month": "April",
@@ -371,7 +371,7 @@ window.TALKS = [
   },
   {
     "id": "38-1971-4-young-people-learn-wisdom-in-thy-youth",
-    "title": "Young People\u2014Learn Wisdom in Thy Youth",
+    "title": "Young People—Learn Wisdom in Thy Youth",
     "speaker": "Paul H. Dunn",
     "year": "1971",
     "month": "April",
@@ -421,7 +421,7 @@ window.TALKS = [
   },
   {
     "id": "43-1971-10-i-know-that-my-redeemer-liveth",
-    "title": "\u201cI Know That My Redeemer Liveth\u201d",
+    "title": "“I Know That My Redeemer Liveth”",
     "speaker": "Joseph Fielding Smith",
     "year": "1971",
     "month": "October",
@@ -461,7 +461,7 @@ window.TALKS = [
   },
   {
     "id": "47-1971-10-this-is-my-beloved-son",
-    "title": "\u201cThis Is My Beloved Son\u201d",
+    "title": "“This Is My Beloved Son”",
     "speaker": "Loren C. Dunn",
     "year": "1971",
     "month": "October",
@@ -481,7 +481,7 @@ window.TALKS = [
   },
   {
     "id": "49-1971-10-satan-s-thrust-youth",
-    "title": "Satan\u2019s Thrust\u2014Youth",
+    "title": "Satan’s Thrust—Youth",
     "speaker": "Ezra Taft Benson",
     "year": "1971",
     "month": "October",
@@ -531,7 +531,7 @@ window.TALKS = [
   },
   {
     "id": "54-1971-10-by-love-serve-one-another",
-    "title": "\u201cBy Love, Serve One Another\u201d",
+    "title": "“By Love, Serve One Another”",
     "speaker": "S. Dilworth Young",
     "year": "1971",
     "month": "October",
@@ -561,7 +561,7 @@ window.TALKS = [
   },
   {
     "id": "57-1971-10-watch-that-ye-may-be-ready",
-    "title": "\u201cWatch, That Ye May Be Ready\u201d",
+    "title": "“Watch, That Ye May Be Ready”",
     "speaker": "Harold B. Lee",
     "year": "1971",
     "month": "October",
@@ -581,7 +581,7 @@ window.TALKS = [
   },
   {
     "id": "59-1971-10-the-light-shineth",
-    "title": "\u201cThe Light Shineth\u201d",
+    "title": "“The Light Shineth”",
     "speaker": "Marion G. Romney",
     "year": "1971",
     "month": "October",
@@ -591,7 +591,7 @@ window.TALKS = [
   },
   {
     "id": "60-1971-10-thus-saith-the-lord",
-    "title": "\u201cThus Saith the Lord\u201d",
+    "title": "“Thus Saith the Lord”",
     "speaker": "Theodore M. Burton",
     "year": "1971",
     "month": "October",
@@ -621,7 +621,7 @@ window.TALKS = [
   },
   {
     "id": "63-1971-10-i-was-in-prison-and-ye-came-unto-me",
-    "title": "\u201cI Was in Prison, and Ye Came unto Me\u201d",
+    "title": "“I Was in Prison, and Ye Came unto Me”",
     "speaker": "Victor L. Brown",
     "year": "1971",
     "month": "October",
@@ -681,7 +681,7 @@ window.TALKS = [
   },
   {
     "id": "69-1971-10-strengthen-thy-brethren",
-    "title": "\u201cStrengthen Thy Brethren\u201d",
+    "title": "“Strengthen Thy Brethren”",
     "speaker": "Robert L. Simpson",
     "year": "1971",
     "month": "October",
@@ -741,7 +741,7 @@ window.TALKS = [
   },
   {
     "id": "75-1971-10-where-art-thou",
-    "title": "\u201cWhere Art Thou?\u201d",
+    "title": "“Where Art Thou?”",
     "speaker": "N. Eldon Tanner",
     "year": "1971",
     "month": "October",
@@ -751,7 +751,7 @@ window.TALKS = [
   },
   {
     "id": "76-1971-10-turn-heavenward-our-eyes",
-    "title": "\u201cTurn Heavenward Our Eyes\u201d",
+    "title": "“Turn Heavenward Our Eyes”",
     "speaker": "John H. Vandenberg",
     "year": "1971",
     "month": "October",
@@ -791,7 +791,7 @@ window.TALKS = [
   },
   {
     "id": "80-1971-10-if-ye-be-willing-and-obedient",
-    "title": "\u201cIf Ye Be Willing and Obedient\u201d",
+    "title": "“If Ye Be Willing and Obedient”",
     "speaker": "Gordon B. Hinckley",
     "year": "1971",
     "month": "October",
@@ -941,7 +941,7 @@ window.TALKS = [
   },
   {
     "id": "95-1972-4-successful-parenthood-a-noteworthy-accomplishment",
-    "title": "Successful Parenthood\u2014A Noteworthy Accomplishment",
+    "title": "Successful Parenthood—A Noteworthy Accomplishment",
     "speaker": "ElRay L. Christiansen",
     "year": "1972",
     "month": "April",
@@ -971,7 +971,7 @@ window.TALKS = [
   },
   {
     "id": "98-1972-4-judge-not-that-ye-be-not-judged",
-    "title": "\u201cJudge Not, That Ye Be Not Judged\u201d",
+    "title": "“Judge Not, That Ye Be Not Judged”",
     "speaker": "N. Eldon Tanner",
     "year": "1972",
     "month": "April",
@@ -1011,7 +1011,7 @@ window.TALKS = [
   },
   {
     "id": "102-1972-4-finishers-wanted",
-    "title": "\u201cFinishers Wanted\u201d",
+    "title": "“Finishers Wanted”",
     "speaker": "Thomas S. Monson",
     "year": "1972",
     "month": "April",
@@ -1031,7 +1031,7 @@ window.TALKS = [
   },
   {
     "id": "104-1972-4-am-i-my-brother-s-keeper",
-    "title": "Am I My Brother\u2019s Keeper?",
+    "title": "Am I My Brother’s Keeper?",
     "speaker": "Henry D. Taylor",
     "year": "1972",
     "month": "April",
@@ -1061,7 +1061,7 @@ window.TALKS = [
   },
   {
     "id": "107-1972-4-man-s-eternal-horizon",
-    "title": "Man\u2019s Eternal Horizon",
+    "title": "Man’s Eternal Horizon",
     "speaker": "Joseph Anderson",
     "year": "1972",
     "month": "April",
@@ -1071,7 +1071,7 @@ window.TALKS = [
   },
   {
     "id": "108-1972-4-be-a-missionary-always-everywhere-you-go",
-    "title": "Be a Missionary\u2014Always\u2014Everywhere You Go!",
+    "title": "Be a Missionary—Always—Everywhere You Go!",
     "speaker": "William H. Bennett",
     "year": "1972",
     "month": "April",
@@ -1111,7 +1111,7 @@ window.TALKS = [
   },
   {
     "id": "112-1972-4-the-aaronic-priesthood-a-sure-foundation",
-    "title": "The Aaronic Priesthood\u2014A Sure Foundation",
+    "title": "The Aaronic Priesthood—A Sure Foundation",
     "speaker": "Victor L. Brown",
     "year": "1972",
     "month": "April",
@@ -1121,7 +1121,7 @@ window.TALKS = [
   },
   {
     "id": "113-1972-4-the-fullness-of-the-gospel-in-each-man-s-language",
-    "title": "The Fullness of the Gospel in Each Man\u2019s Language",
+    "title": "The Fullness of the Gospel in Each Man’s Language",
     "speaker": "J. Thomas Fyans",
     "year": "1972",
     "month": "April",
@@ -1241,7 +1241,7 @@ window.TALKS = [
   },
   {
     "id": "125-1972-4-priesthood-its-power-and-vitality",
-    "title": "Priesthood\u2014Its Power and Vitality",
+    "title": "Priesthood—Its Power and Vitality",
     "speaker": "A. Theodore Tuttle",
     "year": "1972",
     "month": "April",
@@ -1281,7 +1281,7 @@ window.TALKS = [
   },
   {
     "id": "129-1972-4-a-prophet-s-blessing",
-    "title": "A Prophet\u2019s Blessing",
+    "title": "A Prophet’s Blessing",
     "speaker": "Joseph Fielding Smith",
     "year": "1972",
     "month": "April",
@@ -1291,7 +1291,7 @@ window.TALKS = [
   },
   {
     "id": "130-1972-10-may-the-kingdom-of-god-go-forth",
-    "title": "\u201cMay the Kingdom of God Go Forth\u201d",
+    "title": "“May the Kingdom of God Go Forth”",
     "speaker": "Harold B. Lee",
     "year": "1972",
     "month": "October",
@@ -1301,7 +1301,7 @@ window.TALKS = [
   },
   {
     "id": "131-1972-10-i-know-that-my-redeemer-lives",
-    "title": "\u201cI Know That My Redeemer Lives\u201d",
+    "title": "“I Know That My Redeemer Lives”",
     "speaker": "Bruce R. McConkie",
     "year": "1972",
     "month": "October",
@@ -1321,7 +1321,7 @@ window.TALKS = [
   },
   {
     "id": "133-1972-10-we-thank-thee-o-god-for-a-prophet",
-    "title": "\u201cWe Thank Thee, O God, for a Prophet\u201d",
+    "title": "“We Thank Thee, O God, for a Prophet”",
     "speaker": "Spencer W. Kimball",
     "year": "1972",
     "month": "October",
@@ -1391,7 +1391,7 @@ window.TALKS = [
   },
   {
     "id": "140-1972-10-listen-to-a-prophet-s-voice",
-    "title": "Listen to a Prophet\u2019s Voice",
+    "title": "Listen to a Prophet’s Voice",
     "speaker": "Ezra Taft Benson",
     "year": "1972",
     "month": "October",
@@ -1431,7 +1431,7 @@ window.TALKS = [
   },
   {
     "id": "144-1972-10-by-love-serve-one-another",
-    "title": "\u201cBy Love, Serve One Another\u201d",
+    "title": "“By Love, Serve One Another”",
     "speaker": "Victor L. Brown",
     "year": "1972",
     "month": "October",
@@ -1451,7 +1451,7 @@ window.TALKS = [
   },
   {
     "id": "146-1972-10-thy-will-be-done-o-lord",
-    "title": "\u201cThy Will Be Done, O Lord\u201d",
+    "title": "“Thy Will Be Done, O Lord”",
     "speaker": "Franklin D. Richards",
     "year": "1972",
     "month": "October",
@@ -1511,7 +1511,7 @@ window.TALKS = [
   },
   {
     "id": "152-1972-10-strengthen-thy-brethren",
-    "title": "\u201cStrengthen Thy Brethren\u201d",
+    "title": "“Strengthen Thy Brethren”",
     "speaker": "Paul H. Dunn",
     "year": "1972",
     "month": "October",
@@ -1641,7 +1641,7 @@ window.TALKS = [
   },
   {
     "id": "165-1972-10-having-been-born-of-goodly-parents",
-    "title": "\u201cHaving Been Born of Goodly Parents\u201d",
+    "title": "“Having Been Born of Goodly Parents”",
     "speaker": "S. Dilworth Young",
     "year": "1972",
     "month": "October",
@@ -1651,7 +1651,7 @@ window.TALKS = [
   },
   {
     "id": "166-1972-10-home-teachers-watchmen-over-the-church",
-    "title": "Home Teachers\u2014Watchmen over the Church",
+    "title": "Home Teachers—Watchmen over the Church",
     "speaker": "James A. Cullimore",
     "year": "1972",
     "month": "October",
@@ -1681,7 +1681,7 @@ window.TALKS = [
   },
   {
     "id": "169-1972-10-an-instrument-in-the-hands-of-the-lord",
-    "title": "\u201cAn Instrument in the Hands of the Lord\u201d",
+    "title": "“An Instrument in the Hands of the Lord”",
     "speaker": "Rex D. Pinegar",
     "year": "1972",
     "month": "October",
@@ -1741,7 +1741,7 @@ window.TALKS = [
   },
   {
     "id": "175-1973-4-go-and-do-thou-likewise",
-    "title": "\u201cGo, and Do Thou Likewise\u201d",
+    "title": "“Go, and Do Thou Likewise”",
     "speaker": "Robert L. Simpson",
     "year": "1973",
     "month": "April",
@@ -1761,7 +1761,7 @@ window.TALKS = [
   },
   {
     "id": "177-1973-4-upon-judea-s-plains",
-    "title": "Upon Judea\u2019s Plains",
+    "title": "Upon Judea’s Plains",
     "speaker": "Bruce R. McConkie",
     "year": "1973",
     "month": "April",
@@ -1791,7 +1791,7 @@ window.TALKS = [
   },
   {
     "id": "180-1973-4-now-abideth-faith-hope-and-charity",
-    "title": "\u201cNow Abideth Faith, Hope, and Charity\u201d",
+    "title": "“Now Abideth Faith, Hope, and Charity”",
     "speaker": "Vaughn J. Featherstone",
     "year": "1973",
     "month": "April",
@@ -1801,7 +1801,7 @@ window.TALKS = [
   },
   {
     "id": "181-1973-4-watchman-warn-the-wicked",
-    "title": "\u201cWatchman, Warn the Wicked\u201d",
+    "title": "“Watchman, Warn the Wicked”",
     "speaker": "Ezra Taft Benson",
     "year": "1973",
     "month": "April",
@@ -1811,7 +1811,7 @@ window.TALKS = [
   },
   {
     "id": "182-1973-4-thou-mayest-choose-for-thyself",
-    "title": "\u201cThou Mayest Choose for Thyself\u201d",
+    "title": "“Thou Mayest Choose for Thyself”",
     "speaker": "N. Eldon Tanner",
     "year": "1973",
     "month": "April",
@@ -1841,7 +1841,7 @@ window.TALKS = [
   },
   {
     "id": "185-1973-4-and-always-remember-him",
-    "title": "\u201cAnd Always Remember Him\u201d",
+    "title": "“And Always Remember Him”",
     "speaker": "Henry D. Taylor",
     "year": "1973",
     "month": "April",
@@ -1881,7 +1881,7 @@ window.TALKS = [
   },
   {
     "id": "189-1973-4-success-a-journey-or-a-destination",
-    "title": "Success\u2014A Journey or a Destination?",
+    "title": "Success—A Journey or a Destination?",
     "speaker": "Hartman Rector Jr.",
     "year": "1973",
     "month": "April",
@@ -1931,7 +1931,7 @@ window.TALKS = [
   },
   {
     "id": "194-1973-4-youth-s-opportunity-to-serve",
-    "title": "Youth\u2019s Opportunity to Serve",
+    "title": "Youth’s Opportunity to Serve",
     "speaker": "Robert L. Backman",
     "year": "1973",
     "month": "April",
@@ -1951,7 +1951,7 @@ window.TALKS = [
   },
   {
     "id": "196-1973-4-magnifying-one-s-calling-in-the-priesthood",
-    "title": "Magnifying One\u2019s Calling in the Priesthood",
+    "title": "Magnifying One’s Calling in the Priesthood",
     "speaker": "Marion G. Romney",
     "year": "1973",
     "month": "April",
@@ -1981,7 +1981,7 @@ window.TALKS = [
   },
   {
     "id": "199-1973-4-man-a-child-of-god",
-    "title": "Man\u2014A Child of God",
+    "title": "Man—A Child of God",
     "speaker": "Marion G. Romney",
     "year": "1973",
     "month": "April",
@@ -2041,7 +2041,7 @@ window.TALKS = [
   },
   {
     "id": "205-1973-4-what-manner-of-men-as-i-am",
-    "title": "What Manner of Men? \u201cAs I Am\u201d",
+    "title": "What Manner of Men? “As I Am”",
     "speaker": "Marion D. Hanks",
     "year": "1973",
     "month": "April",
@@ -2071,7 +2071,7 @@ window.TALKS = [
   },
   {
     "id": "208-1973-4-this-is-my-gospel",
-    "title": "\u201cThis Is My Gospel\u201d",
+    "title": "“This Is My Gospel”",
     "speaker": "Howard W. Hunter",
     "year": "1973",
     "month": "April",
@@ -2081,7 +2081,7 @@ window.TALKS = [
   },
   {
     "id": "209-1973-4-stand-ye-in-holy-places",
-    "title": "\u201cStand Ye in Holy Places\u201d",
+    "title": "“Stand Ye in Holy Places”",
     "speaker": "Harold B. Lee",
     "year": "1973",
     "month": "April",
@@ -2131,7 +2131,7 @@ window.TALKS = [
   },
   {
     "id": "214-1973-10-inspiring-music-worthy-thoughts",
-    "title": "Inspiring Music\u2014Worthy Thoughts",
+    "title": "Inspiring Music—Worthy Thoughts",
     "speaker": "Boyd K. Packer",
     "year": "1973",
     "month": "October",
@@ -2141,7 +2141,7 @@ window.TALKS = [
   },
   {
     "id": "215-1973-10-behold-thy-mother",
-    "title": "\u201cBehold Thy Mother\u201d",
+    "title": "“Behold Thy Mother”",
     "speaker": "Thomas S. Monson",
     "year": "1973",
     "month": "October",
@@ -2221,7 +2221,7 @@ window.TALKS = [
   },
   {
     "id": "223-1973-10-think-on-these-things",
-    "title": "\u201cThink on These Things\u201d",
+    "title": "“Think on These Things”",
     "speaker": "Bruce R. McConkie",
     "year": "1973",
     "month": "October",
@@ -2241,7 +2241,7 @@ window.TALKS = [
   },
   {
     "id": "225-1973-10-i-will-go-and-do-the-things-which-the-lord-hath-commanded",
-    "title": "\u201cI Will Go and Do the Things Which the Lord Hath Commanded\u201d",
+    "title": "“I Will Go and Do the Things Which the Lord Hath Commanded”",
     "speaker": "L. Tom Perry",
     "year": "1973",
     "month": "October",
@@ -2291,7 +2291,7 @@ window.TALKS = [
   },
   {
     "id": "230-1973-10-which-way-to-shore",
-    "title": "\u201cWhich Way to Shore?\u201d",
+    "title": "“Which Way to Shore?”",
     "speaker": "William H. Bennett",
     "year": "1973",
     "month": "October",
@@ -2321,7 +2321,7 @@ window.TALKS = [
   },
   {
     "id": "233-1973-10-the-gospel-of-jesus-christ-is-the-golden-door",
-    "title": "\u201cThe Gospel of Jesus Christ Is the Golden Door\u201d",
+    "title": "“The Gospel of Jesus Christ Is the Golden Door”",
     "speaker": "Vaughn J. Featherstone",
     "year": "1973",
     "month": "October",
@@ -2341,7 +2341,7 @@ window.TALKS = [
   },
   {
     "id": "235-1973-10-church-welfare-some-fundamentals",
-    "title": "Church Welfare\u2014Some Fundamentals",
+    "title": "Church Welfare—Some Fundamentals",
     "speaker": "Marion G. Romney",
     "year": "1973",
     "month": "October",
@@ -2361,7 +2361,7 @@ window.TALKS = [
   },
   {
     "id": "237-1973-10-president-harold-b-lee-s-general-priesthood-address",
-    "title": "President Harold B. Lee\u2019s General Priesthood Address",
+    "title": "President Harold B. Lee’s General Priesthood Address",
     "speaker": "Harold B. Lee",
     "year": "1973",
     "month": "October",
@@ -2371,7 +2371,7 @@ window.TALKS = [
   },
   {
     "id": "238-1973-10-no-greater-honor-the-woman-s-role",
-    "title": "No Greater Honor: The Woman\u2019s Role",
+    "title": "No Greater Honor: The Woman’s Role",
     "speaker": "N. Eldon Tanner",
     "year": "1973",
     "month": "October",
@@ -2411,7 +2411,7 @@ window.TALKS = [
   },
   {
     "id": "242-1973-10-what-will-a-man-give",
-    "title": "\u201cWhat Will a Man Give?\u201d",
+    "title": "“What Will a Man Give?”",
     "speaker": "Mark E. Petersen",
     "year": "1973",
     "month": "October",
@@ -2441,7 +2441,7 @@ window.TALKS = [
   },
   {
     "id": "245-1973-10-god-s-way-to-eternal-life",
-    "title": "God\u2019s Way to Eternal Life",
+    "title": "God’s Way to Eternal Life",
     "speaker": "Bernard P. Brockbank",
     "year": "1973",
     "month": "October",
@@ -2461,7 +2461,7 @@ window.TALKS = [
   },
   {
     "id": "247-1973-10-we-thank-thee-o-god-for-a-prophet",
-    "title": "\u201cWe Thank Thee, O God, for a Prophet\u201d",
+    "title": "“We Thank Thee, O God, for a Prophet”",
     "speaker": "Gordon B. Hinckley",
     "year": "1973",
     "month": "October",
@@ -2641,7 +2641,7 @@ window.TALKS = [
   },
   {
     "id": "265-1974-4-the-people-say-amen",
-    "title": "The People Say \u201cAmen\u201d",
+    "title": "The People Say “Amen”",
     "speaker": "Mark E. Petersen",
     "year": "1974",
     "month": "April",
@@ -2681,7 +2681,7 @@ window.TALKS = [
   },
   {
     "id": "269-1974-4-the-family-a-divine-blessing",
-    "title": "The Family\u2014A Divine Blessing",
+    "title": "The Family—A Divine Blessing",
     "speaker": "Rex D. Pinegar",
     "year": "1974",
     "month": "April",
@@ -2811,7 +2811,7 @@ window.TALKS = [
   },
   {
     "id": "282-1974-4-the-savior-s-ministry",
-    "title": "The Savior\u2019s Ministry",
+    "title": "The Savior’s Ministry",
     "speaker": "Delbert L. Stapley",
     "year": "1974",
     "month": "April",
@@ -2831,7 +2831,7 @@ window.TALKS = [
   },
   {
     "id": "284-1974-4-i-will-pour-you-out-a-blessing",
-    "title": "\u201cI Will \u2026 Pour You Out a Blessing\u201d",
+    "title": "“I Will … Pour You Out a Blessing”",
     "speaker": "Henry D. Taylor",
     "year": "1974",
     "month": "April",
@@ -2890,7 +2890,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1974/04/the-cause-is-just-and-worthy?lang=eng"
   },
   {
-    "id": "290-1974-4-address-given-by-president-marion-g-romney-at-the-welfare-services-meeting-saturday-april-6-1974",
+    "id": "290-1974-4-address-given-by-president-marion-g-romney-at-the-welfare-se",
     "title": "Address Given by President Marion G. Romney at the Welfare Services Meeting Saturday, April 6, 1974",
     "speaker": "Marion G. Romney",
     "year": "1974",
@@ -2900,7 +2900,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1974/04/welfare-services-romney?lang=eng"
   },
   {
-    "id": "291-1974-4-address-given-by-president-n-eldon-tanner-at-the-welfare-services-meeting-saturday-april-6-1974",
+    "id": "291-1974-4-address-given-by-president-n-eldon-tanner-at-the-welfare-ser",
     "title": "Address Given by President N. Eldon Tanner at the Welfare Services Meeting Saturday, April 6, 1974",
     "speaker": "N. Eldon Tanner",
     "year": "1974",
@@ -2910,7 +2910,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1974/04/welfare-services-tanner?lang=eng"
   },
   {
-    "id": "292-1974-4-address-given-by-president-spencer-w-kimball-at-the-welfare-services-meeting-saturday-april-6-1974",
+    "id": "292-1974-4-address-given-by-president-spencer-w-kimball-at-the-welfare-",
     "title": "Address Given by President Spencer W. Kimball at the Welfare Services Meeting Saturday, April 6, 1974",
     "speaker": "Spencer W. Kimball",
     "year": "1974",
@@ -2961,7 +2961,7 @@ window.TALKS = [
   },
   {
     "id": "297-1974-10-when-thou-art-converted-strengthen-thy-brethren",
-    "title": "\u201cWhen Thou Art Converted, Strengthen Thy Brethren\u201d",
+    "title": "“When Thou Art Converted, Strengthen Thy Brethren”",
     "speaker": "L. Tom Perry",
     "year": "1974",
     "month": "October",
@@ -3011,7 +3011,7 @@ window.TALKS = [
   },
   {
     "id": "302-1974-10-the-savior-s-program-for-the-care-of-the-aged",
-    "title": "The Savior\u2019s Program for the Care of the Aged",
+    "title": "The Savior’s Program for the Care of the Aged",
     "speaker": "Vaughn J. Featherstone",
     "year": "1974",
     "month": "October",
@@ -3051,7 +3051,7 @@ window.TALKS = [
   },
   {
     "id": "306-1974-10-who-s-losing",
-    "title": "Who\u2019s Losing?",
+    "title": "Who’s Losing?",
     "speaker": "Marvin J. Ashton",
     "year": "1974",
     "month": "October",
@@ -3101,7 +3101,7 @@ window.TALKS = [
   },
   {
     "id": "311-1974-10-blessed-are-the-peacemakers",
-    "title": "\u201cBlessed Are the Peacemakers\u201d",
+    "title": "“Blessed Are the Peacemakers”",
     "speaker": "Theodore M. Burton",
     "year": "1974",
     "month": "October",
@@ -3231,7 +3231,7 @@ window.TALKS = [
   },
   {
     "id": "324-1974-10-for-thy-servant-heareth",
-    "title": "\u201cFor Thy Servant Heareth\u201d",
+    "title": "“For Thy Servant Heareth”",
     "speaker": "S. Dilworth Young",
     "year": "1974",
     "month": "October",
@@ -3320,7 +3320,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1974/10/ocean-currents-and-family-influences?lang=eng"
   },
   {
-    "id": "333-1974-10-address-given-by-president-marion-g-romney-at-welfare-services-meeting-saturday-october-5-1974",
+    "id": "333-1974-10-address-given-by-president-marion-g-romney-at-welfare-servic",
     "title": "Address Given by President Marion G. Romney at Welfare Services Meeting Saturday, October 5, 1974",
     "speaker": "Marion G. Romney",
     "year": "1974",
@@ -3330,7 +3330,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1974/10/welfare-services-romney?lang=eng"
   },
   {
-    "id": "334-1974-10-address-given-by-president-spencer-w-kimball-at-welfare-services-meeting-saturday-october-5-1974",
+    "id": "334-1974-10-address-given-by-president-spencer-w-kimball-at-welfare-serv",
     "title": "Address Given by President Spencer W. Kimball at Welfare Services Meeting Saturday, October 5, 1974",
     "speaker": "Spencer W. Kimball",
     "year": "1974",
@@ -3341,7 +3341,7 @@ window.TALKS = [
   },
   {
     "id": "335-1975-4-why-call-ye-me-lord-lord-and-do-not-the-things-which-i-say",
-    "title": "\u201cWhy Call Ye Me Lord, Lord, and Do Not the Things Which I Say?\u201d",
+    "title": "“Why Call Ye Me Lord, Lord, and Do Not the Things Which I Say?”",
     "speaker": "Spencer W. Kimball",
     "year": "1975",
     "month": "April",
@@ -3461,7 +3461,7 @@ window.TALKS = [
   },
   {
     "id": "347-1975-4-faith-the-first-step",
-    "title": "Faith\u2014The First Step",
+    "title": "Faith—The First Step",
     "speaker": "Howard W. Hunter",
     "year": "1975",
     "month": "April",
@@ -3601,7 +3601,7 @@ window.TALKS = [
   },
   {
     "id": "361-1975-4-salvation-for-the-dead-a-missionary-activity",
-    "title": "Salvation for the Dead\u2014A Missionary Activity",
+    "title": "Salvation for the Dead—A Missionary Activity",
     "speaker": "Theodore M. Burton",
     "year": "1975",
     "month": "April",
@@ -3760,7 +3760,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1975/04/why-do-we-continue-to-tolerate-sin?lang=eng"
   },
   {
-    "id": "377-1975-4-address-given-by-president-marion-g-romney-at-welfare-services-session-saturday-april-5-1975",
+    "id": "377-1975-4-address-given-by-president-marion-g-romney-at-welfare-servic",
     "title": "Address Given by President Marion G. Romney at Welfare Services Session Saturday, April 5, 1975",
     "speaker": "Marion G. Romney",
     "year": "1975",
@@ -3770,7 +3770,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1975/04/welfare-services-romney?lang=eng"
   },
   {
-    "id": "378-1975-4-address-given-by-president-spencer-w-kimball-at-welfare-services-session-saturday-april-5-1975",
+    "id": "378-1975-4-address-given-by-president-spencer-w-kimball-at-welfare-serv",
     "title": "Address Given by President Spencer W. Kimball at Welfare Services Session Saturday, April 5, 1975",
     "speaker": "Spencer W. Kimball",
     "year": "1975",
@@ -3801,7 +3801,7 @@ window.TALKS = [
   },
   {
     "id": "381-1975-10-the-world-s-greatest-need",
-    "title": "The World\u2019s Greatest Need",
+    "title": "The World’s Greatest Need",
     "speaker": "Hartman Rector Jr.",
     "year": "1975",
     "month": "October",
@@ -3841,7 +3841,7 @@ window.TALKS = [
   },
   {
     "id": "385-1975-10-a-prophet-s-faith",
-    "title": "A Prophet\u2019s Faith",
+    "title": "A Prophet’s Faith",
     "speaker": "A. Theodore Tuttle",
     "year": "1975",
     "month": "October",
@@ -3901,7 +3901,7 @@ window.TALKS = [
   },
   {
     "id": "391-1975-10-america-s-destiny",
-    "title": "America\u2019s Destiny",
+    "title": "America’s Destiny",
     "speaker": "Marion G. Romney",
     "year": "1975",
     "month": "October",
@@ -3971,7 +3971,7 @@ window.TALKS = [
   },
   {
     "id": "398-1975-10-oh-beautiful-for-patriot-dream",
-    "title": "\u201cOh Beautiful for Patriot Dream\u201d",
+    "title": "“Oh Beautiful for Patriot Dream”",
     "speaker": "Paul H. Dunn",
     "year": "1975",
     "month": "October",
@@ -4011,7 +4011,7 @@ window.TALKS = [
   },
   {
     "id": "402-1975-10-why-can-t-we",
-    "title": "\u201cWhy Can\u2019t We?\u201d",
+    "title": "“Why Can’t We?”",
     "speaker": "David B. Haight",
     "year": "1975",
     "month": "October",
@@ -4031,7 +4031,7 @@ window.TALKS = [
   },
   {
     "id": "404-1975-10-hear-ye-him",
-    "title": "\u201cHear Ye Him!\u201d",
+    "title": "“Hear Ye Him!”",
     "speaker": "Mark E. Petersen",
     "year": "1975",
     "month": "October",
@@ -4100,7 +4100,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1975/10/the-laws-of-god?lang=eng"
   },
   {
-    "id": "411-1975-10-for-the-time-will-come-when-they-will-not-endure-sound-doctrine",
+    "id": "411-1975-10-for-the-time-will-come-when-they-will-not-endure-sound-doctr",
     "title": "For the Time Will Come When They Will Not Endure Sound Doctrine",
     "speaker": "L. Tom Perry",
     "year": "1975",
@@ -4121,7 +4121,7 @@ window.TALKS = [
   },
   {
     "id": "413-1975-10-we-can-t-do-it-alone",
-    "title": "We Can\u2019t Do It Alone",
+    "title": "We Can’t Do It Alone",
     "speaker": "Robert D. Hales",
     "year": "1975",
     "month": "October",
@@ -4241,7 +4241,7 @@ window.TALKS = [
   },
   {
     "id": "425-1975-10-relief-society-s-role-in-welfare-services",
-    "title": "Relief Society\u2019s Role in Welfare Services",
+    "title": "Relief Society’s Role in Welfare Services",
     "speaker": "Barbara B. Smith",
     "year": "1975",
     "month": "October",
@@ -4291,7 +4291,7 @@ window.TALKS = [
   },
   {
     "id": "430-1976-4-hopeless-dawn-joyful-morning",
-    "title": "Hopeless Dawn\u2014Joyful Morning",
+    "title": "Hopeless Dawn—Joyful Morning",
     "speaker": "Thomas S. Monson",
     "year": "1976",
     "month": "April",
@@ -4351,7 +4351,7 @@ window.TALKS = [
   },
   {
     "id": "436-1976-4-jesus-of-nazareth-savior-and-king",
-    "title": "\u201cJesus of Nazareth, Savior and King\u201d",
+    "title": "“Jesus of Nazareth, Savior and King”",
     "speaker": "Neal A. Maxwell",
     "year": "1976",
     "month": "April",
@@ -4381,7 +4381,7 @@ window.TALKS = [
   },
   {
     "id": "439-1976-4-priesthood-authority-and-power",
-    "title": "Priesthood\u2014Authority and Power",
+    "title": "Priesthood—Authority and Power",
     "speaker": "H. Burke Peterson",
     "year": "1976",
     "month": "April",
@@ -4391,7 +4391,7 @@ window.TALKS = [
   },
   {
     "id": "440-1976-4-seek-not-for-riches-but-for-wisdom",
-    "title": "\u201cSeek Not for Riches But for Wisdom\u201d",
+    "title": "“Seek Not for Riches But for Wisdom”",
     "speaker": "Franklin D. Richards",
     "year": "1976",
     "month": "April",
@@ -4481,7 +4481,7 @@ window.TALKS = [
   },
   {
     "id": "449-1976-4-there-am-i-in-the-midst-of-them",
-    "title": "\u201cThere Am I in the Midst of Them\u201d",
+    "title": "“There Am I in the Midst of Them”",
     "speaker": "Joseph B. Wirthlin",
     "year": "1976",
     "month": "April",
@@ -4501,7 +4501,7 @@ window.TALKS = [
   },
   {
     "id": "451-1976-4-an-honest-man-god-s-noblest-work",
-    "title": "\u201cAn Honest Man\u2014God\u2019s Noblest Work\u201d",
+    "title": "“An Honest Man—God’s Noblest Work”",
     "speaker": "Gordon B. Hinckley",
     "year": "1976",
     "month": "April",
@@ -4511,7 +4511,7 @@ window.TALKS = [
   },
   {
     "id": "452-1976-4-as-a-man-soweth",
-    "title": "\u201cAs a Man Soweth\u201d",
+    "title": "“As a Man Soweth”",
     "speaker": "L. Tom Perry",
     "year": "1976",
     "month": "April",
@@ -4561,7 +4561,7 @@ window.TALKS = [
   },
   {
     "id": "457-1976-4-the-leaves-are-commencing-to-show-on-the-fig-tree",
-    "title": "\u201cThe Leaves Are Commencing to Show on the Fig Tree\u201d",
+    "title": "“The Leaves Are Commencing to Show on the Fig Tree”",
     "speaker": "Bernard P. Brockbank",
     "year": "1976",
     "month": "April",
@@ -4631,7 +4631,7 @@ window.TALKS = [
   },
   {
     "id": "464-1976-4-the-constitution-a-glorious-standard",
-    "title": "The Constitution\u2014A Glorious Standard",
+    "title": "The Constitution—A Glorious Standard",
     "speaker": "Ezra Taft Benson",
     "year": "1976",
     "month": "April",
@@ -4641,7 +4641,7 @@ window.TALKS = [
   },
   {
     "id": "465-1976-4-joseph-smith-the-mighty-prophet-of-the-restoration",
-    "title": "Joseph Smith\u2014The Mighty Prophet of the Restoration",
+    "title": "Joseph Smith—The Mighty Prophet of the Restoration",
     "speaker": "Bruce R. McConkie",
     "year": "1976",
     "month": "April",
@@ -4651,7 +4651,7 @@ window.TALKS = [
   },
   {
     "id": "466-1976-4-are-we-following-christ-s-pattern",
-    "title": "Are We Following Christ\u2019s Pattern?",
+    "title": "Are We Following Christ’s Pattern?",
     "speaker": "William R. Bradford",
     "year": "1976",
     "month": "April",
@@ -4661,7 +4661,7 @@ window.TALKS = [
   },
   {
     "id": "467-1976-4-but-they-were-in-one",
-    "title": "\u201cBut They Were in One\u201d",
+    "title": "“But They Were in One”",
     "speaker": "George P. Lee",
     "year": "1976",
     "month": "April",
@@ -4751,7 +4751,7 @@ window.TALKS = [
   },
   {
     "id": "476-1976-4-church-welfare-services-basic-principles",
-    "title": "Church Welfare Services\u2019 Basic Principles",
+    "title": "Church Welfare Services’ Basic Principles",
     "speaker": "Marion G. Romney",
     "year": "1976",
     "month": "April",
@@ -4791,7 +4791,7 @@ window.TALKS = [
   },
   {
     "id": "480-1976-10-i-am-the-vine-ye-are-the-branches",
-    "title": "\u201cI Am the Vine, Ye Are the Branches\u201d",
+    "title": "“I Am the Vine, Ye Are the Branches”",
     "speaker": "Dean L. Larsen",
     "year": "1976",
     "month": "October",
@@ -4901,7 +4901,7 @@ window.TALKS = [
   },
   {
     "id": "491-1976-10-we-believe-in-being-honest",
-    "title": "\u201cWe Believe in Being Honest\u201d",
+    "title": "“We Believe in Being Honest”",
     "speaker": "Marion G. Romney",
     "year": "1976",
     "month": "October",
@@ -4910,8 +4910,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1976/10/we-believe-in-being-honest?lang=eng"
   },
   {
-    "id": "492-1976-10-a-report-on-the-church-s-participation-in-america-s-bicentennial-celebration",
-    "title": "A Report on the Church\u2019s Participation in America\u2019s Bicentennial Celebration",
+    "id": "492-1976-10-a-report-on-the-church-s-participation-in-america-s-bicenten",
+    "title": "A Report on the Church’s Participation in America’s Bicentennial Celebration",
     "speaker": "L. Tom Perry",
     "year": "1976",
     "month": "October",
@@ -4931,7 +4931,7 @@ window.TALKS = [
   },
   {
     "id": "494-1976-10-there-is-the-light",
-    "title": "\u201cThere Is the Light\u201d",
+    "title": "“There Is the Light”",
     "speaker": "John H. Groberg",
     "year": "1976",
     "month": "October",
@@ -4971,7 +4971,7 @@ window.TALKS = [
   },
   {
     "id": "498-1976-10-follow-it",
-    "title": "\u201cFollow It!\u201d",
+    "title": "“Follow It!”",
     "speaker": "Paul H. Dunn",
     "year": "1976",
     "month": "October",
@@ -5121,7 +5121,7 @@ window.TALKS = [
   },
   {
     "id": "513-1976-10-everything-to-gain-nothing-to-lose",
-    "title": "Everything to Gain\u2014Nothing to Lose",
+    "title": "Everything to Gain—Nothing to Lose",
     "speaker": "Gordon B. Hinckley",
     "year": "1976",
     "month": "October",
@@ -5141,7 +5141,7 @@ window.TALKS = [
   },
   {
     "id": "515-1976-10-the-lord-s-support-system",
-    "title": "The Lord\u2019s Support System",
+    "title": "The Lord’s Support System",
     "speaker": "Robert L. Simpson",
     "year": "1976",
     "month": "October",
@@ -5151,7 +5151,7 @@ window.TALKS = [
   },
   {
     "id": "516-1976-10-i-have-gained",
-    "title": "\u201cI Have Gained\u201d",
+    "title": "“I Have Gained”",
     "speaker": "S. Dilworth Young",
     "year": "1976",
     "month": "October",
@@ -5191,7 +5191,7 @@ window.TALKS = [
   },
   {
     "id": "520-1976-10-i-will-never-be-the-same-again",
-    "title": "\u201cI Will Never Be the Same Again\u201d",
+    "title": "“I Will Never Be the Same Again”",
     "speaker": "J. Richard Clarke",
     "year": "1976",
     "month": "October",
@@ -5241,7 +5241,7 @@ window.TALKS = [
   },
   {
     "id": "525-1976-10-she-is-not-afraid-of-the-snow-for-her-household",
-    "title": "\u201cShe Is Not Afraid of the Snow for Her Household \u2026\u201d",
+    "title": "“She Is Not Afraid of the Snow for Her Household …”",
     "speaker": "Barbara B. Smith",
     "year": "1976",
     "month": "October",
@@ -5251,7 +5251,7 @@ window.TALKS = [
   },
   {
     "id": "526-1976-10-in-mine-own-way",
-    "title": "\u201cIn Mine Own Way\u201d",
+    "title": "“In Mine Own Way”",
     "speaker": "Marion G. Romney",
     "year": "1976",
     "month": "October",
@@ -5291,7 +5291,7 @@ window.TALKS = [
   },
   {
     "id": "530-1977-4-we-beheld-his-glory",
-    "title": "\u201cWe Beheld His Glory\u201d",
+    "title": "“We Beheld His Glory”",
     "speaker": "David B. Haight",
     "year": "1977",
     "month": "April",
@@ -5501,7 +5501,7 @@ window.TALKS = [
   },
   {
     "id": "551-1977-4-but-be-ye-doers-of-the-word",
-    "title": "\u201cBut Be Ye Doers of the Word\u201d",
+    "title": "“But Be Ye Doers of the Word”",
     "speaker": "L. Tom Perry",
     "year": "1977",
     "month": "April",
@@ -5511,7 +5511,7 @@ window.TALKS = [
   },
   {
     "id": "552-1977-4-god-moves-in-a-mysterious-way-his-wonders-to-perform",
-    "title": "\u201cGod Moves in a Mysterious Way His Wonders to Perform\u201d",
+    "title": "“God Moves in a Mysterious Way His Wonders to Perform”",
     "speaker": "LeGrand Richards",
     "year": "1977",
     "month": "April",
@@ -5571,7 +5571,7 @@ window.TALKS = [
   },
   {
     "id": "558-1977-4-do-unto-others",
-    "title": "Do unto Others \u2026",
+    "title": "Do unto Others …",
     "speaker": "Mark E. Petersen",
     "year": "1977",
     "month": "April",
@@ -5591,7 +5591,7 @@ window.TALKS = [
   },
   {
     "id": "560-1977-4-rendering-assistance-in-the-lord-s-way",
-    "title": "Rendering Assistance in the Lord\u2019s Way",
+    "title": "Rendering Assistance in the Lord’s Way",
     "speaker": "Victor L. Brown",
     "year": "1977",
     "month": "April",
@@ -5601,7 +5601,7 @@ window.TALKS = [
   },
   {
     "id": "561-1977-4-ministering-to-needs-through-the-lord-s-storehouse-system",
-    "title": "Ministering to Needs through the Lord\u2019s Storehouse System",
+    "title": "Ministering to Needs through the Lord’s Storehouse System",
     "speaker": "Ezra Taft Benson",
     "year": "1977",
     "month": "April",
@@ -5781,7 +5781,7 @@ window.TALKS = [
   },
   {
     "id": "579-1977-10-seeing-the-five-a-s",
-    "title": "Seeing the Five A\u2019s",
+    "title": "Seeing the Five A’s",
     "speaker": "Marion D. Hanks",
     "year": "1977",
     "month": "October",
@@ -5831,7 +5831,7 @@ window.TALKS = [
   },
   {
     "id": "584-1977-10-hallowed-be-thy-name",
-    "title": "\u201cHallowed Be Thy Name\u201d",
+    "title": "“Hallowed Be Thy Name”",
     "speaker": "Howard W. Hunter",
     "year": "1977",
     "month": "October",
@@ -5851,7 +5851,7 @@ window.TALKS = [
   },
   {
     "id": "586-1977-10-young-women-real-guardians",
-    "title": "Young Women\u2014Real Guardians",
+    "title": "Young Women—Real Guardians",
     "speaker": "David B. Haight",
     "year": "1977",
     "month": "October",
@@ -5871,7 +5871,7 @@ window.TALKS = [
   },
   {
     "id": "588-1977-10-father-your-role-your-responsibility",
-    "title": "Father\u2014Your Role, Your Responsibility",
+    "title": "Father—Your Role, Your Responsibility",
     "speaker": "L. Tom Perry",
     "year": "1977",
     "month": "October",
@@ -5911,7 +5911,7 @@ window.TALKS = [
   },
   {
     "id": "592-1977-10-they-didn-t-give-up",
-    "title": "They Didn\u2019t Give Up",
+    "title": "They Didn’t Give Up",
     "speaker": "F. Enzio Busche",
     "year": "1977",
     "month": "October",
@@ -5991,7 +5991,7 @@ window.TALKS = [
   },
   {
     "id": "600-1977-10-the-father-s-duty-to-foster-the-welfare-of-his-family",
-    "title": "The Father\u2019s Duty to Foster the Welfare of His Family",
+    "title": "The Father’s Duty to Foster the Welfare of His Family",
     "speaker": "H. Burke Peterson",
     "year": "1977",
     "month": "October",
@@ -6001,7 +6001,7 @@ window.TALKS = [
   },
   {
     "id": "601-1977-10-she-stretcheth-out-her-hand-to-the-poor",
-    "title": "\u201cShe Stretcheth Out Her Hand to the Poor\u201d",
+    "title": "“She Stretcheth Out Her Hand to the Poor”",
     "speaker": "Barbara B. Smith",
     "year": "1977",
     "month": "October",
@@ -6051,7 +6051,7 @@ window.TALKS = [
   },
   {
     "id": "606-1978-4-the-morning-breaks-the-shadows-flee",
-    "title": "\u201cThe Morning Breaks; the Shadows Flee\u201d",
+    "title": "“The Morning Breaks; the Shadows Flee”",
     "speaker": "Bruce R. McConkie",
     "year": "1978",
     "month": "April",
@@ -6061,7 +6061,7 @@ window.TALKS = [
   },
   {
     "id": "607-1978-4-ye-shall-know-the-truth",
-    "title": "\u201cYe Shall Know the Truth\u201d",
+    "title": "“Ye Shall Know the Truth”",
     "speaker": "N. Eldon Tanner",
     "year": "1978",
     "month": "April",
@@ -6121,7 +6121,7 @@ window.TALKS = [
   },
   {
     "id": "613-1978-4-i-did-not-reach-this-place-by-myself",
-    "title": "\u201cI Did Not Reach This Place By Myself\u201d",
+    "title": "“I Did Not Reach This Place By Myself”",
     "speaker": "Ronald E. Poelman",
     "year": "1978",
     "month": "April",
@@ -6131,7 +6131,7 @@ window.TALKS = [
   },
   {
     "id": "614-1978-4-may-the-kingdom-of-god-go-forth",
-    "title": "\u201cMay the Kingdom of God Go Forth\u201d",
+    "title": "“May the Kingdom of God Go Forth”",
     "speaker": "Ezra Taft Benson",
     "year": "1978",
     "month": "April",
@@ -6141,7 +6141,7 @@ window.TALKS = [
   },
   {
     "id": "615-1978-4-bind-on-thy-sandals",
-    "title": "\u201cBind on Thy Sandals\u201d",
+    "title": "“Bind on Thy Sandals”",
     "speaker": "Howard W. Hunter",
     "year": "1978",
     "month": "April",
@@ -6151,7 +6151,7 @@ window.TALKS = [
   },
   {
     "id": "616-1978-4-not-my-will-but-thine",
-    "title": "\u201cNot My Will, but Thine\u201d",
+    "title": "“Not My Will, but Thine”",
     "speaker": "Robert L. Simpson",
     "year": "1978",
     "month": "April",
@@ -6191,7 +6191,7 @@ window.TALKS = [
   },
   {
     "id": "620-1978-4-strengthening-the-family-the-basic-unit-of-the-church",
-    "title": "Strengthening the Family\u2014the Basic Unit of the Church",
+    "title": "Strengthening the Family—the Basic Unit of the Church",
     "speaker": "Spencer W. Kimball",
     "year": "1978",
     "month": "April",
@@ -6211,7 +6211,7 @@ window.TALKS = [
   },
   {
     "id": "622-1978-4-trust-in-the-lord",
-    "title": "\u201cTrust in the Lord\u201d",
+    "title": "“Trust in the Lord”",
     "speaker": "L. Tom Perry",
     "year": "1978",
     "month": "April",
@@ -6221,7 +6221,7 @@ window.TALKS = [
   },
   {
     "id": "623-1978-4-what-is-truth",
-    "title": "\u201cWhat Is Truth?\u201d",
+    "title": "“What Is Truth?”",
     "speaker": "John H. Vandenberg",
     "year": "1978",
     "month": "April",
@@ -6241,7 +6241,7 @@ window.TALKS = [
   },
   {
     "id": "625-1978-4-be-not-faithless",
-    "title": "\u201cBe Not Faithless\u201d",
+    "title": "“Be Not Faithless”",
     "speaker": "Gordon B. Hinckley",
     "year": "1978",
     "month": "April",
@@ -6251,7 +6251,7 @@ window.TALKS = [
   },
   {
     "id": "626-1978-4-evidence-of-things-not-seen",
-    "title": "\u201cEvidence of Things Not Seen\u201d",
+    "title": "“Evidence of Things Not Seen”",
     "speaker": "Mark E. Petersen",
     "year": "1978",
     "month": "April",
@@ -6281,7 +6281,7 @@ window.TALKS = [
   },
   {
     "id": "629-1978-4-being-anxiously-engaged",
-    "title": "Being \u201cAnxiously Engaged\u201d",
+    "title": "Being “Anxiously Engaged”",
     "speaker": "Joseph Anderson",
     "year": "1978",
     "month": "April",
@@ -6391,7 +6391,7 @@ window.TALKS = [
   },
   {
     "id": "640-1978-4-solving-emotional-problems-in-the-lord-s-own-way",
-    "title": "Solving Emotional Problems in the Lord\u2019s Own Way",
+    "title": "Solving Emotional Problems in the Lord’s Own Way",
     "speaker": "Boyd K. Packer",
     "year": "1978",
     "month": "April",
@@ -6421,7 +6421,7 @@ window.TALKS = [
   },
   {
     "id": "643-1978-10-hold-fast-to-the-iron-rod",
-    "title": "\u201cHold Fast to the Iron Rod\u201d",
+    "title": "“Hold Fast to the Iron Rod”",
     "speaker": "Spencer W. Kimball",
     "year": "1978",
     "month": "October",
@@ -6481,7 +6481,7 @@ window.TALKS = [
   },
   {
     "id": "649-1978-10-behold-your-little-ones",
-    "title": "\u201cBehold Your Little Ones\u201d",
+    "title": "“Behold Your Little Ones”",
     "speaker": "Gordon B. Hinckley",
     "year": "1978",
     "month": "October",
@@ -6521,7 +6521,7 @@ window.TALKS = [
   },
   {
     "id": "653-1978-10-never-be-weary-of-good-works",
-    "title": "\u201cNever Be Weary of Good Works\u201d",
+    "title": "“Never Be Weary of Good Works”",
     "speaker": "Jack H Goaslind Jr.",
     "year": "1978",
     "month": "October",
@@ -6541,7 +6541,7 @@ window.TALKS = [
   },
   {
     "id": "655-1978-10-what-are-the-blessings-of-a-mission-can-ye-tell",
-    "title": "\u201cWhat Are the Blessings of a Mission? Can Ye Tell?\u201d",
+    "title": "“What Are the Blessings of a Mission? Can Ye Tell?”",
     "speaker": "Vaughn J. Featherstone",
     "year": "1978",
     "month": "October",
@@ -6651,7 +6651,7 @@ window.TALKS = [
   },
   {
     "id": "666-1978-10-look-to-god-and-live",
-    "title": "\u201cLook to God and Live\u201d",
+    "title": "“Look to God and Live”",
     "speaker": "Carlos E. Asay",
     "year": "1978",
     "month": "October",
@@ -6681,7 +6681,7 @@ window.TALKS = [
   },
   {
     "id": "669-1978-10-thou-shalt-receive-revelation",
-    "title": "\u201cThou Shalt Receive Revelation\u201d",
+    "title": "“Thou Shalt Receive Revelation”",
     "speaker": "Bruce R. McConkie",
     "year": "1978",
     "month": "October",
@@ -6691,7 +6691,7 @@ window.TALKS = [
   },
   {
     "id": "670-1978-10-come-home-felila",
-    "title": "\u201cCome Home, Felila\u201d",
+    "title": "“Come Home, Felila”",
     "speaker": "John H. Groberg",
     "year": "1978",
     "month": "October",
@@ -6701,7 +6701,7 @@ window.TALKS = [
   },
   {
     "id": "671-1978-10-he-hath-showed-thee-o-man-what-is-good",
-    "title": "\u201cHe Hath Showed Thee, O Man, What Is Good\u201d",
+    "title": "“He Hath Showed Thee, O Man, What Is Good”",
     "speaker": "S. Dilworth Young",
     "year": "1978",
     "month": "October",
@@ -6731,7 +6731,7 @@ window.TALKS = [
   },
   {
     "id": "674-1978-10-home-teaching-a-sacred-calling",
-    "title": "Home Teaching\u2014A Sacred Calling",
+    "title": "Home Teaching—A Sacred Calling",
     "speaker": "L. Tom Perry",
     "year": "1978",
     "month": "October",
@@ -6771,7 +6771,7 @@ window.TALKS = [
   },
   {
     "id": "678-1978-10-good-health-a-key-to-joyous-living",
-    "title": "Good Health\u2014A Key to Joyous Living",
+    "title": "Good Health—A Key to Joyous Living",
     "speaker": "Barbara B. Smith",
     "year": "1978",
     "month": "October",
@@ -6801,7 +6801,7 @@ window.TALKS = [
   },
   {
     "id": "681-1978-10-the-stake-president-s-role-in-welfare-services",
-    "title": "The Stake President\u2019s Role in Welfare Services",
+    "title": "The Stake President’s Role in Welfare Services",
     "speaker": "David B. Haight",
     "year": "1978",
     "month": "October",
@@ -6811,7 +6811,7 @@ window.TALKS = [
   },
   {
     "id": "682-1978-10-caring-for-the-poor-a-covenantal-obligation",
-    "title": "Caring for the Poor\u2014A Covenantal Obligation",
+    "title": "Caring for the Poor—A Covenantal Obligation",
     "speaker": "Marion G. Romney",
     "year": "1978",
     "month": "October",
@@ -6831,7 +6831,7 @@ window.TALKS = [
   },
   {
     "id": "684-1978-10-come-listen-to-a-prophet-s-voice",
-    "title": "\u201cCome, Listen to a Prophet\u2019s Voice\u201d",
+    "title": "“Come, Listen to a Prophet’s Voice”",
     "speaker": "Ruth H. Funk",
     "year": "1978",
     "month": "October",
@@ -6851,7 +6851,7 @@ window.TALKS = [
   },
   {
     "id": "686-1978-10-women-s-greatest-challenge",
-    "title": "Women\u2019s Greatest Challenge",
+    "title": "Women’s Greatest Challenge",
     "speaker": "Barbara B. Smith",
     "year": "1978",
     "month": "October",
@@ -6871,7 +6871,7 @@ window.TALKS = [
   },
   {
     "id": "688-1979-4-because-i-have-a-father",
-    "title": "\u201cBecause I Have a Father\u201d",
+    "title": "“Because I Have a Father”",
     "speaker": "Paul H. Dunn",
     "year": "1979",
     "month": "April",
@@ -6991,7 +6991,7 @@ window.TALKS = [
   },
   {
     "id": "700-1979-4-put-on-the-whole-armour-of-god",
-    "title": "\u201cPut on the Whole Armour of God\u201d",
+    "title": "“Put on the Whole Armour of God”",
     "speaker": "N. Eldon Tanner",
     "year": "1979",
     "month": "April",
@@ -7021,7 +7021,7 @@ window.TALKS = [
   },
   {
     "id": "703-1979-4-the-refiner-s-fire",
-    "title": "The Refiner\u2019s Fire",
+    "title": "The Refiner’s Fire",
     "speaker": "James E. Faust",
     "year": "1979",
     "month": "April",
@@ -7041,7 +7041,7 @@ window.TALKS = [
   },
   {
     "id": "705-1979-4-feed-my-sheep",
-    "title": "\u201cFeed My Sheep\u201d",
+    "title": "“Feed My Sheep”",
     "speaker": "David B. Haight",
     "year": "1979",
     "month": "April",
@@ -7101,7 +7101,7 @@ window.TALKS = [
   },
   {
     "id": "711-1979-4-what-think-ye-of-christ-whom-say-ye-that-i-am",
-    "title": "\u201cWhat Think Ye of Christ?\u201d \u201cWhom Say Ye That I Am?\u201d",
+    "title": "“What Think Ye of Christ?” “Whom Say Ye That I Am?”",
     "speaker": "Robert D. Hales",
     "year": "1979",
     "month": "April",
@@ -7111,7 +7111,7 @@ window.TALKS = [
   },
   {
     "id": "712-1979-4-judge-not-according-to-the-appearance",
-    "title": "\u201cJudge Not According to the Appearance\u201d",
+    "title": "“Judge Not According to the Appearance”",
     "speaker": "Boyd K. Packer",
     "year": "1979",
     "month": "April",
@@ -7191,7 +7191,7 @@ window.TALKS = [
   },
   {
     "id": "720-1979-10-we-need-a-listening-ear",
-    "title": "\u201cWe Need a Listening Ear\u201d",
+    "title": "“We Need a Listening Ear”",
     "speaker": "Spencer W. Kimball",
     "year": "1979",
     "month": "October",
@@ -7201,7 +7201,7 @@ window.TALKS = [
   },
   {
     "id": "721-1979-10-an-angel-from-on-high-the-long-long-silence-broke",
-    "title": "\u201cAn Angel from on High, the Long, Long Silence Broke\u201d",
+    "title": "“An Angel from on High, the Long, Long Silence Broke”",
     "speaker": "Gordon B. Hinckley",
     "year": "1979",
     "month": "October",
@@ -7401,7 +7401,7 @@ window.TALKS = [
   },
   {
     "id": "741-1979-10-pornography-the-deadly-carrier",
-    "title": "Pornography\u2014the Deadly Carrier",
+    "title": "Pornography—the Deadly Carrier",
     "speaker": "Thomas S. Monson",
     "year": "1979",
     "month": "October",
@@ -7411,7 +7411,7 @@ window.TALKS = [
   },
   {
     "id": "742-1979-10-after-much-tribulation-come-the-blessings",
-    "title": "\u201cAfter Much Tribulation Come the Blessings\u201d",
+    "title": "“After Much Tribulation Come the Blessings”",
     "speaker": "Adney Y. Komatsu",
     "year": "1979",
     "month": "October",
@@ -7441,7 +7441,7 @@ window.TALKS = [
   },
   {
     "id": "745-1979-10-we-will-go-with-our-young-and-with-our-old",
-    "title": "\u201cWe Will Go with Our Young and with Our Old\u201d",
+    "title": "“We Will Go with Our Young and with Our Old”",
     "speaker": "Hugh W. Pinnock",
     "year": "1979",
     "month": "October",
@@ -7461,7 +7461,7 @@ window.TALKS = [
   },
   {
     "id": "747-1979-10-give-me-this-mountain",
-    "title": "\u201cGive Me This Mountain\u201d",
+    "title": "“Give Me This Mountain”",
     "speaker": "Spencer W. Kimball",
     "year": "1979",
     "month": "October",
@@ -7510,7 +7510,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1979/10/blessing-the-one?lang=eng"
   },
   {
-    "id": "752-1979-10-establishing-the-church-welfare-services-missionaries-are-an-important-resource",
+    "id": "752-1979-10-establishing-the-church-welfare-services-missionaries-are-an",
     "title": "Establishing the Church: Welfare Services Missionaries Are an Important Resource",
     "speaker": "James E. Faust",
     "year": "1979",
@@ -7571,7 +7571,7 @@ window.TALKS = [
   },
   {
     "id": "758-1980-4-no-unhallowed-hand-can-stop-the-work",
-    "title": "\u201cNo Unhallowed Hand Can Stop the Work\u201d",
+    "title": "“No Unhallowed Hand Can Stop the Work”",
     "speaker": "Spencer W. Kimball",
     "year": "1980",
     "month": "April",
@@ -7591,7 +7591,7 @@ window.TALKS = [
   },
   {
     "id": "760-1980-4-he-is-not-here-he-is-risen",
-    "title": "\u201cHe Is Not Here. He Is Risen\u201d",
+    "title": "“He Is Not Here. He Is Risen”",
     "speaker": "David B. Haight",
     "year": "1980",
     "month": "April",
@@ -7781,7 +7781,7 @@ window.TALKS = [
   },
   {
     "id": "779-1980-4-what-hath-god-wrought-through-his-servant-joseph",
-    "title": "\u201cWhat Hath God Wrought through His Servant Joseph!\u201d",
+    "title": "“What Hath God Wrought through His Servant Joseph!”",
     "speaker": "Gordon B. Hinckley",
     "year": "1980",
     "month": "April",
@@ -7831,7 +7831,7 @@ window.TALKS = [
   },
   {
     "id": "784-1980-4-nauvoo-a-demonstration-of-faith",
-    "title": "Nauvoo\u2014A Demonstration of Faith",
+    "title": "Nauvoo—A Demonstration of Faith",
     "speaker": "L. Tom Perry",
     "year": "1980",
     "month": "April",
@@ -7861,7 +7861,7 @@ window.TALKS = [
   },
   {
     "id": "787-1980-4-let-us-not-weary-in-well-doing",
-    "title": "\u201cLet Us Not Weary in Well Doing\u201d",
+    "title": "“Let Us Not Weary in Well Doing”",
     "speaker": "Spencer W. Kimball",
     "year": "1980",
     "month": "April",
@@ -7871,7 +7871,7 @@ window.TALKS = [
   },
   {
     "id": "788-1980-4-church-welfare-temporal-service-in-a-spiritual-setting",
-    "title": "Church Welfare\u2014Temporal Service in a Spiritual Setting",
+    "title": "Church Welfare—Temporal Service in a Spiritual Setting",
     "speaker": "Marion G. Romney",
     "year": "1980",
     "month": "April",
@@ -7910,7 +7910,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1980/04/welfare-services-past-present-and-future?lang=eng"
   },
   {
-    "id": "792-1980-4-priesthood-councils-key-to-meeting-temporal-and-spiritual-needs",
+    "id": "792-1980-4-priesthood-councils-key-to-meeting-temporal-and-spiritual-ne",
     "title": "Priesthood Councils: Key to Meeting Temporal and Spiritual Needs",
     "speaker": "Ronald E. Poelman",
     "year": "1980",
@@ -7951,7 +7951,7 @@ window.TALKS = [
   },
   {
     "id": "796-1980-10-for-whatsoever-a-man-soweth-that-shall-he-also-reap",
-    "title": "\u201cFor Whatsoever a Man Soweth, That Shall He Also Reap\u201d",
+    "title": "“For Whatsoever a Man Soweth, That Shall He Also Reap”",
     "speaker": "L. Tom Perry",
     "year": "1980",
     "month": "October",
@@ -8011,7 +8011,7 @@ window.TALKS = [
   },
   {
     "id": "802-1980-10-the-savior-s-touch",
-    "title": "The Savior\u2019s Touch",
+    "title": "The Savior’s Touch",
     "speaker": "M. Russell Ballard",
     "year": "1980",
     "month": "October",
@@ -8031,7 +8031,7 @@ window.TALKS = [
   },
   {
     "id": "804-1980-10-feed-my-sheep",
-    "title": "\u201cFeed My Sheep\u201d",
+    "title": "“Feed My Sheep”",
     "speaker": "Rex C. Reeve",
     "year": "1980",
     "month": "October",
@@ -8041,7 +8041,7 @@ window.TALKS = [
   },
   {
     "id": "805-1980-10-forgive-them-i-pray-thee",
-    "title": "\u201cForgive Them, I Pray Thee\u201d",
+    "title": "“Forgive Them, I Pray Thee”",
     "speaker": "Vaughn J. Featherstone",
     "year": "1980",
     "month": "October",
@@ -8091,7 +8091,7 @@ window.TALKS = [
   },
   {
     "id": "810-1980-10-the-oath-and-covenant-which-belongeth-to-the-priesthood",
-    "title": "\u201cThe Oath and Covenant Which Belongeth to the Priesthood\u201d",
+    "title": "“The Oath and Covenant Which Belongeth to the Priesthood”",
     "speaker": "Marion G. Romney",
     "year": "1980",
     "month": "October",
@@ -8151,7 +8151,7 @@ window.TALKS = [
   },
   {
     "id": "816-1980-10-of-you-it-is-required-to-forgive",
-    "title": "\u201cOf You It Is Required to Forgive\u201d",
+    "title": "“Of You It Is Required to Forgive”",
     "speaker": "Gordon B. Hinckley",
     "year": "1980",
     "month": "October",
@@ -8171,7 +8171,7 @@ window.TALKS = [
   },
   {
     "id": "818-1980-10-acquaint-thyself-with-him-and-be-at-peace",
-    "title": "\u201cAcquaint Thyself with Him, and Be at Peace\u201d",
+    "title": "“Acquaint Thyself with Him, and Be at Peace”",
     "speaker": "George P. Lee",
     "year": "1980",
     "month": "October",
@@ -8211,7 +8211,7 @@ window.TALKS = [
   },
   {
     "id": "822-1980-10-the-keys-of-the-kingdom",
-    "title": "\u201cThe Keys of the Kingdom\u201d",
+    "title": "“The Keys of the Kingdom”",
     "speaker": "David B. Haight",
     "year": "1980",
     "month": "October",
@@ -8221,7 +8221,7 @@ window.TALKS = [
   },
   {
     "id": "823-1980-10-do-not-weary-by-the-way",
-    "title": "\u201cDo Not Weary by the Way\u201d",
+    "title": "“Do Not Weary by the Way”",
     "speaker": "Spencer W. Kimball",
     "year": "1980",
     "month": "October",
@@ -8241,7 +8241,7 @@ window.TALKS = [
   },
   {
     "id": "825-1980-10-prepare-every-needful-thing",
-    "title": "\u201cPrepare Every Needful Thing\u201d",
+    "title": "“Prepare Every Needful Thing”",
     "speaker": "Victor L. Brown",
     "year": "1980",
     "month": "October",
@@ -8271,7 +8271,7 @@ window.TALKS = [
   },
   {
     "id": "828-1980-10-is-any-thing-too-hard-for-the-lord",
-    "title": "\u201cIs Any Thing Too Hard for the Lord?\u201d",
+    "title": "“Is Any Thing Too Hard for the Lord?”",
     "speaker": "Douglas W. DeHaan",
     "year": "1980",
     "month": "October",
@@ -8281,7 +8281,7 @@ window.TALKS = [
   },
   {
     "id": "829-1980-10-the-bishop-center-stage-in-welfare",
-    "title": "The Bishop\u2014Center Stage in Welfare",
+    "title": "The Bishop—Center Stage in Welfare",
     "speaker": "Thomas S. Monson",
     "year": "1980",
     "month": "October",
@@ -8291,7 +8291,7 @@ window.TALKS = [
   },
   {
     "id": "830-1980-10-welfare-services-the-savior-s-program",
-    "title": "Welfare Services: The Savior\u2019s Program",
+    "title": "Welfare Services: The Savior’s Program",
     "speaker": "Marion G. Romney",
     "year": "1980",
     "month": "October",
@@ -8301,7 +8301,7 @@ window.TALKS = [
   },
   {
     "id": "831-1980-10-learn-then-teach",
-    "title": "\u201cLearn\u2014Then Teach\u201d",
+    "title": "“Learn—Then Teach”",
     "speaker": "Spencer W. Kimball",
     "year": "1980",
     "month": "October",
@@ -8551,7 +8551,7 @@ window.TALKS = [
   },
   {
     "id": "856-1981-4-life-a-great-proving-ground",
-    "title": "Life\u2014A Great Proving Ground",
+    "title": "Life—A Great Proving Ground",
     "speaker": "Franklin D. Richards",
     "year": "1981",
     "month": "April",
@@ -8571,7 +8571,7 @@ window.TALKS = [
   },
   {
     "id": "858-1981-4-reach-out-to-our-father-s-children",
-    "title": "Reach Out to Our Father\u2019s Children",
+    "title": "Reach Out to Our Father’s Children",
     "speaker": "Jack H Goaslind Jr.",
     "year": "1981",
     "month": "April",
@@ -8611,7 +8611,7 @@ window.TALKS = [
   },
   {
     "id": "862-1981-4-obedience-full-obedience",
-    "title": "Obedience\u2014Full Obedience",
+    "title": "Obedience—Full Obedience",
     "speaker": "Ted E. Brewerton",
     "year": "1981",
     "month": "April",
@@ -8641,7 +8641,7 @@ window.TALKS = [
   },
   {
     "id": "865-1981-4-upon-this-rock",
-    "title": "\u201cUpon This Rock\u201d",
+    "title": "“Upon This Rock”",
     "speaker": "Bruce R. McConkie",
     "year": "1981",
     "month": "April",
@@ -8651,7 +8651,7 @@ window.TALKS = [
   },
   {
     "id": "866-1981-4-we-are-on-the-lord-s-errand",
-    "title": "We Are on the Lord\u2019s Errand",
+    "title": "We Are on the Lord’s Errand",
     "speaker": "Spencer W. Kimball",
     "year": "1981",
     "month": "April",
@@ -8731,7 +8731,7 @@ window.TALKS = [
   },
   {
     "id": "874-1981-10-o-divine-redeemer",
-    "title": "\u201cO, Divine Redeemer\u201d",
+    "title": "“O, Divine Redeemer”",
     "speaker": "Neal A. Maxwell",
     "year": "1981",
     "month": "October",
@@ -8761,7 +8761,7 @@ window.TALKS = [
   },
   {
     "id": "877-1981-10-except-a-man-be-born-again",
-    "title": "\u201cExcept a Man Be Born Again\u201d",
+    "title": "“Except a Man Be Born Again”",
     "speaker": "Marion G. Romney",
     "year": "1981",
     "month": "October",
@@ -8771,7 +8771,7 @@ window.TALKS = [
   },
   {
     "id": "878-1981-10-he-is-risen",
-    "title": "\u201cHe Is Risen\u201d",
+    "title": "“He Is Risen”",
     "speaker": "Thomas S. Monson",
     "year": "1981",
     "month": "October",
@@ -8801,7 +8801,7 @@ window.TALKS = [
   },
   {
     "id": "881-1981-10-the-little-things-and-eternal-life",
-    "title": "The \u201cLittle Things\u201d and Eternal Life",
+    "title": "The “Little Things” and Eternal Life",
     "speaker": "Angel Abrea",
     "year": "1981",
     "month": "October",
@@ -8821,7 +8821,7 @@ window.TALKS = [
   },
   {
     "id": "883-1981-10-be-ye-prepared",
-    "title": "\u201cBe Ye Prepared\u201d",
+    "title": "“Be Ye Prepared”",
     "speaker": "LeGrand Richards",
     "year": "1981",
     "month": "October",
@@ -8861,7 +8861,7 @@ window.TALKS = [
   },
   {
     "id": "887-1981-10-four-b-s-for-boys",
-    "title": "Four B\u2019s for Boys",
+    "title": "Four B’s for Boys",
     "speaker": "Gordon B. Hinckley",
     "year": "1981",
     "month": "October",
@@ -8881,7 +8881,7 @@ window.TALKS = [
   },
   {
     "id": "889-1981-10-who-hath-believed-our-report",
-    "title": "\u201cWho Hath Believed Our Report?\u201d",
+    "title": "“Who Hath Believed Our Report?”",
     "speaker": "Bruce R. McConkie",
     "year": "1981",
     "month": "October",
@@ -8951,7 +8951,7 @@ window.TALKS = [
   },
   {
     "id": "896-1981-10-my-sheep-hear-my-voice",
-    "title": "\u201cMy Sheep Hear My Voice\u201d",
+    "title": "“My Sheep Hear My Voice”",
     "speaker": "Yoshihiko Kikuchi",
     "year": "1981",
     "month": "October",
@@ -8961,7 +8961,7 @@ window.TALKS = [
   },
   {
     "id": "897-1981-10-teach-the-why",
-    "title": "Teach \u201cthe Why\u201d",
+    "title": "Teach “the Why”",
     "speaker": "Paul H. Dunn",
     "year": "1981",
     "month": "October",
@@ -8971,7 +8971,7 @@ window.TALKS = [
   },
   {
     "id": "898-1981-10-my-specialty-is-mercy",
-    "title": "\u201cMy Specialty Is Mercy\u201d",
+    "title": "“My Specialty Is Mercy”",
     "speaker": "Marion D. Hanks",
     "year": "1981",
     "month": "October",
@@ -8991,7 +8991,7 @@ window.TALKS = [
   },
   {
     "id": "900-1981-10-remember-who-you-are",
-    "title": "\u201cRemember Who You Are\u201d",
+    "title": "“Remember Who You Are”",
     "speaker": "N. Eldon Tanner",
     "year": "1981",
     "month": "October",
@@ -9041,7 +9041,7 @@ window.TALKS = [
   },
   {
     "id": "905-1981-10-give-with-wisdom-that-they-may-receive-with-dignity",
-    "title": "\u201cGive with Wisdom That They May Receive with Dignity\u201d",
+    "title": "“Give with Wisdom That They May Receive with Dignity”",
     "speaker": "Marvin J. Ashton",
     "year": "1981",
     "month": "October",
@@ -9061,7 +9061,7 @@ window.TALKS = [
   },
   {
     "id": "907-1981-10-charity-never-faileth",
-    "title": "\u201cCharity Never Faileth\u201d",
+    "title": "“Charity Never Faileth”",
     "speaker": "Gordon B. Hinckley",
     "year": "1981",
     "month": "October",
@@ -9131,7 +9131,7 @@ window.TALKS = [
   },
   {
     "id": "914-1982-4-this-is-no-harm",
-    "title": "\u201cThis Is No Harm\u201d",
+    "title": "“This Is No Harm”",
     "speaker": "Marvin J. Ashton",
     "year": "1982",
     "month": "April",
@@ -9151,7 +9151,7 @@ window.TALKS = [
   },
   {
     "id": "916-1982-4-we-believe-in-being-honest",
-    "title": "\u201cWe Believe in Being Honest\u201d",
+    "title": "“We Believe in Being Honest”",
     "speaker": "Mark E. Petersen",
     "year": "1982",
     "month": "April",
@@ -9201,7 +9201,7 @@ window.TALKS = [
   },
   {
     "id": "921-1982-4-god-s-love-for-us-transcends-our-transgressions",
-    "title": "God\u2019s Love for Us Transcends Our Transgressions",
+    "title": "God’s Love for Us Transcends Our Transgressions",
     "speaker": "Ronald E. Poelman",
     "year": "1982",
     "month": "April",
@@ -9241,7 +9241,7 @@ window.TALKS = [
   },
   {
     "id": "925-1982-4-a-brother-offended",
-    "title": "\u201cA Brother Offended\u201d",
+    "title": "“A Brother Offended”",
     "speaker": "Neal A. Maxwell",
     "year": "1982",
     "month": "April",
@@ -9271,7 +9271,7 @@ window.TALKS = [
   },
   {
     "id": "928-1982-4-five-million-members-a-milestone-and-not-a-summit",
-    "title": "Five Million Members\u2014A Milestone and Not a Summit",
+    "title": "Five Million Members—A Milestone and Not a Summit",
     "speaker": "Gordon B. Hinckley",
     "year": "1982",
     "month": "April",
@@ -9411,7 +9411,7 @@ window.TALKS = [
   },
   {
     "id": "942-1982-4-her-children-arise-up-and-call-her-blessed",
-    "title": "\u201cHer Children Arise Up, and Call Her Blessed\u201d",
+    "title": "“Her Children Arise Up, and Call Her Blessed”",
     "speaker": "Barbara B. Smith",
     "year": "1982",
     "month": "April",
@@ -9431,7 +9431,7 @@ window.TALKS = [
   },
   {
     "id": "944-1982-4-the-gospel-the-foundation-for-our-career",
-    "title": "The Gospel\u2014The Foundation for Our Career",
+    "title": "The Gospel—The Foundation for Our Career",
     "speaker": "Boyd K. Packer",
     "year": "1982",
     "month": "April",
@@ -9481,7 +9481,7 @@ window.TALKS = [
   },
   {
     "id": "949-1982-4-even-as-i-am",
-    "title": "\u201cEven As I Am\u201d",
+    "title": "“Even As I Am”",
     "speaker": "Mark E. Petersen",
     "year": "1982",
     "month": "April",
@@ -9521,7 +9521,7 @@ window.TALKS = [
   },
   {
     "id": "953-1982-10-my-soul-delighteth-in-the-scriptures",
-    "title": "\u201cMy Soul Delighteth in the Scriptures\u201d",
+    "title": "“My Soul Delighteth in the Scriptures”",
     "speaker": "J. Richard Clarke",
     "year": "1982",
     "month": "October",
@@ -9541,7 +9541,7 @@ window.TALKS = [
   },
   {
     "id": "955-1982-10-run-boy-run",
-    "title": "\u201cRun, Boy, Run!\u201d",
+    "title": "“Run, Boy, Run!”",
     "speaker": "Thomas S. Monson",
     "year": "1982",
     "month": "October",
@@ -9551,7 +9551,7 @@ window.TALKS = [
   },
   {
     "id": "956-1982-10-lds-hymns-worshiping-with-song",
-    "title": "LDS Hymns\u2014Worshiping with Song",
+    "title": "LDS Hymns—Worshiping with Song",
     "speaker": "Franklin D. Richards",
     "year": "1982",
     "month": "October",
@@ -9561,7 +9561,7 @@ window.TALKS = [
   },
   {
     "id": "957-1982-10-faith-the-force-of-life",
-    "title": "Faith\u2014The Force of Life",
+    "title": "Faith—The Force of Life",
     "speaker": "Rex D. Pinegar",
     "year": "1982",
     "month": "October",
@@ -9581,7 +9581,7 @@ window.TALKS = [
   },
   {
     "id": "959-1982-10-for-a-bishop-must-be-blameless",
-    "title": "\u201cFor a Bishop Must Be Blameless\u201d",
+    "title": "“For a Bishop Must Be Blameless”",
     "speaker": "L. Tom Perry",
     "year": "1982",
     "month": "October",
@@ -9731,7 +9731,7 @@ window.TALKS = [
   },
   {
     "id": "974-1982-10-be-of-good-cheer",
-    "title": "\u201cBe of Good Cheer\u201d",
+    "title": "“Be of Good Cheer”",
     "speaker": "Neal A. Maxwell",
     "year": "1982",
     "month": "October",
@@ -9751,7 +9751,7 @@ window.TALKS = [
   },
   {
     "id": "976-1982-10-however-faint-the-light-may-glow",
-    "title": "\u201cHowever Faint the Light May Glow\u201d",
+    "title": "“However Faint the Light May Glow”",
     "speaker": "Vaughn J. Featherstone",
     "year": "1982",
     "month": "October",
@@ -9761,7 +9761,7 @@ window.TALKS = [
   },
   {
     "id": "977-1982-10-behold-my-beloved-son-in-whom-i-am-well-pleased",
-    "title": "\u201cBehold My Beloved Son, in Whom I Am Well Pleased\u201d",
+    "title": "“Behold My Beloved Son, in Whom I Am Well Pleased”",
     "speaker": "George P. Lee",
     "year": "1982",
     "month": "October",
@@ -9800,7 +9800,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1982/10/preparation-for-tomorrow?lang=eng"
   },
   {
-    "id": "981-1982-10-application-of-welfare-principles-in-the-home-a-key-to-many-family-problems",
+    "id": "981-1982-10-application-of-welfare-principles-in-the-home-a-key-to-many-",
     "title": "Application of Welfare Principles in the Home: A Key to Many Family Problems",
     "speaker": "Barbara B. Smith",
     "year": "1982",
@@ -9820,7 +9820,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1982/10/the-blessings-of-family-work-projects?lang=eng"
   },
   {
-    "id": "983-1982-10-the-blessings-we-receive-as-we-meet-the-challenges-of-economic-stress",
+    "id": "983-1982-10-the-blessings-we-receive-as-we-meet-the-challenges-of-econom",
     "title": "The Blessings We Receive As We Meet the Challenges of Economic Stress",
     "speaker": "James E. Faust",
     "year": "1982",
@@ -9851,7 +9851,7 @@ window.TALKS = [
   },
   {
     "id": "986-1983-4-shine-as-lights-in-the-world",
-    "title": "\u201cShine As Lights in the World\u201d",
+    "title": "“Shine As Lights in the World”",
     "speaker": "Neal A. Maxwell",
     "year": "1983",
     "month": "April",
@@ -9991,7 +9991,7 @@ window.TALKS = [
   },
   {
     "id": "1000-1983-4-a-call-to-the-priesthood-feed-my-sheep",
-    "title": "A Call to the Priesthood: \u201cFeed My Sheep\u201d",
+    "title": "A Call to the Priesthood: “Feed My Sheep”",
     "speaker": "Ezra Taft Benson",
     "year": "1983",
     "month": "April",
@@ -10021,7 +10021,7 @@ window.TALKS = [
   },
   {
     "id": "1003-1983-4-anonymous",
-    "title": "\u201cAnonymous\u201d",
+    "title": "“Anonymous”",
     "speaker": "Thomas S. Monson",
     "year": "1983",
     "month": "April",
@@ -10041,7 +10041,7 @@ window.TALKS = [
   },
   {
     "id": "1005-1983-4-finding-one-s-identity",
-    "title": "Finding One\u2019s Identity",
+    "title": "Finding One’s Identity",
     "speaker": "Victor L. Brown",
     "year": "1983",
     "month": "April",
@@ -10071,7 +10071,7 @@ window.TALKS = [
   },
   {
     "id": "1008-1983-4-teaching-no-greater-call",
-    "title": "Teaching\u2014No Greater Call",
+    "title": "Teaching—No Greater Call",
     "speaker": "M. Russell Ballard",
     "year": "1983",
     "month": "April",
@@ -10121,7 +10121,7 @@ window.TALKS = [
   },
   {
     "id": "1013-1983-4-fear-not-to-do-good",
-    "title": "\u201cFear Not to Do Good\u201d",
+    "title": "“Fear Not to Do Good”",
     "speaker": "Gordon B. Hinckley",
     "year": "1983",
     "month": "April",
@@ -10161,7 +10161,7 @@ window.TALKS = [
   },
   {
     "id": "1017-1983-10-our-father-which-art-in-heaven",
-    "title": "\u201cOur Father Which Art in Heaven\u201d",
+    "title": "“Our Father Which Art in Heaven”",
     "speaker": "L. Tom Perry",
     "year": "1983",
     "month": "October",
@@ -10221,7 +10221,7 @@ window.TALKS = [
   },
   {
     "id": "1023-1983-10-honour-thy-father-and-thy-mother",
-    "title": "\u201cHonour Thy Father and Thy Mother\u201d",
+    "title": "“Honour Thy Father and Thy Mother”",
     "speaker": "Paul H. Dunn",
     "year": "1983",
     "month": "October",
@@ -10250,7 +10250,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1983/10/the-angel-moroni-came?lang=eng"
   },
   {
-    "id": "1026-1983-10-our-responsibility-to-take-the-gospel-to-the-ends-of-the-earth",
+    "id": "1026-1983-10-our-responsibility-to-take-the-gospel-to-the-ends-of-the-ear",
     "title": "Our Responsibility to Take the Gospel to the Ends of the Earth",
     "speaker": "Jack H Goaslind Jr.",
     "year": "1983",
@@ -10271,7 +10271,7 @@ window.TALKS = [
   },
   {
     "id": "1028-1983-10-called-as-if-he-heard-a-voice-from-heaven",
-    "title": "\u201cCalled As If He Heard a Voice from Heaven\u201d",
+    "title": "“Called As If He Heard a Voice from Heaven”",
     "speaker": "Vaughn J. Featherstone",
     "year": "1983",
     "month": "October",
@@ -10351,7 +10351,7 @@ window.TALKS = [
   },
   {
     "id": "1036-1983-10-the-word-is-commitment",
-    "title": "\u201cThe Word Is Commitment\u201d",
+    "title": "“The Word Is Commitment”",
     "speaker": "Marvin J. Ashton",
     "year": "1983",
     "month": "October",
@@ -10361,7 +10361,7 @@ window.TALKS = [
   },
   {
     "id": "1037-1983-10-parents-concern-for-children",
-    "title": "Parents\u2019 Concern for Children",
+    "title": "Parents’ Concern for Children",
     "speaker": "Howard W. Hunter",
     "year": "1983",
     "month": "October",
@@ -10425,7 +10425,7 @@ window.TALKS = [
     "speaker": "Gordon B. Hinckley",
     "year": "1983",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1983 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1983/10/live-up-to-your-inheritance?lang=eng"
   },
@@ -10435,7 +10435,7 @@ window.TALKS = [
     "speaker": "Barbara B. Smith",
     "year": "1983",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1983 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1983/10/a-season-for-strength?lang=eng"
   },
@@ -10445,7 +10445,7 @@ window.TALKS = [
     "speaker": "Dwan J. Young",
     "year": "1983",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1983 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1983/10/prepare-to-teach-his-children?lang=eng"
   },
@@ -10455,7 +10455,7 @@ window.TALKS = [
     "speaker": "Elaine A. Cannon",
     "year": "1983",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1983 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1983/10/agency-and-accountability?lang=eng"
   },
@@ -10581,7 +10581,7 @@ window.TALKS = [
   },
   {
     "id": "1059-1984-4-missions-only-you-can-decide",
-    "title": "Missions\u2014Only You Can Decide",
+    "title": "Missions—Only You Can Decide",
     "speaker": "Devin G. Durrant",
     "year": "1984",
     "month": "April",
@@ -10591,7 +10591,7 @@ window.TALKS = [
   },
   {
     "id": "1060-1984-4-who-s-on-the-lord-s-team",
-    "title": "Who\u2019s on the Lord\u2019s Team?",
+    "title": "Who’s on the Lord’s Team?",
     "speaker": "J. Thomas Fyans",
     "year": "1984",
     "month": "April",
@@ -10661,7 +10661,7 @@ window.TALKS = [
   },
   {
     "id": "1067-1984-4-i-love-the-sisters-of-the-church",
-    "title": "\u201cI Love the Sisters of the Church\u201d",
+    "title": "“I Love the Sisters of the Church”",
     "speaker": "Barbara W. Winder",
     "year": "1984",
     "month": "April",
@@ -10741,7 +10741,7 @@ window.TALKS = [
   },
   {
     "id": "1075-1984-4-youth-of-the-noble-birthright",
-    "title": "\u201cYouth of the Noble Birthright\u201d",
+    "title": "“Youth of the Noble Birthright”",
     "speaker": "Ardeth G. Kapp",
     "year": "1984",
     "month": "April",
@@ -10751,7 +10751,7 @@ window.TALKS = [
   },
   {
     "id": "1076-1984-4-go-ye-therefore-and-teach-all-nations",
-    "title": "\u201cGo Ye Therefore, and Teach All Nations\u201d",
+    "title": "“Go Ye Therefore, and Teach All Nations”",
     "speaker": "L. Tom Perry",
     "year": "1984",
     "month": "April",
@@ -10781,7 +10781,7 @@ window.TALKS = [
   },
   {
     "id": "1079-1984-10-out-of-obscurity",
-    "title": "\u201cOut of Obscurity\u201d",
+    "title": "“Out of Obscurity”",
     "speaker": "Neal A. Maxwell",
     "year": "1984",
     "month": "October",
@@ -10810,8 +10810,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1984/10/write-down-a-date?lang=eng"
   },
   {
-    "id": "1082-1984-10-and-why-call-ye-me-lord-lord-and-do-not-the-things-which-i-say",
-    "title": "\u201cAnd Why Call Ye Me, Lord, Lord, and Do Not the Things Which I Say?\u201d",
+    "id": "1082-1984-10-and-why-call-ye-me-lord-lord-and-do-not-the-things-which-i-s",
+    "title": "“And Why Call Ye Me, Lord, Lord, and Do Not the Things Which I Say?”",
     "speaker": "L. Tom Perry",
     "year": "1984",
     "month": "October",
@@ -10821,7 +10821,7 @@ window.TALKS = [
   },
   {
     "id": "1083-1984-10-if-thou-endure-it-well",
-    "title": "\u201cIf Thou Endure It Well\u201d",
+    "title": "“If Thou Endure It Well”",
     "speaker": "Marvin J. Ashton",
     "year": "1984",
     "month": "October",
@@ -10841,7 +10841,7 @@ window.TALKS = [
   },
   {
     "id": "1085-1984-10-he-returned-speedily",
-    "title": "\u201cHe Returned Speedily\u201d",
+    "title": "“He Returned Speedily”",
     "speaker": "Robert B. Harbertson",
     "year": "1984",
     "month": "October",
@@ -10881,7 +10881,7 @@ window.TALKS = [
   },
   {
     "id": "1089-1984-10-master-the-tempest-is-raging",
-    "title": "\u201cMaster, the Tempest Is Raging\u201d",
+    "title": "“Master, the Tempest Is Raging”",
     "speaker": "Howard W. Hunter",
     "year": "1984",
     "month": "October",
@@ -10971,7 +10971,7 @@ window.TALKS = [
   },
   {
     "id": "1098-1984-10-by-their-fruits-ye-shall-know-them",
-    "title": "\u201cBy Their Fruits Ye Shall Know Them\u201d",
+    "title": "“By Their Fruits Ye Shall Know Them”",
     "speaker": "Royden G. Derrick",
     "year": "1984",
     "month": "October",
@@ -11011,7 +11011,7 @@ window.TALKS = [
   },
   {
     "id": "1102-1984-10-learning-our-father-s-will",
-    "title": "Learning Our Father\u2019s Will",
+    "title": "Learning Our Father’s Will",
     "speaker": "Hugh W. Pinnock",
     "year": "1984",
     "month": "October",
@@ -11111,7 +11111,7 @@ window.TALKS = [
   },
   {
     "id": "1112-1984-10-if-thou-art-faithful",
-    "title": "\u201cIf Thou Art Faithful\u201d",
+    "title": "“If Thou Art Faithful”",
     "speaker": "Gordon B. Hinckley",
     "year": "1984",
     "month": "October",
@@ -11181,7 +11181,7 @@ window.TALKS = [
   },
   {
     "id": "1119-1985-4-born-of-goodly-parents",
-    "title": "\u201cBorn of Goodly Parents\u201d",
+    "title": "“Born of Goodly Parents”",
     "speaker": "L. Tom Perry",
     "year": "1985",
     "month": "April",
@@ -11241,7 +11241,7 @@ window.TALKS = [
   },
   {
     "id": "1125-1985-4-from-such-turn-away",
-    "title": "\u201cFrom Such Turn Away\u201d",
+    "title": "“From Such Turn Away”",
     "speaker": "Boyd K. Packer",
     "year": "1985",
     "month": "April",
@@ -11351,7 +11351,7 @@ window.TALKS = [
   },
   {
     "id": "1136-1985-4-the-spirit-giveth-life",
-    "title": "\u201cThe Spirit Giveth Life\u201d",
+    "title": "“The Spirit Giveth Life”",
     "speaker": "Thomas S. Monson",
     "year": "1985",
     "month": "April",
@@ -11361,7 +11361,7 @@ window.TALKS = [
   },
   {
     "id": "1137-1985-4-willing-to-submit",
-    "title": "\u201cWilling to Submit\u201d",
+    "title": "“Willing to Submit”",
     "speaker": "Neal A. Maxwell",
     "year": "1985",
     "month": "April",
@@ -11371,7 +11371,7 @@ window.TALKS = [
   },
   {
     "id": "1138-1985-4-hold-up-your-light",
-    "title": "\u201cHold Up Your Light\u201d",
+    "title": "“Hold Up Your Light”",
     "speaker": "J. Richard Clarke",
     "year": "1985",
     "month": "April",
@@ -11491,7 +11491,7 @@ window.TALKS = [
   },
   {
     "id": "1150-1985-10-as-i-have-loved-you",
-    "title": "\u201cAs I Have Loved You\u201d",
+    "title": "“As I Have Loved You”",
     "speaker": "Robert L. Backman",
     "year": "1985",
     "month": "October",
@@ -11531,7 +11531,7 @@ window.TALKS = [
   },
   {
     "id": "1154-1985-10-what-s-the-difference",
-    "title": "What\u2019s the Difference?",
+    "title": "What’s the Difference?",
     "speaker": "Derek A. Cuthbert",
     "year": "1985",
     "month": "October",
@@ -11581,7 +11581,7 @@ window.TALKS = [
   },
   {
     "id": "1159-1985-10-the-heavens-declare-the-glory-of-god",
-    "title": "\u201cThe Heavens Declare the Glory of God\u201d",
+    "title": "“The Heavens Declare the Glory of God”",
     "speaker": "Don Lind",
     "year": "1985",
     "month": "October",
@@ -11611,7 +11611,7 @@ window.TALKS = [
   },
   {
     "id": "1162-1985-10-i-confer-the-priesthood-of-aaron",
-    "title": "\u201cI Confer the Priesthood of Aaron\u201d",
+    "title": "“I Confer the Priesthood of Aaron”",
     "speaker": "L. Tom Perry",
     "year": "1985",
     "month": "October",
@@ -11661,7 +11661,7 @@ window.TALKS = [
   },
   {
     "id": "1167-1985-10-by-their-fruits-ye-shall-know-them",
-    "title": "\u201cBy Their Fruits Ye Shall Know Them\u201d",
+    "title": "“By Their Fruits Ye Shall Know Them”",
     "speaker": "Dean L. Larsen",
     "year": "1985",
     "month": "October",
@@ -11671,7 +11671,7 @@ window.TALKS = [
   },
   {
     "id": "1168-1985-10-peace-a-triumph-of-principles",
-    "title": "Peace\u2014A Triumph of Principles",
+    "title": "Peace—A Triumph of Principles",
     "speaker": "Marvin J. Ashton",
     "year": "1985",
     "month": "October",
@@ -11731,7 +11731,7 @@ window.TALKS = [
   },
   {
     "id": "1174-1985-10-let-us-move-this-work-forward",
-    "title": "\u201cLet Us Move This Work Forward\u201d",
+    "title": "“Let Us Move This Work Forward”",
     "speaker": "Gordon B. Hinckley",
     "year": "1985",
     "month": "October",
@@ -11741,11 +11741,11 @@ window.TALKS = [
   },
   {
     "id": "1175-1985-10-draw-near-unto-me",
-    "title": "\u201cDraw Near unto Me\u201d",
+    "title": "“Draw Near unto Me”",
     "speaker": "J. Thomas Fyans",
     "year": "1985",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1985 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1985/10/draw-near-unto-me?lang=eng"
   },
@@ -11755,7 +11755,7 @@ window.TALKS = [
     "speaker": "Dwan J. Young",
     "year": "1985",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1985 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1985/10/draw-near-to-him-in-prayer?lang=eng"
   },
@@ -11765,7 +11765,7 @@ window.TALKS = [
     "speaker": "Ardeth G. Kapp",
     "year": "1985",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1985 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1985/10/the-holy-scriptures-letters-from-home?lang=eng"
   },
@@ -11775,7 +11775,7 @@ window.TALKS = [
     "speaker": "Barbara W. Winder",
     "year": "1985",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1985 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1985/10/draw-near-unto-me-through-obedience?lang=eng"
   },
@@ -11785,7 +11785,7 @@ window.TALKS = [
     "speaker": "Gordon B. Hinckley",
     "year": "1985",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1985 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1985/10/ten-gifts-from-the-lord?lang=eng"
   },
@@ -11811,7 +11811,7 @@ window.TALKS = [
   },
   {
     "id": "1182-1986-4-we-love-you-please-come-back",
-    "title": "We Love You\u2014Please Come Back",
+    "title": "We Love You—Please Come Back",
     "speaker": "Richard G. Scott",
     "year": "1986",
     "month": "April",
@@ -11831,7 +11831,7 @@ window.TALKS = [
   },
   {
     "id": "1184-1986-4-an-apostle-s-witness-of-the-resurrection",
-    "title": "An Apostle\u2019s Witness of the Resurrection",
+    "title": "An Apostle’s Witness of the Resurrection",
     "speaker": "Howard W. Hunter",
     "year": "1986",
     "month": "April",
@@ -11861,7 +11861,7 @@ window.TALKS = [
   },
   {
     "id": "1187-1986-4-in-the-lord-s-own-way",
-    "title": "In the Lord\u2019s Own Way",
+    "title": "In the Lord’s Own Way",
     "speaker": "Russell M. Nelson",
     "year": "1986",
     "month": "April",
@@ -11870,8 +11870,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1986/04/in-the-lords-own-way?lang=eng"
   },
   {
-    "id": "1188-1986-4-welfare-principles-to-guide-our-lives-an-eternal-plan-for-the-welfare-of-men-s-souls",
-    "title": "Welfare Principles to Guide Our Lives: An Eternal Plan for the Welfare of Men\u2019s Souls",
+    "id": "1188-1986-4-welfare-principles-to-guide-our-lives-an-eternal-plan-for-th",
+    "title": "Welfare Principles to Guide Our Lives: An Eternal Plan for the Welfare of Men’s Souls",
     "speaker": "Robert D. Hales",
     "year": "1986",
     "month": "April",
@@ -11891,7 +11891,7 @@ window.TALKS = [
   },
   {
     "id": "1190-1986-4-called-and-prepared-from-the-foundation-of-the-world",
-    "title": "\u201cCalled and Prepared from the Foundation of the World\u201d",
+    "title": "“Called and Prepared from the Foundation of the World”",
     "speaker": "Neal A. Maxwell",
     "year": "1986",
     "month": "April",
@@ -11921,7 +11921,7 @@ window.TALKS = [
   },
   {
     "id": "1193-1986-4-to-the-youth-of-the-noble-birthright",
-    "title": "To the \u201cYouth of the Noble Birthright\u201d",
+    "title": "To the “Youth of the Noble Birthright”",
     "speaker": "Ezra Taft Benson",
     "year": "1986",
     "month": "April",
@@ -11961,7 +11961,7 @@ window.TALKS = [
   },
   {
     "id": "1197-1986-4-the-things-of-my-soul",
-    "title": "\u201cThe Things of My Soul\u201d",
+    "title": "“The Things of My Soul”",
     "speaker": "Boyd K. Packer",
     "year": "1986",
     "month": "April",
@@ -11971,7 +11971,7 @@ window.TALKS = [
   },
   {
     "id": "1198-1986-4-a-provident-plan-a-precious-promise",
-    "title": "A Provident Plan\u2014A Precious Promise",
+    "title": "A Provident Plan—A Precious Promise",
     "speaker": "Thomas S. Monson",
     "year": "1986",
     "month": "April",
@@ -11981,7 +11981,7 @@ window.TALKS = [
   },
   {
     "id": "1199-1986-4-be-of-good-cheer",
-    "title": "\u201cBe of Good Cheer\u201d",
+    "title": "“Be of Good Cheer”",
     "speaker": "Marvin J. Ashton",
     "year": "1986",
     "month": "April",
@@ -11991,7 +11991,7 @@ window.TALKS = [
   },
   {
     "id": "1200-1986-4-they-taught-and-did-minister-one-to-another",
-    "title": "\u201cThey Taught and Did Minister One to Another\u201d",
+    "title": "“They Taught and Did Minister One to Another”",
     "speaker": "James M. Paramore",
     "year": "1986",
     "month": "April",
@@ -12051,7 +12051,7 @@ window.TALKS = [
   },
   {
     "id": "1206-1986-10-the-book-of-mormon-keystone-of-our-religion",
-    "title": "The Book of Mormon\u2014Keystone of Our Religion",
+    "title": "The Book of Mormon—Keystone of Our Religion",
     "speaker": "Ezra Taft Benson",
     "year": "1986",
     "month": "October",
@@ -12071,7 +12071,7 @@ window.TALKS = [
   },
   {
     "id": "1208-1986-10-i-will-look-unto-the-lord",
-    "title": "\u201cI Will Look unto the Lord\u201d",
+    "title": "“I Will Look unto the Lord”",
     "speaker": "Marion D. Hanks",
     "year": "1986",
     "month": "October",
@@ -12081,7 +12081,7 @@ window.TALKS = [
   },
   {
     "id": "1209-1986-10-shake-off-the-chains-with-which-ye-are-bound",
-    "title": "\u201cShake Off the Chains with Which Ye Are Bound\u201d",
+    "title": "“Shake Off the Chains with Which Ye Are Bound”",
     "speaker": "Marvin J. Ashton",
     "year": "1986",
     "month": "October",
@@ -12101,7 +12101,7 @@ window.TALKS = [
   },
   {
     "id": "1211-1986-10-brother-s-keeper",
-    "title": "\u201cBrother\u2019s Keeper\u201d",
+    "title": "“Brother’s Keeper”",
     "speaker": "Dallin H. Oaks",
     "year": "1986",
     "month": "October",
@@ -12141,7 +12141,7 @@ window.TALKS = [
   },
   {
     "id": "1215-1986-10-my-son-and-yours-each-a-remarkable-one",
-    "title": "My Son and Yours\u2014Each a Remarkable One",
+    "title": "My Son and Yours—Each a Remarkable One",
     "speaker": "Ted E. Brewerton",
     "year": "1986",
     "month": "October",
@@ -12161,7 +12161,7 @@ window.TALKS = [
   },
   {
     "id": "1217-1986-10-the-lord-s-touchstone",
-    "title": "The Lord\u2019s Touchstone",
+    "title": "The Lord’s Touchstone",
     "speaker": "Howard W. Hunter",
     "year": "1986",
     "month": "October",
@@ -12231,7 +12231,7 @@ window.TALKS = [
   },
   {
     "id": "1224-1986-10-god-will-yet-reveal",
-    "title": "\u201cGod Will Yet Reveal\u201d",
+    "title": "“God Will Yet Reveal”",
     "speaker": "Neal A. Maxwell",
     "year": "1986",
     "month": "October",
@@ -12271,7 +12271,7 @@ window.TALKS = [
   },
   {
     "id": "1228-1986-10-joy-cometh-in-the-morning",
-    "title": "\u201cJoy Cometh in the Morning\u201d",
+    "title": "“Joy Cometh in the Morning”",
     "speaker": "Russell M. Nelson",
     "year": "1986",
     "month": "October",
@@ -12335,7 +12335,7 @@ window.TALKS = [
     "speaker": "Ezra Taft Benson",
     "year": "1986",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1986 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1986/10/to-the-young-women-of-the-church?lang=eng"
   },
@@ -12345,7 +12345,7 @@ window.TALKS = [
     "speaker": "Dwan J. Young",
     "year": "1986",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1986 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1986/10/the-light-of-hope?lang=eng"
   },
@@ -12355,7 +12355,7 @@ window.TALKS = [
     "speaker": "Ardeth G. Kapp",
     "year": "1986",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1986 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1986/10/a-time-for-hope?lang=eng"
   },
@@ -12365,13 +12365,13 @@ window.TALKS = [
     "speaker": "Barbara W. Winder",
     "year": "1986",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1986 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1986/10/hope-in-christ?lang=eng"
   },
   {
     "id": "1238-1987-4-the-savior-s-visit-to-america",
-    "title": "The Savior\u2019s Visit to America",
+    "title": "The Savior’s Visit to America",
     "speaker": "Ezra Taft Benson",
     "year": "1987",
     "month": "April",
@@ -12401,7 +12401,7 @@ window.TALKS = [
   },
   {
     "id": "1241-1987-4-keeping-life-s-demands-in-balance",
-    "title": "Keeping Life\u2019s Demands in Balance",
+    "title": "Keeping Life’s Demands in Balance",
     "speaker": "M. Russell Ballard",
     "year": "1987",
     "month": "April",
@@ -12411,7 +12411,7 @@ window.TALKS = [
   },
   {
     "id": "1242-1987-4-am-i-a-living-member",
-    "title": "Am I a \u201cLiving\u201d Member?",
+    "title": "Am I a “Living” Member?",
     "speaker": "Howard W. Hunter",
     "year": "1987",
     "month": "April",
@@ -12441,7 +12441,7 @@ window.TALKS = [
   },
   {
     "id": "1245-1987-4-the-book-of-mormon-s-witness-of-jesus-christ",
-    "title": "The Book of Mormon\u2019s Witness of Jesus Christ",
+    "title": "The Book of Mormon’s Witness of Jesus Christ",
     "speaker": "J. Thomas Fyans",
     "year": "1987",
     "month": "April",
@@ -12461,7 +12461,7 @@ window.TALKS = [
   },
   {
     "id": "1247-1987-4-united-in-building-the-kingdom-of-god",
-    "title": "\u201cUnited in Building the Kingdom of God\u201d",
+    "title": "“United in Building the Kingdom of God”",
     "speaker": "L. Tom Perry",
     "year": "1987",
     "month": "April",
@@ -12531,7 +12531,7 @@ window.TALKS = [
   },
   {
     "id": "1254-1987-4-my-neighbor-my-brother",
-    "title": "My Neighbor\u2014My Brother!",
+    "title": "My Neighbor—My Brother!",
     "speaker": "David B. Haight",
     "year": "1987",
     "month": "April",
@@ -12551,7 +12551,7 @@ window.TALKS = [
   },
   {
     "id": "1256-1987-4-i-am-an-adult-now",
-    "title": "\u201cI Am an Adult Now\u201d",
+    "title": "“I Am an Adult Now”",
     "speaker": "Marvin J. Ashton",
     "year": "1987",
     "month": "April",
@@ -12571,7 +12571,7 @@ window.TALKS = [
   },
   {
     "id": "1258-1987-4-overcome-even-as-i-also-overcame",
-    "title": "\u201cOvercome \u2026 Even As I Also Overcame\u201d",
+    "title": "“Overcome … Even As I Also Overcame”",
     "speaker": "Neal A. Maxwell",
     "year": "1987",
     "month": "April",
@@ -12591,7 +12591,7 @@ window.TALKS = [
   },
   {
     "id": "1260-1987-4-some-have-compassion-making-a-difference",
-    "title": "\u201cSome Have Compassion, Making a Difference\u201d",
+    "title": "“Some Have Compassion, Making a Difference”",
     "speaker": "Robert D. Hales",
     "year": "1987",
     "month": "April",
@@ -12611,7 +12611,7 @@ window.TALKS = [
   },
   {
     "id": "1262-1987-4-will-i-be-happy",
-    "title": "\u201cWill I Be Happy?\u201d",
+    "title": "“Will I Be Happy?”",
     "speaker": "James E. Faust",
     "year": "1987",
     "month": "April",
@@ -12681,7 +12681,7 @@ window.TALKS = [
   },
   {
     "id": "1269-1987-10-there-are-many-gifts",
-    "title": "\u201cThere Are Many Gifts\u201d",
+    "title": "“There Are Many Gifts”",
     "speaker": "Marvin J. Ashton",
     "year": "1987",
     "month": "October",
@@ -12721,7 +12721,7 @@ window.TALKS = [
   },
   {
     "id": "1273-1987-10-yet-thou-art-there",
-    "title": "\u201cYet Thou Art There\u201d",
+    "title": "“Yet Thou Art There”",
     "speaker": "Neal A. Maxwell",
     "year": "1987",
     "month": "October",
@@ -12731,7 +12731,7 @@ window.TALKS = [
   },
   {
     "id": "1274-1987-10-the-great-imitator",
-    "title": "\u201cThe Great Imitator\u201d",
+    "title": "“The Great Imitator”",
     "speaker": "James E. Faust",
     "year": "1987",
     "month": "October",
@@ -12751,7 +12751,7 @@ window.TALKS = [
   },
   {
     "id": "1276-1987-10-they-re-not-really-happy",
-    "title": "\u201cThey\u2019re Not Really Happy\u201d",
+    "title": "“They’re Not Really Happy”",
     "speaker": "Glenn L. Pace",
     "year": "1987",
     "month": "October",
@@ -12791,7 +12791,7 @@ window.TALKS = [
   },
   {
     "id": "1280-1987-10-lord-increase-our-faith",
-    "title": "\u201cLord, Increase Our Faith\u201d",
+    "title": "“Lord, Increase Our Faith”",
     "speaker": "Gordon B. Hinckley",
     "year": "1987",
     "month": "October",
@@ -12811,7 +12811,7 @@ window.TALKS = [
   },
   {
     "id": "1282-1987-10-called-to-serve",
-    "title": "\u201cCalled to Serve\u201d",
+    "title": "“Called to Serve”",
     "speaker": "Robert L. Backman",
     "year": "1987",
     "month": "October",
@@ -12821,7 +12821,7 @@ window.TALKS = [
   },
   {
     "id": "1283-1987-10-the-light-and-life-of-the-world",
-    "title": "\u201cThe Light and Life of the World\u201d",
+    "title": "“The Light and Life of the World”",
     "speaker": "Dallin H. Oaks",
     "year": "1987",
     "month": "October",
@@ -12841,7 +12841,7 @@ window.TALKS = [
   },
   {
     "id": "1285-1987-10-a-meaningful-celebration",
-    "title": "\u201cA Meaningful Celebration\u201d",
+    "title": "“A Meaningful Celebration”",
     "speaker": "L. Tom Perry",
     "year": "1987",
     "month": "October",
@@ -12871,7 +12871,7 @@ window.TALKS = [
   },
   {
     "id": "1288-1987-10-i-will-go-and-do",
-    "title": "\u201cI Will Go and Do \u2026\u201d",
+    "title": "“I Will Go and Do …”",
     "speaker": "Lynn A. Sorensen",
     "year": "1987",
     "month": "October",
@@ -12901,7 +12901,7 @@ window.TALKS = [
   },
   {
     "id": "1291-1987-10-come-unto-christ",
-    "title": "\u201cCome unto Christ\u201d",
+    "title": "“Come unto Christ”",
     "speaker": "Ezra Taft Benson",
     "year": "1987",
     "month": "October",
@@ -12931,7 +12931,7 @@ window.TALKS = [
   },
   {
     "id": "1294-1987-10-overcoming-challenges-along-life-s-way",
-    "title": "Overcoming Challenges along Life\u2019s Way",
+    "title": "Overcoming Challenges along Life’s Way",
     "speaker": "Joy F. Evans",
     "year": "1987",
     "month": "October",
@@ -12951,7 +12951,7 @@ window.TALKS = [
   },
   {
     "id": "1296-1988-4-the-great-commandment-love-the-lord",
-    "title": "The Great Commandment\u2014Love the Lord",
+    "title": "The Great Commandment—Love the Lord",
     "speaker": "Ezra Taft Benson",
     "year": "1988",
     "month": "April",
@@ -12961,7 +12961,7 @@ window.TALKS = [
   },
   {
     "id": "1297-1988-4-for-i-will-lead-you-along",
-    "title": "\u201cFor I Will Lead You Along\u201d",
+    "title": "“For I Will Lead You Along”",
     "speaker": "Neal A. Maxwell",
     "year": "1988",
     "month": "April",
@@ -12981,7 +12981,7 @@ window.TALKS = [
   },
   {
     "id": "1299-1988-4-in-the-world",
-    "title": "\u201cIn the World\u201d",
+    "title": "“In the World”",
     "speaker": "L. Tom Perry",
     "year": "1988",
     "month": "April",
@@ -13021,7 +13021,7 @@ window.TALKS = [
   },
   {
     "id": "1303-1988-4-what-think-ye-of-christ",
-    "title": "\u201cWhat Think Ye of Christ?\u201d",
+    "title": "“What Think Ye of Christ?”",
     "speaker": "Douglas H. Smith",
     "year": "1988",
     "month": "April",
@@ -13031,7 +13031,7 @@ window.TALKS = [
   },
   {
     "id": "1304-1988-4-because-i-pray-for-you",
-    "title": "\u201cBecause I Pray for You\u201d",
+    "title": "“Because I Pray for You”",
     "speaker": "Glen L. Rudd",
     "year": "1988",
     "month": "April",
@@ -13051,7 +13051,7 @@ window.TALKS = [
   },
   {
     "id": "1306-1988-4-with-god-nothing-shall-be-impossible",
-    "title": "\u201cWith God Nothing Shall Be Impossible\u201d",
+    "title": "“With God Nothing Shall Be Impossible”",
     "speaker": "Russell M. Nelson",
     "year": "1988",
     "month": "April",
@@ -13091,7 +13091,7 @@ window.TALKS = [
   },
   {
     "id": "1310-1988-4-the-aaronic-priesthood-a-gift-from-god",
-    "title": "The Aaronic Priesthood\u2014a Gift from God",
+    "title": "The Aaronic Priesthood—a Gift from God",
     "speaker": "Gordon B. Hinckley",
     "year": "1988",
     "month": "April",
@@ -13121,7 +13121,7 @@ window.TALKS = [
   },
   {
     "id": "1313-1988-4-god-s-love-for-his-children",
-    "title": "God\u2019s Love for His Children",
+    "title": "God’s Love for His Children",
     "speaker": "M. Russell Ballard",
     "year": "1988",
     "month": "April",
@@ -13231,7 +13231,7 @@ window.TALKS = [
   },
   {
     "id": "1324-1988-4-come-unto-christ-and-be-perfected-in-him",
-    "title": "\u201cCome unto Christ, and Be Perfected in Him\u201d",
+    "title": "“Come unto Christ, and Be Perfected in Him”",
     "speaker": "Ezra Taft Benson",
     "year": "1988",
     "month": "April",
@@ -13291,7 +13291,7 @@ window.TALKS = [
   },
   {
     "id": "1330-1988-10-funerals-a-time-for-reverence",
-    "title": "Funerals\u2014A Time for Reverence",
+    "title": "Funerals—A Time for Reverence",
     "speaker": "Boyd K. Packer",
     "year": "1988",
     "month": "October",
@@ -13341,7 +13341,7 @@ window.TALKS = [
   },
   {
     "id": "1335-1988-10-answer-me",
-    "title": "\u201cAnswer Me\u201d",
+    "title": "“Answer Me”",
     "speaker": "Neal A. Maxwell",
     "year": "1988",
     "month": "October",
@@ -13361,7 +13361,7 @@ window.TALKS = [
   },
   {
     "id": "1337-1988-10-inviting-others-to-come-unto-christ",
-    "title": "Inviting Others to \u201cCome unto Christ\u201d",
+    "title": "Inviting Others to “Come unto Christ”",
     "speaker": "Gene R. Cook",
     "year": "1988",
     "month": "October",
@@ -13401,7 +13401,7 @@ window.TALKS = [
   },
   {
     "id": "1341-1988-10-what-went-ye-out-to-see",
-    "title": "\u201cWhat Went Ye Out \u2026 to See?\u201d",
+    "title": "“What Went Ye Out … to See?”",
     "speaker": "Gerald E. Melchin",
     "year": "1988",
     "month": "October",
@@ -13461,7 +13461,7 @@ window.TALKS = [
   },
   {
     "id": "1347-1988-10-what-think-ye-of-christ",
-    "title": "\u201cWhat Think Ye of Christ?\u201d",
+    "title": "“What Think Ye of Christ?”",
     "speaker": "Dallin H. Oaks",
     "year": "1988",
     "month": "October",
@@ -13481,7 +13481,7 @@ window.TALKS = [
   },
   {
     "id": "1349-1988-10-train-up-a-child",
-    "title": "\u201cTrain Up a Child\u201d",
+    "title": "“Train Up a Child”",
     "speaker": "L. Tom Perry",
     "year": "1988",
     "month": "October",
@@ -13545,17 +13545,17 @@ window.TALKS = [
     "speaker": "Barbara W. Winder",
     "year": "1988",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1988 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1988/10/becoming-a-prepared-people?lang=eng"
   },
   {
     "id": "1356-1988-10-i-will-follow-god-s-plan-for-me",
-    "title": "I Will Follow God\u2019s Plan for Me",
+    "title": "I Will Follow God’s Plan for Me",
     "speaker": "Michaelene P. Grassli",
     "year": "1988",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1988 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1988/10/i-will-follow-gods-plan-for-me?lang=eng"
   },
@@ -13565,7 +13565,7 @@ window.TALKS = [
     "speaker": "Ardeth G. Kapp",
     "year": "1988",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1988 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1988/10/stand-for-truth-and-righteousness?lang=eng"
   },
@@ -13575,7 +13575,7 @@ window.TALKS = [
     "speaker": "Ezra Taft Benson",
     "year": "1988",
     "month": "October",
-    "session": "General Women\u2019s Meeting",
+    "session": "General Women’s Meeting",
     "reference": "October 1988 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1988/10/to-the-single-adult-sisters-of-the-church?lang=eng"
   },
@@ -13671,7 +13671,7 @@ window.TALKS = [
   },
   {
     "id": "1368-1989-4-the-gift-of-the-holy-ghost-a-sure-compass",
-    "title": "The Gift of the Holy Ghost\u2014A Sure Compass",
+    "title": "The Gift of the Holy Ghost—A Sure Compass",
     "speaker": "James E. Faust",
     "year": "1989",
     "month": "April",
@@ -13751,7 +13751,7 @@ window.TALKS = [
   },
   {
     "id": "1376-1989-4-our-kindred-family-expression-of-eternal-love",
-    "title": "Our Kindred Family\u2014Expression of Eternal Love",
+    "title": "Our Kindred Family—Expression of Eternal Love",
     "speaker": "J. Richard Clarke",
     "year": "1989",
     "month": "April",
@@ -13801,7 +13801,7 @@ window.TALKS = [
   },
   {
     "id": "1381-1989-4-lord-when-saw-we-thee-an-hungred",
-    "title": "\u201cLord, When Saw We Thee an Hungred?\u201d",
+    "title": "“Lord, When Saw We Thee an Hungred?”",
     "speaker": "Joy F. Evans",
     "year": "1989",
     "month": "April",
@@ -13891,7 +13891,7 @@ window.TALKS = [
   },
   {
     "id": "1390-1989-10-woman-of-infinite-worth",
-    "title": "Woman\u2014Of Infinite Worth",
+    "title": "Woman—Of Infinite Worth",
     "speaker": "Russell M. Nelson",
     "year": "1989",
     "month": "October",
@@ -13911,7 +13911,7 @@ window.TALKS = [
   },
   {
     "id": "1392-1989-10-he-loved-them-unto-the-end",
-    "title": "\u201cHe Loved Them unto the End\u201d",
+    "title": "“He Loved Them unto the End”",
     "speaker": "Jeffrey R. Holland",
     "year": "1989",
     "month": "October",
@@ -13921,7 +13921,7 @@ window.TALKS = [
   },
   {
     "id": "1393-1989-10-an-eye-single-to-the-glory-of-god",
-    "title": "\u201cAn Eye Single to the Glory of God\u201d",
+    "title": "“An Eye Single to the Glory of God”",
     "speaker": "Marlin K. Jensen",
     "year": "1989",
     "month": "October",
@@ -13961,7 +13961,7 @@ window.TALKS = [
   },
   {
     "id": "1397-1989-10-stalwart-and-brave-we-stand",
-    "title": "\u201cStalwart and Brave We Stand\u201d",
+    "title": "“Stalwart and Brave We Stand”",
     "speaker": "Marvin J. Ashton",
     "year": "1989",
     "month": "October",
@@ -14031,7 +14031,7 @@ window.TALKS = [
   },
   {
     "id": "1404-1989-10-the-sacrament-and-the-sacrifice",
-    "title": "The Sacrament\u2014and the Sacrifice",
+    "title": "The Sacrament—and the Sacrifice",
     "speaker": "David B. Haight",
     "year": "1989",
     "month": "October",
@@ -14071,7 +14071,7 @@ window.TALKS = [
   },
   {
     "id": "1408-1989-10-the-peaceable-followers-of-christ",
-    "title": "\u201cThe Peaceable Followers of Christ\u201d",
+    "title": "“The Peaceable Followers of Christ”",
     "speaker": "L. Tom Perry",
     "year": "1989",
     "month": "October",
@@ -14131,7 +14131,7 @@ window.TALKS = [
   },
   {
     "id": "1414-1989-10-murmur-not",
-    "title": "\u201cMurmur Not\u201d",
+    "title": "“Murmur Not”",
     "speaker": "Neal A. Maxwell",
     "year": "1989",
     "month": "October",
@@ -14161,7 +14161,7 @@ window.TALKS = [
   },
   {
     "id": "1417-1989-10-remember-him",
-    "title": "\u201cRemember Him\u201d",
+    "title": "“Remember Him”",
     "speaker": "Joanne B. Doxey",
     "year": "1989",
     "month": "October",
@@ -14211,7 +14211,7 @@ window.TALKS = [
   },
   {
     "id": "1422-1990-4-home-first",
-    "title": "\u201cHome First\u201d",
+    "title": "“Home First”",
     "speaker": "Rex D. Pinegar",
     "year": "1990",
     "month": "April",
@@ -14231,7 +14231,7 @@ window.TALKS = [
   },
   {
     "id": "1424-1990-4-ye-have-done-it-unto-me",
-    "title": "\u201cYe Have Done It unto Me\u201d",
+    "title": "“Ye Have Done It unto Me”",
     "speaker": "Richard P. Lindsay",
     "year": "1990",
     "month": "April",
@@ -14241,7 +14241,7 @@ window.TALKS = [
   },
   {
     "id": "1425-1990-4-thus-shall-my-church-be-called",
-    "title": "\u201cThus Shall My Church Be Called\u201d",
+    "title": "“Thus Shall My Church Be Called”",
     "speaker": "Russell M. Nelson",
     "year": "1990",
     "month": "April",
@@ -14271,7 +14271,7 @@ window.TALKS = [
   },
   {
     "id": "1428-1990-4-choose-you-this-day",
-    "title": "\u201cChoose You This Day\u201d",
+    "title": "“Choose You This Day”",
     "speaker": "Hans B. Ringger",
     "year": "1990",
     "month": "April",
@@ -14311,7 +14311,7 @@ window.TALKS = [
   },
   {
     "id": "1432-1990-4-endure-it-well",
-    "title": "\u201cEndure It Well\u201d",
+    "title": "“Endure It Well”",
     "speaker": "Neal A. Maxwell",
     "year": "1990",
     "month": "April",
@@ -14371,7 +14371,7 @@ window.TALKS = [
   },
   {
     "id": "1438-1990-4-my-brother-s-keeper",
-    "title": "My Brother\u2019s Keeper",
+    "title": "My Brother’s Keeper",
     "speaker": "Thomas S. Monson",
     "year": "1990",
     "month": "April",
@@ -14391,7 +14391,7 @@ window.TALKS = [
   },
   {
     "id": "1440-1990-4-a-little-child-shall-lead-them",
-    "title": "\u201cA Little Child Shall Lead Them\u201d",
+    "title": "“A Little Child Shall Lead Them”",
     "speaker": "Thomas S. Monson",
     "year": "1990",
     "month": "April",
@@ -14411,7 +14411,7 @@ window.TALKS = [
   },
   {
     "id": "1442-1990-4-one-small-step-for-a-man-one-giant-leap-for-mankind",
-    "title": "\u201cOne Small Step for a Man; One Giant Leap for Mankind\u201d",
+    "title": "“One Small Step for a Man; One Giant Leap for Mankind”",
     "speaker": "Carlos E. Asay",
     "year": "1990",
     "month": "April",
@@ -14421,7 +14421,7 @@ window.TALKS = [
   },
   {
     "id": "1443-1990-4-neither-boast-of-faith-nor-of-mighty-works",
-    "title": "\u201cNeither Boast of Faith Nor of Mighty Works\u201d",
+    "title": "“Neither Boast of Faith Nor of Mighty Works”",
     "speaker": "Marvin J. Ashton",
     "year": "1990",
     "month": "April",
@@ -14471,7 +14471,7 @@ window.TALKS = [
   },
   {
     "id": "1448-1990-4-i-will-go-and-do",
-    "title": "\u201cI Will Go and Do\u201d",
+    "title": "“I Will Go and Do”",
     "speaker": "Elaine L. Jack",
     "year": "1990",
     "month": "April",
@@ -14521,7 +14521,7 @@ window.TALKS = [
   },
   {
     "id": "1453-1990-4-sacred-resolves",
-    "title": "\u201cSacred Resolves\u201d",
+    "title": "“Sacred Resolves”",
     "speaker": "Gordon B. Hinckley",
     "year": "1990",
     "month": "April",
@@ -14541,7 +14541,7 @@ window.TALKS = [
   },
   {
     "id": "1455-1990-4-the-lord-s-way",
-    "title": "The Lord\u2019s Way",
+    "title": "The Lord’s Way",
     "speaker": "Thomas S. Monson",
     "year": "1990",
     "month": "April",
@@ -14561,7 +14561,7 @@ window.TALKS = [
   },
   {
     "id": "1457-1990-10-this-work-will-go-forward",
-    "title": "\u201cThis Work Will Go Forward\u201d",
+    "title": "“This Work Will Go Forward”",
     "speaker": "Gordon B. Hinckley",
     "year": "1990",
     "month": "October",
@@ -14621,7 +14621,7 @@ window.TALKS = [
   },
   {
     "id": "1463-1990-10-come-unto-me",
-    "title": "\u201cCome unto Me\u201d",
+    "title": "“Come unto Me”",
     "speaker": "Howard W. Hunter",
     "year": "1990",
     "month": "October",
@@ -14662,7 +14662,7 @@ window.TALKS = [
   {
     "id": "1467-1990-10-the-value-of-a-testimony",
     "title": "The Value of a Testimony",
-    "speaker": "Helv\u00e9cio Martins",
+    "speaker": "Helvécio Martins",
     "year": "1990",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -14691,7 +14691,7 @@ window.TALKS = [
   },
   {
     "id": "1470-1990-10-the-greatest-challenge-in-the-world-good-parenting",
-    "title": "The Greatest Challenge in the World\u2014Good Parenting",
+    "title": "The Greatest Challenge in the World—Good Parenting",
     "speaker": "James E. Faust",
     "year": "1990",
     "month": "October",
@@ -14751,7 +14751,7 @@ window.TALKS = [
   },
   {
     "id": "1476-1990-10-in-counsellors-there-is-safety",
-    "title": "\u201cIn \u2026 Counsellors There Is Safety\u201d",
+    "title": "“In … Counsellors There Is Safety”",
     "speaker": "Gordon B. Hinckley",
     "year": "1990",
     "month": "October",
@@ -14761,7 +14761,7 @@ window.TALKS = [
   },
   {
     "id": "1477-1990-10-mormon-should-mean-more-good",
-    "title": "Mormon Should Mean \u201cMore Good\u201d",
+    "title": "Mormon Should Mean “More Good”",
     "speaker": "Gordon B. Hinckley",
     "year": "1990",
     "month": "October",
@@ -14811,7 +14811,7 @@ window.TALKS = [
   },
   {
     "id": "1482-1990-10-serve-god-acceptably-with-reverence-and-godly-fear",
-    "title": "\u201cServe God Acceptably with Reverence and Godly Fear\u201d",
+    "title": "“Serve God Acceptably with Reverence and Godly Fear”",
     "speaker": "L. Tom Perry",
     "year": "1990",
     "month": "October",
@@ -14881,7 +14881,7 @@ window.TALKS = [
   },
   {
     "id": "1489-1990-10-god-be-with-you-till-we-meet-again",
-    "title": "\u201cGod Be with You Till We Meet Again\u201d",
+    "title": "“God Be with You Till We Meet Again”",
     "speaker": "Thomas S. Monson",
     "year": "1990",
     "month": "October",
@@ -14891,7 +14891,7 @@ window.TALKS = [
   },
   {
     "id": "1490-1990-10-these-things-are-manifested-unto-us-plainly",
-    "title": "\u201cThese Things Are Manifested unto Us Plainly\u201d",
+    "title": "“These Things Are Manifested unto Us Plainly”",
     "speaker": "Elaine L. Jack",
     "year": "1990",
     "month": "October",
@@ -14901,7 +14901,7 @@ window.TALKS = [
   },
   {
     "id": "1491-1990-10-kindness-a-part-of-god-s-plan",
-    "title": "Kindness\u2014A Part of God\u2019s Plan",
+    "title": "Kindness—A Part of God’s Plan",
     "speaker": "Betty Jo N. Jepsen",
     "year": "1990",
     "month": "October",
@@ -14911,7 +14911,7 @@ window.TALKS = [
   },
   {
     "id": "1492-1990-10-crickets-can-be-destroyed-through-spirituality",
-    "title": "\u201cCrickets\u201d Can Be Destroyed through Spirituality",
+    "title": "“Crickets” Can Be Destroyed through Spirituality",
     "speaker": "Ardeth G. Kapp",
     "year": "1990",
     "month": "October",
@@ -14951,7 +14951,7 @@ window.TALKS = [
   },
   {
     "id": "1496-1991-4-beware-lest-thou-forget-the-lord",
-    "title": "\u201cBeware Lest Thou Forget the Lord\u201d",
+    "title": "“Beware Lest Thou Forget the Lord”",
     "speaker": "Dean L. Larsen",
     "year": "1991",
     "month": "April",
@@ -14971,7 +14971,7 @@ window.TALKS = [
   },
   {
     "id": "1498-1991-4-honour-thy-father-and-thy-mother",
-    "title": "\u201cHonour Thy Father and Thy Mother\u201d",
+    "title": "“Honour Thy Father and Thy Mother”",
     "speaker": "Dallin H. Oaks",
     "year": "1991",
     "month": "April",
@@ -14981,7 +14981,7 @@ window.TALKS = [
   },
   {
     "id": "1499-1991-4-a-voice-of-gladness",
-    "title": "\u201cA Voice of Gladness\u201d",
+    "title": "“A Voice of Gladness”",
     "speaker": "Marvin J. Ashton",
     "year": "1991",
     "month": "April",
@@ -15031,7 +15031,7 @@ window.TALKS = [
   },
   {
     "id": "1504-1991-4-the-savior-and-joseph-smith-alike-yet-unlike",
-    "title": "The Savior and Joseph Smith\u2014Alike Yet Unlike",
+    "title": "The Savior and Joseph Smith—Alike Yet Unlike",
     "speaker": "Francis M. Gibbons",
     "year": "1991",
     "month": "April",
@@ -15071,7 +15071,7 @@ window.TALKS = [
   },
   {
     "id": "1508-1991-4-to-honor-the-priesthood",
-    "title": "\u201cTo Honor the Priesthood\u201d",
+    "title": "“To Honor the Priesthood”",
     "speaker": "J. Richard Clarke",
     "year": "1991",
     "month": "April",
@@ -15091,7 +15091,7 @@ window.TALKS = [
   },
   {
     "id": "1510-1991-4-yagottawanna",
-    "title": "\u201cYagottawanna\u201d",
+    "title": "“Yagottawanna”",
     "speaker": "Jack H Goaslind Jr.",
     "year": "1991",
     "month": "April",
@@ -15221,7 +15221,7 @@ window.TALKS = [
   },
   {
     "id": "1523-1991-4-lest-ye-be-wearied-and-faint-in-your-minds",
-    "title": "\u201cLest Ye Be Wearied and Faint in Your Minds\u201d",
+    "title": "“Lest Ye Be Wearied and Faint in Your Minds”",
     "speaker": "Neal A. Maxwell",
     "year": "1991",
     "month": "April",
@@ -15281,7 +15281,7 @@ window.TALKS = [
   },
   {
     "id": "1529-1991-10-today-a-day-of-eternity",
-    "title": "Today\u2014A Day of Eternity",
+    "title": "Today—A Day of Eternity",
     "speaker": "George I. Cannon",
     "year": "1991",
     "month": "October",
@@ -15301,7 +15301,7 @@ window.TALKS = [
   },
   {
     "id": "1531-1991-10-the-gospel-a-global-faith",
-    "title": "The Gospel\u2014A Global Faith",
+    "title": "The Gospel—A Global Faith",
     "speaker": "Howard W. Hunter",
     "year": "1991",
     "month": "October",
@@ -15322,7 +15322,7 @@ window.TALKS = [
   {
     "id": "1533-1991-10-the-conversion-process",
     "title": "The Conversion Process",
-    "speaker": "Julio E. D\u00e1vila",
+    "speaker": "Julio E. Dávila",
     "year": "1991",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -15331,7 +15331,7 @@ window.TALKS = [
   },
   {
     "id": "1534-1991-10-the-ultimate-inheritance-an-allegory",
-    "title": "The Ultimate Inheritance\u2014An Allegory",
+    "title": "The Ultimate Inheritance—An Allegory",
     "speaker": "Cree-L Kofford",
     "year": "1991",
     "month": "October",
@@ -15341,7 +15341,7 @@ window.TALKS = [
   },
   {
     "id": "1535-1991-10-and-now-you-will-know",
-    "title": "\u201cAnd Now You Will Know\u201d",
+    "title": "“And Now You Will Know”",
     "speaker": "Joseph C. Muren",
     "year": "1991",
     "month": "October",
@@ -15361,7 +15361,7 @@ window.TALKS = [
   },
   {
     "id": "1537-1991-10-the-lord-s-day",
-    "title": "The Lord\u2019s Day",
+    "title": "The Lord’s Day",
     "speaker": "James E. Faust",
     "year": "1991",
     "month": "October",
@@ -15411,7 +15411,7 @@ window.TALKS = [
   },
   {
     "id": "1542-1991-10-called-to-serve",
-    "title": "\u201cCalled to Serve\u201d",
+    "title": "“Called to Serve”",
     "speaker": "Thomas S. Monson",
     "year": "1991",
     "month": "October",
@@ -15441,7 +15441,7 @@ window.TALKS = [
   },
   {
     "id": "1545-1991-10-these-were-our-examples",
-    "title": "\u201cThese \u2026 Were Our Examples\u201d",
+    "title": "“These … Were Our Examples”",
     "speaker": "Russell M. Nelson",
     "year": "1991",
     "month": "October",
@@ -15471,7 +15471,7 @@ window.TALKS = [
   },
   {
     "id": "1548-1991-10-precious-children-a-gift-from-god",
-    "title": "Precious Children\u2014A Gift from God",
+    "title": "Precious Children—A Gift from God",
     "speaker": "Thomas S. Monson",
     "year": "1991",
     "month": "October",
@@ -15481,7 +15481,7 @@ window.TALKS = [
   },
   {
     "id": "1549-1991-10-strengthen-the-feeble-knees",
-    "title": "\u201cStrengthen the Feeble Knees\u201d",
+    "title": "“Strengthen the Feeble Knees”",
     "speaker": "Marvin J. Ashton",
     "year": "1991",
     "month": "October",
@@ -15501,7 +15501,7 @@ window.TALKS = [
   },
   {
     "id": "1551-1991-10-charity-suffereth-long",
-    "title": "\u201cCharity Suffereth Long\u201d",
+    "title": "“Charity Suffereth Long”",
     "speaker": "Aileen H. Clyde",
     "year": "1991",
     "month": "October",
@@ -15521,7 +15521,7 @@ window.TALKS = [
   },
   {
     "id": "1553-1991-10-bring-up-your-children-in-light-and-truth",
-    "title": "\u201cBring Up Your Children in Light and Truth\u201d",
+    "title": "“Bring Up Your Children in Light and Truth”",
     "speaker": "H. Verlan Andersen",
     "year": "1991",
     "month": "October",
@@ -15531,7 +15531,7 @@ window.TALKS = [
   },
   {
     "id": "1554-1991-10-the-call-an-eternal-miracle",
-    "title": "The Call\u2014An Eternal Miracle",
+    "title": "The Call—An Eternal Miracle",
     "speaker": "Gardner H. Russell",
     "year": "1991",
     "month": "October",
@@ -15551,7 +15551,7 @@ window.TALKS = [
   },
   {
     "id": "1556-1991-10-the-lord-bless-you",
-    "title": "\u201cThe Lord Bless You\u201d",
+    "title": "“The Lord Bless You”",
     "speaker": "Thomas S. Monson",
     "year": "1991",
     "month": "October",
@@ -15561,7 +15561,7 @@ window.TALKS = [
   },
   {
     "id": "1557-1991-10-rejoice-in-every-good-thing",
-    "title": "\u201cRejoice in Every Good Thing\u201d",
+    "title": "“Rejoice in Every Good Thing”",
     "speaker": "Chieko N. Okazaki",
     "year": "1991",
     "month": "October",
@@ -15641,7 +15641,7 @@ window.TALKS = [
   },
   {
     "id": "1565-1992-4-the-pure-love-of-god",
-    "title": "\u201cThe Pure Love of God\u201d",
+    "title": "“The Pure Love of God”",
     "speaker": "Yoshihiko Kikuchi",
     "year": "1992",
     "month": "April",
@@ -15681,7 +15681,7 @@ window.TALKS = [
   },
   {
     "id": "1569-1992-4-but-the-labourers-are-few",
-    "title": "\u201cBut the Labourers Are Few\u201d",
+    "title": "“But the Labourers Are Few”",
     "speaker": "L. Tom Perry",
     "year": "1992",
     "month": "April",
@@ -15741,7 +15741,7 @@ window.TALKS = [
   },
   {
     "id": "1575-1992-4-my-servant-joseph",
-    "title": "\u201cMy Servant Joseph\u201d",
+    "title": "“My Servant Joseph”",
     "speaker": "Neal A. Maxwell",
     "year": "1992",
     "month": "April",
@@ -15771,7 +15771,7 @@ window.TALKS = [
   },
   {
     "id": "1578-1992-4-a-disciple-of-jesus-christ",
-    "title": "\u201cA Disciple of Jesus Christ\u201d",
+    "title": "“A Disciple of Jesus Christ”",
     "speaker": "L. Aldin Porter",
     "year": "1992",
     "month": "April",
@@ -15791,7 +15791,7 @@ window.TALKS = [
   },
   {
     "id": "1580-1992-4-believe-his-prophets",
-    "title": "\u201cBelieve His Prophets\u201d",
+    "title": "“Believe His Prophets”",
     "speaker": "Gordon B. Hinckley",
     "year": "1992",
     "month": "April",
@@ -15841,7 +15841,7 @@ window.TALKS = [
   },
   {
     "id": "1585-1992-4-a-chosen-generation",
-    "title": "\u201cA Chosen Generation\u201d",
+    "title": "“A Chosen Generation”",
     "speaker": "Gordon B. Hinckley",
     "year": "1992",
     "month": "April",
@@ -15931,7 +15931,7 @@ window.TALKS = [
   },
   {
     "id": "1594-1992-4-charity-never-faileth",
-    "title": "\u201cCharity Never Faileth\u201d",
+    "title": "“Charity Never Faileth”",
     "speaker": "Elaine L. Jack",
     "year": "1992",
     "month": "April",
@@ -16001,7 +16001,7 @@ window.TALKS = [
   },
   {
     "id": "1601-1992-10-by-the-power-of-his-word-did-they-cause-prisons-to-tumble",
-    "title": "\u201cBy the Power of His Word Did They Cause Prisons to Tumble\u201d",
+    "title": "“By the Power of His Word Did They Cause Prisons to Tumble”",
     "speaker": "James M. Paramore",
     "year": "1992",
     "month": "October",
@@ -16030,8 +16030,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1992/10/the-golden-years?lang=eng"
   },
   {
-    "id": "1604-1992-10-behold-the-lord-hath-shown-unto-me-great-and-marvelous-things",
-    "title": "\u201cBehold, the Lord Hath Shown unto Me Great and Marvelous Things\u201d",
+    "id": "1604-1992-10-behold-the-lord-hath-shown-unto-me-great-and-marvelous-thing",
+    "title": "“Behold, the Lord Hath Shown unto Me Great and Marvelous Things”",
     "speaker": "L. Tom Perry",
     "year": "1992",
     "month": "October",
@@ -16061,7 +16061,7 @@ window.TALKS = [
   },
   {
     "id": "1607-1992-10-honour-thy-father-and-thy-mother",
-    "title": "\u201cHonour Thy Father and Thy Mother\u201d",
+    "title": "“Honour Thy Father and Thy Mother”",
     "speaker": "Lino Alvarez",
     "year": "1992",
     "month": "October",
@@ -16071,7 +16071,7 @@ window.TALKS = [
   },
   {
     "id": "1608-1992-10-born-of-goodly-parents",
-    "title": "\u201cBorn of Goodly Parents\u201d",
+    "title": "“Born of Goodly Parents”",
     "speaker": "Dallas N. Archibald",
     "year": "1992",
     "month": "October",
@@ -16140,7 +16140,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1992/10/the-lord-will-prosper-the-righteous?lang=eng"
   },
   {
-    "id": "1615-1992-10-jesus-christ-is-at-the-center-of-the-restoration-of-the-gospel",
+    "id": "1615-1992-10-jesus-christ-is-at-the-center-of-the-restoration-of-the-gosp",
     "title": "Jesus Christ Is at the Center of the Restoration of the Gospel",
     "speaker": "Gary J. Coleman",
     "year": "1992",
@@ -16211,7 +16211,7 @@ window.TALKS = [
   },
   {
     "id": "1622-1992-10-settle-this-in-your-hearts",
-    "title": "\u201cSettle This in Your Hearts\u201d",
+    "title": "“Settle This in Your Hearts”",
     "speaker": "Neal A. Maxwell",
     "year": "1992",
     "month": "October",
@@ -16221,7 +16221,7 @@ window.TALKS = [
   },
   {
     "id": "1623-1992-10-miracles-then-and-now",
-    "title": "Miracles\u2014Then and Now",
+    "title": "Miracles—Then and Now",
     "speaker": "Thomas S. Monson",
     "year": "1992",
     "month": "October",
@@ -16231,7 +16231,7 @@ window.TALKS = [
   },
   {
     "id": "1624-1992-10-to-be-learned-is-good-if",
-    "title": "\u201cTo Be Learned Is Good If \u2026\u201d",
+    "title": "“To Be Learned Is Good If …”",
     "speaker": "Boyd K. Packer",
     "year": "1992",
     "month": "October",
@@ -16251,7 +16251,7 @@ window.TALKS = [
   },
   {
     "id": "1626-1992-10-by-way-of-invitation-alma-5-62",
-    "title": "\u201cBy Way of Invitation\u201d (Alma 5:62)",
+    "title": "“By Way of Invitation” (Alma 5:62)",
     "speaker": "Betty Jo N. Jepsen",
     "year": "1992",
     "month": "October",
@@ -16271,7 +16271,7 @@ window.TALKS = [
   },
   {
     "id": "1628-1992-10-remember-also-the-promises",
-    "title": "\u201cRemember Also the Promises\u201d",
+    "title": "“Remember Also the Promises”",
     "speaker": "Jay E. Jensen",
     "year": "1992",
     "month": "October",
@@ -16331,7 +16331,7 @@ window.TALKS = [
   },
   {
     "id": "1634-1992-10-behold-your-little-ones",
-    "title": "\u201cBehold Your Little Ones\u201d",
+    "title": "“Behold Your Little Ones”",
     "speaker": "Michaelene P. Grassli",
     "year": "1992",
     "month": "October",
@@ -16351,7 +16351,7 @@ window.TALKS = [
   },
   {
     "id": "1636-1992-10-an-example-of-the-believers",
-    "title": "\u201cAn Example of the Believers\u201d",
+    "title": "“An Example of the Believers”",
     "speaker": "Thomas S. Monson",
     "year": "1992",
     "month": "October",
@@ -16561,7 +16561,7 @@ window.TALKS = [
   },
   {
     "id": "1657-1993-4-jesus-the-very-thought-of-thee",
-    "title": "\u201cJesus, the Very Thought of Thee\u201d",
+    "title": "“Jesus, the Very Thought of Thee”",
     "speaker": "Howard W. Hunter",
     "year": "1993",
     "month": "April",
@@ -16601,7 +16601,7 @@ window.TALKS = [
   },
   {
     "id": "1661-1993-4-behold-the-enemy-is-combined-d-c-38-12",
-    "title": "\u201cBehold, the Enemy Is Combined\u201d (D&C 38:12)",
+    "title": "“Behold, the Enemy Is Combined” (D&C 38:12)",
     "speaker": "Neal A. Maxwell",
     "year": "1993",
     "month": "April",
@@ -16621,7 +16621,7 @@ window.TALKS = [
   },
   {
     "id": "1663-1993-4-whom-the-lord-calls-the-lord-qualifies",
-    "title": "\u201cWhom the Lord Calls, the Lord Qualifies\u201d",
+    "title": "“Whom the Lord Calls, the Lord Qualifies”",
     "speaker": "Neil L. Andersen",
     "year": "1993",
     "month": "April",
@@ -16641,7 +16641,7 @@ window.TALKS = [
   },
   {
     "id": "1665-1993-4-cat-s-cradle-of-kindness",
-    "title": "Cat\u2019s Cradle of Kindness",
+    "title": "Cat’s Cradle of Kindness",
     "speaker": "Chieko N. Okazaki",
     "year": "1993",
     "month": "April",
@@ -16651,7 +16651,7 @@ window.TALKS = [
   },
   {
     "id": "1666-1993-4-he-maketh-me-to-lie-down-in-green-pastures",
-    "title": "\u201cHe Maketh Me to Lie Down in Green Pastures\u201d",
+    "title": "“He Maketh Me to Lie Down in Green Pastures”",
     "speaker": "Kwok Yuen Tai",
     "year": "1993",
     "month": "April",
@@ -16681,7 +16681,7 @@ window.TALKS = [
   },
   {
     "id": "1669-1993-4-a-prophet-s-testimony",
-    "title": "\u201cA Prophet\u2019s Testimony\u201d",
+    "title": "“A Prophet’s Testimony”",
     "speaker": "Gordon B. Hinckley",
     "year": "1993",
     "month": "April",
@@ -16721,7 +16721,7 @@ window.TALKS = [
   },
   {
     "id": "1673-1993-10-look-to-god-and-live",
-    "title": "\u201cLook to God and Live\u201d",
+    "title": "“Look to God and Live”",
     "speaker": "Jeffrey R. Holland",
     "year": "1993",
     "month": "October",
@@ -16741,7 +16741,7 @@ window.TALKS = [
   },
   {
     "id": "1675-1993-10-from-the-beginning",
-    "title": "\u201cFrom the Beginning\u201d",
+    "title": "“From the Beginning”",
     "speaker": "Neal A. Maxwell",
     "year": "1993",
     "month": "October",
@@ -16771,7 +16771,7 @@ window.TALKS = [
   },
   {
     "id": "1678-1993-10-the-lord-s-wind",
-    "title": "The Lord\u2019s Wind",
+    "title": "The Lord’s Wind",
     "speaker": "John H. Groberg",
     "year": "1993",
     "month": "October",
@@ -16841,7 +16841,7 @@ window.TALKS = [
   },
   {
     "id": "1685-1993-10-touch-not-the-evil-gift-nor-the-unclean-thing",
-    "title": "\u201cTouch Not the Evil Gift, nor the Unclean Thing\u201d",
+    "title": "“Touch Not the Evil Gift, nor the Unclean Thing”",
     "speaker": "H. Burke Peterson",
     "year": "1993",
     "month": "October",
@@ -16891,7 +16891,7 @@ window.TALKS = [
   },
   {
     "id": "1690-1993-10-missionary-work-our-responsibility",
-    "title": "Missionary Work\u2014Our Responsibility",
+    "title": "Missionary Work—Our Responsibility",
     "speaker": "David B. Haight",
     "year": "1993",
     "month": "October",
@@ -16911,7 +16911,7 @@ window.TALKS = [
   },
   {
     "id": "1692-1993-10-choose-the-right",
-    "title": "\u201cChoose the Right\u201d",
+    "title": "“Choose the Right”",
     "speaker": "L. Tom Perry",
     "year": "1993",
     "month": "October",
@@ -16921,7 +16921,7 @@ window.TALKS = [
   },
   {
     "id": "1693-1993-10-meeting-life-s-challenges",
-    "title": "Meeting Life\u2019s Challenges",
+    "title": "Meeting Life’s Challenges",
     "speaker": "Thomas S. Monson",
     "year": "1993",
     "month": "October",
@@ -16931,7 +16931,7 @@ window.TALKS = [
   },
   {
     "id": "1694-1993-10-the-great-plan-of-happiness",
-    "title": "\u201cThe Great Plan of Happiness\u201d",
+    "title": "“The Great Plan of Happiness”",
     "speaker": "Dallin H. Oaks",
     "year": "1993",
     "month": "October",
@@ -16950,8 +16950,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1993/10/strength-in-counsel?lang=eng"
   },
   {
-    "id": "1696-1993-10-ward-and-branch-families-part-of-heavenly-father-s-plan-for-us",
-    "title": "Ward and Branch Families: Part of Heavenly Father\u2019s Plan for Us",
+    "id": "1696-1993-10-ward-and-branch-families-part-of-heavenly-father-s-plan-for-",
+    "title": "Ward and Branch Families: Part of Heavenly Father’s Plan for Us",
     "speaker": "Virginia H. Pearce",
     "year": "1993",
     "month": "October",
@@ -17021,7 +17021,7 @@ window.TALKS = [
   },
   {
     "id": "1703-1993-10-be-of-good-cheer",
-    "title": "\u201cBe of Good Cheer\u201d",
+    "title": "“Be of Good Cheer”",
     "speaker": "Jeanne Inouye",
     "year": "1993",
     "month": "October",
@@ -17031,7 +17031,7 @@ window.TALKS = [
   },
   {
     "id": "1704-1993-10-ponder-the-path-of-thy-feet",
-    "title": "\u201cPonder the Path of Thy Feet\u201d",
+    "title": "“Ponder the Path of Thy Feet”",
     "speaker": "Elaine L. Jack",
     "year": "1993",
     "month": "October",
@@ -17041,7 +17041,7 @@ window.TALKS = [
   },
   {
     "id": "1705-1993-10-combatting-spiritual-drift-our-global-pandemic",
-    "title": "Combatting Spiritual Drift\u2014Our Global Pandemic",
+    "title": "Combatting Spiritual Drift—Our Global Pandemic",
     "speaker": "Russell M. Nelson",
     "year": "1993",
     "month": "October",
@@ -17071,7 +17071,7 @@ window.TALKS = [
   },
   {
     "id": "1708-1994-4-if-a-man-die-shall-he-live-again",
-    "title": "\u201cIf a Man Die, Shall He Live Again?\u201d",
+    "title": "“If a Man Die, Shall He Live Again?”",
     "speaker": "Carlos E. Asay",
     "year": "1994",
     "month": "April",
@@ -17081,7 +17081,7 @@ window.TALKS = [
   },
   {
     "id": "1709-1994-4-a-child-s-love-matured",
-    "title": "A Child\u2019s Love Matured",
+    "title": "A Child’s Love Matured",
     "speaker": "Albert Choules Jr.",
     "year": "1994",
     "month": "April",
@@ -17091,7 +17091,7 @@ window.TALKS = [
   },
   {
     "id": "1710-1994-4-walk-with-me",
-    "title": "\u201cWalk with Me\u201d",
+    "title": "“Walk with Me”",
     "speaker": "Elaine L. Jack",
     "year": "1994",
     "month": "April",
@@ -17171,7 +17171,7 @@ window.TALKS = [
   },
   {
     "id": "1718-1994-4-therefore-i-was-taught",
-    "title": "\u201cTherefore I Was Taught\u201d",
+    "title": "“Therefore I Was Taught”",
     "speaker": "L. Tom Perry",
     "year": "1994",
     "month": "April",
@@ -17201,7 +17201,7 @@ window.TALKS = [
   },
   {
     "id": "1721-1994-4-feed-my-sheep",
-    "title": "\u201cFeed My Sheep\u201d",
+    "title": "“Feed My Sheep”",
     "speaker": "Richard P. Lindsay",
     "year": "1994",
     "month": "April",
@@ -17221,7 +17221,7 @@ window.TALKS = [
   },
   {
     "id": "1723-1994-4-the-priesthood-a-sacred-trust",
-    "title": "The Priesthood\u2014A Sacred Trust",
+    "title": "The Priesthood—A Sacred Trust",
     "speaker": "Thomas S. Monson",
     "year": "1994",
     "month": "April",
@@ -17251,7 +17251,7 @@ window.TALKS = [
   },
   {
     "id": "1726-1994-4-what-manner-of-men-ought-ye-to-be",
-    "title": "\u201cWhat Manner of Men Ought Ye to Be?\u201d",
+    "title": "“What Manner of Men Ought Ye to Be?”",
     "speaker": "Howard W. Hunter",
     "year": "1994",
     "month": "April",
@@ -17281,7 +17281,7 @@ window.TALKS = [
   },
   {
     "id": "1729-1994-4-teach-us-tolerance-and-love",
-    "title": "\u201cTeach Us Tolerance and Love\u201d",
+    "title": "“Teach Us Tolerance and Love”",
     "speaker": "Russell M. Nelson",
     "year": "1994",
     "month": "April",
@@ -17351,7 +17351,7 @@ window.TALKS = [
   },
   {
     "id": "1736-1994-4-what-shall-we-do",
-    "title": "\u201cWhat Shall We Do?\u201d",
+    "title": "“What Shall We Do?”",
     "speaker": "Hans B. Ringger",
     "year": "1994",
     "month": "April",
@@ -17361,7 +17361,7 @@ window.TALKS = [
   },
   {
     "id": "1737-1994-4-take-especial-care-of-your-family",
-    "title": "\u201cTake Especial Care of Your Family\u201d",
+    "title": "“Take Especial Care of Your Family”",
     "speaker": "Neal A. Maxwell",
     "year": "1994",
     "month": "April",
@@ -17411,7 +17411,7 @@ window.TALKS = [
   },
   {
     "id": "1742-1994-10-exceeding-great-and-precious-promises",
-    "title": "\u201cExceeding Great and Precious Promises\u201d",
+    "title": "“Exceeding Great and Precious Promises”",
     "speaker": "Howard W. Hunter",
     "year": "1994",
     "month": "October",
@@ -17451,7 +17451,7 @@ window.TALKS = [
   },
   {
     "id": "1746-1994-10-heed-the-prophet-s-voice",
-    "title": "Heed the Prophet\u2019s Voice",
+    "title": "Heed the Prophet’s Voice",
     "speaker": "L. Tom Perry",
     "year": "1994",
     "month": "October",
@@ -17501,7 +17501,7 @@ window.TALKS = [
   },
   {
     "id": "1751-1994-10-make-thee-an-ark",
-    "title": "\u201cMake Thee an Ark\u201d",
+    "title": "“Make Thee an Ark”",
     "speaker": "W. Don Ladd",
     "year": "1994",
     "month": "October",
@@ -17531,7 +17531,7 @@ window.TALKS = [
   },
   {
     "id": "1754-1994-10-brightness-of-hope",
-    "title": "\u201cBrightness of Hope\u201d",
+    "title": "“Brightness of Hope”",
     "speaker": "Neal A. Maxwell",
     "year": "1994",
     "month": "October",
@@ -17571,7 +17571,7 @@ window.TALKS = [
   },
   {
     "id": "1758-1994-10-my-brother-s-keeper",
-    "title": "My Brother\u2019s Keeper",
+    "title": "My Brother’s Keeper",
     "speaker": "Thomas S. Monson",
     "year": "1994",
     "month": "October",
@@ -17581,7 +17581,7 @@ window.TALKS = [
   },
   {
     "id": "1759-1994-10-don-t-drop-the-ball",
-    "title": "Don\u2019t Drop the Ball",
+    "title": "Don’t Drop the Ball",
     "speaker": "Gordon B. Hinckley",
     "year": "1994",
     "month": "October",
@@ -17641,7 +17641,7 @@ window.TALKS = [
   },
   {
     "id": "1765-1994-10-the-fatherless-and-the-widows-beloved-of-god",
-    "title": "The Fatherless and the Widows\u2014Beloved of God",
+    "title": "The Fatherless and the Widows—Beloved of God",
     "speaker": "Thomas S. Monson",
     "year": "1994",
     "month": "October",
@@ -17691,7 +17691,7 @@ window.TALKS = [
   },
   {
     "id": "1770-1994-10-stand-ye-in-holy-places",
-    "title": "\u201cStand Ye in Holy Places\u201d",
+    "title": "“Stand Ye in Holy Places”",
     "speaker": "Lance B. Wickman",
     "year": "1994",
     "month": "October",
@@ -17721,7 +17721,7 @@ window.TALKS = [
   },
   {
     "id": "1773-1994-10-seek-and-ye-shall-find",
-    "title": "\u201cSeek, and Ye Shall Find\u201d",
+    "title": "“Seek, and Ye Shall Find”",
     "speaker": "Elaine L. Jack",
     "year": "1994",
     "month": "October",
@@ -17771,7 +17771,7 @@ window.TALKS = [
   },
   {
     "id": "1778-1995-4-the-shield-of-faith",
-    "title": "\u201cThe Shield of Faith\u201d",
+    "title": "“The Shield of Faith”",
     "speaker": "Boyd K. Packer",
     "year": "1995",
     "month": "April",
@@ -17811,7 +17811,7 @@ window.TALKS = [
   },
   {
     "id": "1782-1995-4-hear-the-prophet-s-voice-and-obey",
-    "title": "Hear the Prophet\u2019s Voice and Obey",
+    "title": "Hear the Prophet’s Voice and Obey",
     "speaker": "Robert D. Hales",
     "year": "1995",
     "month": "April",
@@ -17831,7 +17831,7 @@ window.TALKS = [
   },
   {
     "id": "1784-1995-4-answers-to-life-s-questions",
-    "title": "Answers to Life\u2019s Questions",
+    "title": "Answers to Life’s Questions",
     "speaker": "M. Russell Ballard",
     "year": "1995",
     "month": "April",
@@ -17841,7 +17841,7 @@ window.TALKS = [
   },
   {
     "id": "1785-1995-4-always-remember-him",
-    "title": "\u201cAlways Remember Him\u201d",
+    "title": "“Always Remember Him”",
     "speaker": "Henry B. Eyring",
     "year": "1995",
     "month": "April",
@@ -17921,8 +17921,8 @@ window.TALKS = [
   },
   {
     "id": "1793-1995-4-watchmen-on-the-tower",
-    "title": "\u201cWatchmen on the Tower\u201d",
-    "speaker": "Helv\u00e9cio Martins",
+    "title": "“Watchmen on the Tower”",
+    "speaker": "Helvécio Martins",
     "year": "1995",
     "month": "April",
     "session": "Priesthood Session",
@@ -17961,7 +17961,7 @@ window.TALKS = [
   },
   {
     "id": "1797-1995-4-mercy-the-divine-gift",
-    "title": "Mercy\u2014The Divine Gift",
+    "title": "Mercy—The Divine Gift",
     "speaker": "Thomas S. Monson",
     "year": "1995",
     "month": "April",
@@ -17991,7 +17991,7 @@ window.TALKS = [
   },
   {
     "id": "1800-1995-4-deny-yourselves-of-all-ungodliness",
-    "title": "\u201cDeny Yourselves of All Ungodliness\u201d",
+    "title": "“Deny Yourselves of All Ungodliness”",
     "speaker": "Neal A. Maxwell",
     "year": "1995",
     "month": "April",
@@ -18101,7 +18101,7 @@ window.TALKS = [
   },
   {
     "id": "1811-1995-4-ye-shall-feast-upon-this-fruit",
-    "title": "\u201cYe Shall Feast upon This Fruit\u201d",
+    "title": "“Ye Shall Feast upon This Fruit”",
     "speaker": "Janette Hales Beckham",
     "year": "1995",
     "month": "April",
@@ -18181,7 +18181,7 @@ window.TALKS = [
   },
   {
     "id": "1819-1995-10-hyrum-smith-firm-as-the-pillars-of-heaven",
-    "title": "Hyrum Smith: \u201cFirm As the Pillars of Heaven\u201d",
+    "title": "Hyrum Smith: “Firm As the Pillars of Heaven”",
     "speaker": "M. Russell Ballard",
     "year": "1995",
     "month": "October",
@@ -18211,7 +18211,7 @@ window.TALKS = [
   },
   {
     "id": "1822-1995-10-encircled-in-the-savior-s-love",
-    "title": "Encircled in the Savior\u2019s Love",
+    "title": "Encircled in the Savior’s Love",
     "speaker": "W. Craig Zwick",
     "year": "1995",
     "month": "October",
@@ -18251,7 +18251,7 @@ window.TALKS = [
   },
   {
     "id": "1826-1995-10-swallowed-up-in-the-will-of-the-father",
-    "title": "\u201cSwallowed Up in the Will of the Father\u201d",
+    "title": "“Swallowed Up in the Will of the Father”",
     "speaker": "Neal A. Maxwell",
     "year": "1995",
     "month": "October",
@@ -18301,7 +18301,7 @@ window.TALKS = [
   },
   {
     "id": "1831-1995-10-if-ye-are-prepared-ye-shall-not-fear",
-    "title": "\u201cIf Ye Are Prepared Ye Shall Not Fear\u201d",
+    "title": "“If Ye Are Prepared Ye Shall Not Fear”",
     "speaker": "L. Tom Perry",
     "year": "1995",
     "month": "October",
@@ -18331,7 +18331,7 @@ window.TALKS = [
   },
   {
     "id": "1834-1995-10-i-will-go",
-    "title": "\u201cI Will Go\u201d",
+    "title": "“I Will Go”",
     "speaker": "H. David Burton",
     "year": "1995",
     "month": "October",
@@ -18371,7 +18371,7 @@ window.TALKS = [
   },
   {
     "id": "1838-1995-10-patience-a-heavenly-virtue",
-    "title": "Patience\u2014A Heavenly Virtue",
+    "title": "Patience—A Heavenly Virtue",
     "speaker": "Thomas S. Monson",
     "year": "1995",
     "month": "October",
@@ -18401,7 +18401,7 @@ window.TALKS = [
   },
   {
     "id": "1841-1995-10-this-do-in-remembrance-of-me",
-    "title": "\u201cThis Do in Remembrance of Me\u201d",
+    "title": "“This Do in Remembrance of Me”",
     "speaker": "Jeffrey R. Holland",
     "year": "1995",
     "month": "October",
@@ -18411,7 +18411,7 @@ window.TALKS = [
   },
   {
     "id": "1842-1995-10-stay-the-course-keep-the-faith",
-    "title": "Stay the Course\u2014Keep the Faith",
+    "title": "Stay the Course—Keep the Faith",
     "speaker": "Gordon B. Hinckley",
     "year": "1995",
     "month": "October",
@@ -18461,7 +18461,7 @@ window.TALKS = [
   },
   {
     "id": "1847-1995-10-lord-to-whom-shall-we-go",
-    "title": "\u201cLord, to Whom Shall We Go?\u201d",
+    "title": "“Lord, to Whom Shall We Go?”",
     "speaker": "Hans B. Ringger",
     "year": "1995",
     "month": "October",
@@ -18561,7 +18561,7 @@ window.TALKS = [
   },
   {
     "id": "1857-1996-4-ye-may-know",
-    "title": "\u201cYe May Know\u201d",
+    "title": "“Ye May Know”",
     "speaker": "Keith B. McMullin",
     "year": "1996",
     "month": "April",
@@ -18591,7 +18591,7 @@ window.TALKS = [
   },
   {
     "id": "1860-1996-4-thou-shalt-have-no-other-gods",
-    "title": "\u201cThou Shalt Have No Other Gods\u201d",
+    "title": "“Thou Shalt Have No Other Gods”",
     "speaker": "Russell M. Nelson",
     "year": "1996",
     "month": "April",
@@ -18661,7 +18661,7 @@ window.TALKS = [
   },
   {
     "id": "1867-1996-4-if-thou-wilt-enter-into-life-keep-the-commandments",
-    "title": "\u201cIf Thou Wilt Enter into Life, Keep the Commandments\u201d",
+    "title": "“If Thou Wilt Enter into Life, Keep the Commandments”",
     "speaker": "Robert D. Hales",
     "year": "1996",
     "month": "April",
@@ -18701,7 +18701,7 @@ window.TALKS = [
   },
   {
     "id": "1871-1996-4-be-ye-clean",
-    "title": "\u201cBe Ye Clean\u201d",
+    "title": "“Be Ye Clean”",
     "speaker": "Gordon B. Hinckley",
     "year": "1996",
     "month": "April",
@@ -18721,7 +18721,7 @@ window.TALKS = [
   },
   {
     "id": "1873-1996-4-sacrament-of-the-lord-s-supper",
-    "title": "Sacrament of the Lord\u2019s Supper",
+    "title": "Sacrament of the Lord’s Supper",
     "speaker": "L. Tom Perry",
     "year": "1996",
     "month": "April",
@@ -18761,7 +18761,7 @@ window.TALKS = [
   },
   {
     "id": "1877-1996-4-becometh-as-a-child",
-    "title": "\u201cBecometh As a Child\u201d",
+    "title": "“Becometh As a Child”",
     "speaker": "Neal A. Maxwell",
     "year": "1996",
     "month": "April",
@@ -18811,7 +18811,7 @@ window.TALKS = [
   },
   {
     "id": "1882-1996-4-feasting-at-the-lord-s-table",
-    "title": "Feasting at the Lord\u2019s Table",
+    "title": "Feasting at the Lord’s Table",
     "speaker": "M. Russell Ballard",
     "year": "1996",
     "month": "April",
@@ -18821,7 +18821,7 @@ window.TALKS = [
   },
   {
     "id": "1883-1996-4-remember-thy-church-o-lord",
-    "title": "\u201cRemember \u2026 Thy Church, O Lord\u201d",
+    "title": "“Remember … Thy Church, O Lord”",
     "speaker": "Gordon B. Hinckley",
     "year": "1996",
     "month": "April",
@@ -18881,7 +18881,7 @@ window.TALKS = [
   },
   {
     "id": "1889-1996-4-an-anchor-for-eternity-and-today",
-    "title": "An Anchor for Eternity\u2014and Today",
+    "title": "An Anchor for Eternity—and Today",
     "speaker": "Bonnie D. Parkin",
     "year": "1996",
     "month": "April",
@@ -18930,8 +18930,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1996/10/the-spirit-of-prophecy?lang=eng"
   },
   {
-    "id": "1894-1996-10-the-ordinary-classroom-a-powerful-place-for-steady-and-continued-growth",
-    "title": "The Ordinary Classroom\u2014a Powerful Place for Steady and Continued Growth",
+    "id": "1894-1996-10-the-ordinary-classroom-a-powerful-place-for-steady-and-conti",
+    "title": "The Ordinary Classroom—a Powerful Place for Steady and Continued Growth",
     "speaker": "Virginia H. Pearce",
     "year": "1996",
     "month": "October",
@@ -18951,7 +18951,7 @@ window.TALKS = [
   },
   {
     "id": "1896-1996-10-christ-at-bethesda-s-pool",
-    "title": "Christ at Bethesda\u2019s Pool",
+    "title": "Christ at Bethesda’s Pool",
     "speaker": "Thomas S. Monson",
     "year": "1996",
     "month": "October",
@@ -18961,7 +18961,7 @@ window.TALKS = [
   },
   {
     "id": "1897-1996-10-according-to-the-desire-of-our-hearts",
-    "title": "\u201cAccording to the Desire of [Our] Hearts\u201d",
+    "title": "“According to the Desire of [Our] Hearts”",
     "speaker": "Neal A. Maxwell",
     "year": "1996",
     "month": "October",
@@ -19021,7 +19021,7 @@ window.TALKS = [
   },
   {
     "id": "1903-1996-10-run-and-not-be-weary",
-    "title": "\u201cRun and Not Be Weary\u201d",
+    "title": "“Run and Not Be Weary”",
     "speaker": "L. Tom Perry",
     "year": "1996",
     "month": "October",
@@ -19041,7 +19041,7 @@ window.TALKS = [
   },
   {
     "id": "1905-1996-10-honesty-a-moral-compass",
-    "title": "Honesty\u2014a Moral Compass",
+    "title": "Honesty—a Moral Compass",
     "speaker": "James E. Faust",
     "year": "1996",
     "month": "October",
@@ -19051,7 +19051,7 @@ window.TALKS = [
   },
   {
     "id": "1906-1996-10-be-thou-an-example",
-    "title": "\u201cBe Thou an Example\u201d",
+    "title": "“Be Thou an Example”",
     "speaker": "Thomas S. Monson",
     "year": "1996",
     "month": "October",
@@ -19061,7 +19061,7 @@ window.TALKS = [
   },
   {
     "id": "1907-1996-10-this-thing-was-not-done-in-a-corner",
-    "title": "\u201cThis Thing Was Not Done in a Corner\u201d",
+    "title": "“This Thing Was Not Done in a Corner”",
     "speaker": "Gordon B. Hinckley",
     "year": "1996",
     "month": "October",
@@ -19071,7 +19071,7 @@ window.TALKS = [
   },
   {
     "id": "1908-1996-10-woman-why-weepest-thou",
-    "title": "\u201cWoman, Why Weepest Thou?\u201d",
+    "title": "“Woman, Why Weepest Thou?”",
     "speaker": "James E. Faust",
     "year": "1996",
     "month": "October",
@@ -19081,7 +19081,7 @@ window.TALKS = [
   },
   {
     "id": "1909-1996-10-always-have-his-spirit",
-    "title": "\u201cAlways Have His Spirit\u201d",
+    "title": "“Always Have His Spirit”",
     "speaker": "Dallin H. Oaks",
     "year": "1996",
     "month": "October",
@@ -19091,7 +19091,7 @@ window.TALKS = [
   },
   {
     "id": "1910-1996-10-we-care-enough-to-send-our-very-best",
-    "title": "\u201cWe Care Enough to Send Our Very Best\u201d",
+    "title": "“We Care Enough to Send Our Very Best”",
     "speaker": "Richard C. Edgley",
     "year": "1996",
     "month": "October",
@@ -19141,7 +19141,7 @@ window.TALKS = [
   },
   {
     "id": "1915-1996-10-partakers-of-the-glories",
-    "title": "\u201cPartakers of the Glories\u201d",
+    "title": "“Partakers of the Glories”",
     "speaker": "Elaine L. Jack",
     "year": "1996",
     "month": "October",
@@ -19152,7 +19152,7 @@ window.TALKS = [
   {
     "id": "1916-1996-10-listening-to-the-voice-of-the-lord",
     "title": "Listening to the Voice of the Lord",
-    "speaker": "Francisco J. Vi\u00f1as",
+    "speaker": "Francisco J. Viñas",
     "year": "1996",
     "month": "October",
     "session": "Sunday Afternoon Session",
@@ -19161,7 +19161,7 @@ window.TALKS = [
   },
   {
     "id": "1917-1996-10-behold-your-little-ones",
-    "title": "\u201cBehold Your Little Ones\u201d",
+    "title": "“Behold Your Little Ones”",
     "speaker": "W. Rolfe Kerr",
     "year": "1996",
     "month": "October",
@@ -19171,7 +19171,7 @@ window.TALKS = [
   },
   {
     "id": "1918-1996-10-the-peaceable-things-of-the-kingdom",
-    "title": "\u201cThe Peaceable Things of the Kingdom\u201d",
+    "title": "“The Peaceable Things of the Kingdom”",
     "speaker": "Jeffrey R. Holland",
     "year": "1996",
     "month": "October",
@@ -19181,7 +19181,7 @@ window.TALKS = [
   },
   {
     "id": "1919-1996-10-reach-with-a-rescuing-hand",
-    "title": "\u201cReach with a Rescuing Hand\u201d",
+    "title": "“Reach with a Rescuing Hand”",
     "speaker": "Gordon B. Hinckley",
     "year": "1996",
     "month": "October",
@@ -19251,7 +19251,7 @@ window.TALKS = [
   },
   {
     "id": "1926-1997-4-from-whom-all-blessings-flow",
-    "title": "\u201cFrom Whom All Blessings Flow\u201d",
+    "title": "“From Whom All Blessings Flow”",
     "speaker": "Neal A. Maxwell",
     "year": "1997",
     "month": "April",
@@ -19271,7 +19271,7 @@ window.TALKS = [
   },
   {
     "id": "1928-1997-4-true-to-the-truth",
-    "title": "\u201cTrue to the Truth\u201d",
+    "title": "“True to the Truth”",
     "speaker": "Joseph B. Wirthlin",
     "year": "1997",
     "month": "April",
@@ -19291,7 +19291,7 @@ window.TALKS = [
   },
   {
     "id": "1930-1997-4-bishop-help",
-    "title": "\u201cBishop, Help!\u201d",
+    "title": "“Bishop, Help!”",
     "speaker": "Dallin H. Oaks",
     "year": "1997",
     "month": "April",
@@ -19351,7 +19351,7 @@ window.TALKS = [
   },
   {
     "id": "1936-1997-4-because-she-is-a-mother",
-    "title": "\u201cBecause She Is a Mother\u201d",
+    "title": "“Because She Is a Mother”",
     "speaker": "Jeffrey R. Holland",
     "year": "1997",
     "month": "April",
@@ -19371,7 +19371,7 @@ window.TALKS = [
   },
   {
     "id": "1938-1997-4-in-his-strength-i-can-do-all-things",
-    "title": "\u201cIn His Strength I Can Do All Things\u201d",
+    "title": "“In His Strength I Can Do All Things”",
     "speaker": "Jack H Goaslind Jr.",
     "year": "1997",
     "month": "April",
@@ -19431,7 +19431,7 @@ window.TALKS = [
   },
   {
     "id": "1944-1997-4-you-have-nothing-to-fear-from-the-journey",
-    "title": "\u201cYou Have Nothing to Fear from the Journey\u201d",
+    "title": "“You Have Nothing to Fear from the Journey”",
     "speaker": "M. Russell Ballard",
     "year": "1997",
     "month": "April",
@@ -19441,7 +19441,7 @@ window.TALKS = [
   },
   {
     "id": "1945-1997-4-true-to-the-faith",
-    "title": "\u201cTrue to the Faith\u201d",
+    "title": "“True to the Faith”",
     "speaker": "Gordon B. Hinckley",
     "year": "1997",
     "month": "April",
@@ -19451,7 +19451,7 @@ window.TALKS = [
   },
   {
     "id": "1946-1997-4-that-spirit-which-leadeth-to-do-good",
-    "title": "\u201cThat Spirit Which Leadeth to Do Good\u201d",
+    "title": "“That Spirit Which Leadeth to Do Good”",
     "speaker": "L. Tom Perry",
     "year": "1997",
     "month": "April",
@@ -19471,7 +19471,7 @@ window.TALKS = [
   },
   {
     "id": "1948-1997-4-a-small-stone",
-    "title": "\u201cA Small Stone\u201d",
+    "title": "“A Small Stone”",
     "speaker": "Elaine L. Jack",
     "year": "1997",
     "month": "April",
@@ -19481,7 +19481,7 @@ window.TALKS = [
   },
   {
     "id": "1949-1997-4-go-and-do-thou-likewise",
-    "title": "\u201cGo, and Do Thou Likewise\u201d",
+    "title": "“Go, and Do Thou Likewise”",
     "speaker": "H. David Burton",
     "year": "1997",
     "month": "April",
@@ -19491,7 +19491,7 @@ window.TALKS = [
   },
   {
     "id": "1950-1997-4-pray-unto-the-father-in-my-name",
-    "title": "\u201cPray unto the Father in My Name\u201d",
+    "title": "“Pray unto the Father in My Name”",
     "speaker": "L. Edward Brown",
     "year": "1997",
     "month": "April",
@@ -19501,7 +19501,7 @@ window.TALKS = [
   },
   {
     "id": "1951-1997-4-when-thou-art-converted-strengthen-thy-brethren",
-    "title": "\u201cWhen Thou Art Converted, Strengthen Thy Brethren\u201d",
+    "title": "“When Thou Art Converted, Strengthen Thy Brethren”",
     "speaker": "Robert D. Hales",
     "year": "1997",
     "month": "April",
@@ -19562,7 +19562,7 @@ window.TALKS = [
   {
     "id": "1957-1997-4-draw-nearer-to-christ",
     "title": "Draw Nearer to Christ",
-    "speaker": "Alejandra Hern\u00e1ndez",
+    "speaker": "Alejandra Hernández",
     "year": "1997",
     "month": "April",
     "session": "Sunday Afternoon Session",
@@ -19661,7 +19661,7 @@ window.TALKS = [
   },
   {
     "id": "1967-1997-10-apply-the-atoning-blood-of-christ",
-    "title": "\u201cApply the Atoning Blood of Christ\u201d",
+    "title": "“Apply the Atoning Blood of Christ”",
     "speaker": "Neal A. Maxwell",
     "year": "1997",
     "month": "October",
@@ -19741,7 +19741,7 @@ window.TALKS = [
   },
   {
     "id": "1975-1997-10-behold-the-man",
-    "title": "\u201cBehold the Man\u201d",
+    "title": "“Behold the Man”",
     "speaker": "Keith B. McMullin",
     "year": "1997",
     "month": "October",
@@ -19751,7 +19751,7 @@ window.TALKS = [
   },
   {
     "id": "1976-1997-10-pioneers-of-the-future-be-not-afraid-only-believe",
-    "title": "Pioneers of the Future: \u201cBe Not Afraid, Only Believe\u201d",
+    "title": "Pioneers of the Future: “Be Not Afraid, Only Believe”",
     "speaker": "James E. Faust",
     "year": "1997",
     "month": "October",
@@ -19761,7 +19761,7 @@ window.TALKS = [
   },
   {
     "id": "1977-1997-10-home-teaching-a-divine-service",
-    "title": "Home Teaching\u2014a Divine Service",
+    "title": "Home Teaching—a Divine Service",
     "speaker": "Thomas S. Monson",
     "year": "1997",
     "month": "October",
@@ -19770,7 +19770,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1997/10/home-teaching-a-divine-service?lang=eng"
   },
   {
-    "id": "1978-1997-10-some-thoughts-on-temples-retention-of-converts-and-missionary-service",
+    "id": "1978-1997-10-some-thoughts-on-temples-retention-of-converts-and-missionar",
     "title": "Some Thoughts on Temples, Retention of Converts, and Missionary Service",
     "speaker": "Gordon B. Hinckley",
     "year": "1997",
@@ -19811,7 +19811,7 @@ window.TALKS = [
   },
   {
     "id": "1982-1997-10-he-hath-filled-the-hungry-with-good-things",
-    "title": "\u201cHe Hath Filled the Hungry with Good Things\u201d",
+    "title": "“He Hath Filled the Hungry with Good Things”",
     "speaker": "Jeffrey R. Holland",
     "year": "1997",
     "month": "October",
@@ -19831,7 +19831,7 @@ window.TALKS = [
   },
   {
     "id": "1984-1997-10-hymn-of-the-obedient-all-is-well",
-    "title": "Hymn of the Obedient: \u201cAll Is Well\u201d",
+    "title": "Hymn of the Obedient: “All Is Well”",
     "speaker": "David B. Haight",
     "year": "1997",
     "month": "October",
@@ -19871,7 +19871,7 @@ window.TALKS = [
   },
   {
     "id": "1988-1997-10-daughter-be-of-good-comfort",
-    "title": "\u201cDaughter, Be of Good Comfort\u201d",
+    "title": "“Daughter, Be of Good Comfort”",
     "speaker": "Wayne M. Hancock",
     "year": "1997",
     "month": "October",
@@ -19891,7 +19891,7 @@ window.TALKS = [
   },
   {
     "id": "1990-1997-10-feed-my-lambs",
-    "title": "\u201cFeed My Lambs\u201d",
+    "title": "“Feed My Lambs”",
     "speaker": "Henry B. Eyring",
     "year": "1997",
     "month": "October",
@@ -19911,7 +19911,7 @@ window.TALKS = [
   },
   {
     "id": "1992-1997-10-for-such-a-time-as-this",
-    "title": "\u201cFor Such a Time as This\u201d",
+    "title": "“For Such a Time as This”",
     "speaker": "Mary Ellen W. Smoot",
     "year": "1997",
     "month": "October",
@@ -19931,7 +19931,7 @@ window.TALKS = [
   },
   {
     "id": "1994-1997-10-are-you-the-woman-i-think-you-are",
-    "title": "\u201cAre You the Woman I Think You Are?\u201d",
+    "title": "“Are You the Woman I Think You Are?”",
     "speaker": "Sheri L. Dew",
     "year": "1997",
     "month": "October",
@@ -20001,7 +20001,7 @@ window.TALKS = [
   },
   {
     "id": "2001-1998-4-search-me-o-god-and-know-my-heart",
-    "title": "\u201cSearch Me, O God, and Know My Heart\u201d",
+    "title": "“Search Me, O God, and Know My Heart”",
     "speaker": "James E. Faust",
     "year": "1998",
     "month": "April",
@@ -20021,7 +20021,7 @@ window.TALKS = [
   },
   {
     "id": "2003-1998-4-a-teacher-come-from-god",
-    "title": "\u201cA Teacher Come from God\u201d",
+    "title": "“A Teacher Come from God”",
     "speaker": "Jeffrey R. Holland",
     "year": "1998",
     "month": "April",
@@ -20041,7 +20041,7 @@ window.TALKS = [
   },
   {
     "id": "2005-1998-4-the-kingdom-s-perfecting-pathway",
-    "title": "The Kingdom\u2019s Perfecting Pathway",
+    "title": "The Kingdom’s Perfecting Pathway",
     "speaker": "Dale E. Miller",
     "year": "1998",
     "month": "April",
@@ -20071,7 +20071,7 @@ window.TALKS = [
   },
   {
     "id": "2008-1998-4-put-your-shoulder-to-the-wheel",
-    "title": "\u201cPut Your Shoulder to the Wheel\u201d",
+    "title": "“Put Your Shoulder to the Wheel”",
     "speaker": "Neal A. Maxwell",
     "year": "1998",
     "month": "April",
@@ -20091,7 +20091,7 @@ window.TALKS = [
   },
   {
     "id": "2010-1998-4-the-heart-and-a-willing-mind",
-    "title": "\u201cThe Heart and a Willing Mind\u201d",
+    "title": "“The Heart and a Willing Mind”",
     "speaker": "James M. Paramore",
     "year": "1998",
     "month": "April",
@@ -20101,7 +20101,7 @@ window.TALKS = [
   },
   {
     "id": "2011-1998-4-we-seek-after-these-things",
-    "title": "\u201cWe Seek After These Things\u201d",
+    "title": "“We Seek After These Things”",
     "speaker": "James E. Faust",
     "year": "1998",
     "month": "April",
@@ -20111,7 +20111,7 @@ window.TALKS = [
   },
   {
     "id": "2012-1998-4-in-harm-s-way",
-    "title": "In Harm\u2019s Way",
+    "title": "In Harm’s Way",
     "speaker": "Thomas S. Monson",
     "year": "1998",
     "month": "April",
@@ -20201,7 +20201,7 @@ window.TALKS = [
   },
   {
     "id": "2021-1998-4-behold-we-count-them-happy-which-endure",
-    "title": "\u201cBehold, We Count Them Happy Which Endure\u201d",
+    "title": "“Behold, We Count Them Happy Which Endure”",
     "speaker": "Robert D. Hales",
     "year": "1998",
     "month": "April",
@@ -20231,7 +20231,7 @@ window.TALKS = [
   },
   {
     "id": "2024-1998-4-obedience-life-s-great-challenge",
-    "title": "Obedience\u2014Life\u2019s Great Challenge",
+    "title": "Obedience—Life’s Great Challenge",
     "speaker": "Donald L. Staheli",
     "year": "1998",
     "month": "April",
@@ -20261,7 +20261,7 @@ window.TALKS = [
   },
   {
     "id": "2027-1998-4-new-temples-to-provide-crowning-blessings-of-the-gospel",
-    "title": "New Temples to Provide \u201cCrowning Blessings\u201d of the Gospel",
+    "title": "New Temples to Provide “Crowning Blessings” of the Gospel",
     "speaker": "Gordon B. Hinckley",
     "year": "1998",
     "month": "April",
@@ -20291,7 +20291,7 @@ window.TALKS = [
   },
   {
     "id": "2030-1998-4-young-women-titles-of-liberty",
-    "title": "Young Women\u2014Titles of Liberty",
+    "title": "Young Women—Titles of Liberty",
     "speaker": "Sharon G. Larsen",
     "year": "1998",
     "month": "April",
@@ -20341,7 +20341,7 @@ window.TALKS = [
   },
   {
     "id": "2035-1998-10-come-listen-to-a-prophet-s-voice",
-    "title": "\u201cCome, Listen to a Prophet\u2019s Voice\u201d",
+    "title": "“Come, Listen to a Prophet’s Voice”",
     "speaker": "Virginia U. Jensen",
     "year": "1998",
     "month": "October",
@@ -20401,8 +20401,8 @@ window.TALKS = [
   },
   {
     "id": "2041-1998-10-obeying-the-law-serving-one-s-neighbor",
-    "title": "Obeying the Law\u2014Serving One\u2019s Neighbor",
-    "speaker": "Athos M. Amor\u00edm",
+    "title": "Obeying the Law—Serving One’s Neighbor",
+    "speaker": "Athos M. Amorím",
     "year": "1998",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -20461,7 +20461,7 @@ window.TALKS = [
   },
   {
     "id": "2047-1998-10-as-for-me-and-my-house-we-will-serve-the-lord",
-    "title": "\u201cAs for Me and My House, We Will Serve the Lord\u201d",
+    "title": "“As for Me and My House, We Will Serve the Lord”",
     "speaker": "H. Bryan Richards",
     "year": "1998",
     "month": "October",
@@ -20471,7 +20471,7 @@ window.TALKS = [
   },
   {
     "id": "2048-1998-10-by-what-power-have-ye-done-this",
-    "title": "\u201cBy What Power \u2026 Have Ye Done This?\u201d",
+    "title": "“By What Power … Have Ye Done This?”",
     "speaker": "James E. Faust",
     "year": "1998",
     "month": "October",
@@ -20521,7 +20521,7 @@ window.TALKS = [
   },
   {
     "id": "2053-1998-10-small-temples-large-blessings",
-    "title": "Small Temples\u2014Large Blessings",
+    "title": "Small Temples—Large Blessings",
     "speaker": "David E. Sorensen",
     "year": "1998",
     "month": "October",
@@ -20581,7 +20581,7 @@ window.TALKS = [
   },
   {
     "id": "2059-1998-10-ye-also-shall-bear-witness",
-    "title": "\u201cYe Also Shall Bear Witness\u201d",
+    "title": "“Ye Also Shall Bear Witness”",
     "speaker": "Ronald T. Halverson",
     "year": "1998",
     "month": "October",
@@ -20741,7 +20741,7 @@ window.TALKS = [
   },
   {
     "id": "2075-1999-4-repent-of-our-selfishness-d-c-56-8",
-    "title": "\u201cRepent of [Our] Selfishness\u201d (D&C 56:8)",
+    "title": "“Repent of [Our] Selfishness” (D&C 56:8)",
     "speaker": "Neal A. Maxwell",
     "year": "1999",
     "month": "April",
@@ -20761,7 +20761,7 @@ window.TALKS = [
   },
   {
     "id": "2077-1999-4-out-of-small-things",
-    "title": "\u201cOut of Small Things\u201d",
+    "title": "“Out of Small Things”",
     "speaker": "Stephen A. West",
     "year": "1999",
     "month": "April",
@@ -20811,7 +20811,7 @@ window.TALKS = [
   },
   {
     "id": "2082-1999-4-made-like-unto-the-son-of-god",
-    "title": "\u201cMade Like unto the Son of God\u201d",
+    "title": "“Made Like unto the Son of God”",
     "speaker": "Ray H. Wood",
     "year": "1999",
     "month": "April",
@@ -20822,7 +20822,7 @@ window.TALKS = [
   {
     "id": "2083-1999-4-fellowshipping",
     "title": "Fellowshipping",
-    "speaker": "Ned B. Rouech\u00e9",
+    "speaker": "Ned B. Roueché",
     "year": "1999",
     "month": "April",
     "session": "Priesthood Session",
@@ -20851,7 +20851,7 @@ window.TALKS = [
   },
   {
     "id": "2086-1999-4-the-priesthood-mighty-army-of-the-lord",
-    "title": "The Priesthood\u2014Mighty Army of the Lord",
+    "title": "The Priesthood—Mighty Army of the Lord",
     "speaker": "Thomas S. Monson",
     "year": "1999",
     "month": "April",
@@ -20921,7 +20921,7 @@ window.TALKS = [
   },
   {
     "id": "2093-1999-4-he-is-not-here-but-is-risen",
-    "title": "\u201cHe Is Not Here, but Is Risen\u201d",
+    "title": "“He Is Not Here, but Is Risen”",
     "speaker": "Gordon B. Hinckley",
     "year": "1999",
     "month": "April",
@@ -21071,7 +21071,7 @@ window.TALKS = [
   },
   {
     "id": "2108-1999-10-feed-my-sheep",
-    "title": "\u201cFeed My Sheep\u201d",
+    "title": "“Feed My Sheep”",
     "speaker": "Ben B. Banks",
     "year": "1999",
     "month": "October",
@@ -21081,7 +21081,7 @@ window.TALKS = [
   },
   {
     "id": "2109-1999-10-agency-a-blessing-and-a-burden",
-    "title": "Agency\u2014A Blessing and a Burden",
+    "title": "Agency—A Blessing and a Burden",
     "speaker": "Sharon G. Larsen",
     "year": "1999",
     "month": "October",
@@ -21131,7 +21131,7 @@ window.TALKS = [
   },
   {
     "id": "2114-1999-10-for-this-cause-came-i-into-the-world",
-    "title": "\u201cFor This Cause Came I into the World\u201d",
+    "title": "“For This Cause Came I into the World”",
     "speaker": "Alexander B. Morrison",
     "year": "1999",
     "month": "October",
@@ -21181,7 +21181,7 @@ window.TALKS = [
   },
   {
     "id": "2119-1999-10-an-high-priest-of-good-things-to-come",
-    "title": "\u201cAn High Priest of Good Things to Come\u201d",
+    "title": "“An High Priest of Good Things to Come”",
     "speaker": "Jeffrey R. Holland",
     "year": "1999",
     "month": "October",
@@ -21201,7 +21201,7 @@ window.TALKS = [
   },
   {
     "id": "2121-1999-10-behold-the-man",
-    "title": "\u201cBehold the Man\u201d",
+    "title": "“Behold the Man”",
     "speaker": "Richard C. Edgley",
     "year": "1999",
     "month": "October",
@@ -21210,7 +21210,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/1999/10/behold-the-man?lang=eng"
   },
   {
-    "id": "2122-1999-10-the-faith-of-a-sparrow-faith-and-trust-in-the-lord-jesus-christ",
+    "id": "2122-1999-10-the-faith-of-a-sparrow-faith-and-trust-in-the-lord-jesus-chr",
     "title": "The Faith of a Sparrow: Faith and Trust in the Lord Jesus Christ",
     "speaker": "H. Bruce Stucki",
     "year": "1999",
@@ -21331,7 +21331,7 @@ window.TALKS = [
   },
   {
     "id": "2134-1999-10-no-man-is-an-island",
-    "title": "\u201cNo Man Is an Island\u201d",
+    "title": "“No Man Is an Island”",
     "speaker": "Richard H. Winkel",
     "year": "1999",
     "month": "October",
@@ -21341,7 +21341,7 @@ window.TALKS = [
   },
   {
     "id": "2135-1999-10-the-tongue-of-angels",
-    "title": "\u201cThe Tongue of Angels\u201d",
+    "title": "“The Tongue of Angels”",
     "speaker": "Robert S. Wood",
     "year": "1999",
     "month": "October",
@@ -21481,7 +21481,7 @@ window.TALKS = [
   },
   {
     "id": "2149-2000-4-thou-shalt-give-heed-unto-all-his-words",
-    "title": "\u201cThou Shalt Give Heed unto All His Words\u201d",
+    "title": "“Thou Shalt Give Heed unto All His Words”",
     "speaker": "L. Tom Perry",
     "year": "2000",
     "month": "April",
@@ -21511,7 +21511,7 @@ window.TALKS = [
   },
   {
     "id": "2152-2000-4-are-you-still-here",
-    "title": "\u201cAre You Still Here?\u201d",
+    "title": "“Are You Still Here?”",
     "speaker": "Gary J. Coleman",
     "year": "2000",
     "month": "April",
@@ -21521,7 +21521,7 @@ window.TALKS = [
   },
   {
     "id": "2153-2000-4-how-is-it-with-us",
-    "title": "\u201cHow Is It with Us?\u201d",
+    "title": "“How Is It with Us?”",
     "speaker": "M. Russell Ballard",
     "year": "2000",
     "month": "April",
@@ -21691,7 +21691,7 @@ window.TALKS = [
   },
   {
     "id": "2170-2000-4-because-my-father-sent-me",
-    "title": "\u201cBecause My Father Sent Me\u201d",
+    "title": "“Because My Father Sent Me”",
     "speaker": "Loren C. Dunn",
     "year": "2000",
     "month": "April",
@@ -21780,7 +21780,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2000/10/a-great-family-in-reverence-and-worship?lang=eng"
   },
   {
-    "id": "2179-2000-10-the-covenant-of-baptism-to-be-in-the-kingdom-and-of-the-kingdom",
+    "id": "2179-2000-10-the-covenant-of-baptism-to-be-in-the-kingdom-and-of-the-king",
     "title": "The Covenant of Baptism: To Be in the Kingdom and of the Kingdom",
     "speaker": "Robert D. Hales",
     "year": "2000",
@@ -21801,7 +21801,7 @@ window.TALKS = [
   },
   {
     "id": "2181-2000-10-come-and-see",
-    "title": "\u201cCome and See\u201d",
+    "title": "“Come and See”",
     "speaker": "Alexander B. Morrison",
     "year": "2000",
     "month": "October",
@@ -21921,7 +21921,7 @@ window.TALKS = [
   },
   {
     "id": "2193-2000-10-sanctify-yourselves",
-    "title": "\u201cSanctify Yourselves\u201d",
+    "title": "“Sanctify Yourselves”",
     "speaker": "Jeffrey R. Holland",
     "year": "2000",
     "month": "October",
@@ -21941,7 +21941,7 @@ window.TALKS = [
   },
   {
     "id": "2195-2000-10-satan-s-bag-of-snipes",
-    "title": "Satan\u2019s Bag of Snipes",
+    "title": "Satan’s Bag of Snipes",
     "speaker": "Richard C. Edgley",
     "year": "2000",
     "month": "October",
@@ -21971,7 +21971,7 @@ window.TALKS = [
   },
   {
     "id": "2198-2000-10-great-shall-be-the-peace-of-thy-children",
-    "title": "\u201cGreat Shall Be the Peace of Thy Children\u201d",
+    "title": "“Great Shall Be the Peace of Thy Children”",
     "speaker": "Gordon B. Hinckley",
     "year": "2000",
     "month": "October",
@@ -22001,7 +22001,7 @@ window.TALKS = [
   },
   {
     "id": "2201-2000-10-lead-kindly-light",
-    "title": "\u201cLead, Kindly Light\u201d",
+    "title": "“Lead, Kindly Light”",
     "speaker": "Virginia U. Jensen",
     "year": "2000",
     "month": "October",
@@ -22031,7 +22031,7 @@ window.TALKS = [
   },
   {
     "id": "2204-2000-10-ye-are-the-temple-of-god",
-    "title": "\u201cYe Are the Temple of God\u201d",
+    "title": "“Ye Are the Temple of God”",
     "speaker": "Boyd K. Packer",
     "year": "2000",
     "month": "October",
@@ -22081,7 +22081,7 @@ window.TALKS = [
   },
   {
     "id": "2209-2000-10-freedom-from-or-freedom-to",
-    "title": "Freedom \u201cfrom\u201d or Freedom \u201cto\u201d",
+    "title": "Freedom “from” or Freedom “to”",
     "speaker": "F. Enzio Busche",
     "year": "2000",
     "month": "October",
@@ -22091,7 +22091,7 @@ window.TALKS = [
   },
   {
     "id": "2210-2000-10-write-upon-my-heart",
-    "title": "\u201cWrite upon My Heart\u201d",
+    "title": "“Write upon My Heart”",
     "speaker": "Henry B. Eyring",
     "year": "2000",
     "month": "October",
@@ -22101,7 +22101,7 @@ window.TALKS = [
   },
   {
     "id": "2211-2000-10-an-humble-and-a-contrite-heart",
-    "title": "\u201cAn Humble and a Contrite Heart\u201d",
+    "title": "“An Humble and a Contrite Heart”",
     "speaker": "Gordon B. Hinckley",
     "year": "2000",
     "month": "October",
@@ -22171,7 +22171,7 @@ window.TALKS = [
   },
   {
     "id": "2218-2001-4-to-walk-humbly-with-thy-god",
-    "title": "\u201cTo Walk Humbly with Thy God\u201d",
+    "title": "“To Walk Humbly with Thy God”",
     "speaker": "Marlin K. Jensen",
     "year": "2001",
     "month": "April",
@@ -22191,7 +22191,7 @@ window.TALKS = [
   },
   {
     "id": "2220-2001-4-witnesses-unto-me",
-    "title": "\u201cWitnesses unto Me\u201d",
+    "title": "“Witnesses unto Me”",
     "speaker": "Jeffrey R. Holland",
     "year": "2001",
     "month": "April",
@@ -22211,7 +22211,7 @@ window.TALKS = [
   },
   {
     "id": "2222-2001-4-the-touch-of-the-master-s-hand",
-    "title": "\u201cThe Touch of the Master\u2019s Hand\u201d",
+    "title": "“The Touch of the Master’s Hand”",
     "speaker": "Boyd K. Packer",
     "year": "2001",
     "month": "April",
@@ -22241,7 +22241,7 @@ window.TALKS = [
   },
   {
     "id": "2225-2001-4-to-bear-testimony-of-mine-only-begotten",
-    "title": "\u201cTo Bear Testimony of Mine Only Begotten\u201d",
+    "title": "“To Bear Testimony of Mine Only Begotten”",
     "speaker": "L. Aldin Porter",
     "year": "2001",
     "month": "April",
@@ -22271,7 +22271,7 @@ window.TALKS = [
   },
   {
     "id": "2228-2001-4-watch-with-me",
-    "title": "\u201cWatch with Me\u201d",
+    "title": "“Watch with Me”",
     "speaker": "Henry B. Eyring",
     "year": "2001",
     "month": "April",
@@ -22281,7 +22281,7 @@ window.TALKS = [
   },
   {
     "id": "2229-2001-4-you-can-t-pet-a-rattlesnake",
-    "title": "You Can\u2019t Pet a Rattlesnake",
+    "title": "You Can’t Pet a Rattlesnake",
     "speaker": "David E. Sorensen",
     "year": "2001",
     "month": "April",
@@ -22301,7 +22301,7 @@ window.TALKS = [
   },
   {
     "id": "2231-2001-4-them-that-honour-me-i-will-honour",
-    "title": "\u201cThem That Honour Me I Will Honour\u201d",
+    "title": "“Them That Honour Me I Will Honour”",
     "speaker": "James E. Faust",
     "year": "2001",
     "month": "April",
@@ -22341,7 +22341,7 @@ window.TALKS = [
   },
   {
     "id": "2235-2001-4-plow-in-hope",
-    "title": "\u201cPlow in Hope\u201d",
+    "title": "“Plow in Hope”",
     "speaker": "Neal A. Maxwell",
     "year": "2001",
     "month": "April",
@@ -22371,7 +22371,7 @@ window.TALKS = [
   },
   {
     "id": "2238-2001-4-his-word-ye-shall-receive",
-    "title": "\u201cHis Word Ye Shall Receive\u201d",
+    "title": "“His Word Ye Shall Receive”",
     "speaker": "M. Russell Ballard",
     "year": "2001",
     "month": "April",
@@ -22581,7 +22581,7 @@ window.TALKS = [
   },
   {
     "id": "2259-2001-10-help-thou-mine-unbelief",
-    "title": "\u201cHelp Thou Mine Unbelief\u201d",
+    "title": "“Help Thou Mine Unbelief”",
     "speaker": "L. Whitney Clayton",
     "year": "2001",
     "month": "October",
@@ -22591,7 +22591,7 @@ window.TALKS = [
   },
   {
     "id": "2260-2001-10-our-father-s-plan",
-    "title": "Our Father\u2019s Plan",
+    "title": "Our Father’s Plan",
     "speaker": "Christoffel Golden",
     "year": "2001",
     "month": "October",
@@ -22602,7 +22602,7 @@ window.TALKS = [
   {
     "id": "2261-2001-10-writing-gospel-principles-in-our-hearts",
     "title": "Writing Gospel Principles in Our Hearts",
-    "speaker": "Walter F. Gonz\u00e1lez",
+    "speaker": "Walter F. González",
     "year": "2001",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -22611,7 +22611,7 @@ window.TALKS = [
   },
   {
     "id": "2262-2001-10-like-a-watered-garden",
-    "title": "\u201cLike a Watered Garden\u201d",
+    "title": "“Like a Watered Garden”",
     "speaker": "Jeffrey R. Holland",
     "year": "2001",
     "month": "October",
@@ -22671,7 +22671,7 @@ window.TALKS = [
   },
   {
     "id": "2268-2001-10-some-great-thing",
-    "title": "\u201cSome Great Thing\u201d",
+    "title": "“Some Great Thing”",
     "speaker": "James E. Faust",
     "year": "2001",
     "month": "October",
@@ -22731,7 +22731,7 @@ window.TALKS = [
   },
   {
     "id": "2274-2001-10-fear-not-for-they-that-be-with-us-are-more",
-    "title": "\u201cFear Not: For They That Be with Us Are More\u201d",
+    "title": "“Fear Not: For They That Be with Us Are More”",
     "speaker": "Sharon G. Larsen",
     "year": "2001",
     "month": "October",
@@ -22741,7 +22741,7 @@ window.TALKS = [
   },
   {
     "id": "2275-2001-10-set-in-order-thy-house",
-    "title": "\u201cSet in Order Thy House\u201d",
+    "title": "“Set in Order Thy House”",
     "speaker": "Russell M. Nelson",
     "year": "2001",
     "month": "October",
@@ -22781,7 +22781,7 @@ window.TALKS = [
   },
   {
     "id": "2279-2001-10-the-first-and-great-commandment",
-    "title": "\u201cThe First and Great Commandment\u201d",
+    "title": "“The First and Great Commandment”",
     "speaker": "Robert F. Orton",
     "year": "2001",
     "month": "October",
@@ -22821,7 +22821,7 @@ window.TALKS = [
   },
   {
     "id": "2283-2001-10-till-we-meet-again",
-    "title": "\u201cTill We Meet Again\u201d",
+    "title": "“Till We Meet Again”",
     "speaker": "Gordon B. Hinckley",
     "year": "2001",
     "month": "October",
@@ -22861,7 +22861,7 @@ window.TALKS = [
   },
   {
     "id": "2287-2001-10-be-thou-an-example",
-    "title": "\u201cBe Thou an Example\u201d",
+    "title": "“Be Thou an Example”",
     "speaker": "Thomas S. Monson",
     "year": "2001",
     "month": "October",
@@ -22911,7 +22911,7 @@ window.TALKS = [
   },
   {
     "id": "2292-2002-4-follow-me",
-    "title": "\u201cFollow Me\u201d",
+    "title": "“Follow Me”",
     "speaker": "Joseph B. Wirthlin",
     "year": "2002",
     "month": "April",
@@ -23021,7 +23021,7 @@ window.TALKS = [
   },
   {
     "id": "2303-2002-4-it-can-t-happen-to-me",
-    "title": "It Can\u2019t Happen to Me",
+    "title": "It Can’t Happen to Me",
     "speaker": "James E. Faust",
     "year": "2002",
     "month": "April",
@@ -23171,7 +23171,7 @@ window.TALKS = [
   },
   {
     "id": "2318-2002-4-i-ll-go-where-you-want-me-to-go",
-    "title": "I\u2019ll Go Where You Want Me to Go",
+    "title": "I’ll Go Where You Want Me to Go",
     "speaker": "William R. Walker",
     "year": "2002",
     "month": "April",
@@ -23241,7 +23241,7 @@ window.TALKS = [
   },
   {
     "id": "2325-2002-10-o-that-i-were-an-angel-and-could-have-the-wish-of-mine-heart",
-    "title": "\u201cO That I Were an Angel, and Could Have the Wish of Mine Heart\u201d",
+    "title": "“O That I Were an Angel, and Could Have the Wish of Mine Heart”",
     "speaker": "Gordon B. Hinckley",
     "year": "2002",
     "month": "October",
@@ -23291,7 +23291,7 @@ window.TALKS = [
   },
   {
     "id": "2330-2002-10-what-s-in-it-for-me",
-    "title": "What\u2019s in It for Me?",
+    "title": "What’s in It for Me?",
     "speaker": "James E. Faust",
     "year": "2002",
     "month": "October",
@@ -23351,7 +23351,7 @@ window.TALKS = [
   },
   {
     "id": "2336-2002-10-blessed-are-the-peacemakers",
-    "title": "\u201cBlessed Are the Peacemakers\u201d",
+    "title": "“Blessed Are the Peacemakers”",
     "speaker": "Russell M. Nelson",
     "year": "2002",
     "month": "October",
@@ -23421,7 +23421,7 @@ window.TALKS = [
   },
   {
     "id": "2343-2002-10-i-ll-go-where-you-want-me-to-go",
-    "title": "I\u2019ll Go Where You Want Me to Go",
+    "title": "I’ll Go Where You Want Me to Go",
     "speaker": "Dallin H. Oaks",
     "year": "2002",
     "month": "October",
@@ -23721,7 +23721,7 @@ window.TALKS = [
   },
   {
     "id": "2373-2003-4-and-that-s-the-way-it-is",
-    "title": "And That\u2019s the Way It Is",
+    "title": "And That’s the Way It Is",
     "speaker": "H. David Burton",
     "year": "2003",
     "month": "April",
@@ -23731,7 +23731,7 @@ window.TALKS = [
   },
   {
     "id": "2374-2003-4-the-devil-s-throat",
-    "title": "The Devil\u2019s Throat",
+    "title": "The Devil’s Throat",
     "speaker": "James E. Faust",
     "year": "2003",
     "month": "April",
@@ -23791,7 +23791,7 @@ window.TALKS = [
   },
   {
     "id": "2380-2003-4-did-i-tell-you",
-    "title": "Did I Tell You \u2026 ?",
+    "title": "Did I Tell You … ?",
     "speaker": "Susan W. Tanner",
     "year": "2003",
     "month": "April",
@@ -23800,7 +23800,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2003/04/did-i-tell-you?lang=eng"
   },
   {
-    "id": "2381-2003-4-the-sustaining-power-of-faith-in-times-of-uncertainty-and-testing",
+    "id": "2381-2003-4-the-sustaining-power-of-faith-in-times-of-uncertainty-and-te",
     "title": "The Sustaining Power of Faith in Times of Uncertainty and Testing",
     "speaker": "Richard G. Scott",
     "year": "2003",
@@ -24031,7 +24031,7 @@ window.TALKS = [
   },
   {
     "id": "2404-2003-10-the-standard-of-truth-has-been-erected",
-    "title": "\u201cThe Standard of Truth Has Been Erected\u201d",
+    "title": "“The Standard of Truth Has Been Erected”",
     "speaker": "Boyd K. Packer",
     "year": "2003",
     "month": "October",
@@ -24101,7 +24101,7 @@ window.TALKS = [
   },
   {
     "id": "2411-2003-10-young-men-holders-of-keys",
-    "title": "Young Men\u2014Holders of Keys",
+    "title": "Young Men—Holders of Keys",
     "speaker": "Monte J. Brough",
     "year": "2003",
     "month": "October",
@@ -24231,7 +24231,7 @@ window.TALKS = [
   },
   {
     "id": "2424-2003-10-come-follow-me",
-    "title": "\u201cCome, Follow Me\u201d",
+    "title": "“Come, Follow Me”",
     "speaker": "William W. Parmley",
     "year": "2003",
     "month": "October",
@@ -24401,7 +24401,7 @@ window.TALKS = [
   },
   {
     "id": "2441-2004-4-abide-in-me",
-    "title": "\u201cAbide in Me\u201d",
+    "title": "“Abide in Me”",
     "speaker": "Jeffrey R. Holland",
     "year": "2004",
     "month": "April",
@@ -24421,7 +24421,7 @@ window.TALKS = [
   },
   {
     "id": "2443-2004-4-the-words-of-christ-our-spiritual-liahona",
-    "title": "The Words of Christ\u2014Our Spiritual Liahona",
+    "title": "The Words of Christ—Our Spiritual Liahona",
     "speaker": "W. Rolfe Kerr",
     "year": "2004",
     "month": "April",
@@ -24430,9 +24430,9 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2004/04/the-words-of-christ-our-spiritual-liahona?lang=eng"
   },
   {
-    "id": "2444-2004-4-applying-the-simple-and-plain-gospel-principles-in-the-family",
+    "id": "2444-2004-4-applying-the-simple-and-plain-gospel-principles-in-the-famil",
     "title": "Applying the Simple and Plain Gospel Principles in the Family",
-    "speaker": "Francisco J. Vi\u00f1as",
+    "speaker": "Francisco J. Viñas",
     "year": "2004",
     "month": "April",
     "session": "Saturday Afternoon Session",
@@ -24501,7 +24501,7 @@ window.TALKS = [
   },
   {
     "id": "2451-2004-4-i-was-an-hungred-and-ye-gave-me-meat",
-    "title": "\u201cI Was an Hungred, and Ye Gave Me Meat\u201d",
+    "title": "“I Was an Hungred, and Ye Gave Me Meat”",
     "speaker": "Gordon B. Hinckley",
     "year": "2004",
     "month": "April",
@@ -24531,7 +24531,7 @@ window.TALKS = [
   },
   {
     "id": "2454-2004-4-but-if-not",
-    "title": "But If Not \u2026",
+    "title": "But If Not …",
     "speaker": "Dennis E. Simmons",
     "year": "2004",
     "month": "April",
@@ -24541,7 +24541,7 @@ window.TALKS = [
   },
   {
     "id": "2455-2004-4-a-mother-heart",
-    "title": "A \u201cMother Heart\u201d",
+    "title": "A “Mother Heart”",
     "speaker": "Julie B. Beck",
     "year": "2004",
     "month": "April",
@@ -24580,7 +24580,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2004/04/the-atonement-and-the-value-of-one-soul?lang=eng"
   },
   {
-    "id": "2459-2004-4-with-all-the-feeling-of-a-tender-parent-a-message-of-hope-for-families",
+    "id": "2459-2004-4-with-all-the-feeling-of-a-tender-parent-a-message-of-hope-fo",
     "title": "With All the Feeling of a Tender Parent: A Message of Hope for Families",
     "speaker": "Robert D. Hales",
     "year": "2004",
@@ -24701,7 +24701,7 @@ window.TALKS = [
   },
   {
     "id": "2471-2004-10-the-power-of-god-s-love",
-    "title": "The Power of God\u2019s Love",
+    "title": "The Power of God’s Love",
     "speaker": "John H. Groberg",
     "year": "2004",
     "month": "October",
@@ -24761,8 +24761,8 @@ window.TALKS = [
   },
   {
     "id": "2477-2004-10-feed-my-sheep",
-    "title": "\u201cFeed My Sheep\u201d",
-    "speaker": "Ned B. Rouech\u00e9",
+    "title": "“Feed My Sheep”",
+    "speaker": "Ned B. Roueché",
     "year": "2004",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -24771,7 +24771,7 @@ window.TALKS = [
   },
   {
     "id": "2478-2004-10-i-stand-at-the-door-and-knock",
-    "title": "\u201cI Stand at the Door, and Knock\u201d",
+    "title": "“I Stand at the Door, and Knock”",
     "speaker": "Ronald T. Halverson",
     "year": "2004",
     "month": "October",
@@ -25050,8 +25050,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2005/04/opening-remarks?lang=eng"
   },
   {
-    "id": "2506-2005-4-the-book-of-mormon-another-testament-of-jesus-christ-plain-and-precious-things",
-    "title": "The Book of Mormon: Another Testament of Jesus Christ\u2014Plain and Precious Things",
+    "id": "2506-2005-4-the-book-of-mormon-another-testament-of-jesus-christ-plain-a",
+    "title": "The Book of Mormon: Another Testament of Jesus Christ—Plain and Precious Things",
     "speaker": "Boyd K. Packer",
     "year": "2005",
     "month": "April",
@@ -25131,7 +25131,7 @@ window.TALKS = [
   },
   {
     "id": "2514-2005-4-tithing-a-commandment-even-for-the-destitute",
-    "title": "Tithing\u2014a Commandment Even for the Destitute",
+    "title": "Tithing—a Commandment Even for the Destitute",
     "speaker": "Lynn G. Robbins",
     "year": "2005",
     "month": "April",
@@ -25181,7 +25181,7 @@ window.TALKS = [
   },
   {
     "id": "2519-2005-4-who-s-on-the-lord-s-side-who",
-    "title": "Who\u2019s on the Lord\u2019s Side? Who?",
+    "title": "Who’s on the Lord’s Side? Who?",
     "speaker": "Robert C. Oaks",
     "year": "2005",
     "month": "April",
@@ -25411,7 +25411,7 @@ window.TALKS = [
   },
   {
     "id": "2542-2005-10-be-prepared-be-ye-strong-from-henceforth",
-    "title": "Be Prepared \u2026 Be Ye Strong from Henceforth",
+    "title": "Be Prepared … Be Ye Strong from Henceforth",
     "speaker": "Keith B. McMullin",
     "year": "2005",
     "month": "October",
@@ -25472,7 +25472,7 @@ window.TALKS = [
   {
     "id": "2548-2005-10-true-happiness-a-conscious-decision",
     "title": "True Happiness: A Conscious Decision",
-    "speaker": "Benjam\u00edn De Hoyos",
+    "speaker": "Benjamín De Hoyos",
     "year": "2005",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -25491,7 +25491,7 @@ window.TALKS = [
   },
   {
     "id": "2550-2005-10-if-christ-had-my-opportunities",
-    "title": "\u201cIf Christ Had My Opportunities \u2026\u201d",
+    "title": "“If Christ Had My Opportunities …”",
     "speaker": "Paul K. Sybrowsky",
     "year": "2005",
     "month": "October",
@@ -25531,7 +25531,7 @@ window.TALKS = [
   },
   {
     "id": "2554-2005-10-man-s-search-for-divine-truth",
-    "title": "Man\u2019s Search for Divine Truth",
+    "title": "Man’s Search for Divine Truth",
     "speaker": "Charles A. Didier",
     "year": "2005",
     "month": "October",
@@ -25561,7 +25561,7 @@ window.TALKS = [
   },
   {
     "id": "2557-2005-10-do-your-duty-that-is-best",
-    "title": "Do Your Duty\u2014That Is Best",
+    "title": "Do Your Duty—That Is Best",
     "speaker": "Thomas S. Monson",
     "year": "2005",
     "month": "October",
@@ -25591,7 +25591,7 @@ window.TALKS = [
   },
   {
     "id": "2560-2005-10-on-zion-s-hill",
-    "title": "On Zion\u2019s Hill",
+    "title": "On Zion’s Hill",
     "speaker": "Boyd K. Packer",
     "year": "2005",
     "month": "October",
@@ -25641,7 +25641,7 @@ window.TALKS = [
   },
   {
     "id": "2565-2005-10-jesus-christ-the-master-healer",
-    "title": "Jesus Christ\u2014the Master Healer",
+    "title": "Jesus Christ—the Master Healer",
     "speaker": "Russell M. Nelson",
     "year": "2005",
     "month": "October",
@@ -25650,8 +25650,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2005/10/jesus-christ-the-master-healer?lang=eng"
   },
   {
-    "id": "2566-2005-10-preparations-for-the-restoration-and-the-second-coming-my-hand-shall-be-over-thee",
-    "title": "Preparations for the Restoration and the Second Coming: \u201cMy Hand Shall Be over Thee\u201d",
+    "id": "2566-2005-10-preparations-for-the-restoration-and-the-second-coming-my-ha",
+    "title": "Preparations for the Restoration and the Second Coming: “My Hand Shall Be over Thee”",
     "speaker": "Robert D. Hales",
     "year": "2005",
     "month": "October",
@@ -25691,7 +25691,7 @@ window.TALKS = [
   },
   {
     "id": "2570-2005-10-feed-my-sheep",
-    "title": "\u201cFeed My Sheep\u201d",
+    "title": "“Feed My Sheep”",
     "speaker": "Ulisses Soares",
     "year": "2005",
     "month": "October",
@@ -25701,7 +25701,7 @@ window.TALKS = [
   },
   {
     "id": "2571-2005-10-christlike-attributes-the-wind-beneath-our-wings",
-    "title": "Christlike Attributes\u2014the Wind beneath Our Wings",
+    "title": "Christlike Attributes—the Wind beneath Our Wings",
     "speaker": "Dieter F. Uchtdorf",
     "year": "2005",
     "month": "October",
@@ -25741,7 +25741,7 @@ window.TALKS = [
   },
   {
     "id": "2575-2005-10-knowing-the-lord-s-will-for-you",
-    "title": "Knowing the Lord\u2019s Will for You",
+    "title": "Knowing the Lord’s Will for You",
     "speaker": "Anne C. Pingree",
     "year": "2005",
     "month": "October",
@@ -25811,7 +25811,7 @@ window.TALKS = [
   },
   {
     "id": "2582-2006-4-i-will-remember-your-sins-no-more",
-    "title": "\u201cI Will Remember Your Sins No More\u201d",
+    "title": "“I Will Remember Your Sins No More”",
     "speaker": "Boyd K. Packer",
     "year": "2006",
     "month": "April",
@@ -26021,7 +26021,7 @@ window.TALKS = [
   },
   {
     "id": "2603-2006-4-instruments-of-the-lord-s-peace",
-    "title": "Instruments of the Lord\u2019s Peace",
+    "title": "Instruments of the Lord’s Peace",
     "speaker": "Robert S. Wood",
     "year": "2006",
     "month": "April",
@@ -26061,7 +26061,7 @@ window.TALKS = [
   },
   {
     "id": "2607-2006-4-i-am-the-light-which-ye-shall-hold-up",
-    "title": "\u201cI Am the Light Which Ye Shall Hold Up\u201d",
+    "title": "“I Am the Light Which Ye Shall Hold Up”",
     "speaker": "Susan W. Tanner",
     "year": "2006",
     "month": "April",
@@ -26091,7 +26091,7 @@ window.TALKS = [
   },
   {
     "id": "2610-2006-4-your-light-a-standard-to-all-nations",
-    "title": "Your Light\u2014a Standard to All Nations",
+    "title": "Your Light—a Standard to All Nations",
     "speaker": "James E. Faust",
     "year": "2006",
     "month": "April",
@@ -26361,7 +26361,7 @@ window.TALKS = [
   },
   {
     "id": "2637-2006-10-the-great-and-wonderful-love",
-    "title": "\u201cThe Great and Wonderful Love\u201d",
+    "title": "“The Great and Wonderful Love”",
     "speaker": "Anthony D. Perkins",
     "year": "2006",
     "month": "October",
@@ -26491,7 +26491,7 @@ window.TALKS = [
   },
   {
     "id": "2650-2006-10-remembering-the-lord-s-love",
-    "title": "Remembering the Lord\u2019s Love",
+    "title": "Remembering the Lord’s Love",
     "speaker": "Kathleen H. Hughes",
     "year": "2006",
     "month": "October",
@@ -26591,7 +26591,7 @@ window.TALKS = [
   },
   {
     "id": "2660-2007-4-prophets-pioneer-and-modern-day",
-    "title": "Prophets\u2014Pioneer and Modern Day",
+    "title": "Prophets—Pioneer and Modern Day",
     "speaker": "Earl C. Tingey",
     "year": "2007",
     "month": "April",
@@ -26661,7 +26661,7 @@ window.TALKS = [
   },
   {
     "id": "2667-2007-4-life-s-lessons-learned",
-    "title": "Life\u2019s Lessons Learned",
+    "title": "Life’s Lessons Learned",
     "speaker": "Joseph B. Wirthlin",
     "year": "2007",
     "month": "April",
@@ -26670,7 +26670,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2007/04/lifes-lessons-learned?lang=eng"
   },
   {
-    "id": "2668-2007-4-to-the-aaronic-priesthood-preparing-for-the-decade-of-decision",
+    "id": "2668-2007-4-to-the-aaronic-priesthood-preparing-for-the-decade-of-decisi",
     "title": "To the Aaronic Priesthood: Preparing for the Decade of Decision",
     "speaker": "Robert D. Hales",
     "year": "2007",
@@ -26701,7 +26701,7 @@ window.TALKS = [
   },
   {
     "id": "2671-2007-4-the-priesthood-a-sacred-gift",
-    "title": "The Priesthood\u2014a Sacred Gift",
+    "title": "The Priesthood—a Sacred Gift",
     "speaker": "Thomas S. Monson",
     "year": "2007",
     "month": "April",
@@ -26711,7 +26711,7 @@ window.TALKS = [
   },
   {
     "id": "2672-2007-4-i-am-clean",
-    "title": "\u201cI Am Clean\u201d",
+    "title": "“I Am Clean”",
     "speaker": "Gordon B. Hinckley",
     "year": "2007",
     "month": "April",
@@ -26741,7 +26741,7 @@ window.TALKS = [
   },
   {
     "id": "2675-2007-4-it-s-true-isn-t-it-then-what-else-matters",
-    "title": "It\u2019s True, Isn\u2019t It? Then What Else Matters?",
+    "title": "It’s True, Isn’t It? Then What Else Matters?",
     "speaker": "Neil L. Andersen",
     "year": "2007",
     "month": "April",
@@ -26811,7 +26811,7 @@ window.TALKS = [
   },
   {
     "id": "2682-2007-4-mom-are-we-christians",
-    "title": "\u201cMom, Are We Christians?\u201d",
+    "title": "“Mom, Are We Christians?”",
     "speaker": "Gary J. Coleman",
     "year": "2007",
     "month": "April",
@@ -26821,7 +26821,7 @@ window.TALKS = [
   },
   {
     "id": "2683-2007-4-who-s-on-the-lord-s-side",
-    "title": "Who\u2019s on the Lord\u2019s Side?",
+    "title": "Who’s on the Lord’s Side?",
     "speaker": "Charles W. Dahlquist II",
     "year": "2007",
     "month": "April",
@@ -26971,7 +26971,7 @@ window.TALKS = [
   },
   {
     "id": "2698-2007-10-mrs-patton-the-story-continues",
-    "title": "Mrs. Patton\u2014the Story Continues",
+    "title": "Mrs. Patton—the Story Continues",
     "speaker": "Thomas S. Monson",
     "year": "2007",
     "month": "October",
@@ -27010,8 +27010,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2007/10/a-broken-heart-and-a-contrite-spirit?lang=eng"
   },
   {
-    "id": "2702-2007-10-preach-my-gospel-the-unifying-tool-between-members-and-missionaries",
-    "title": "Preach My Gospel\u2014the Unifying Tool between Members and Missionaries",
+    "id": "2702-2007-10-preach-my-gospel-the-unifying-tool-between-members-and-missi",
+    "title": "Preach My Gospel—the Unifying Tool between Members and Missionaries",
     "speaker": "Erich W. Kopischke",
     "year": "2007",
     "month": "October",
@@ -27092,7 +27092,7 @@ window.TALKS = [
   {
     "id": "2710-2007-10-today-is-the-time",
     "title": "Today Is the Time",
-    "speaker": "Walter F. Gonz\u00e1lez",
+    "speaker": "Walter F. González",
     "year": "2007",
     "month": "October",
     "session": "Priesthood Session",
@@ -27151,7 +27151,7 @@ window.TALKS = [
   },
   {
     "id": "2716-2007-10-don-t-leave-for-tomorrow-what-you-can-do-today",
-    "title": "Don\u2019t Leave for Tomorrow What You Can Do Today",
+    "title": "Don’t Leave for Tomorrow What You Can Do Today",
     "speaker": "Claudio R. M. Costa",
     "year": "2007",
     "month": "October",
@@ -27200,7 +27200,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2007/10/the-stone-cut-out-of-the-mountain?lang=eng"
   },
   {
-    "id": "2721-2007-10-personal-revelation-the-teachings-and-examples-of-the-prophets",
+    "id": "2721-2007-10-personal-revelation-the-teachings-and-examples-of-the-prophe",
     "title": "Personal Revelation: The Teachings and Examples of the Prophets",
     "speaker": "Robert D. Hales",
     "year": "2007",
@@ -27290,7 +27290,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2007/10/closing-remarks?lang=eng"
   },
   {
-    "id": "2730-2007-10-what-latter-day-saint-women-do-best-stand-strong-and-immovable",
+    "id": "2730-2007-10-what-latter-day-saint-women-do-best-stand-strong-and-immovab",
     "title": "What Latter-day Saint Women Do Best: Stand Strong and Immovable",
     "speaker": "Julie B. Beck",
     "year": "2007",
@@ -27400,7 +27400,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2008/04/testimony?lang=eng"
   },
   {
-    "id": "2741-2008-4-gaining-a-testimony-of-god-the-father-his-son-jesus-christ-and-the-holy-ghost",
+    "id": "2741-2008-4-gaining-a-testimony-of-god-the-father-his-son-jesus-christ-a",
     "title": "Gaining a Testimony of God the Father; His Son, Jesus Christ; and the Holy Ghost",
     "speaker": "Robert D. Hales",
     "year": "2008",
@@ -27461,7 +27461,7 @@ window.TALKS = [
   },
   {
     "id": "2747-2008-4-give-heed-unto-the-prophets-words",
-    "title": "Give Heed unto the Prophets\u2019 Words",
+    "title": "Give Heed unto the Prophets’ Words",
     "speaker": "Quentin L. Cook",
     "year": "2008",
     "month": "April",
@@ -27591,7 +27591,7 @@ window.TALKS = [
   },
   {
     "id": "2760-2008-4-my-words-never-cease",
-    "title": "\u201cMy Words \u2026 Never Cease\u201d",
+    "title": "“My Words … Never Cease”",
     "speaker": "Jeffrey R. Holland",
     "year": "2008",
     "month": "April",
@@ -27812,7 +27812,7 @@ window.TALKS = [
   {
     "id": "2782-2008-10-even-a-child-can-understand",
     "title": "Even a Child Can Understand",
-    "speaker": "G\u00e9rald Causs\u00e9",
+    "speaker": "Gérald Caussé",
     "year": "2008",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -27991,7 +27991,7 @@ window.TALKS = [
   },
   {
     "id": "2800-2008-10-gospel-teaching-our-most-important-calling",
-    "title": "Gospel Teaching\u2014Our Most Important Calling",
+    "title": "Gospel Teaching—Our Most Important Calling",
     "speaker": "William D. Oswald",
     "year": "2008",
     "month": "October",
@@ -28021,7 +28021,7 @@ window.TALKS = [
   },
   {
     "id": "2803-2008-10-hope-ya-know-we-had-a-hard-time",
-    "title": "\u201cHope Ya Know, We Had a Hard Time\u201d",
+    "title": "“Hope Ya Know, We Had a Hard Time”",
     "speaker": "Quentin L. Cook",
     "year": "2008",
     "month": "October",
@@ -28161,7 +28161,7 @@ window.TALKS = [
   },
   {
     "id": "2817-2009-4-our-father-s-plan-big-enough-for-all-his-children",
-    "title": "Our Father\u2019s Plan\u2014Big Enough for All His Children",
+    "title": "Our Father’s Plan—Big Enough for All His Children",
     "speaker": "Quentin L. Cook",
     "year": "2009",
     "month": "April",
@@ -28190,7 +28190,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2009/04/faith-in-adversity?lang=eng"
   },
   {
-    "id": "2820-2009-4-temple-worship-the-source-of-strength-and-power-in-times-of-need",
+    "id": "2820-2009-4-temple-worship-the-source-of-strength-and-power-in-times-of-",
     "title": "Temple Worship: The Source of Strength and Power in Times of Need",
     "speaker": "Richard G. Scott",
     "year": "2009",
@@ -28201,7 +28201,7 @@ window.TALKS = [
   },
   {
     "id": "2821-2009-4-lessons-from-the-lord-s-prayers",
-    "title": "Lessons from the Lord\u2019s Prayers",
+    "title": "Lessons from the Lord’s Prayers",
     "speaker": "Russell M. Nelson",
     "year": "2009",
     "month": "April",
@@ -28251,7 +28251,7 @@ window.TALKS = [
   },
   {
     "id": "2826-2009-4-man-down",
-    "title": "\u201cMan Down!\u201d",
+    "title": "“Man Down!”",
     "speaker": "Henry B. Eyring",
     "year": "2009",
     "month": "April",
@@ -28362,7 +28362,7 @@ window.TALKS = [
   {
     "id": "2837-2009-4-gifts-to-help-us-navigate-our-life",
     "title": "Gifts to Help Us Navigate Our Life",
-    "speaker": "Jos\u00e9 A. Teixeira",
+    "speaker": "José A. Teixeira",
     "year": "2009",
     "month": "April",
     "session": "Sunday Afternoon Session",
@@ -28381,7 +28381,7 @@ window.TALKS = [
   },
   {
     "id": "2839-2009-4-bring-souls-unto-me",
-    "title": "\u201cBring Souls unto Me\u201d",
+    "title": "“Bring Souls unto Me”",
     "speaker": "L. Tom Perry",
     "year": "2009",
     "month": "April",
@@ -28411,7 +28411,7 @@ window.TALKS = [
   },
   {
     "id": "2842-2009-4-a-virtuous-life-step-by-step",
-    "title": "A Virtuous Life\u2014Step by Step",
+    "title": "A Virtuous Life—Step by Step",
     "speaker": "Mary N. Cook",
     "year": "2009",
     "month": "April",
@@ -28520,7 +28520,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2009/10/love-and-law?lang=eng"
   },
   {
-    "id": "2853-2009-10-seeking-to-know-god-our-heavenly-father-and-his-son-jesus-christ",
+    "id": "2853-2009-10-seeking-to-know-god-our-heavenly-father-and-his-son-jesus-ch",
     "title": "Seeking to Know God, Our Heavenly Father, and His Son, Jesus Christ",
     "speaker": "Robert D. Hales",
     "year": "2009",
@@ -28541,7 +28541,7 @@ window.TALKS = [
   },
   {
     "id": "2855-2009-10-joseph-smith-prophet-of-the-restoration",
-    "title": "Joseph Smith\u2014Prophet of the Restoration",
+    "title": "Joseph Smith—Prophet of the Restoration",
     "speaker": "Tad R. Callister",
     "year": "2009",
     "month": "October",
@@ -28561,7 +28561,7 @@ window.TALKS = [
   },
   {
     "id": "2857-2009-10-repent-that-i-may-heal-you",
-    "title": "\u201cRepent \u2026 That I May Heal You\u201d",
+    "title": "“Repent … That I May Heal You”",
     "speaker": "Neil L. Andersen",
     "year": "2009",
     "month": "October",
@@ -28592,7 +28592,7 @@ window.TALKS = [
   {
     "id": "2860-2009-10-becoming-more-powerful-priesthood-holders",
     "title": "Becoming More Powerful Priesthood Holders",
-    "speaker": "Walter F. Gonz\u00e1lez",
+    "speaker": "Walter F. González",
     "year": "2009",
     "month": "October",
     "session": "Priesthood Session",
@@ -28711,7 +28711,7 @@ window.TALKS = [
   },
   {
     "id": "2872-2009-10-stewardship-a-sacred-trust",
-    "title": "Stewardship\u2014a Sacred Trust",
+    "title": "Stewardship—a Sacred Trust",
     "speaker": "Quentin L. Cook",
     "year": "2009",
     "month": "October",
@@ -28731,7 +28731,7 @@ window.TALKS = [
   },
   {
     "id": "2874-2009-10-preserving-the-heart-s-mighty-change",
-    "title": "Preserving the Heart\u2019s Mighty Change",
+    "title": "Preserving the Heart’s Mighty Change",
     "speaker": "Dale G. Renlund",
     "year": "2009",
     "month": "October",
@@ -28840,8 +28840,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2010/04/the-power-of-the-priesthood?lang=eng"
   },
   {
-    "id": "2885-2010-4-and-upon-the-handmaids-in-those-days-will-i-pour-out-my-spirit",
-    "title": "\u201cAnd upon the Handmaids in Those Days Will I Pour Out My Spirit\u201d",
+    "id": "2885-2010-4-and-upon-the-handmaids-in-those-days-will-i-pour-out-my-spir",
+    "title": "“And upon the Handmaids in Those Days Will I Pour Out My Spirit”",
     "speaker": "Julie B. Beck",
     "year": "2010",
     "month": "April",
@@ -29011,7 +29011,7 @@ window.TALKS = [
   },
   {
     "id": "2902-2010-4-you-are-my-hands",
-    "title": "\u201cYou Are My Hands\u201d",
+    "title": "“You Are My Hands”",
     "speaker": "Dieter F. Uchtdorf",
     "year": "2010",
     "month": "April",
@@ -29080,7 +29080,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2010/04/generations-linked-in-love?lang=eng"
   },
   {
-    "id": "2909-2010-4-our-duty-to-god-the-mission-of-parents-and-leaders-to-the-rising-generation",
+    "id": "2909-2010-4-our-duty-to-god-the-mission-of-parents-and-leaders-to-the-ri",
     "title": "Our Duty to God: The Mission of Parents and Leaders to the Rising Generation",
     "speaker": "Robert D. Hales",
     "year": "2010",
@@ -29122,7 +29122,7 @@ window.TALKS = [
   {
     "id": "2913-2010-4-things-pertaining-to-righteousness",
     "title": "Things Pertaining to Righteousness",
-    "speaker": "Francisco J. Vi\u00f1as",
+    "speaker": "Francisco J. Viñas",
     "year": "2010",
     "month": "April",
     "session": "Sunday Afternoon Session",
@@ -29281,7 +29281,7 @@ window.TALKS = [
   },
   {
     "id": "2929-2010-10-faith-the-choice-is-yours",
-    "title": "Faith\u2014the Choice Is Yours",
+    "title": "Faith—the Choice Is Yours",
     "speaker": "Richard C. Edgley",
     "year": "2010",
     "month": "October",
@@ -29341,7 +29341,7 @@ window.TALKS = [
   },
   {
     "id": "2935-2010-10-come-unto-me-with-full-purpose-of-heart-and-i-shall-heal-you",
-    "title": "\u201cCome unto Me with Full Purpose of Heart, and I Shall Heal You\u201d",
+    "title": "“Come unto Me with Full Purpose of Heart, and I Shall Heal You”",
     "speaker": "Patrick Kearon",
     "year": "2010",
     "month": "October",
@@ -29530,7 +29530,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2010/10/till-we-meet-again?lang=eng"
   },
   {
-    "id": "2954-2010-10-daughters-in-my-kingdom-the-history-and-work-of-relief-society",
+    "id": "2954-2010-10-daughters-in-my-kingdom-the-history-and-work-of-relief-socie",
     "title": "Daughters in My Kingdom: The History and Work of Relief Society",
     "speaker": "Julie B. Beck",
     "year": "2010",
@@ -29571,7 +29571,7 @@ window.TALKS = [
   },
   {
     "id": "2958-2011-4-it-s-conference-once-again",
-    "title": "It\u2019s Conference Once Again",
+    "title": "It’s Conference Once Again",
     "speaker": "Thomas S. Monson",
     "year": "2011",
     "month": "April",
@@ -29602,7 +29602,7 @@ window.TALKS = [
   {
     "id": "2961-2011-4-followers-of-christ",
     "title": "Followers of Christ",
-    "speaker": "Walter F. Gonz\u00e1lez",
+    "speaker": "Walter F. González",
     "year": "2011",
     "month": "April",
     "session": "Saturday Morning Session",
@@ -29811,7 +29811,7 @@ window.TALKS = [
   },
   {
     "id": "2982-2011-4-the-holy-temple-a-beacon-to-the-world",
-    "title": "The Holy Temple\u2014a Beacon to the World",
+    "title": "The Holy Temple—a Beacon to the World",
     "speaker": "Thomas S. Monson",
     "year": "2011",
     "month": "April",
@@ -29831,7 +29831,7 @@ window.TALKS = [
   },
   {
     "id": "2984-2011-4-as-many-as-i-love-i-rebuke-and-chasten",
-    "title": "\u201cAs Many as I Love, I Rebuke and Chasten\u201d",
+    "title": "“As Many as I Love, I Rebuke and Chasten”",
     "speaker": "D. Todd Christofferson",
     "year": "2011",
     "month": "April",
@@ -29841,7 +29841,7 @@ window.TALKS = [
   },
   {
     "id": "2985-2011-4-the-lord-s-richest-blessings",
-    "title": "The Lord\u2019s Richest Blessings",
+    "title": "The Lord’s Richest Blessings",
     "speaker": "Carl B. Pratt",
     "year": "2011",
     "month": "April",
@@ -29862,7 +29862,7 @@ window.TALKS = [
   {
     "id": "2987-2011-4-called-to-be-saints",
     "title": "Called to Be Saints",
-    "speaker": "Benjam\u00edn De Hoyos",
+    "speaker": "Benjamín De Hoyos",
     "year": "2011",
     "month": "April",
     "session": "Sunday Afternoon Session",
@@ -29911,7 +29911,7 @@ window.TALKS = [
   },
   {
     "id": "2992-2011-4-remember-this-kindness-begins-with-me",
-    "title": "\u201cRemember This: Kindness Begins with Me\u201d",
+    "title": "“Remember This: Kindness Begins with Me”",
     "speaker": "Mary N. Cook",
     "year": "2011",
     "month": "April",
@@ -29982,7 +29982,7 @@ window.TALKS = [
   {
     "id": "2999-2011-10-doing-the-right-thing-at-the-right-time-without-delay",
     "title": "Doing the Right Thing at the Right Time, without Delay",
-    "speaker": "Jos\u00e9 L. Alonso",
+    "speaker": "José L. Alonso",
     "year": "2011",
     "month": "October",
     "session": "Saturday Morning Session",
@@ -30111,7 +30111,7 @@ window.TALKS = [
   },
   {
     "id": "3012-2011-10-providing-in-the-lord-s-way",
-    "title": "Providing in the Lord\u2019s Way",
+    "title": "Providing in the Lord’s Way",
     "speaker": "Dieter F. Uchtdorf",
     "year": "2011",
     "month": "October",
@@ -30121,7 +30121,7 @@ window.TALKS = [
   },
   {
     "id": "3013-2011-10-preparation-in-the-priesthood-i-need-your-help",
-    "title": "Preparation in the Priesthood: \u201cI Need Your Help\u201d",
+    "title": "Preparation in the Priesthood: “I Need Your Help”",
     "speaker": "Henry B. Eyring",
     "year": "2011",
     "month": "October",
@@ -30161,7 +30161,7 @@ window.TALKS = [
   },
   {
     "id": "3017-2011-10-the-book-of-mormon-a-book-from-god",
-    "title": "The Book of Mormon\u2014a Book from God",
+    "title": "The Book of Mormon—a Book from God",
     "speaker": "Tad R. Callister",
     "year": "2011",
     "month": "October",
@@ -30280,7 +30280,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2011/10/until-we-meet-again?lang=eng"
   },
   {
-    "id": "3029-2011-10-what-i-hope-my-granddaughters-and-grandsons-will-understand-about-relief-society",
+    "id": "3029-2011-10-what-i-hope-my-granddaughters-and-grandsons-will-understand-",
     "title": "What I Hope My Granddaughters (and Grandsons) Will Understand about Relief Society",
     "speaker": "Julie B. Beck",
     "year": "2011",
@@ -30400,7 +30400,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2012/04/the-laborers-in-the-vineyard?lang=eng"
   },
   {
-    "id": "3041-2012-4-coming-to-ourselves-the-sacrament-the-temple-and-sacrifice-in-service",
+    "id": "3041-2012-4-coming-to-ourselves-the-sacrament-the-temple-and-sacrifice-i",
     "title": "Coming to Ourselves: The Sacrament, the Temple, and Sacrifice in Service",
     "speaker": "Robert D. Hales",
     "year": "2012",
@@ -30411,7 +30411,7 @@ window.TALKS = [
   },
   {
     "id": "3042-2012-4-abide-in-the-lord-s-territory",
-    "title": "Abide in the Lord\u2019s Territory!",
+    "title": "Abide in the Lord’s Territory!",
     "speaker": "Ulisses Soares",
     "year": "2012",
     "month": "April",
@@ -30440,7 +30440,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2012/04/in-tune-with-the-music-of-faith?lang=eng"
   },
   {
-    "id": "3045-2012-4-how-to-obtain-revelation-and-inspiration-for-your-personal-life",
+    "id": "3045-2012-4-how-to-obtain-revelation-and-inspiration-for-your-personal-l",
     "title": "How to Obtain Revelation and Inspiration for Your Personal Life",
     "speaker": "Richard G. Scott",
     "year": "2012",
@@ -30472,7 +30472,7 @@ window.TALKS = [
   {
     "id": "3048-2012-4-aaronic-priesthood-arise-and-use-the-power-of-god",
     "title": "Aaronic Priesthood: Arise and Use the Power of God",
-    "speaker": "Adri\u00e1n Ochoa",
+    "speaker": "Adrián Ochoa",
     "year": "2012",
     "month": "April",
     "session": "Priesthood Session",
@@ -30530,7 +30530,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2012/04/special-lessons?lang=eng"
   },
   {
-    "id": "3054-2012-4-the-vision-of-prophets-regarding-relief-society-faith-family-relief",
+    "id": "3054-2012-4-the-vision-of-prophets-regarding-relief-society-faith-family",
     "title": "The Vision of Prophets regarding Relief Society: Faith, Family, Relief",
     "speaker": "Julie B. Beck",
     "year": "2012",
@@ -30721,7 +30721,7 @@ window.TALKS = [
   },
   {
     "id": "3073-2012-10-because-i-live-ye-shall-live-also",
-    "title": "\u201cBecause I Live, Ye Shall Live Also\u201d",
+    "title": "“Because I Live, Ye Shall Live Also”",
     "speaker": "Shayne M. Bowen",
     "year": "2012",
     "month": "October",
@@ -30771,7 +30771,7 @@ window.TALKS = [
   },
   {
     "id": "3078-2012-10-come-unto-me-o-ye-house-of-israel",
-    "title": "\u201cCome unto Me, O Ye House of Israel\u201d",
+    "title": "“Come unto Me, O Ye House of Israel”",
     "speaker": "Larry J. Echo Hawk",
     "year": "2012",
     "month": "October",
@@ -30912,7 +30912,7 @@ window.TALKS = [
   {
     "id": "3092-2012-10-learning-with-our-hearts",
     "title": "Learning with Our Hearts",
-    "speaker": "Walter F. Gonz\u00e1lez",
+    "speaker": "Walter F. González",
     "year": "2012",
     "month": "October",
     "session": "Sunday Morning Session",
@@ -31020,7 +31020,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2012/10/god-be-with-you-till-we-meet-again?lang=eng"
   },
   {
-    "id": "3103-2012-10-is-faith-in-the-atonement-of-jesus-christ-written-in-our-hearts",
+    "id": "3103-2012-10-is-faith-in-the-atonement-of-jesus-christ-written-in-our-hea",
     "title": "Is Faith in the Atonement of Jesus Christ Written in Our Hearts?",
     "speaker": "Linda K. Burton",
     "year": "2012",
@@ -31111,7 +31111,7 @@ window.TALKS = [
   },
   {
     "id": "3112-2013-4-this-is-my-work-and-glory",
-    "title": "\u201cThis Is My Work and Glory\u201d",
+    "title": "“This Is My Work and Glory”",
     "speaker": "M. Russell Ballard",
     "year": "2013",
     "month": "April",
@@ -31121,7 +31121,7 @@ window.TALKS = [
   },
   {
     "id": "3113-2013-4-come-unto-me",
-    "title": "\u201cCome unto Me\u201d",
+    "title": "“Come unto Me”",
     "speaker": "Henry B. Eyring",
     "year": "2013",
     "month": "April",
@@ -31151,7 +31151,7 @@ window.TALKS = [
   },
   {
     "id": "3116-2013-4-the-lord-s-way",
-    "title": "The Lord\u2019s Way",
+    "title": "The Lord’s Way",
     "speaker": "Stanley G. Ellis",
     "year": "2013",
     "month": "April",
@@ -31251,7 +31251,7 @@ window.TALKS = [
   },
   {
     "id": "3126-2013-4-the-hope-of-god-s-light",
-    "title": "The Hope of God\u2019s Light",
+    "title": "The Hope of God’s Light",
     "speaker": "Dieter F. Uchtdorf",
     "year": "2013",
     "month": "April",
@@ -31261,7 +31261,7 @@ window.TALKS = [
   },
   {
     "id": "3127-2013-4-it-s-a-miracle",
-    "title": "It\u2019s a Miracle",
+    "title": "It’s a Miracle",
     "speaker": "Neil L. Andersen",
     "year": "2013",
     "month": "April",
@@ -31311,7 +31311,7 @@ window.TALKS = [
   },
   {
     "id": "3132-2013-4-lord-i-believe",
-    "title": "\u201cLord, I Believe\u201d",
+    "title": "“Lord, I Believe”",
     "speaker": "Jeffrey R. Holland",
     "year": "2013",
     "month": "April",
@@ -31521,7 +31521,7 @@ window.TALKS = [
   },
   {
     "id": "3153-2013-10-hastening-the-lord-s-game-plan",
-    "title": "Hastening the Lord\u2019s Game Plan!",
+    "title": "Hastening the Lord’s Game Plan!",
     "speaker": "S. Gifford Nielsen",
     "year": "2013",
     "month": "October",
@@ -31570,7 +31570,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2013/10/put-your-trust-in-the-lord?lang=eng"
   },
   {
-    "id": "3158-2013-10-the-doctrines-and-principles-contained-in-the-articles-of-faith",
+    "id": "3158-2013-10-the-doctrines-and-principles-contained-in-the-articles-of-fa",
     "title": "The Doctrines and Principles Contained in the Articles of Faith",
     "speaker": "L. Tom Perry",
     "year": "2013",
@@ -31582,7 +31582,7 @@ window.TALKS = [
   {
     "id": "3159-2013-10-ye-are-no-more-strangers",
     "title": "Ye Are No More Strangers",
-    "speaker": "G\u00e9rald Causs\u00e9",
+    "speaker": "Gérald Caussé",
     "year": "2013",
     "month": "October",
     "session": "Priesthood Session",
@@ -31681,7 +31681,7 @@ window.TALKS = [
   },
   {
     "id": "3169-2013-10-i-will-not-fail-thee-nor-forsake-thee",
-    "title": "\u201cI Will Not Fail Thee, nor Forsake Thee\u201d",
+    "title": "“I Will Not Fail Thee, nor Forsake Thee”",
     "speaker": "Thomas S. Monson",
     "year": "2013",
     "month": "October",
@@ -31732,7 +31732,7 @@ window.TALKS = [
   {
     "id": "3174-2013-10-look-up",
     "title": "Look Up",
-    "speaker": "Adri\u00e1n Ochoa",
+    "speaker": "Adrián Ochoa",
     "year": "2013",
     "month": "October",
     "session": "Sunday Afternoon Session",
@@ -31821,7 +31821,7 @@ window.TALKS = [
   },
   {
     "id": "3183-2014-4-the-cost-and-blessings-of-discipleship",
-    "title": "The Cost\u2014and Blessings\u2014of Discipleship",
+    "title": "The Cost—and Blessings—of Discipleship",
     "speaker": "Jeffrey R. Holland",
     "year": "2014",
     "month": "April",
@@ -31851,7 +31851,7 @@ window.TALKS = [
   },
   {
     "id": "3186-2014-4-protection-from-pornography-a-christ-focused-home",
-    "title": "Protection from Pornography\u2014a Christ-Focused Home",
+    "title": "Protection from Pornography—a Christ-Focused Home",
     "speaker": "Linda S. Reeves",
     "year": "2014",
     "month": "April",
@@ -31891,7 +31891,7 @@ window.TALKS = [
   },
   {
     "id": "3190-2014-4-i-have-given-you-an-example",
-    "title": "\u201cI Have Given You an Example\u201d",
+    "title": "“I Have Given You an Example”",
     "speaker": "Richard G. Scott",
     "year": "2014",
     "month": "April",
@@ -31901,7 +31901,7 @@ window.TALKS = [
   },
   {
     "id": "3191-2014-4-if-ye-love-me-keep-my-commandments",
-    "title": "\u201cIf Ye Love Me, Keep My Commandments\u201d",
+    "title": "“If Ye Love Me, Keep My Commandments”",
     "speaker": "Robert D. Hales",
     "year": "2014",
     "month": "April",
@@ -31911,7 +31911,7 @@ window.TALKS = [
   },
   {
     "id": "3192-2014-4-let-s-not-take-the-wrong-way",
-    "title": "Let\u2019s Not Take the Wrong Way",
+    "title": "Let’s Not Take the Wrong Way",
     "speaker": "Claudio D. Zivic",
     "year": "2014",
     "month": "April",
@@ -32021,7 +32021,7 @@ window.TALKS = [
   },
   {
     "id": "3203-2014-4-fear-not-i-am-with-thee",
-    "title": "\u201cFear Not; I Am with Thee\u201d",
+    "title": "“Fear Not; I Am with Thee”",
     "speaker": "Jean A. Stevens",
     "year": "2014",
     "month": "April",
@@ -32051,7 +32051,7 @@ window.TALKS = [
   },
   {
     "id": "3206-2014-4-love-the-essence-of-the-gospel",
-    "title": "Love\u2014the Essence of the Gospel",
+    "title": "Love—the Essence of the Gospel",
     "speaker": "Thomas S. Monson",
     "year": "2014",
     "month": "April",
@@ -32211,7 +32211,7 @@ window.TALKS = [
   },
   {
     "id": "3222-2014-10-the-sacrament-a-renewal-for-the-soul",
-    "title": "The Sacrament\u2014a Renewal for the Soul",
+    "title": "The Sacrament—a Renewal for the Soul",
     "speaker": "Cheryl A. Esplin",
     "year": "2014",
     "month": "October",
@@ -32282,7 +32282,7 @@ window.TALKS = [
   {
     "id": "3229-2014-10-approaching-the-throne-of-god-with-confidence",
     "title": "Approaching the Throne of God with Confidence",
-    "speaker": "J\u00f6rg Klebingat",
+    "speaker": "Jörg Klebingat",
     "year": "2014",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -32340,7 +32340,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2014/10/i-know-these-things-of-myself?lang=eng"
   },
   {
-    "id": "3235-2014-10-the-law-of-the-fast-a-personal-responsibility-to-care-for-the-poor-and-needy",
+    "id": "3235-2014-10-the-law-of-the-fast-a-personal-responsibility-to-care-for-th",
     "title": "The Law of the Fast: A Personal Responsibility to Care for the Poor and Needy",
     "speaker": "Dean M. Davies",
     "year": "2014",
@@ -32351,7 +32351,7 @@ window.TALKS = [
   },
   {
     "id": "3236-2014-10-lord-is-it-i",
-    "title": "\u201cLord, Is It I?\u201d",
+    "title": "“Lord, Is It I?”",
     "speaker": "Dieter F. Uchtdorf",
     "year": "2014",
     "month": "October",
@@ -32410,8 +32410,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2014/10/live-according-to-the-words-of-the-prophets?lang=eng"
   },
   {
-    "id": "3242-2014-10-eternal-life-to-know-our-heavenly-father-and-his-son-jesus-christ",
-    "title": "Eternal Life\u2014to Know Our Heavenly Father and His Son, Jesus Christ",
+    "id": "3242-2014-10-eternal-life-to-know-our-heavenly-father-and-his-son-jesus-c",
+    "title": "Eternal Life—to Know Our Heavenly Father and His Son, Jesus Christ",
     "speaker": "Robert D. Hales",
     "year": "2014",
     "month": "October",
@@ -32565,7 +32565,7 @@ window.TALKS = [
     "speaker": "Cheryl A. Esplin",
     "year": "2015",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2015 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2015/04/filling-our-homes-with-light-and-truth?lang=eng"
   },
@@ -32575,7 +32575,7 @@ window.TALKS = [
     "speaker": "Carole M. Stephens",
     "year": "2015",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2015 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2015/04/the-family-is-of-god?lang=eng"
   },
@@ -32585,7 +32585,7 @@ window.TALKS = [
     "speaker": "Bonnie L. Oscarson",
     "year": "2015",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2015 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2015/04/defenders-of-the-family-proclamation?lang=eng"
   },
@@ -32595,13 +32595,13 @@ window.TALKS = [
     "speaker": "Henry B. Eyring",
     "year": "2015",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2015 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2015/04/the-comforter?lang=eng"
   },
   {
     "id": "3261-2015-4-is-not-this-the-fast-that-i-have-chosen",
-    "title": "\u201cIs Not This the Fast That I Have Chosen?\u201d",
+    "title": "“Is Not This the Fast That I Have Chosen?”",
     "speaker": "Henry B. Eyring",
     "year": "2015",
     "month": "April",
@@ -32621,7 +32621,7 @@ window.TALKS = [
   },
   {
     "id": "3263-2015-4-we-ll-ascend-together",
-    "title": "We\u2019ll Ascend Together",
+    "title": "We’ll Ascend Together",
     "speaker": "Linda K. Burton",
     "year": "2015",
     "month": "April",
@@ -32651,7 +32651,7 @@ window.TALKS = [
   },
   {
     "id": "3266-2015-4-why-marriage-and-family-matter-everywhere-in-the-world",
-    "title": "Why Marriage and Family Matter\u2014Everywhere in the World",
+    "title": "Why Marriage and Family Matter—Everywhere in the World",
     "speaker": "L. Tom Perry",
     "year": "2015",
     "month": "April",
@@ -32741,7 +32741,7 @@ window.TALKS = [
   },
   {
     "id": "3275-2015-4-fatherhood-our-eternal-destiny",
-    "title": "Fatherhood\u2014Our Eternal Destiny",
+    "title": "Fatherhood—Our Eternal Destiny",
     "speaker": "Larry M. Gibson",
     "year": "2015",
     "month": "April",
@@ -32771,7 +32771,7 @@ window.TALKS = [
   },
   {
     "id": "3278-2015-4-the-priesthood-a-sacred-gift",
-    "title": "The Priesthood\u2014a Sacred Gift",
+    "title": "The Priesthood—a Sacred Gift",
     "speaker": "Thomas S. Monson",
     "year": "2015",
     "month": "April",
@@ -32802,7 +32802,7 @@ window.TALKS = [
   {
     "id": "3281-2015-4-seeking-the-lord",
     "title": "Seeking the Lord",
-    "speaker": "Jos\u00e9 A. Teixeira",
+    "speaker": "José A. Teixeira",
     "year": "2015",
     "month": "April",
     "session": "Sunday Morning Session",
@@ -32812,7 +32812,7 @@ window.TALKS = [
   {
     "id": "3282-2015-4-is-it-still-wonderful-to-you",
     "title": "Is It Still Wonderful to You?",
-    "speaker": "G\u00e9rald Causs\u00e9",
+    "speaker": "Gérald Caussé",
     "year": "2015",
     "month": "April",
     "session": "Sunday Morning Session",
@@ -32925,7 +32925,7 @@ window.TALKS = [
     "speaker": "Rosemary M. Wixom",
     "year": "2015",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2015 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2015/10/discovering-the-divinity-within?lang=eng"
   },
@@ -32935,7 +32935,7 @@ window.TALKS = [
     "speaker": "Linda S. Reeves",
     "year": "2015",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2015 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2015/10/worthy-of-our-promised-blessings?lang=eng"
   },
@@ -32945,7 +32945,7 @@ window.TALKS = [
     "speaker": "Carol F. McConkie",
     "year": "2015",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2015 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2015/10/here-to-serve-a-righteous-cause?lang=eng"
   },
@@ -32955,7 +32955,7 @@ window.TALKS = [
     "speaker": "Dieter F. Uchtdorf",
     "year": "2015",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2015 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2015/10/a-summer-with-great-aunt-rose?lang=eng"
   },
@@ -33012,7 +33012,7 @@ window.TALKS = [
   {
     "id": "3302-2015-10-the-pleasing-word-of-god",
     "title": "The Pleasing Word of God",
-    "speaker": "Francisco J. Vi\u00f1as",
+    "speaker": "Francisco J. Viñas",
     "year": "2015",
     "month": "October",
     "session": "Saturday Morning Session",
@@ -33020,8 +33020,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2015/10/the-pleasing-word-of-god?lang=eng"
   },
   {
-    "id": "3303-2015-10-shipshape-and-bristol-fashion-be-temple-worthy-in-good-times-and-bad-times",
-    "title": "Shipshape and Bristol Fashion: Be Temple Worthy\u2014in Good Times and Bad Times",
+    "id": "3303-2015-10-shipshape-and-bristol-fashion-be-temple-worthy-in-good-times",
+    "title": "Shipshape and Bristol Fashion: Be Temple Worthy—in Good Times and Bad Times",
     "speaker": "Quentin L. Cook",
     "year": "2015",
     "month": "October",
@@ -33031,7 +33031,7 @@ window.TALKS = [
   },
   {
     "id": "3304-2015-10-meeting-the-challenges-of-today-s-world",
-    "title": "Meeting the Challenges of Today\u2019s World",
+    "title": "Meeting the Challenges of Today’s World",
     "speaker": "Robert D. Hales",
     "year": "2015",
     "month": "October",
@@ -33051,7 +33051,7 @@ window.TALKS = [
   },
   {
     "id": "3306-2015-10-it-s-never-too-early-and-it-s-never-too-late",
-    "title": "It\u2019s Never Too Early and It\u2019s Never Too Late",
+    "title": "It’s Never Too Early and It’s Never Too Late",
     "speaker": "Bradley D. Foster",
     "year": "2015",
     "month": "October",
@@ -33061,7 +33061,7 @@ window.TALKS = [
   },
   {
     "id": "3307-2015-10-tested-and-tempted-but-helped",
-    "title": "Tested and Tempted\u2014but Helped",
+    "title": "Tested and Tempted—but Helped",
     "speaker": "Hugo Montoya",
     "year": "2015",
     "month": "October",
@@ -33181,7 +33181,7 @@ window.TALKS = [
   },
   {
     "id": "3319-2015-10-through-god-s-eyes",
-    "title": "Through God\u2019s Eyes",
+    "title": "Through God’s Eyes",
     "speaker": "Dale G. Renlund",
     "year": "2015",
     "month": "October",
@@ -33261,7 +33261,7 @@ window.TALKS = [
   },
   {
     "id": "3327-2015-10-if-ye-love-me-keep-my-commandments",
-    "title": "\u201cIf Ye Love Me, Keep My Commandments\u201d",
+    "title": "“If Ye Love Me, Keep My Commandments”",
     "speaker": "Carole M. Stephens",
     "year": "2015",
     "month": "October",
@@ -33301,7 +33301,7 @@ window.TALKS = [
   },
   {
     "id": "3331-2015-10-chosen-to-bear-testimony-of-my-name",
-    "title": "\u201cChosen to Bear Testimony of My Name\u201d",
+    "title": "“Chosen to Bear Testimony of My Name”",
     "speaker": "David A. Bednar",
     "year": "2015",
     "month": "October",
@@ -33315,7 +33315,7 @@ window.TALKS = [
     "speaker": "Cheryl A. Esplin",
     "year": "2016",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2016 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2016/04/he-asks-us-to-be-his-hands?lang=eng"
   },
@@ -33325,17 +33325,17 @@ window.TALKS = [
     "speaker": "Neill F. Marriott",
     "year": "2016",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2016 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2016/04/what-shall-we-do?lang=eng"
   },
   {
     "id": "3334-2016-4-i-was-a-stranger",
-    "title": "\u201cI Was a Stranger\u201d",
+    "title": "“I Was a Stranger”",
     "speaker": "Linda K. Burton",
     "year": "2016",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2016 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2016/04/i-was-a-stranger?lang=eng"
   },
@@ -33345,7 +33345,7 @@ window.TALKS = [
     "speaker": "Henry B. Eyring",
     "year": "2016",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2016 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2016/04/trust-in-that-spirit-which-leadeth-to-do-good?lang=eng"
   },
@@ -33361,7 +33361,7 @@ window.TALKS = [
   },
   {
     "id": "3337-2016-4-a-child-s-guiding-gift",
-    "title": "A Child\u2019s Guiding Gift",
+    "title": "A Child’s Guiding Gift",
     "speaker": "Mary R. Durham",
     "year": "2016",
     "month": "April",
@@ -33411,7 +33411,7 @@ window.TALKS = [
   },
   {
     "id": "3342-2016-4-that-i-might-draw-all-men-unto-me",
-    "title": "\u201cThat I Might Draw All Men unto Me\u201d",
+    "title": "“That I Might Draw All Men unto Me”",
     "speaker": "Dale G. Renlund",
     "year": "2016",
     "month": "April",
@@ -33431,7 +33431,7 @@ window.TALKS = [
   },
   {
     "id": "3344-2016-4-whoso-receiveth-them-receiveth-me",
-    "title": "\u201cWhoso Receiveth Them, Receiveth Me\u201d",
+    "title": "“Whoso Receiveth Them, Receiveth Me”",
     "speaker": "Neil L. Andersen",
     "year": "2016",
     "month": "April",
@@ -33665,7 +33665,7 @@ window.TALKS = [
     "speaker": "Jean B. Bingham",
     "year": "2016",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2016 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2016/10/i-will-bring-the-light-of-the-gospel-into-my-home?lang=eng"
   },
@@ -33675,7 +33675,7 @@ window.TALKS = [
     "speaker": "Carole M. Stephens",
     "year": "2016",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2016 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2016/10/the-master-healer?lang=eng"
   },
@@ -33685,7 +33685,7 @@ window.TALKS = [
     "speaker": "Bonnie L. Oscarson",
     "year": "2016",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2016 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2016/10/rise-up-in-strength-sisters-in-zion?lang=eng"
   },
@@ -33695,7 +33695,7 @@ window.TALKS = [
     "speaker": "Dieter F. Uchtdorf",
     "year": "2016",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2016 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2016/10/fourth-floor-last-door?lang=eng"
   },
@@ -33711,7 +33711,7 @@ window.TALKS = [
   },
   {
     "id": "3372-2016-10-come-follow-me-by-practicing-christian-love-and-service",
-    "title": "\u201cCome, Follow Me\u201d by Practicing Christian Love and Service",
+    "title": "“Come, Follow Me” by Practicing Christian Love and Service",
     "speaker": "Robert D. Hales",
     "year": "2016",
     "month": "October",
@@ -33721,7 +33721,7 @@ window.TALKS = [
   },
   {
     "id": "3373-2016-10-the-soul-s-sincere-desire",
-    "title": "The Soul\u2019s Sincere Desire",
+    "title": "The Soul’s Sincere Desire",
     "speaker": "Carol F. McConkie",
     "year": "2016",
     "month": "October",
@@ -33731,7 +33731,7 @@ window.TALKS = [
   },
   {
     "id": "3374-2016-10-a-choice-seer-will-i-raise-up",
-    "title": "\u201cA Choice Seer Will I Raise Up\u201d",
+    "title": "“A Choice Seer Will I Raise Up”",
     "speaker": "Craig C. Christensen",
     "year": "2016",
     "month": "October",
@@ -33791,7 +33791,7 @@ window.TALKS = [
   },
   {
     "id": "3380-2016-10-abide-in-my-love",
-    "title": "\u201cAbide in My Love\u201d",
+    "title": "“Abide in My Love”",
     "speaker": "D. Todd Christofferson",
     "year": "2016",
     "month": "October",
@@ -33961,7 +33961,7 @@ window.TALKS = [
   },
   {
     "id": "3397-2016-10-if-ye-had-known-me",
-    "title": "\u201cIf Ye Had Known Me\u201d",
+    "title": "“If Ye Had Known Me”",
     "speaker": "David A. Bednar",
     "year": "2016",
     "month": "October",
@@ -34035,7 +34035,7 @@ window.TALKS = [
     "speaker": "Bonnie H. Cordon",
     "year": "2017",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2017 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2017/04/trust-in-the-lord-and-lean-not?lang=eng"
   },
@@ -34045,7 +34045,7 @@ window.TALKS = [
     "speaker": "Carol F. McConkie",
     "year": "2017",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2017 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2017/04/the-beauty-of-holiness?lang=eng"
   },
@@ -34055,17 +34055,17 @@ window.TALKS = [
     "speaker": "Linda K. Burton",
     "year": "2017",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2017 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2017/04/certain-women?lang=eng"
   },
   {
     "id": "3407-2017-4-my-peace-i-leave-with-you",
-    "title": "\u201cMy Peace I Leave with You\u201d",
+    "title": "“My Peace I Leave with You”",
     "speaker": "Henry B. Eyring",
     "year": "2017",
     "month": "April",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "April 2017 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2017/04/my-peace-i-leave-with-you?lang=eng"
   },
@@ -34091,7 +34091,7 @@ window.TALKS = [
   },
   {
     "id": "3410-2017-4-our-father-s-glorious-plan",
-    "title": "Our Father\u2019s Glorious Plan",
+    "title": "Our Father’s Glorious Plan",
     "speaker": "Weatherford T. Clayton",
     "year": "2017",
     "month": "April",
@@ -34172,7 +34172,7 @@ window.TALKS = [
   {
     "id": "3418-2017-4-the-language-of-the-gospel",
     "title": "The Language of the Gospel",
-    "speaker": "Valeri V. Cord\u00f3n",
+    "speaker": "Valeri V. Cordón",
     "year": "2017",
     "month": "April",
     "session": "Saturday Afternoon Session",
@@ -34222,7 +34222,7 @@ window.TALKS = [
   {
     "id": "3423-2017-4-prepare-the-way",
     "title": "Prepare the Way",
-    "speaker": "G\u00e9rald Causs\u00e9",
+    "speaker": "Gérald Caussé",
     "year": "2017",
     "month": "April",
     "session": "General Priesthood Session",
@@ -34241,7 +34241,7 @@ window.TALKS = [
   },
   {
     "id": "3425-2017-4-walk-with-me",
-    "title": "\u201cWalk with Me\u201d",
+    "title": "“Walk with Me”",
     "speaker": "Henry B. Eyring",
     "year": "2017",
     "month": "April",
@@ -34271,7 +34271,7 @@ window.TALKS = [
   },
   {
     "id": "3428-2017-4-don-t-look-around-look-up",
-    "title": "Don\u2019t Look Around, Look Up!",
+    "title": "Don’t Look Around, Look Up!",
     "speaker": "Yoon Hwan Choi",
     "year": "2017",
     "month": "April",
@@ -34372,7 +34372,7 @@ window.TALKS = [
   {
     "id": "3438-2017-4-that-our-light-may-be-a-standard-for-the-nations",
     "title": "That Our Light May Be a Standard for the Nations",
-    "speaker": "Benjam\u00edn De Hoyos",
+    "speaker": "Benjamín De Hoyos",
     "year": "2017",
     "month": "April",
     "session": "Sunday Afternoon Session",
@@ -34395,7 +34395,7 @@ window.TALKS = [
     "speaker": "Sharon Eubank",
     "year": "2017",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2017 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2017/10/turn-on-your-light?lang=eng"
   },
@@ -34405,7 +34405,7 @@ window.TALKS = [
     "speaker": "Neill F. Marriott",
     "year": "2017",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2017 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2017/10/abiding-in-god-and-repairing-the-breach?lang=eng"
   },
@@ -34415,7 +34415,7 @@ window.TALKS = [
     "speaker": "Joy D. Jones",
     "year": "2017",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2017 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2017/10/value-beyond-measure?lang=eng"
   },
@@ -34425,7 +34425,7 @@ window.TALKS = [
     "speaker": "Dieter F. Uchtdorf",
     "year": "2017",
     "month": "October",
-    "session": "General Women\u2019s Session",
+    "session": "General Women’s Session",
     "reference": "October 2017 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2017/10/three-sisters?lang=eng"
   },
@@ -34461,7 +34461,7 @@ window.TALKS = [
   },
   {
     "id": "3447-2017-10-i-have-a-work-for-thee",
-    "title": "\u201cI Have a Work for Thee\u201d",
+    "title": "“I Have a Work for Thee”",
     "speaker": "John C. Pingree Jr.",
     "year": "2017",
     "month": "October",
@@ -34481,7 +34481,7 @@ window.TALKS = [
   },
   {
     "id": "3449-2017-10-be-ye-therefore-perfect-eventually",
-    "title": "Be Ye Therefore Perfect\u2014Eventually",
+    "title": "Be Ye Therefore Perfect—Eventually",
     "speaker": "Jeffrey R. Holland",
     "year": "2017",
     "month": "October",
@@ -34551,7 +34551,7 @@ window.TALKS = [
   },
   {
     "id": "3456-2017-10-the-priesthood-and-the-savior-s-atoning-power",
-    "title": "The Priesthood and the Savior\u2019s Atoning Power",
+    "title": "The Priesthood and the Savior’s Atoning Power",
     "speaker": "Dale G. Renlund",
     "year": "2017",
     "month": "October",
@@ -34671,7 +34671,7 @@ window.TALKS = [
   },
   {
     "id": "3468-2017-10-god-s-compelling-witness-the-book-of-mormon",
-    "title": "God\u2019s Compelling Witness: The Book of Mormon",
+    "title": "God’s Compelling Witness: The Book of Mormon",
     "speaker": "Tad R. Callister",
     "year": "2017",
     "month": "October",
@@ -34701,7 +34701,7 @@ window.TALKS = [
   },
   {
     "id": "3471-2017-10-essential-truths-our-need-to-act",
-    "title": "Essential Truths\u2014Our Need to Act",
+    "title": "Essential Truths—Our Need to Act",
     "speaker": "Adilson de Paula Parrella",
     "year": "2017",
     "month": "October",
@@ -34722,7 +34722,7 @@ window.TALKS = [
   {
     "id": "3473-2017-10-love-one-another-as-he-has-loved-us",
     "title": "Love One Another as He Has Loved Us",
-    "speaker": "Jos\u00e9 L. Alonso",
+    "speaker": "José L. Alonso",
     "year": "2017",
     "month": "October",
     "session": "Sunday Afternoon Session",
@@ -34851,7 +34851,7 @@ window.TALKS = [
   },
   {
     "id": "3486-2018-4-teaching-in-the-home-a-joyful-and-sacred-responsibility",
-    "title": "Teaching in the Home\u2014a Joyful and Sacred Responsibility",
+    "title": "Teaching in the Home—a Joyful and Sacred Responsibility",
     "speaker": "Devin G. Durrant",
     "year": "2018",
     "month": "April",
@@ -34960,7 +34960,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2018/04/with-one-accord?lang=eng"
   },
   {
-    "id": "3497-2018-4-pure-love-the-true-sign-of-every-true-disciple-of-jesus-christ",
+    "id": "3497-2018-4-pure-love-the-true-sign-of-every-true-disciple-of-jesus-chri",
     "title": "Pure Love: The True Sign of Every True Disciple of Jesus Christ",
     "speaker": "Massimo De Feo",
     "year": "2018",
@@ -35041,7 +35041,7 @@ window.TALKS = [
   },
   {
     "id": "3505-2018-4-be-with-and-strengthen-them",
-    "title": "\u201cBe With and Strengthen Them\u201d",
+    "title": "“Be With and Strengthen Them”",
     "speaker": "Jeffrey R. Holland",
     "year": "2018",
     "month": "April",
@@ -35072,7 +35072,7 @@ window.TALKS = [
   {
     "id": "3508-2018-4-it-is-all-about-people",
     "title": "It Is All about People",
-    "speaker": "G\u00e9rald Causs\u00e9",
+    "speaker": "Gérald Caussé",
     "year": "2018",
     "month": "April",
     "session": "Sunday Afternoon Session",
@@ -35110,7 +35110,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2018/10/opening-remarks?lang=eng"
   },
   {
-    "id": "3512-2018-10-deep-and-lasting-conversion-to-heavenly-father-and-the-lord-jesus-christ",
+    "id": "3512-2018-10-deep-and-lasting-conversion-to-heavenly-father-and-the-lord-",
     "title": "Deep and Lasting Conversion to Heavenly Father and the Lord Jesus Christ",
     "speaker": "Quentin L. Cook",
     "year": "2018",
@@ -35181,7 +35181,7 @@ window.TALKS = [
   },
   {
     "id": "3519-2018-10-come-listen-to-a-prophet-s-voice",
-    "title": "Come, Listen to a Prophet\u2019s Voice",
+    "title": "Come, Listen to a Prophet’s Voice",
     "speaker": "Dean M. Davies",
     "year": "2018",
     "month": "October",
@@ -35281,7 +35281,7 @@ window.TALKS = [
   },
   {
     "id": "3529-2018-10-sisters-participation-in-the-gathering-of-israel",
-    "title": "Sisters\u2019 Participation in the Gathering of Israel",
+    "title": "Sisters’ Participation in the Gathering of Israel",
     "speaker": "Russell M. Nelson",
     "year": "2018",
     "month": "October",
@@ -35631,7 +35631,7 @@ window.TALKS = [
   },
   {
     "id": "3564-2019-4-great-love-for-our-father-s-children",
-    "title": "Great Love for Our Father\u2019s Children",
+    "title": "Great Love for Our Father’s Children",
     "speaker": "Quentin L. Cook",
     "year": "2019",
     "month": "April",
@@ -35641,7 +35641,7 @@ window.TALKS = [
   },
   {
     "id": "3565-2019-4-preparing-for-the-lord-s-return",
-    "title": "Preparing for the Lord\u2019s Return",
+    "title": "Preparing for the Lord’s Return",
     "speaker": "D. Todd Christofferson",
     "year": "2019",
     "month": "April",
@@ -35661,7 +35661,7 @@ window.TALKS = [
   },
   {
     "id": "3567-2019-4-come-follow-me",
-    "title": "\u201cCome, Follow Me\u201d",
+    "title": "“Come, Follow Me”",
     "speaker": "Russell M. Nelson",
     "year": "2019",
     "month": "April",
@@ -35822,7 +35822,7 @@ window.TALKS = [
   {
     "id": "3583-2019-10-found-through-the-power-of-the-book-of-mormon",
     "title": "Found through the Power of the Book of Mormon",
-    "speaker": "Rub\u00e9n V. Alliaud",
+    "speaker": "Rubén V. Alliaud",
     "year": "2019",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -35961,8 +35961,8 @@ window.TALKS = [
   },
   {
     "id": "3597-2019-10-the-savior-s-touch",
-    "title": "The Savior\u2019s Touch",
-    "speaker": "Walter F. Gonz\u00e1lez",
+    "title": "The Savior’s Touch",
+    "speaker": "Walter F. González",
     "year": "2019",
     "month": "October",
     "session": "Sunday Morning Session",
@@ -36141,7 +36141,7 @@ window.TALKS = [
   },
   {
     "id": "3615-2020-4-come-unto-christ-living-as-latter-day-saints",
-    "title": "Come unto Christ\u2014Living as Latter-day Saints",
+    "title": "Come unto Christ—Living as Latter-day Saints",
     "speaker": "John A. McCune",
     "year": "2020",
     "month": "April",
@@ -36152,7 +36152,7 @@ window.TALKS = [
   {
     "id": "3616-2020-4-a-living-witness-of-the-living-christ",
     "title": "A Living Witness of the Living Christ",
-    "speaker": "G\u00e9rald Causs\u00e9",
+    "speaker": "Gérald Caussé",
     "year": "2020",
     "month": "April",
     "session": "Saturday Afternoon Session",
@@ -36190,8 +36190,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2020/04/28stevenson?lang=eng"
   },
   {
-    "id": "3620-2020-4-hosanna-and-hallelujah-the-living-jesus-christ-the-heart-of-restoration-and-easter",
-    "title": "Hosanna and Hallelujah\u2014The Living Jesus Christ: The Heart of Restoration and Easter",
+    "id": "3620-2020-4-hosanna-and-hallelujah-the-living-jesus-christ-the-heart-of-",
+    "title": "Hosanna and Hallelujah—The Living Jesus Christ: The Heart of Restoration and Easter",
     "speaker": "Gerrit W. Gong",
     "year": "2020",
     "month": "April",
@@ -36221,7 +36221,7 @@ window.TALKS = [
   },
   {
     "id": "3623-2020-4-united-in-accomplishing-god-s-work",
-    "title": "United in Accomplishing God\u2019s Work",
+    "title": "United in Accomplishing God’s Work",
     "speaker": "Jean B. Bingham",
     "year": "2020",
     "month": "April",
@@ -36291,7 +36291,7 @@ window.TALKS = [
   },
   {
     "id": "3630-2020-4-let-this-house-be-built-unto-my-name",
-    "title": "\u201cLet This House Be Built unto My Name\u201d",
+    "title": "“Let This House Be Built unto My Name”",
     "speaker": "David A. Bednar",
     "year": "2020",
     "month": "April",
@@ -36330,7 +36330,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2020/04/51oaks?lang=eng"
   },
   {
-    "id": "3634-2020-4-the-blessing-of-continuing-revelation-to-prophets-and-personal-revelation-to-guide-our-lives",
+    "id": "3634-2020-4-the-blessing-of-continuing-revelation-to-prophets-and-person",
     "title": "The Blessing of Continuing Revelation to Prophets and Personal Revelation to Guide Our Lives",
     "speaker": "Quentin L. Cook",
     "year": "2020",
@@ -36342,7 +36342,7 @@ window.TALKS = [
   {
     "id": "3635-2020-4-finding-refuge-from-the-storms-of-life",
     "title": "Finding Refuge from the Storms of Life",
-    "speaker": "Ricardo P. Gim\u00e9nez",
+    "speaker": "Ricardo P. Giménez",
     "year": "2020",
     "month": "April",
     "session": "Sunday Afternoon Session",
@@ -36761,7 +36761,7 @@ window.TALKS = [
   },
   {
     "id": "3677-2021-4-teaching-in-the-savior-s-way",
-    "title": "Teaching in the Savior\u2019s Way",
+    "title": "Teaching in the Savior’s Way",
     "speaker": "Jan E. Newman",
     "year": "2021",
     "month": "April",
@@ -36861,7 +36861,7 @@ window.TALKS = [
   },
   {
     "id": "3687-2021-4-bishops-shepherds-over-the-lord-s-flock",
-    "title": "Bishops\u2014Shepherds over the Lord\u2019s Flock",
+    "title": "Bishops—Shepherds over the Lord’s Flock",
     "speaker": "Quentin L. Cook",
     "year": "2021",
     "month": "April",
@@ -36962,7 +36962,7 @@ window.TALKS = [
   {
     "id": "3697-2021-4-remember-your-way-back-home",
     "title": "Remember Your Way Back Home",
-    "speaker": "Jos\u00e9 A. Teixeira",
+    "speaker": "José A. Teixeira",
     "year": "2021",
     "month": "April",
     "session": "Sunday Morning Session",
@@ -37021,7 +37021,7 @@ window.TALKS = [
   },
   {
     "id": "3703-2021-4-behold-i-am-a-god-of-miracles",
-    "title": "\u201cBehold! I Am a God of Miracles\u201d",
+    "title": "“Behold! I Am a God of Miracles”",
     "speaker": "Ronald A. Rasband",
     "year": "2021",
     "month": "April",
@@ -37061,7 +37061,7 @@ window.TALKS = [
   },
   {
     "id": "3707-2021-4-the-principles-of-my-gospel",
-    "title": "\u201cThe Principles of My Gospel\u201d",
+    "title": "“The Principles of My Gospel”",
     "speaker": "David A. Bednar",
     "year": "2021",
     "month": "April",
@@ -37101,7 +37101,7 @@ window.TALKS = [
   },
   {
     "id": "3711-2021-10-come-unto-christ-and-don-t-come-alone",
-    "title": "Come unto Christ and Don\u2019t Come Alone",
+    "title": "Come unto Christ and Don’t Come Alone",
     "speaker": "Bonnie H. Cordon",
     "year": "2021",
     "month": "October",
@@ -37111,7 +37111,7 @@ window.TALKS = [
   },
   {
     "id": "3712-2021-10-the-savior-s-abiding-compassion",
-    "title": "The Savior\u2019s Abiding Compassion",
+    "title": "The Savior’s Abiding Compassion",
     "speaker": "Ulisses Soares",
     "year": "2021",
     "month": "October",
@@ -37181,7 +37181,7 @@ window.TALKS = [
   },
   {
     "id": "3719-2021-10-god-s-love-the-most-joyous-to-the-soul",
-    "title": "God\u2019s Love: The Most Joyous to the Soul",
+    "title": "God’s Love: The Most Joyous to the Soul",
     "speaker": "Susan H. Porter",
     "year": "2021",
     "month": "October",
@@ -37222,7 +37222,7 @@ window.TALKS = [
   {
     "id": "3723-2021-10-favored-of-the-lord-in-all-my-days",
     "title": "Favored of the Lord in All My Days",
-    "speaker": "Mois\u00e9s Villanueva",
+    "speaker": "Moisés Villanueva",
     "year": "2021",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -37231,7 +37231,7 @@ window.TALKS = [
   },
   {
     "id": "3724-2021-10-simply-beautiful-beautifully-simple",
-    "title": "Simply Beautiful\u2014Beautifully Simple",
+    "title": "Simply Beautiful—Beautifully Simple",
     "speaker": "Gary E. Stevenson",
     "year": "2021",
     "month": "October",
@@ -37241,7 +37241,7 @@ window.TALKS = [
   },
   {
     "id": "3725-2021-10-lovest-thou-me-more-than-these",
-    "title": "\u201cLovest Thou Me More Than These?\u201d",
+    "title": "“Lovest Thou Me More Than These?”",
     "speaker": "M. Russell Ballard",
     "year": "2021",
     "month": "October",
@@ -37251,7 +37251,7 @@ window.TALKS = [
   },
   {
     "id": "3726-2021-10-i-pray-he-ll-use-us",
-    "title": "I Pray He\u2019ll Use Us",
+    "title": "I Pray He’ll Use Us",
     "speaker": "Sharon Eubank",
     "year": "2021",
     "month": "October",
@@ -37511,7 +37511,7 @@ window.TALKS = [
   },
   {
     "id": "3752-2022-4-a-mighty-change-of-heart-i-have-nothing-more-to-give-you",
-    "title": "A Mighty Change of Heart: \u201cI Have Nothing More to Give You\u201d",
+    "title": "A Mighty Change of Heart: “I Have Nothing More to Give You”",
     "speaker": "Eduardo Gavarret",
     "year": "2022",
     "month": "April",
@@ -37550,7 +37550,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2022/04/23holland?lang=eng"
   },
   {
-    "id": "3756-2022-4-he-is-risen-with-healing-in-his-wings-we-can-be-more-than-conquerors",
+    "id": "3756-2022-4-he-is-risen-with-healing-in-his-wings-we-can-be-more-than-co",
     "title": "He Is Risen with Healing in His Wings: We Can Be More Than Conquerors",
     "speaker": "Patrick Kearon",
     "year": "2022",
@@ -37582,7 +37582,7 @@ window.TALKS = [
   {
     "id": "3759-2022-4-is-the-plan-working",
     "title": "Is the Plan Working?",
-    "speaker": "Adri\u00e1n Ochoa",
+    "speaker": "Adrián Ochoa",
     "year": "2022",
     "month": "April",
     "session": "Saturday Afternoon Session",
@@ -37591,7 +37591,7 @@ window.TALKS = [
   },
   {
     "id": "3760-2022-4-then-will-i-make-weak-things-become-strong",
-    "title": "\u201cThen Will I Make Weak Things Become Strong\u201d",
+    "title": "“Then Will I Make Weak Things Become Strong”",
     "speaker": "Kevin S. Hamilton",
     "year": "2022",
     "month": "April",
@@ -37640,7 +37640,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2022/04/33craven?lang=eng"
   },
   {
-    "id": "3765-2022-4-covenants-with-god-strengthen-protect-and-prepare-us-for-eternal-glory",
+    "id": "3765-2022-4-covenants-with-god-strengthen-protect-and-prepare-us-for-ete",
     "title": "Covenants with God Strengthen, Protect, and Prepare Us for Eternal Glory",
     "speaker": "Jean B. Bingham",
     "year": "2022",
@@ -37731,7 +37731,7 @@ window.TALKS = [
   },
   {
     "id": "3774-2022-4-divine-love-in-the-father-s-plan",
-    "title": "Divine Love in the Father\u2019s Plan",
+    "title": "Divine Love in the Father’s Plan",
     "speaker": "Dallin H. Oaks",
     "year": "2022",
     "month": "April",
@@ -37752,7 +37752,7 @@ window.TALKS = [
   {
     "id": "3776-2022-4-valiant-discipleship-in-the-latter-days",
     "title": "Valiant Discipleship in the Latter Days",
-    "speaker": "J\u00f6rg Klebingat",
+    "speaker": "Jörg Klebingat",
     "year": "2022",
     "month": "April",
     "session": "Sunday Afternoon Session",
@@ -37962,7 +37962,7 @@ window.TALKS = [
   {
     "id": "3797-2022-10-our-earthly-stewardship",
     "title": "Our Earthly Stewardship",
-    "speaker": "G\u00e9rald Causs\u00e9",
+    "speaker": "Gérald Caussé",
     "year": "2022",
     "month": "October",
     "session": "Saturday Evening Session",
@@ -38181,7 +38181,7 @@ window.TALKS = [
   },
   {
     "id": "3819-2023-4-just-keep-going-with-faith",
-    "title": "Just Keep Going\u2014with Faith",
+    "title": "Just Keep Going—with Faith",
     "speaker": "Carl B. Cook",
     "year": "2023",
     "month": "April",
@@ -38231,7 +38231,7 @@ window.TALKS = [
   },
   {
     "id": "3824-2023-4-accessing-god-s-power-through-covenants",
-    "title": "Accessing God\u2019s Power through Covenants",
+    "title": "Accessing God’s Power through Covenants",
     "speaker": "Dale G. Renlund",
     "year": "2023",
     "month": "April",
@@ -38250,8 +38250,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2023/04/24meurs?lang=eng"
   },
   {
-    "id": "3826-2023-4-your-patriarchal-blessing-inspired-direction-from-heavenly-father",
-    "title": "Your Patriarchal Blessing\u2014Inspired Direction from Heavenly Father",
+    "id": "3826-2023-4-your-patriarchal-blessing-inspired-direction-from-heavenly-f",
+    "title": "Your Patriarchal Blessing—Inspired Direction from Heavenly Father",
     "speaker": "Randall K. Bennett",
     "year": "2023",
     "month": "April",
@@ -38261,7 +38261,7 @@ window.TALKS = [
   },
   {
     "id": "3827-2023-4-there-can-be-nothing-so-exquisite-and-sweet-as-was-my-joy",
-    "title": "\u201cThere Can Be Nothing So Exquisite and Sweet as Was My Joy\u201d",
+    "title": "“There Can Be Nothing So Exquisite and Sweet as Was My Joy”",
     "speaker": "Craig C. Christensen",
     "year": "2023",
     "month": "April",
@@ -38280,9 +38280,9 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2023/04/27schmutz?lang=eng"
   },
   {
-    "id": "3829-2023-4-the-work-of-the-temple-and-family-history-one-and-the-same-work",
-    "title": "The Work of the Temple and Family History\u2014One and the Same Work",
-    "speaker": "Benjam\u00edn De Hoyos",
+    "id": "3829-2023-4-the-work-of-the-temple-and-family-history-one-and-the-same-w",
+    "title": "The Work of the Temple and Family History—One and the Same Work",
+    "speaker": "Benjamín De Hoyos",
     "year": "2023",
     "month": "April",
     "session": "Saturday Afternoon Session",
@@ -38471,7 +38471,7 @@ window.TALKS = [
   },
   {
     "id": "3848-2023-4-abide-in-me-and-i-in-you-therefore-walk-with-me",
-    "title": "\u201cAbide in Me, and I in You; Therefore Walk with Me\u201d",
+    "title": "“Abide in Me, and I in You; Therefore Walk with Me”",
     "speaker": "David A. Bednar",
     "year": "2023",
     "month": "April",
@@ -38570,7 +38570,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2023/10/22andersen?lang=eng"
   },
   {
-    "id": "3858-2023-10-preserving-the-voice-of-the-covenant-people-in-the-rising-generation",
+    "id": "3858-2023-10-preserving-the-voice-of-the-covenant-people-in-the-rising-ge",
     "title": "Preserving the Voice of the Covenant People in the Rising Generation",
     "speaker": "Jan E. Newman",
     "year": "2023",
@@ -38651,7 +38651,7 @@ window.TALKS = [
   },
   {
     "id": "3866-2023-10-seeing-god-s-family-through-the-overview-lens",
-    "title": "Seeing God\u2019s Family through the Overview Lens",
+    "title": "Seeing God’s Family through the Overview Lens",
     "speaker": "Tamara W. Runia",
     "year": "2023",
     "month": "October",
@@ -38762,7 +38762,7 @@ window.TALKS = [
   {
     "id": "3877-2023-10-divine-parenting-lessons",
     "title": "Divine Parenting Lessons",
-    "speaker": "Valeri V. Cord\u00f3n",
+    "speaker": "Valeri V. Cordón",
     "year": "2023",
     "month": "October",
     "session": "Sunday Afternoon Session",
@@ -38771,7 +38771,7 @@ window.TALKS = [
   },
   {
     "id": "3878-2023-10-the-savior-s-healing-power-upon-the-isles-of-the-sea",
-    "title": "The Savior\u2019s Healing Power upon the Isles of the Sea",
+    "title": "The Savior’s Healing Power upon the Isles of the Sea",
     "speaker": "J. Kimo Esplin",
     "year": "2023",
     "month": "October",
@@ -38871,7 +38871,7 @@ window.TALKS = [
   },
   {
     "id": "3888-2024-4-be-still-and-know-that-i-am-god",
-    "title": "\u201cBe Still, and Know That I Am God\u201d",
+    "title": "“Be Still, and Know That I Am God”",
     "speaker": "David A. Bednar",
     "year": "2024",
     "month": "April",
@@ -38962,7 +38962,7 @@ window.TALKS = [
   {
     "id": "3897-2024-4-faithful-to-the-end",
     "title": "Faithful to the End",
-    "speaker": "Andrea Mu\u00f1oz Spannaus",
+    "speaker": "Andrea Muñoz Spannaus",
     "year": "2024",
     "month": "April",
     "session": "Saturday Evening Session",
@@ -39031,7 +39031,7 @@ window.TALKS = [
   },
   {
     "id": "3904-2024-4-god-s-intent-is-to-bring-you-home",
-    "title": "God\u2019s Intent Is to Bring You Home",
+    "title": "God’s Intent Is to Bring You Home",
     "speaker": "Patrick Kearon",
     "year": "2024",
     "month": "April",
@@ -39071,7 +39071,7 @@ window.TALKS = [
   },
   {
     "id": "3908-2024-4-call-don-t-fall",
-    "title": "Call, Don\u2019t Fall",
+    "title": "Call, Don’t Fall",
     "speaker": "Taylor G. Godoy",
     "year": "2024",
     "month": "April",
@@ -39110,7 +39110,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2024/04/55andersen?lang=eng"
   },
   {
-    "id": "3912-2024-4-it-is-wisdom-in-the-lord-that-we-should-have-the-book-of-mormon",
+    "id": "3912-2024-4-it-is-wisdom-in-the-lord-that-we-should-have-the-book-of-mor",
     "title": "It Is Wisdom in the Lord That We Should Have the Book of Mormon",
     "speaker": "Mark L. Pace",
     "year": "2024",
@@ -39151,7 +39151,7 @@ window.TALKS = [
   },
   {
     "id": "3916-2024-10-god-s-favourite",
-    "title": "God\u2019s Favourite",
+    "title": "God’s Favourite",
     "speaker": "Karl D. Hirst",
     "year": "2024",
     "month": "October",
@@ -39161,7 +39161,7 @@ window.TALKS = [
   },
   {
     "id": "3917-2024-10-this-is-my-gospel-this-is-my-church",
-    "title": "\u201cThis Is My Gospel\u201d\u2014\u201cThis Is My Church\u201d",
+    "title": "“This Is My Gospel”—“This Is My Church”",
     "speaker": "Dale G. Renlund",
     "year": "2024",
     "month": "October",
@@ -39212,7 +39212,7 @@ window.TALKS = [
   {
     "id": "3922-2024-10-bonded-to-jesus-christ-becoming-the-salt-of-the-earth",
     "title": "Bonded to Jesus Christ: Becoming the Salt of the Earth",
-    "speaker": "Jos\u00e9 A. Teixeira",
+    "speaker": "José A. Teixeira",
     "year": "2024",
     "month": "October",
     "session": "Saturday Afternoon Session",
@@ -39241,7 +39241,7 @@ window.TALKS = [
   },
   {
     "id": "3925-2024-10-ye-are-my-friends",
-    "title": "\u201cYe Are My Friends\u201d",
+    "title": "“Ye Are My Friends”",
     "speaker": "David L. Buckner",
     "year": "2024",
     "month": "October",
@@ -39311,7 +39311,7 @@ window.TALKS = [
   },
   {
     "id": "3932-2024-10-embrace-the-lord-s-gift-of-repentance",
-    "title": "Embrace the Lord\u2019s Gift of Repentance",
+    "title": "Embrace the Lord’s Gift of Repentance",
     "speaker": "Jorge M. Alvarado",
     "year": "2024",
     "month": "October",
@@ -39331,7 +39331,7 @@ window.TALKS = [
   },
   {
     "id": "3934-2024-10-i-am-he",
-    "title": "\u201cI Am He\u201d",
+    "title": "“I Am He”",
     "speaker": "Jeffrey R. Holland",
     "year": "2024",
     "month": "October",
@@ -39410,7 +39410,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2024/10/51uchtdorf?lang=eng"
   },
   {
-    "id": "3942-2024-10-the-words-of-christ-and-the-holy-ghost-will-lead-us-to-the-truth",
+    "id": "3942-2024-10-the-words-of-christ-and-the-holy-ghost-will-lead-us-to-the-t",
     "title": "The Words of Christ and the Holy Ghost Will Lead Us to the Truth",
     "speaker": "Takashi Wada",
     "year": "2024",
@@ -39421,7 +39421,7 @@ window.TALKS = [
   },
   {
     "id": "3943-2024-10-behold-i-am-the-light-which-ye-shall-hold-up",
-    "title": "\u201cBehold I Am the Light Which Ye Shall Hold Up\u201d",
+    "title": "“Behold I Am the Light Which Ye Shall Hold Up”",
     "speaker": "Ronald A. Rasband",
     "year": "2024",
     "month": "October",
@@ -39431,7 +39431,7 @@ window.TALKS = [
   },
   {
     "id": "3944-2024-10-sacred-scriptures-the-foundations-of-faith",
-    "title": "Sacred Scriptures\u2014the Foundations of Faith",
+    "title": "Sacred Scriptures—the Foundations of Faith",
     "speaker": "Quentin L. Cook",
     "year": "2024",
     "month": "October",
@@ -39442,7 +39442,7 @@ window.TALKS = [
   {
     "id": "3945-2024-10-sons-and-daughters-of-god",
     "title": "Sons and Daughters of God",
-    "speaker": "Rub\u00e9n V. Alliaud",
+    "speaker": "Rubén V. Alliaud",
     "year": "2024",
     "month": "October",
     "session": "Sunday Afternoon Session",
@@ -39511,8 +39511,8 @@ window.TALKS = [
   },
   {
     "id": "3952-2025-4-my-love-for-the-savior-is-my-why",
-    "title": "My Love for the Savior Is My \u201cWhy\u201d",
-    "speaker": "Ricardo P. Gim\u00e9nez",
+    "title": "My Love for the Savior Is My “Why”",
+    "speaker": "Ricardo P. Giménez",
     "year": "2025",
     "month": "April",
     "session": "Saturday Morning Session",
@@ -39521,7 +39521,7 @@ window.TALKS = [
   },
   {
     "id": "3953-2025-4-draw-near-unto-me",
-    "title": "\u201cDraw Near unto Me\u201d",
+    "title": "“Draw Near unto Me”",
     "speaker": "Henry B. Eyring",
     "year": "2025",
     "month": "April",
@@ -39551,7 +39551,7 @@ window.TALKS = [
   },
   {
     "id": "3956-2025-4-return-unto-me-that-i-may-heal-you",
-    "title": "\u201cReturn unto Me \u2026 That I May Heal You\u201d",
+    "title": "“Return unto Me … That I May Heal You”",
     "speaker": "S. Mark Palmer",
     "year": "2025",
     "month": "April",
@@ -39591,7 +39591,7 @@ window.TALKS = [
   },
   {
     "id": "3960-2025-4-by-this-all-will-know-that-you-are-my-disciples",
-    "title": "\u201cBy This All Will Know That You Are My Disciples\u201d",
+    "title": "“By This All Will Know That You Are My Disciples”",
     "speaker": "Dieter F. Uchtdorf",
     "year": "2025",
     "month": "April",
@@ -39661,7 +39661,7 @@ window.TALKS = [
   },
   {
     "id": "3967-2025-4-participate-to-prepare-for-christ-s-return",
-    "title": "Participate to Prepare for Christ\u2019s Return",
+    "title": "Participate to Prepare for Christ’s Return",
     "speaker": "Steven D. Shumway",
     "year": "2025",
     "month": "April",
@@ -39670,8 +39670,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2025/04/42shumway?lang=eng"
   },
   {
-    "id": "3968-2025-4-your-repentance-doesn-t-burden-jesus-christ-it-brightens-his-joy",
-    "title": "Your Repentance Doesn\u2019t Burden Jesus Christ; It Brightens His Joy",
+    "id": "3968-2025-4-your-repentance-doesn-t-burden-jesus-christ-it-brightens-his",
+    "title": "Your Repentance Doesn’t Burden Jesus Christ; It Brightens His Joy",
     "speaker": "Tamara W. Runia",
     "year": "2025",
     "month": "April",
@@ -39682,7 +39682,7 @@ window.TALKS = [
   {
     "id": "3969-2025-4-compensating-blessings",
     "title": "Compensating Blessings",
-    "speaker": "G\u00e9rald Causs\u00e9",
+    "speaker": "Gérald Caussé",
     "year": "2025",
     "month": "April",
     "session": "Sunday Morning Session",
@@ -39690,8 +39690,8 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2025/04/44causse?lang=eng"
   },
   {
-    "id": "3970-2025-4-eternity-s-great-gifts-jesus-christ-s-atonement-resurrection-restoration",
-    "title": "Eternity\u2019s Great Gifts: Jesus Christ\u2019s Atonement, Resurrection, Restoration",
+    "id": "3970-2025-4-eternity-s-great-gifts-jesus-christ-s-atonement-resurrection",
+    "title": "Eternity’s Great Gifts: Jesus Christ’s Atonement, Resurrection, Restoration",
     "speaker": "Gerrit W. Gong",
     "year": "2025",
     "month": "April",
@@ -39731,7 +39731,7 @@ window.TALKS = [
   },
   {
     "id": "3974-2025-4-charity-a-sign-of-true-discipleship",
-    "title": "Charity\u2014a Sign of True Discipleship",
+    "title": "Charity—a Sign of True Discipleship",
     "speaker": "Michael B. Strong",
     "year": "2025",
     "month": "April",
@@ -39810,7 +39810,7 @@ window.TALKS = [
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2025/10/12stevenson?lang=eng"
   },
   {
-    "id": "3982-2025-10-tune-your-heart-to-jesus-christ-the-sacred-gift-of-primary-music",
+    "id": "3982-2025-10-tune-your-heart-to-jesus-christ-the-sacred-gift-of-primary-m",
     "title": "Tune Your Heart to Jesus Christ: The Sacred Gift of Primary Music",
     "speaker": "Tracy Y. Browning",
     "year": "2025",
@@ -39861,7 +39861,7 @@ window.TALKS = [
   },
   {
     "id": "3987-2025-10-the-family-proclamation-words-from-god",
-    "title": "The Family Proclamation\u2014Words from God",
+    "title": "The Family Proclamation—Words from God",
     "speaker": "Ronald A. Rasband",
     "year": "2025",
     "month": "October",
@@ -39951,7 +39951,7 @@ window.TALKS = [
   },
   {
     "id": "3996-2025-10-lovest-thou-me",
-    "title": "\u201cLovest Thou Me?\u201d",
+    "title": "“Lovest Thou Me?”",
     "speaker": "Steven C. Barlow",
     "year": "2025",
     "month": "October",
@@ -40032,7 +40032,7 @@ window.TALKS = [
   {
     "id": "4004-2025-10-prophets-of-god",
     "title": "Prophets of God",
-    "speaker": "Andrea Mu\u00f1oz Spannaus",
+    "speaker": "Andrea Muñoz Spannaus",
     "year": "2025",
     "month": "October",
     "session": "Sunday Morning Session",
@@ -40111,7 +40111,7 @@ window.TALKS = [
   },
   {
     "id": "4012-2025-10-the-book-of-mormon-an-immeasurable-treasure-on-our-journey",
-    "title": "The Book of Mormon\u2014an Immeasurable Treasure on Our Journey",
+    "title": "The Book of Mormon—an Immeasurable Treasure on Our Journey",
     "speaker": "Ozani Farias",
     "year": "2025",
     "month": "October",
@@ -40128,5 +40128,685 @@ window.TALKS = [
     "session": "Sunday Afternoon Session",
     "reference": "October 2025 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2025/10/58oaks?lang=eng"
+  },
+  {
+    "id": "4014-2026-4-introduction",
+    "title": "Introduction",
+    "speaker": "Dallin H. Oaks",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/11oaks?lang=eng"
+  },
+  {
+    "id": "4016-2026-4-about-his-business",
+    "title": "About His Business",
+    "speaker": "Patrick Kearon",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/13kearon?lang=eng"
+  },
+  {
+    "id": "4017-2026-4-ministering-that-ye-love-one-another-as-i-have-loved-you",
+    "title": "Ministering—“That Ye Love One Another; as I Have Loved You”",
+    "speaker": "Kristin M. Yee",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/14yee?lang=eng"
+  },
+  {
+    "id": "4018-2026-4-come-home",
+    "title": "Come Home",
+    "speaker": "Clark G. Gilbert",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/15gilbert?lang=eng"
+  },
+  {
+    "id": "4019-2026-4-all-who-have-endured-valiantly",
+    "title": "All Who Have Endured Valiantly",
+    "speaker": "David A. Bednar",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/16bednar?lang=eng"
+  },
+  {
+    "id": "4020-2026-4-follow-the-prophet-he-knows-the-way",
+    "title": "Follow the Prophet; He Knows the Way",
+    "speaker": "Michael John U. Teh",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/17teh?lang=eng"
+  },
+  {
+    "id": "4021-2026-4-tithing-putting-god-first",
+    "title": "Tithing—Putting God First",
+    "speaker": "Jorge T. Becerra",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/18becerra?lang=eng"
+  },
+  {
+    "id": "4022-2026-4-prayers-for-peace",
+    "title": "Prayers for Peace",
+    "speaker": "Henry B. Eyring",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/19eyring?lang=eng"
+  },
+  {
+    "id": "4025-2026-4-lost-luggage-redeemed-souls",
+    "title": "Lost Luggage, Redeemed Souls",
+    "speaker": "Gary E. Stevenson",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/23stevenson?lang=eng"
+  },
+  {
+    "id": "4026-2026-4-christ-author-and-finisher-of-our-faith",
+    "title": "Christ—Author and Finisher of Our Faith",
+    "speaker": "Eduardo F. Ortega",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/24ortega?lang=eng"
+  },
+  {
+    "id": "4027-2026-4-i-will-give-away-all-my-sins-to-know-thee",
+    "title": "“I Will Give Away All My Sins to Know Thee”",
+    "speaker": "Wan-Liang Wu",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/25wu?lang=eng"
+  },
+  {
+    "id": "4028-2026-4-jesus-christ-is-not-our-burden-he-is-our-relief",
+    "title": "Jesus Christ Is Not Our Burden; He Is Our Relief",
+    "speaker": "David J. Wunderli",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/26wunderli?lang=eng"
+  },
+  {
+    "id": "4029-2026-4-love-all-love-each",
+    "title": "Love All; Love Each",
+    "speaker": "Gérald Caussé",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/27causse?lang=eng"
+  },
+  {
+    "id": "4030-2026-4-jesus-christ-is-the-way",
+    "title": "Jesus Christ Is the Way",
+    "speaker": "Brian J. Holmes",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/28holmes?lang=eng"
+  },
+  {
+    "id": "4031-2026-4-he-knows-you-by-name",
+    "title": "He Knows You by Name",
+    "speaker": "Clement M. Matswagothata",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/29matswagothata?lang=eng"
+  },
+  {
+    "id": "4032-2026-4-jesus-christ-the-true-vine",
+    "title": "Jesus Christ—the True Vine",
+    "speaker": "Ulisses Soares",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/210soares?lang=eng"
+  },
+  {
+    "id": "4033-2026-4-encounter-at-the-empty-tomb",
+    "title": "Encounter at the Empty Tomb",
+    "speaker": "Dieter F. Uchtdorf",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/41uchtdorf?lang=eng"
+  },
+  {
+    "id": "4034-2026-4-best-days-and-worst-days",
+    "title": "Best Days and Worst Days",
+    "speaker": "Emily Belle Freeman",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/42freeman?lang=eng"
+  },
+  {
+    "id": "4035-2026-4-i-feel-my-savior-s-love",
+    "title": "I Feel My Savior’s Love",
+    "speaker": "Pedro X. Larreal",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/43larreal?lang=eng"
+  },
+  {
+    "id": "4036-2026-4-choose-jesus-christ-as-your-guide",
+    "title": "Choose Jesus Christ as Your Guide",
+    "speaker": "Edward B. Rowe",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/44rowe?lang=eng"
+  },
+  {
+    "id": "4037-2026-4-he-is-risen",
+    "title": "He Is Risen",
+    "speaker": "Ronald A. Rasband",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/45rasband?lang=eng"
+  },
+  {
+    "id": "4038-2026-4-because-of-jesus-christ",
+    "title": "Because of Jesus Christ",
+    "speaker": "Dale G. Renlund",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/46renlund?lang=eng"
+  },
+  {
+    "id": "4039-2026-4-the-joy-of-a-covenant-relationship-with-god",
+    "title": "The Joy of a Covenant Relationship with God",
+    "speaker": "Thierry K. Mutombo",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/47mutombo?lang=eng"
+  },
+  {
+    "id": "4040-2026-4-a-peculiar-treasure",
+    "title": "A Peculiar Treasure",
+    "speaker": "Alan R. Walker",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/48walker?lang=eng"
+  },
+  {
+    "id": "4041-2026-4-alive-in-christ",
+    "title": "Alive in Christ",
+    "speaker": "Dallin H. Oaks",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/49oaks?lang=eng"
+  },
+  {
+    "id": "4042-2026-4-the-character-of-christ",
+    "title": "The Character of Christ",
+    "speaker": "D. Todd Christofferson",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/51christofferson?lang=eng"
+  },
+  {
+    "id": "4043-2026-4-remember-remember",
+    "title": "Remember, Remember",
+    "speaker": "Chi Hong (Sam) Wong",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/52wong?lang=eng"
+  },
+  {
+    "id": "4044-2026-4-i-glory-in-my-jesus",
+    "title": "I Glory in My Jesus",
+    "speaker": "Aaron T. Hall",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/53hall?lang=eng"
+  },
+  {
+    "id": "4045-2026-4-here-am-i-send-me",
+    "title": "“Here Am I, Send Me”",
+    "speaker": "Susan H. Porter",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/54porter?lang=eng"
+  },
+  {
+    "id": "4046-2026-4-eternal-marriage-is-an-eternal-journey",
+    "title": "Eternal Marriage Is an Eternal Journey",
+    "speaker": "Neil L. Andersen",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/55andersen?lang=eng"
+  },
+  {
+    "id": "4047-2026-4-keys-covenants-and-easter",
+    "title": "Keys, Covenants, and Easter",
+    "speaker": "Quentin L. Cook",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/56cook?lang=eng"
+  },
+  {
+    "id": "4048-2026-4-come-unto-christ-together",
+    "title": "Come unto Christ—Together",
+    "speaker": "Taniela B. Wakolo",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/57wakolo?lang=eng"
+  },
+  {
+    "id": "4049-2026-4-tis-eastertide-no-one-walks-alone",
+    "title": "’Tis Eastertide: No One Walks Alone",
+    "speaker": "Gerrit W. Gong",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/58gong?lang=eng"
+  },
+  {
+    "id": "4050-2026-4-closing-remarks",
+    "title": "Closing Remarks",
+    "speaker": "Dallin H. Oaks",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/59oaks?lang=eng"
+  },
+  {
+    "id": "1-2026-4-introduction",
+    "title": "Introduction",
+    "speaker": "Dallin H. Oaks",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/11oaks?lang=eng"
+  },
+  {
+    "id": "2-2026-4-about-his-business",
+    "title": "About His Business",
+    "speaker": "Patrick Kearon",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/13kearon?lang=eng"
+  },
+  {
+    "id": "3-2026-4-ministering-that-ye-love-one-another-as-i-have-loved-you",
+    "title": "Ministering—“That Ye Love One Another; as I Have Loved You”",
+    "speaker": "Kristin M. Yee",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/14yee?lang=eng"
+  },
+  {
+    "id": "4-2026-4-come-home",
+    "title": "Come Home",
+    "speaker": "Clark G. Gilbert",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/15gilbert?lang=eng"
+  },
+  {
+    "id": "5-2026-4-all-who-have-endured-valiantly",
+    "title": "All Who Have Endured Valiantly",
+    "speaker": "David A. Bednar",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/16bednar?lang=eng"
+  },
+  {
+    "id": "6-2026-4-follow-the-prophet-he-knows-the-way",
+    "title": "Follow the Prophet; He Knows the Way",
+    "speaker": "Michael John U. Teh",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/17teh?lang=eng"
+  },
+  {
+    "id": "7-2026-4-tithing-putting-god-first",
+    "title": "Tithing—Putting God First",
+    "speaker": "Jorge T. Becerra",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/18becerra?lang=eng"
+  },
+  {
+    "id": "8-2026-4-prayers-for-peace",
+    "title": "Prayers for Peace",
+    "speaker": "Henry B. Eyring",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/19eyring?lang=eng"
+  },
+  {
+    "id": "9-2026-4-lost-luggage-redeemed-souls",
+    "title": "Lost Luggage, Redeemed Souls",
+    "speaker": "Gary E. Stevenson",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/23stevenson?lang=eng"
+  },
+  {
+    "id": "10-2026-4-christ-author-and-finisher-of-our-faith",
+    "title": "Christ—Author and Finisher of Our Faith",
+    "speaker": "Eduardo F. Ortega",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/24ortega?lang=eng"
+  },
+  {
+    "id": "11-2026-4-i-will-give-away-all-my-sins-to-know-thee",
+    "title": "“I Will Give Away All My Sins to Know Thee”",
+    "speaker": "Wan-Liang Wu",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/25wu?lang=eng"
+  },
+  {
+    "id": "12-2026-4-jesus-christ-is-not-our-burden-he-is-our-relief",
+    "title": "Jesus Christ Is Not Our Burden; He Is Our Relief",
+    "speaker": "David J. Wunderli",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/26wunderli?lang=eng"
+  },
+  {
+    "id": "13-2026-4-love-all-love-each",
+    "title": "Love All; Love Each",
+    "speaker": "Gérald Caussé",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/27causse?lang=eng"
+  },
+  {
+    "id": "14-2026-4-jesus-christ-is-the-way",
+    "title": "Jesus Christ Is the Way",
+    "speaker": "Brian J. Holmes",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/28holmes?lang=eng"
+  },
+  {
+    "id": "15-2026-4-he-knows-you-by-name",
+    "title": "He Knows You by Name",
+    "speaker": "Clement M. Matswagothata",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/29matswagothata?lang=eng"
+  },
+  {
+    "id": "16-2026-4-jesus-christ-the-true-vine",
+    "title": "Jesus Christ—the True Vine",
+    "speaker": "Ulisses Soares",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/210soares?lang=eng"
+  },
+  {
+    "id": "17-2026-4-encounter-at-the-empty-tomb",
+    "title": "Encounter at the Empty Tomb",
+    "speaker": "Dieter F. Uchtdorf",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/41uchtdorf?lang=eng"
+  },
+  {
+    "id": "18-2026-4-best-days-and-worst-days",
+    "title": "Best Days and Worst Days",
+    "speaker": "Emily Belle Freeman",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/42freeman?lang=eng"
+  },
+  {
+    "id": "19-2026-4-i-feel-my-savior-s-love",
+    "title": "I Feel My Savior’s Love",
+    "speaker": "Pedro X. Larreal",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/43larreal?lang=eng"
+  },
+  {
+    "id": "20-2026-4-choose-jesus-christ-as-your-guide",
+    "title": "Choose Jesus Christ as Your Guide",
+    "speaker": "Edward B. Rowe",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/44rowe?lang=eng"
+  },
+  {
+    "id": "21-2026-4-he-is-risen",
+    "title": "He Is Risen",
+    "speaker": "Ronald A. Rasband",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/45rasband?lang=eng"
+  },
+  {
+    "id": "22-2026-4-because-of-jesus-christ",
+    "title": "Because of Jesus Christ",
+    "speaker": "Dale G. Renlund",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/46renlund?lang=eng"
+  },
+  {
+    "id": "23-2026-4-the-joy-of-a-covenant-relationship-with-god",
+    "title": "The Joy of a Covenant Relationship with God",
+    "speaker": "Thierry K. Mutombo",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/47mutombo?lang=eng"
+  },
+  {
+    "id": "24-2026-4-a-peculiar-treasure",
+    "title": "A Peculiar Treasure",
+    "speaker": "Alan R. Walker",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/48walker?lang=eng"
+  },
+  {
+    "id": "25-2026-4-alive-in-christ",
+    "title": "Alive in Christ",
+    "speaker": "Dallin H. Oaks",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/49oaks?lang=eng"
+  },
+  {
+    "id": "26-2026-4-the-character-of-christ",
+    "title": "The Character of Christ",
+    "speaker": "D. Todd Christofferson",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/51christofferson?lang=eng"
+  },
+  {
+    "id": "27-2026-4-remember-remember",
+    "title": "Remember, Remember",
+    "speaker": "Chi Hong (Sam) Wong",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/52wong?lang=eng"
+  },
+  {
+    "id": "28-2026-4-i-glory-in-my-jesus",
+    "title": "I Glory in My Jesus",
+    "speaker": "Aaron T. Hall",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/53hall?lang=eng"
+  },
+  {
+    "id": "29-2026-4-here-am-i-send-me",
+    "title": "“Here Am I, Send Me”",
+    "speaker": "Susan H. Porter",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/54porter?lang=eng"
+  },
+  {
+    "id": "30-2026-4-eternal-marriage-is-an-eternal-journey",
+    "title": "Eternal Marriage Is an Eternal Journey",
+    "speaker": "Neil L. Andersen",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/55andersen?lang=eng"
+  },
+  {
+    "id": "31-2026-4-keys-covenants-and-easter",
+    "title": "Keys, Covenants, and Easter",
+    "speaker": "Quentin L. Cook",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/56cook?lang=eng"
+  },
+  {
+    "id": "32-2026-4-come-unto-christ-together",
+    "title": "Come unto Christ—Together",
+    "speaker": "Taniela B. Wakolo",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/57wakolo?lang=eng"
+  },
+  {
+    "id": "33-2026-4-tis-eastertide-no-one-walks-alone",
+    "title": "’Tis Eastertide: No One Walks Alone",
+    "speaker": "Gerrit W. Gong",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/58gong?lang=eng"
+  },
+  {
+    "id": "34-2026-4-closing-remarks",
+    "title": "Closing Remarks",
+    "speaker": "Dallin H. Oaks",
+    "year": "2026",
+    "month": "April",
+    "session": "Sunday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/59oaks?lang=eng"
   }
 ];
