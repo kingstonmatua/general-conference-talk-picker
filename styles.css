@@ -170,6 +170,12 @@ select {
   color: #15803d;
 }
 
+.reset-pending {
+  background: linear-gradient(180deg, #fff5f5 0%, #fee2e2 100%);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #dc2626;
+}
+
 .actions-panel {
   display: flex;
   flex-wrap: wrap;

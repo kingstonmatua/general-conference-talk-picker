@@ -40,6 +40,7 @@ const ui = {
 const talks = Array.isArray(window.TALKS) ? window.TALKS : [];
 const availableYears = getAvailableYears();
 let state = loadState();
+let resetPending = false;
 let markState = { year: "all", conference: "all", speaker: "all", talkId: null };
 
 // ─── State management ────────────────────────────────────────────────────────
@@ -590,16 +591,32 @@ function markTalkAsStudied() {
 }
 
 function resetBag() {
-  const confirmed = window.confirm(
-    "Are you sure you want to reset? This will put every talk back in the bag and clear your current progress, but your favorites will stay saved."
-  );
-  if (!confirmed) {
-    updateStatusMessage("Reset canceled. Your progress is unchanged.");
+  if (!resetPending) {
+    resetPending = true;
+    ui.resetButton.textContent = "Are you sure? Click again to confirm.";
+    ui.resetButton.classList.add("reset-pending");
+    updateStatusMessage("This will clear your progress. Favorites are kept.");
+
+    setTimeout(() => {
+      if (resetPending) {
+        resetPending = false;
+        ui.resetButton.textContent = "Reset the bag";
+        ui.resetButton.classList.remove("reset-pending");
+        updateStatusMessage("Reset canceled — took too long.");
+      }
+    }, 4000);
+
     return;
   }
+
+  resetPending = false;
+  ui.resetButton.textContent = "Reset the bag";
+  ui.resetButton.classList.remove("reset-pending");
+
   const favoriteIds = [...state.favoriteIds];
   state = createFreshState();
   state.favoriteIds = favoriteIds;
+  populateYearFilter();
   saveState();
   render();
   updateStatusMessage("The bag has been reset. Your favorites are still saved.");
