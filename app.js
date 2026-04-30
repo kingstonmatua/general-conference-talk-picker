@@ -36,7 +36,16 @@ const ui = {
   markTalk: document.querySelector("#mark-talk"),
   markStudiedButton: document.querySelector("#mark-studied-button"),
   clearFiltersButton: document.querySelector("#clear-filters-button"),
-  fabDrawButton: document.querySelector("#fab-draw-button")
+  fabDrawButton: document.querySelector("#fab-draw-button"),
+  authOverlay: document.querySelector("#auth-overlay"),
+  authForm: document.querySelector("#auth-form"),
+  authEmail: document.querySelector("#auth-email"),
+  authPassword: document.querySelector("#auth-password"),
+  authError: document.querySelector("#auth-error"),
+  authSubmit: document.querySelector("#auth-submit"),
+  userBar: document.querySelector("#user-bar"),
+  userEmail: document.querySelector("#user-email"),
+  signoutButton: document.querySelector("#signout-button")
 };
 
 const talks = Array.isArray(window.TALKS) ? window.TALKS : [];
@@ -105,6 +114,7 @@ function loadState() {
 
 function saveState() {
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  saveStateToSupabase();
 }
 
 // ─── Data helpers ─────────────────────────────────────────────────────────────
@@ -762,6 +772,110 @@ ui.clearFiltersButton.addEventListener("click", () => {
   updateStatusMessage("Filters cleared. Drawing from all remaining talks.");
 });
 
+// ─── Supabase data sync ───────────────────────────────────────────────────────
+
+async function saveStateToSupabase() {
+  const { data: { user } } = await supabaseClient.auth.getUser();
+  if (!user) return;
+  await supabaseClient
+    .from("user_progress")
+    .upsert({
+      user_id: user.id,
+      remaining_ids: state.remainingIds,
+      studied_ids: state.studiedIds,
+      favorite_ids: state.favoriteIds,
+      current_talk_id: state.currentTalkId,
+      selected_year: state.selectedYear,
+      selected_conference: state.selectedConference,
+      selected_speaker: state.selectedSpeaker,
+      updated_at: new Date().toISOString()
+    }, { onConflict: "user_id" });
+}
+
+async function loadStateFromSupabase() {
+  const { data: { user } } = await supabaseClient.auth.getUser();
+  if (!user) return;
+  const { data, error } = await supabaseClient
+    .from("user_progress")
+    .select("*")
+    .eq("user_id", user.id)
+    .single();
+  if (error || !data) return;
+  const validIds = new Set(talks.map(t => t.id));
+  state.remainingIds = (data.remaining_ids || []).filter(id => validIds.has(id));
+  state.studiedIds = (data.studied_ids || []).filter(id => validIds.has(id));
+  state.favoriteIds = (data.favorite_ids || []).filter(id => validIds.has(id));
+  state.currentTalkId = validIds.has(data.current_talk_id) ? data.current_talk_id : null;
+  state.selectedYear = data.selected_year || "all";
+  state.selectedConference = data.selected_conference || "all";
+  state.selectedSpeaker = data.selected_speaker || "all";
+  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  render();
+}
+
+// ─── Auth ─────────────────────────────────────────────────────────────────────
+
+let authMode = "signin";
+
+function showAuthModal() { ui.authOverlay.classList.remove("hidden"); }
+function hideAuthModal() { ui.authOverlay.classList.add("hidden"); }
+
+function setUserBar(user) {
+  ui.userBar.classList.toggle("hidden", !user);
+  ui.userEmail.textContent = user ? user.email : "";
+}
+
+document.querySelectorAll(".auth-toggle-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    authMode = btn.dataset.mode;
+    document.querySelectorAll(".auth-toggle-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : "Create Account";
+    ui.authError.classList.add("hidden");
+  });
+});
+
+ui.authForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const email = ui.authEmail.value.trim();
+  const password = ui.authPassword.value;
+  ui.authError.classList.add("hidden");
+  ui.authSubmit.disabled = true;
+  ui.authSubmit.textContent = authMode === "signin" ? "Signing in…" : "Creating account…";
+  const { error } = authMode === "signin"
+    ? await supabaseClient.auth.signInWithPassword({ email, password })
+    : await supabaseClient.auth.signUp({ email, password });
+  if (error) {
+    ui.authError.textContent = error.message;
+    ui.authError.classList.remove("hidden");
+    ui.authSubmit.disabled = false;
+    ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : "Create Account";
+  }
+});
+
+ui.signoutButton.addEventListener("click", () => supabaseClient.auth.signOut());
+
+async function initAuth() {
+  const { data: { session } } = await supabaseClient.auth.getSession();
+  if (session) {
+    hideAuthModal();
+    setUserBar(session.user);
+    await loadStateFromSupabase();
+  } else {
+    showAuthModal();
+  }
+  supabaseClient.auth.onAuthStateChange(async (event, session) => {
+    if (event === "SIGNED_IN") {
+      hideAuthModal();
+      setUserBar(session.user);
+      await loadStateFromSupabase();
+    } else if (event === "SIGNED_OUT") {
+      setUserBar(null);
+      showAuthModal();
+    }
+  });
+}
+
 // ─── Tab navigation ───────────────────────────────────────────────────────────
 
 function switchTab(tabName) {
@@ -789,3 +903,4 @@ const initialTab = ["home", "library"].includes(location.hash.slice(1))
 switchTab(initialTab);
 
 render();
+initAuth();

@@ -9,9 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   </head>
   <body>
     <main class="app-shell">
+      <div id="user-bar" class="user-bar hidden">
+        <span id="user-email" class="user-email"></span>
+        <button id="signout-button" class="signout-button" type="button">Sign out</button>
+      </div>
+
       <section class="hero">
         <img
           src="./No Buffer.png"
@@ -205,6 +211,33 @@
         </section>
       </div>
 
+      <!-- Auth modal -->
+      <div id="auth-overlay" class="auth-overlay">
+        <div class="auth-card">
+          <img src="./Main Icon.png" class="auth-icon" alt="Logo" />
+          <h2 class="auth-title">Welcome</h2>
+          <p class="auth-subtitle">Sign in to sync your study progress across all your devices.</p>
+
+          <div class="auth-toggle">
+            <button class="auth-toggle-btn active" data-mode="signin" type="button">Sign In</button>
+            <button class="auth-toggle-btn" data-mode="signup" type="button">Create Account</button>
+          </div>
+
+          <form id="auth-form" class="auth-form">
+            <label class="auth-field" for="auth-email">
+              <span class="label">Email</span>
+              <input type="email" id="auth-email" placeholder="you@example.com" autocomplete="email" required />
+            </label>
+            <label class="auth-field" for="auth-password">
+              <span class="label">Password</span>
+              <input type="password" id="auth-password" placeholder="••••••••" autocomplete="current-password" required />
+            </label>
+            <p id="auth-error" class="auth-error hidden"></p>
+            <button type="submit" id="auth-submit" class="primary-button">Sign In</button>
+          </form>
+        </div>
+      </div>
+
       <!-- Status message (outside tabs — always visible) -->
       <p id="status-message" class="status-message"></p>
 
@@ -242,6 +275,7 @@
     </main>
 
     <script src="./talks-data.js"></script>
+    <script src="./config.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
