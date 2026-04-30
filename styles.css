@@ -47,31 +47,19 @@ select {
 .app-shell {
   width: min(1180px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 2.75rem 0 4rem;
+  padding: 0.25rem 0 4rem;
 }
 
 .hero {
-  margin-bottom: 1.75rem;
-}
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.9rem;
   margin-bottom: 1rem;
 }
 
-.hero-icon {
-  display: inline-grid;
-  place-items: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 1rem;
-  background: linear-gradient(135deg, var(--purple) 0%, #9b6bff 100%);
-  color: white;
-  font-size: 1.35rem;
-  font-weight: 700;
-  box-shadow: 0 16px 30px rgba(124, 58, 237, 0.28);
+.hero-logo {
+  display: block;
+  max-width: min(720px, 100%);
+  height: auto;
+  mix-blend-mode: multiply;
+  margin: 0 auto;
 }
 
 .eyebrow,
@@ -164,10 +152,32 @@ select {
 }
 
 .progress-panel,
+.mark-studied-panel,
 .history-panel,
 .favorites-panel {
   padding: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.mark-studied-panel {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.mark-studied-button {
+  background: linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%);
+  border-color: rgba(22, 163, 74, 0.2);
+  color: #15803d;
+}
+
+.actions-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.actions-panel button {
+  flex: 1 1 240px;
 }
 
 .draw-panel {
@@ -242,7 +252,7 @@ select {
 
 .controls-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(220px, 0.8fr);
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: end;
 }
@@ -250,6 +260,11 @@ select {
 .filter-field {
   display: grid;
   gap: 0.55rem;
+}
+
+select:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 select {
@@ -410,6 +425,34 @@ button:active:not(:disabled) {
   line-height: 1.5;
 }
 
+.history-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.history-copy {
+  flex: 1 1 0;
+}
+
+.history-favorite-button {
+  flex: 0 0 auto;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.88rem;
+}
+
+.history-talk-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.history-talk-link:hover {
+  color: var(--purple-dark);
+  text-decoration: underline;
+}
+
 .favorite-item {
   display: flex;
   flex-wrap: wrap;
@@ -420,6 +463,20 @@ button:active:not(:disabled) {
 
 .favorite-copy {
   flex: 1 1 240px;
+}
+
+.favorite-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.favorite-open-link {
+  font-size: 0.9rem;
+  min-height: auto;
+  padding: 0 0.25rem;
 }
 
 .favorite-remove-button {
@@ -497,6 +554,7 @@ button:active:not(:disabled) {
   }
 
   .progress-panel,
+  .mark-studied-panel,
   .history-panel,
   .favorites-panel {
     padding: 1.15rem;

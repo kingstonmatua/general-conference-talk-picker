@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conference Talk Study</title>
+    <title>General Conference Talk Picker</title>
+    <link rel="icon" type="image/png" href="./Main Icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -12,14 +13,11 @@
   <body>
     <main class="app-shell">
       <section class="hero">
-        <div class="hero-badge">
-          <span class="hero-icon" aria-hidden="true">+</span>
-          <p class="eyebrow">General Conference Study App</p>
-        </div>
-        <h1>General Conference Talk Picker</h1>
-        <p class="intro">
-          Get a random talk. Study every Talk.
-        </p>
+        <img
+          src="./No Buffer.png"
+          alt="General Conference Talk Picker — Pick a Talk. Study Daily. Track Your Progress."
+          class="hero-logo"
+        />
       </section>
 
       <section class="stats-panel">
@@ -72,15 +70,25 @@
             <p class="section-label">Draw settings</p>
             <h2 class="panel-title">Choose your lane, then draw.</h2>
             <p class="panel-copy">
-              Filter the remaining bag by conference year, then draw one talk and
-              let the app remove it from the pool automatically.
+              Filter by year, conference, or speaker — or mix and match. Draw one
+              talk and the app removes it from the pool automatically.
             </p>
           </div>
 
           <div class="controls-grid">
             <label class="filter-field" for="year-filter">
-              <span class="label">Conference year</span>
+              <span class="label">Year</span>
               <select id="year-filter"></select>
+            </label>
+
+            <label class="filter-field" for="conference-filter">
+              <span class="label">Conference</span>
+              <select id="conference-filter" disabled></select>
+            </label>
+
+            <label class="filter-field" for="speaker-filter">
+              <span class="label">Speaker</span>
+              <select id="speaker-filter"></select>
             </label>
 
             <article class="mini-stat">
@@ -119,6 +127,44 @@
           </article>
 
           <p id="status-message" class="status-message"></p>
+        </div>
+      </section>
+
+      <section class="panel mark-studied-panel">
+        <div class="filter-copy">
+          <p class="section-label">Already read it?</p>
+          <h2 class="panel-title">Mark a talk as studied.</h2>
+          <p class="panel-copy">
+            Find a talk you've already read and remove it from your remaining bag without using a draw.
+          </p>
+        </div>
+
+        <div class="controls-grid">
+          <label class="filter-field" for="mark-year">
+            <span class="label">Year</span>
+            <select id="mark-year"></select>
+          </label>
+
+          <label class="filter-field" for="mark-conference">
+            <span class="label">Conference</span>
+            <select id="mark-conference" disabled></select>
+          </label>
+
+          <label class="filter-field" for="mark-speaker">
+            <span class="label">Speaker</span>
+            <select id="mark-speaker"></select>
+          </label>
+
+          <label class="filter-field" for="mark-talk">
+            <span class="label">Talk</span>
+            <select id="mark-talk"></select>
+          </label>
+        </div>
+
+        <div class="actions-panel">
+          <button id="mark-studied-button" class="secondary-button mark-studied-button" type="button" disabled>
+            Mark as studied
+          </button>
         </div>
       </section>
 
