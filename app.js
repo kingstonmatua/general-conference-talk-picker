@@ -35,7 +35,8 @@ const ui = {
   markSpeaker: document.querySelector("#mark-speaker"),
   markTalk: document.querySelector("#mark-talk"),
   markStudiedButton: document.querySelector("#mark-studied-button"),
-  clearFiltersButton: document.querySelector("#clear-filters-button")
+  clearFiltersButton: document.querySelector("#clear-filters-button"),
+  fabDrawButton: document.querySelector("#fab-draw-button")
 };
 
 const talks = Array.isArray(window.TALKS) ? window.TALKS : [];
@@ -770,16 +771,21 @@ function switchTab(tabName) {
   document.querySelectorAll(".tab-panel").forEach(panel => {
     panel.classList.toggle("active", panel.id === `tab-${tabName}`);
   });
-  history.replaceState(null, "", `#${tabName}`);
+  history.replaceState(null, "", tabName === "home" ? location.pathname : `#${tabName}`);
 }
 
 document.querySelectorAll(".tab-btn").forEach(btn => {
   btn.addEventListener("click", () => switchTab(btn.dataset.tab));
 });
 
-const initialTab = ["draw", "log", "library"].includes(location.hash.slice(1))
+ui.fabDrawButton.addEventListener("click", () => {
+  drawRandomTalk();
+  switchTab("home");
+});
+
+const initialTab = ["home", "library"].includes(location.hash.slice(1))
   ? location.hash.slice(1)
-  : "draw";
+  : "home";
 switchTab(initialTab);
 
 render();
