@@ -319,7 +319,11 @@ button:active:not(:disabled) {
   transition-duration: 60ms;
 }
 
-#draw-button {
+.draw-button-wrapper {
+  width: 100%;
+}
+
+.draw-button-wrapper #draw-button {
   width: 100%;
 }
 
@@ -423,6 +427,23 @@ button:active:not(:disabled) {
   max-height: 420px;
   overflow-y: auto;
   padding-right: 0.5rem;
+}
+
+.history-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.history-list::-webkit-scrollbar-thumb {
+  background: var(--purple-soft);
+  border-radius: 999px;
+}
+
+.history-list::-webkit-scrollbar-thumb:hover {
+  background: var(--purple);
 }
 
 .history-list li {
@@ -546,6 +567,19 @@ button:active:not(:disabled) {
   .app-shell {
     width: min(100% - 1rem, 1180px);
     padding-top: 1.1rem;
+    padding-bottom: 6rem;
+  }
+
+  .draw-button-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom));
+    background: rgba(251, 249, 244, 0.92);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--panel-border);
   }
 
   .hero-badge {
@@ -572,6 +606,10 @@ button:active:not(:disabled) {
   .draw-panel-left,
   .draw-panel-right {
     padding: 1.15rem;
+  }
+
+  .stats-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .favorite-item {
