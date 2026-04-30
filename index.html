@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conference Talk Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <div class="hero-badge">
+          <span class="hero-icon" aria-hidden="true">+</span>
+          <p class="eyebrow">General Conference Study App</p>
+        </div>
+        <h1>General Conference Talk Picker</h1>
+        <p class="intro">
+          Get a random talk. Study every Talk.
+        </p>
+      </section>
+
+      <section class="stats-panel">
+        <article class="stat stat-primary">
+          <span class="label">Total talks</span>
+          <strong id="total-count">0</strong>
+        </article>
+        <article class="stat stat-accent">
+          <span class="label">Studied</span>
+          <strong id="studied-count">0</strong>
+        </article>
+        <article class="stat">
+          <span class="label">Remaining</span>
+          <strong id="remaining-count">0</strong>
+        </article>
+        <article class="stat">
+          <span class="label">Favorites</span>
+          <strong id="top-favorites-count">0</strong>
+        </article>
+      </section>
+
+      <section class="panel progress-panel">
+        <div class="progress-header">
+          <div>
+            <p class="section-label">Overall progress</p>
+            <h2 class="panel-title">Keep the whole bag moving.</h2>
+          </div>
+          <strong id="progress-text" class="progress-copy">0% complete</strong>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+
+        <div id="year-progress-panel" class="year-progress hidden">
+          <div class="progress-header">
+            <div>
+              <p id="year-progress-label" class="section-label">Selected year progress</p>
+            </div>
+            <strong id="year-progress-text" class="progress-copy">0% complete</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div id="year-progress-fill" class="progress-fill year-progress-fill"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel draw-panel">
+        <div class="draw-panel-left">
+          <div class="filter-copy">
+            <p class="section-label">Draw settings</p>
+            <h2 class="panel-title">Choose your lane, then draw.</h2>
+            <p class="panel-copy">
+              Filter the remaining bag by conference year, then draw one talk and
+              let the app remove it from the pool automatically.
+            </p>
+          </div>
+
+          <div class="controls-grid">
+            <label class="filter-field" for="year-filter">
+              <span class="label">Conference year</span>
+              <select id="year-filter"></select>
+            </label>
+
+            <article class="mini-stat">
+              <span class="label">Matching remaining talks</span>
+              <strong id="filtered-remaining-count">0</strong>
+            </article>
+          </div>
+
+          <button id="reset-button" class="secondary-button" type="button">Reset the bag</button>
+        </div>
+
+        <div class="draw-panel-right">
+          <button id="draw-button" class="primary-button" type="button">Draw a random talk</button>
+
+          <div id="empty-state" class="empty-state">
+            <h3>Nothing drawn yet</h3>
+            <p>
+              Choose a year if you want a narrower study lane, or draw from the full
+              conference bag and start building momentum.
+            </p>
+          </div>
+
+          <article id="talk-card" class="talk-card hidden" aria-live="polite">
+            <p id="talk-session" class="talk-session"></p>
+            <h3 id="talk-title"></h3>
+            <p id="talk-speaker" class="talk-speaker"></p>
+            <p id="talk-reference" class="talk-reference"></p>
+            <div class="talk-actions">
+              <button id="favorite-button" class="secondary-button favorite-button" type="button">
+                Add to favorites
+              </button>
+              <a id="talk-link" class="talk-link" href="#" target="_blank" rel="noreferrer">
+                Open talk link
+              </a>
+            </div>
+          </article>
+
+          <p id="status-message" class="status-message"></p>
+        </div>
+      </section>
+
+      <section class="library-grid">
+        <section class="panel history-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-label">Study history</p>
+              <h2 class="panel-title">Recent draws</h2>
+            </div>
+            <span id="history-count" class="history-count">0 talks drawn</span>
+          </div>
+          <ol id="history-list" class="history-list"></ol>
+        </section>
+
+        <section class="panel favorites-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-label">Favorites</p>
+              <h2 class="panel-title">Keep the talks you want to revisit.</h2>
+            </div>
+            <span id="favorites-count" class="history-count">0 favorites</span>
+          </div>
+          <ol id="favorites-list" class="history-list"></ol>
+        </section>
+      </section>
+    </main>
+
+    <script src="./talks-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
