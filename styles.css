@@ -420,6 +420,9 @@ button:active:not(:disabled) {
   padding: 0;
   display: grid;
   gap: 0.8rem;
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
 }
 
 .history-list li {
