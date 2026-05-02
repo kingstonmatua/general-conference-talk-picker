@@ -844,7 +844,9 @@ ui.authForm.addEventListener("submit", async (e) => {
   ui.authSubmit.textContent = authMode === "signin" ? "Signing in…" : "Creating account…";
   const { error } = authMode === "signin"
     ? await supabaseClient.auth.signInWithPassword({ email, password })
-    : await supabaseClient.auth.signUp({ email, password });
+    : await supabaseClient.auth.signUp({ email, password, options: {
+        emailRedirectTo: new URL("./confirm.html", location.href).href
+      } });
   if (error) {
     ui.authError.textContent = error.message;
     ui.authError.classList.remove("hidden");
