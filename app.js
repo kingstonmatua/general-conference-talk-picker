@@ -855,15 +855,13 @@ ui.authForm.addEventListener("submit", async (e) => {
       }
       // success: onAuthStateChange handles hiding the modal
     } else {
-      const { error } = await supabaseClient.auth.signUp({ email, password, options: {
-        emailRedirectTo: new URL("./confirm.html", location.href).href
-      }});
+      const { error } = await supabaseClient.auth.signUp({ email, password });
       if (error) {
         ui.authError.textContent = error.message;
         ui.authError.classList.remove("hidden");
       } else {
         ui.authError.style.color = "green";
-        ui.authError.textContent = "Check your email to confirm your account, then sign in!";
+        ui.authError.textContent = "Account created! Please check your email to confirm your account.";
         ui.authError.classList.remove("hidden");
       }
       ui.authSubmit.disabled = false;
