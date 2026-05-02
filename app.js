@@ -840,24 +840,40 @@ ui.authForm.addEventListener("submit", async (e) => {
   const email = ui.authEmail.value.trim();
   const password = ui.authPassword.value;
   ui.authError.classList.add("hidden");
+  ui.authError.style.color = "";
   ui.authSubmit.disabled = true;
   ui.authSubmit.textContent = authMode === "signin" ? "Signing in…" : "Creating account…";
-  const { error } = authMode === "signin"
-    ? await supabaseClient.auth.signInWithPassword({ email, password })
-    : await supabaseClient.auth.signUp({ email, password, options: {
+
+  try {
+    if (authMode === "signin") {
+      const { error } = await supabaseClient.auth.signInWithPassword({ email, password });
+      if (error) {
+        ui.authError.textContent = error.message;
+        ui.authError.classList.remove("hidden");
+        ui.authSubmit.disabled = false;
+        ui.authSubmit.textContent = "Sign In";
+      }
+      // success: onAuthStateChange handles hiding the modal
+    } else {
+      const { error } = await supabaseClient.auth.signUp({ email, password, options: {
         emailRedirectTo: new URL("./confirm.html", location.href).href
-      } });
-  if (error) {
-    ui.authError.textContent = error.message;
+      }});
+      if (error) {
+        ui.authError.textContent = error.message;
+        ui.authError.classList.remove("hidden");
+      } else {
+        ui.authError.style.color = "green";
+        ui.authError.textContent = "Check your email to confirm your account, then sign in!";
+        ui.authError.classList.remove("hidden");
+      }
+      ui.authSubmit.disabled = false;
+      ui.authSubmit.textContent = "Create Account";
+    }
+  } catch {
+    ui.authError.textContent = "Something went wrong. Please try again.";
     ui.authError.classList.remove("hidden");
     ui.authSubmit.disabled = false;
     ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : "Create Account";
-  } else if (authMode === "signup") {
-    ui.authError.style.color = "green";
-    ui.authError.textContent = "Check your email to confirm your account, then sign in!";
-    ui.authError.classList.remove("hidden");
-    ui.authSubmit.disabled = false;
-    ui.authSubmit.textContent = "Create Account";
   }
 });
 
