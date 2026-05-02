@@ -850,6 +850,12 @@ ui.authForm.addEventListener("submit", async (e) => {
     ui.authError.classList.remove("hidden");
     ui.authSubmit.disabled = false;
     ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : "Create Account";
+  } else if (authMode === "signup") {
+    ui.authError.style.color = "green";
+    ui.authError.textContent = "Check your email to confirm your account, then sign in!";
+    ui.authError.classList.remove("hidden");
+    ui.authSubmit.disabled = false;
+    ui.authSubmit.textContent = "Create Account";
   }
 });
 
