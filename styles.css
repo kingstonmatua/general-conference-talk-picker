@@ -361,7 +361,9 @@ button:active:not(:disabled) {
 
 .draw-button-wrapper {
   width: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 0.65rem;
 }
 
@@ -370,12 +372,9 @@ button:active:not(:disabled) {
 }
 
 .undo-button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 0.35rem;
-  justify-self: center;
-  width: fit-content;
   font-size: 0.82rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
