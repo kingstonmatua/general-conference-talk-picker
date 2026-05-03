@@ -556,7 +556,7 @@ button:active:not(:disabled) {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* ─── Auth modal ─────────────────────────────────────────────────────────────── */
