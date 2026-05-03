@@ -13,6 +13,7 @@ const ui = {
   yearProgressText: document.querySelector("#year-progress-text"),
   yearProgressFill: document.querySelector("#year-progress-fill"),
   drawButton: document.querySelector("#draw-button"),
+  undoButton: document.querySelector("#undo-button"),
   resetButton: document.querySelector("#reset-button"),
   favoriteButton: document.querySelector("#favorite-button"),
   yearFilter: document.querySelector("#year-filter"),
@@ -372,6 +373,7 @@ function updateCounts() {
     ? 0
     : Math.round((state.studiedIds.length / talks.length) * 100);
 
+  ui.undoButton.disabled = state.studiedIds.length === 0;
   ui.totalCount.textContent = String(talks.length);
   ui.studiedCount.textContent = String(state.studiedIds.length);
   ui.remainingCount.textContent = String(state.remainingIds.length);
@@ -610,6 +612,18 @@ function drawRandomTalk() {
   updateStatusMessage(buildDrawStatusMessage());
 }
 
+function undoLastDraw() {
+  if (state.studiedIds.length === 0) return;
+  const lastId = state.studiedIds[state.studiedIds.length - 1];
+  state.studiedIds.pop();
+  state.remainingIds.push(lastId);
+  if (state.currentTalkId === lastId) state.currentTalkId = null;
+  saveState();
+  render();
+  const talk = getTalkById(lastId);
+  updateStatusMessage(`"${talk.title}" has been returned to the remaining bag.`);
+}
+
 function markTalkAsStudied() {
   const talkId = markState.talkId;
   if (!talkId) return;
@@ -698,6 +712,7 @@ function removeFavoriteById(talkId) {
 // ─── Event listeners ──────────────────────────────────────────────────────────
 
 ui.drawButton.addEventListener("click", drawRandomTalk);
+ui.undoButton.addEventListener("click", undoLastDraw);
 ui.resetButton.addEventListener("click", resetBag);
 ui.favoriteButton.addEventListener("click", toggleFavorite);
 
