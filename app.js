@@ -41,6 +41,8 @@ const ui = {
   authForm: document.querySelector("#auth-form"),
   authEmail: document.querySelector("#auth-email"),
   authPassword: document.querySelector("#auth-password"),
+  authConfirmField: document.querySelector("#auth-confirm-field"),
+  authConfirmPassword: document.querySelector("#auth-confirm-password"),
   authError: document.querySelector("#auth-error"),
   authSubmit: document.querySelector("#auth-submit"),
   userBar: document.querySelector("#user-bar"),
@@ -831,6 +833,8 @@ document.querySelectorAll(".auth-toggle-btn").forEach(btn => {
     document.querySelectorAll(".auth-toggle-btn").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : "Create Account";
+    ui.authConfirmField.classList.toggle("hidden", authMode === "signin");
+    ui.authConfirmPassword.value = "";
     ui.authError.classList.add("hidden");
   });
 });
@@ -841,6 +845,13 @@ ui.authForm.addEventListener("submit", async (e) => {
   const password = ui.authPassword.value;
   ui.authError.classList.add("hidden");
   ui.authError.style.color = "";
+
+  if (authMode === "signup" && password !== ui.authConfirmPassword.value) {
+    ui.authError.textContent = "Passwords don't match. Please try again.";
+    ui.authError.classList.remove("hidden");
+    return;
+  }
+
   ui.authSubmit.disabled = true;
   ui.authSubmit.textContent = authMode === "signin" ? "Signing in…" : "Creating account…";
 
