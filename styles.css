@@ -303,6 +303,14 @@ select {
   align-items: end;
 }
 
+.draw-panel-left .controls-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.draw-panel-left .controls-grid .mini-stat {
+  grid-column: 1 / -1;
+}
+
 .filter-field {
   display: grid;
   gap: 0.55rem;
@@ -866,8 +874,13 @@ button:active:not(:disabled) {
   }
 
   .controls-grid,
+  .draw-panel-left .controls-grid,
   .library-grid {
     grid-template-columns: 1fr;
+  }
+
+  .draw-panel-left .controls-grid .mini-stat {
+    grid-column: 1;
   }
 }
 
