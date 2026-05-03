@@ -115,6 +115,13 @@
           <div class="draw-panel-right">
             <div class="draw-button-wrapper">
               <button id="draw-button" class="primary-button" type="button">Draw a random talk</button>
+              <button id="undo-button" class="secondary-button undo-button" type="button" disabled>
+                <svg class="undo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="1 4 1 10 7 10"/>
+                  <path d="M3.51 15a9 9 0 1 0 .49-3.08"/>
+                </svg>
+                Undo last draw
+              </button>
             </div>
 
             <div id="empty-state" class="empty-state">
@@ -231,6 +238,10 @@
             <label class="auth-field" for="auth-password">
               <span class="label">Password</span>
               <input type="password" id="auth-password" placeholder="••••••••" autocomplete="current-password" required />
+            </label>
+            <label class="auth-field hidden" id="auth-confirm-field" for="auth-confirm-password">
+              <span class="label">Confirm Password</span>
+              <input type="password" id="auth-confirm-password" placeholder="••••••••" autocomplete="new-password" />
             </label>
             <p id="auth-error" class="auth-error hidden"></p>
             <button type="submit" id="auth-submit" class="primary-button">Sign In</button>

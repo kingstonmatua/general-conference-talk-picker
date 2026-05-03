@@ -13,6 +13,7 @@ const ui = {
   yearProgressText: document.querySelector("#year-progress-text"),
   yearProgressFill: document.querySelector("#year-progress-fill"),
   drawButton: document.querySelector("#draw-button"),
+  undoButton: document.querySelector("#undo-button"),
   resetButton: document.querySelector("#reset-button"),
   favoriteButton: document.querySelector("#favorite-button"),
   yearFilter: document.querySelector("#year-filter"),
@@ -41,6 +42,8 @@ const ui = {
   authForm: document.querySelector("#auth-form"),
   authEmail: document.querySelector("#auth-email"),
   authPassword: document.querySelector("#auth-password"),
+  authConfirmField: document.querySelector("#auth-confirm-field"),
+  authConfirmPassword: document.querySelector("#auth-confirm-password"),
   authError: document.querySelector("#auth-error"),
   authSubmit: document.querySelector("#auth-submit"),
   userBar: document.querySelector("#user-bar"),
@@ -370,6 +373,7 @@ function updateCounts() {
     ? 0
     : Math.round((state.studiedIds.length / talks.length) * 100);
 
+  ui.undoButton.disabled = state.studiedIds.length === 0;
   ui.totalCount.textContent = String(talks.length);
   ui.studiedCount.textContent = String(state.studiedIds.length);
   ui.remainingCount.textContent = String(state.remainingIds.length);
@@ -608,6 +612,18 @@ function drawRandomTalk() {
   updateStatusMessage(buildDrawStatusMessage());
 }
 
+function undoLastDraw() {
+  if (state.studiedIds.length === 0) return;
+  const lastId = state.studiedIds[state.studiedIds.length - 1];
+  state.studiedIds.pop();
+  state.remainingIds.push(lastId);
+  if (state.currentTalkId === lastId) state.currentTalkId = null;
+  saveState();
+  render();
+  const talk = getTalkById(lastId);
+  updateStatusMessage(`"${talk.title}" has been returned to the remaining bag.`);
+}
+
 function markTalkAsStudied() {
   const talkId = markState.talkId;
   if (!talkId) return;
@@ -696,6 +712,7 @@ function removeFavoriteById(talkId) {
 // ─── Event listeners ──────────────────────────────────────────────────────────
 
 ui.drawButton.addEventListener("click", drawRandomTalk);
+ui.undoButton.addEventListener("click", undoLastDraw);
 ui.resetButton.addEventListener("click", resetBag);
 ui.favoriteButton.addEventListener("click", toggleFavorite);
 
@@ -831,6 +848,8 @@ document.querySelectorAll(".auth-toggle-btn").forEach(btn => {
     document.querySelectorAll(".auth-toggle-btn").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : "Create Account";
+    ui.authConfirmField.classList.toggle("hidden", authMode === "signin");
+    ui.authConfirmPassword.value = "";
     ui.authError.classList.add("hidden");
   });
 });
@@ -841,6 +860,13 @@ ui.authForm.addEventListener("submit", async (e) => {
   const password = ui.authPassword.value;
   ui.authError.classList.add("hidden");
   ui.authError.style.color = "";
+
+  if (authMode === "signup" && password !== ui.authConfirmPassword.value) {
+    ui.authError.textContent = "Passwords don't match. Please try again.";
+    ui.authError.classList.remove("hidden");
+    return;
+  }
+
   ui.authSubmit.disabled = true;
   ui.authSubmit.textContent = authMode === "signin" ? "Signing in…" : "Creating account…";
 
