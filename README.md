@@ -1,13 +1,15 @@
 # Conference Talk Bag
 
-This is a beginner-friendly starter app for your idea.
+An app for randomly drawing General Conference talks from a "bag". Talks are removed as you draw them so you work through the full library without repeats.
 
-It does four things:
-
-- Keeps a list of talks in a "bag"
-- Draws one random talk when you click a button
-- Removes that talk from the remaining bag
-- Saves your progress in the browser so you can come back later
+Features:
+- Draws a random talk and removes it from the remaining bag
+- Filters by year, conference, and speaker
+- Mark specific talks as studied manually
+- Favorites list
+- Undo last draw
+- Progress tracking (overall and per year/conference)
+- Supabase auth — progress syncs to the cloud across devices
 
 ## How to open it
 
@@ -27,41 +29,35 @@ http://localhost:8000
 
 ## Files
 
-- `index.html` contains the page structure
-- `styles.css` contains the design
-- `app.js` contains the random-draw logic
-- `talks-data.js` contains the talk list
+- `index.html` — page structure
+- `styles.css` — design
+- `app.js` — draw logic, state management, Supabase sync, auth
+- `talks-data.js` — full talk dataset (4,050 talks, April 1971 – April 2026)
+- `config.js` — Supabase project URL and anon key
+- `confirm.html` — email confirmation landing page
 
-## How to add more talks
+## Talk data
 
-Right now `talks-data.js` has a small sample list so the app works immediately.
-
-Each talk looks like this:
+`talks-data.js` contains the full General Conference dataset sourced from the Gospel Library. Each talk looks like this:
 
 ```js
 {
-  id: "unique-id",
-  title: "Talk Title",
-  speaker: "Speaker Name",
-  session: "April 2024 General Conference",
-  reference: "Speaker calling",
+  id: "1-1971-4-out-of-the-darkness",
+  title: "Out of the Darkness",
+  speaker: "Joseph Fielding Smith",
+  year: "1971",
+  month: "April",
+  session: "Saturday Morning Session",
+  reference: "April 1971 General Conference",
   url: "https://www.churchofjesuschrist.org/study/general-conference/..."
 }
 ```
 
-To grow the app, you can replace the sample list with a much larger list.
+The source CSV is `General Conference Database FINAL - Sheet1.csv`. To update the dataset after a new conference, add rows to the CSV and regenerate `talks-data.js` from it.
 
-## Best next step
+## What's next
 
-The next practical milestone is this:
-
-1. Keep this basic version.
-2. Gather the full talk data in a structured format.
-3. Load all talks into `talks-data.js` or a JSON file.
-4. Add filters later, such as speaker, year, topic, or unread-only history.
-
-## Important note
-
-I added only sample talks here. I did **not** pull the full Gospel Library talk database into the project yet.
-
-That full dataset is a separate step, and we should do it carefully so the data format stays clean and easy to maintain.
+- Fix cloud sync: new talks added to `talks-data.js` don't get added to the remaining bag for users who already have Supabase data saved
+- Add a forgot password link to the auth modal
+- Topic/theme filter
+- Search within history and favorites

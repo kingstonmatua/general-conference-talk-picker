@@ -28,8 +28,10 @@ const ui = {
   talkReference: document.querySelector("#talk-reference"),
   talkLink: document.querySelector("#talk-link"),
   historyCount: document.querySelector("#history-count"),
+  historySearch: document.querySelector("#history-search"),
   historyList: document.querySelector("#history-list"),
   favoritesCount: document.querySelector("#favorites-count"),
+  favoritesSearch: document.querySelector("#favorites-search"),
   favoritesList: document.querySelector("#favorites-list"),
   markYear: document.querySelector("#mark-year"),
   markConference: document.querySelector("#mark-conference"),
@@ -42,12 +44,16 @@ const ui = {
   authForm: document.querySelector("#auth-form"),
   authEmail: document.querySelector("#auth-email"),
   authPassword: document.querySelector("#auth-password"),
+  authPasswordField: document.querySelector("#auth-password-field"),
   authConfirmField: document.querySelector("#auth-confirm-field"),
   authConfirmPassword: document.querySelector("#auth-confirm-password"),
+  forgotPasswordBtn: document.querySelector("#forgot-password-btn"),
   authError: document.querySelector("#auth-error"),
   authSubmit: document.querySelector("#auth-submit"),
   userBar: document.querySelector("#user-bar"),
   userEmail: document.querySelector("#user-email"),
+  syncButton: document.querySelector("#sync-button"),
+  syncLabel: document.querySelector("#sync-label"),
   signoutButton: document.querySelector("#signout-button")
 };
 
@@ -447,11 +453,20 @@ function renderCurrentTalk() {
 
 function renderHistory() {
   ui.historyList.innerHTML = "";
-  const items = state.studiedIds.map((id) => getTalkById(id)).filter(Boolean).reverse();
+  const query = ui.historySearch.value.trim().toLowerCase();
+  let items = state.studiedIds.map((id) => getTalkById(id)).filter(Boolean).reverse();
+  if (query) items = items.filter((t) => t.title.toLowerCase().includes(query) || t.speaker.toLowerCase().includes(query));
+
+  if (state.studiedIds.length === 0) {
+    const listItem = document.createElement("li");
+    listItem.textContent = "No talks studied yet.";
+    ui.historyList.appendChild(listItem);
+    return;
+  }
 
   if (items.length === 0) {
     const listItem = document.createElement("li");
-    listItem.textContent = "No talks studied yet.";
+    listItem.textContent = "No results match your search.";
     ui.historyList.appendChild(listItem);
     return;
   }
@@ -503,11 +518,20 @@ function renderHistory() {
 
 function renderFavorites() {
   ui.favoritesList.innerHTML = "";
-  const items = state.favoriteIds.map((id) => getTalkById(id)).filter(Boolean).reverse();
+  const query = ui.favoritesSearch.value.trim().toLowerCase();
+  let items = state.favoriteIds.map((id) => getTalkById(id)).filter(Boolean).reverse();
+  if (query) items = items.filter((t) => t.title.toLowerCase().includes(query) || t.speaker.toLowerCase().includes(query));
+
+  if (state.favoriteIds.length === 0) {
+    const listItem = document.createElement("li");
+    listItem.textContent = "No favorite talks yet.";
+    ui.favoritesList.appendChild(listItem);
+    return;
+  }
 
   if (items.length === 0) {
     const listItem = document.createElement("li");
-    listItem.textContent = "No favorite talks yet.";
+    listItem.textContent = "No results match your search.";
     ui.favoritesList.appendChild(listItem);
     return;
   }
@@ -780,6 +804,9 @@ ui.markTalk.addEventListener("change", (event) => {
 
 ui.markStudiedButton.addEventListener("click", markTalkAsStudied);
 
+ui.historySearch.addEventListener("input", renderHistory);
+ui.favoritesSearch.addEventListener("input", renderFavorites);
+
 ui.clearFiltersButton.addEventListener("click", () => {
   state.selectedYear = "all";
   state.selectedConference = "all";
@@ -819,8 +846,12 @@ async function loadStateFromSupabase() {
     .single();
   if (error || !data) return;
   const validIds = new Set(talks.map(t => t.id));
-  state.remainingIds = (data.remaining_ids || []).filter(id => validIds.has(id));
-  state.studiedIds = (data.studied_ids || []).filter(id => validIds.has(id));
+  const remainingIds = (data.remaining_ids || []).filter(id => validIds.has(id));
+  const studiedIds = (data.studied_ids || []).filter(id => validIds.has(id));
+  const allKnownIds = new Set([...remainingIds, ...studiedIds]);
+  const missingIds = talks.map(t => t.id).filter(id => !allKnownIds.has(id));
+  state.remainingIds = [...remainingIds, ...missingIds];
+  state.studiedIds = studiedIds;
   state.favoriteIds = (data.favorite_ids || []).filter(id => validIds.has(id));
   state.currentTalkId = validIds.has(data.current_talk_id) ? data.current_talk_id : null;
   state.selectedYear = data.selected_year || "all";
@@ -842,17 +873,27 @@ function setUserBar(user) {
   ui.userEmail.textContent = user ? user.email : "";
 }
 
-document.querySelectorAll(".auth-toggle-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    authMode = btn.dataset.mode;
-    document.querySelectorAll(".auth-toggle-btn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : "Create Account";
-    ui.authConfirmField.classList.toggle("hidden", authMode === "signin");
-    ui.authConfirmPassword.value = "";
-    ui.authError.classList.add("hidden");
+function setAuthMode(mode) {
+  authMode = mode;
+  document.querySelectorAll(".auth-toggle-btn").forEach(b => {
+    b.classList.toggle("active", b.dataset.mode === mode);
   });
+  ui.authPasswordField.classList.toggle("hidden", mode === "reset");
+  ui.authConfirmField.classList.toggle("hidden", mode !== "signup");
+  ui.forgotPasswordBtn.classList.toggle("hidden", mode !== "signin");
+  ui.authConfirmPassword.value = "";
+  ui.authError.classList.add("hidden");
+  ui.authError.style.color = "";
+  if (mode === "signin") ui.authSubmit.textContent = "Sign In";
+  else if (mode === "signup") ui.authSubmit.textContent = "Create Account";
+  else ui.authSubmit.textContent = "Send Reset Link";
+}
+
+document.querySelectorAll(".auth-toggle-btn").forEach(btn => {
+  btn.addEventListener("click", () => setAuthMode(btn.dataset.mode));
 });
+
+ui.forgotPasswordBtn.addEventListener("click", () => setAuthMode("reset"));
 
 ui.authForm.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -868,9 +909,26 @@ ui.authForm.addEventListener("submit", async (e) => {
   }
 
   ui.authSubmit.disabled = true;
-  ui.authSubmit.textContent = authMode === "signin" ? "Signing in…" : "Creating account…";
+  ui.authSubmit.textContent = authMode === "signin" ? "Signing in…" : authMode === "signup" ? "Creating account…" : "Sending…";
 
   try {
+    if (authMode === "reset") {
+      const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+        redirectTo: window.location.origin + "/reset-password.html"
+      });
+      if (error) {
+        ui.authError.textContent = error.message;
+        ui.authError.classList.remove("hidden");
+      } else {
+        ui.authError.style.color = "green";
+        ui.authError.textContent = "Check your email for a password reset link.";
+        ui.authError.classList.remove("hidden");
+      }
+      ui.authSubmit.disabled = false;
+      ui.authSubmit.textContent = "Send Reset Link";
+      return;
+    }
+
     if (authMode === "signin") {
       const { error } = await supabaseClient.auth.signInWithPassword({ email, password });
       if (error) {
@@ -897,8 +955,21 @@ ui.authForm.addEventListener("submit", async (e) => {
     ui.authError.textContent = "Something went wrong. Please try again.";
     ui.authError.classList.remove("hidden");
     ui.authSubmit.disabled = false;
-    ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : "Create Account";
+    ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : authMode === "signup" ? "Create Account" : "Send Reset Link";
   }
+});
+
+ui.syncButton.addEventListener("click", async () => {
+  ui.syncButton.disabled = true;
+  ui.syncButton.classList.add("syncing");
+  ui.syncLabel.textContent = "Syncing…";
+  await loadStateFromSupabase();
+  ui.syncButton.classList.remove("syncing");
+  ui.syncLabel.textContent = "Synced";
+  setTimeout(() => {
+    ui.syncLabel.textContent = "Sync";
+    ui.syncButton.disabled = false;
+  }, 2000);
 });
 
 ui.signoutButton.addEventListener("click", () => supabaseClient.auth.signOut());

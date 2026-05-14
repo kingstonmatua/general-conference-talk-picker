@@ -15,6 +15,13 @@
     <main class="app-shell">
       <div id="user-bar" class="user-bar hidden">
         <span id="user-email" class="user-email"></span>
+        <button id="sync-button" class="signout-button sync-button" type="button" aria-label="Sync progress">
+          <svg id="sync-icon" class="sync-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9h13a5 5 0 0 1 0 10H7"/>
+            <polyline points="7 5 3 9 7 13"/>
+          </svg>
+          <span id="sync-label">Sync</span>
+        </button>
         <button id="signout-button" class="signout-button" type="button">Sign out</button>
       </div>
 
@@ -117,8 +124,8 @@
               <button id="draw-button" class="primary-button" type="button">Draw a random talk</button>
               <button id="undo-button" class="secondary-button undo-button" type="button" disabled>
                 <svg class="undo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="1 4 1 10 7 10"/>
-                  <path d="M3.51 15a9 9 0 1 0 .49-3.08"/>
+                  <path d="M3 9h13a5 5 0 0 1 0 10H7"/>
+                  <polyline points="7 5 3 9 7 13"/>
                 </svg>
                 Undo last draw
               </button>
@@ -202,6 +209,7 @@
               </div>
               <span id="history-count" class="history-count">0 talks drawn</span>
             </div>
+            <input type="search" id="history-search" class="list-search" placeholder="Search by title or speaker…" />
             <ol id="history-list" class="history-list"></ol>
           </section>
 
@@ -213,6 +221,7 @@
               </div>
               <span id="favorites-count" class="history-count">0 favorites</span>
             </div>
+            <input type="search" id="favorites-search" class="list-search" placeholder="Search by title or speaker…" />
             <ol id="favorites-list" class="history-list"></ol>
           </section>
         </section>
@@ -235,10 +244,11 @@
               <span class="label">Email</span>
               <input type="email" id="auth-email" placeholder="you@example.com" autocomplete="email" required />
             </label>
-            <label class="auth-field" for="auth-password">
+            <label class="auth-field" id="auth-password-field" for="auth-password">
               <span class="label">Password</span>
               <input type="password" id="auth-password" placeholder="••••••••" autocomplete="current-password" required />
             </label>
+            <button type="button" id="forgot-password-btn" class="forgot-password-btn">Forgot password?</button>
             <label class="auth-field hidden" id="auth-confirm-field" for="auth-confirm-password">
               <span class="label">Confirm Password</span>
               <input type="password" id="auth-confirm-password" placeholder="••••••••" autocomplete="new-password" />
