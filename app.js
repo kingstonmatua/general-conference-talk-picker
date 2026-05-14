@@ -819,8 +819,12 @@ async function loadStateFromSupabase() {
     .single();
   if (error || !data) return;
   const validIds = new Set(talks.map(t => t.id));
-  state.remainingIds = (data.remaining_ids || []).filter(id => validIds.has(id));
-  state.studiedIds = (data.studied_ids || []).filter(id => validIds.has(id));
+  const remainingIds = (data.remaining_ids || []).filter(id => validIds.has(id));
+  const studiedIds = (data.studied_ids || []).filter(id => validIds.has(id));
+  const allKnownIds = new Set([...remainingIds, ...studiedIds]);
+  const missingIds = talks.map(t => t.id).filter(id => !allKnownIds.has(id));
+  state.remainingIds = [...remainingIds, ...missingIds];
+  state.studiedIds = studiedIds;
   state.favoriteIds = (data.favorite_ids || []).filter(id => validIds.has(id));
   state.currentTalkId = validIds.has(data.current_talk_id) ? data.current_talk_id : null;
   state.selectedYear = data.selected_year || "all";
