@@ -911,7 +911,9 @@ ui.authForm.addEventListener("submit", async (e) => {
 
   try {
     if (authMode === "reset") {
-      const { error } = await supabaseClient.auth.resetPasswordForEmail(email);
+      const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+        redirectTo: window.location.origin + "/reset-password.html"
+      });
       if (error) {
         ui.authError.textContent = error.message;
         ui.authError.classList.remove("hidden");
