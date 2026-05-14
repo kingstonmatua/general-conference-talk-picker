@@ -235,10 +235,11 @@
               <span class="label">Email</span>
               <input type="email" id="auth-email" placeholder="you@example.com" autocomplete="email" required />
             </label>
-            <label class="auth-field" for="auth-password">
+            <label class="auth-field" id="auth-password-field" for="auth-password">
               <span class="label">Password</span>
               <input type="password" id="auth-password" placeholder="••••••••" autocomplete="current-password" required />
             </label>
+            <button type="button" id="forgot-password-btn" class="forgot-password-btn">Forgot password?</button>
             <label class="auth-field hidden" id="auth-confirm-field" for="auth-confirm-password">
               <span class="label">Confirm Password</span>
               <input type="password" id="auth-confirm-password" placeholder="••••••••" autocomplete="new-password" />

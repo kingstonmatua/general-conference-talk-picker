@@ -42,8 +42,10 @@ const ui = {
   authForm: document.querySelector("#auth-form"),
   authEmail: document.querySelector("#auth-email"),
   authPassword: document.querySelector("#auth-password"),
+  authPasswordField: document.querySelector("#auth-password-field"),
   authConfirmField: document.querySelector("#auth-confirm-field"),
   authConfirmPassword: document.querySelector("#auth-confirm-password"),
+  forgotPasswordBtn: document.querySelector("#forgot-password-btn"),
   authError: document.querySelector("#auth-error"),
   authSubmit: document.querySelector("#auth-submit"),
   userBar: document.querySelector("#user-bar"),
@@ -846,17 +848,27 @@ function setUserBar(user) {
   ui.userEmail.textContent = user ? user.email : "";
 }
 
-document.querySelectorAll(".auth-toggle-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    authMode = btn.dataset.mode;
-    document.querySelectorAll(".auth-toggle-btn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : "Create Account";
-    ui.authConfirmField.classList.toggle("hidden", authMode === "signin");
-    ui.authConfirmPassword.value = "";
-    ui.authError.classList.add("hidden");
+function setAuthMode(mode) {
+  authMode = mode;
+  document.querySelectorAll(".auth-toggle-btn").forEach(b => {
+    b.classList.toggle("active", b.dataset.mode === mode);
   });
+  ui.authPasswordField.classList.toggle("hidden", mode === "reset");
+  ui.authConfirmField.classList.toggle("hidden", mode !== "signup");
+  ui.forgotPasswordBtn.classList.toggle("hidden", mode !== "signin");
+  ui.authConfirmPassword.value = "";
+  ui.authError.classList.add("hidden");
+  ui.authError.style.color = "";
+  if (mode === "signin") ui.authSubmit.textContent = "Sign In";
+  else if (mode === "signup") ui.authSubmit.textContent = "Create Account";
+  else ui.authSubmit.textContent = "Send Reset Link";
+}
+
+document.querySelectorAll(".auth-toggle-btn").forEach(btn => {
+  btn.addEventListener("click", () => setAuthMode(btn.dataset.mode));
 });
+
+ui.forgotPasswordBtn.addEventListener("click", () => setAuthMode("reset"));
 
 ui.authForm.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -872,9 +884,24 @@ ui.authForm.addEventListener("submit", async (e) => {
   }
 
   ui.authSubmit.disabled = true;
-  ui.authSubmit.textContent = authMode === "signin" ? "Signing in…" : "Creating account…";
+  ui.authSubmit.textContent = authMode === "signin" ? "Signing in…" : authMode === "signup" ? "Creating account…" : "Sending…";
 
   try {
+    if (authMode === "reset") {
+      const { error } = await supabaseClient.auth.resetPasswordForEmail(email);
+      if (error) {
+        ui.authError.textContent = error.message;
+        ui.authError.classList.remove("hidden");
+      } else {
+        ui.authError.style.color = "green";
+        ui.authError.textContent = "Check your email for a password reset link.";
+        ui.authError.classList.remove("hidden");
+      }
+      ui.authSubmit.disabled = false;
+      ui.authSubmit.textContent = "Send Reset Link";
+      return;
+    }
+
     if (authMode === "signin") {
       const { error } = await supabaseClient.auth.signInWithPassword({ email, password });
       if (error) {
@@ -901,7 +928,7 @@ ui.authForm.addEventListener("submit", async (e) => {
     ui.authError.textContent = "Something went wrong. Please try again.";
     ui.authError.classList.remove("hidden");
     ui.authSubmit.disabled = false;
-    ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : "Create Account";
+    ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : authMode === "signup" ? "Create Account" : "Send Reset Link";
   }
 });
 
