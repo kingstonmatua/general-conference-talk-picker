@@ -28,8 +28,10 @@ const ui = {
   talkReference: document.querySelector("#talk-reference"),
   talkLink: document.querySelector("#talk-link"),
   historyCount: document.querySelector("#history-count"),
+  historySearch: document.querySelector("#history-search"),
   historyList: document.querySelector("#history-list"),
   favoritesCount: document.querySelector("#favorites-count"),
+  favoritesSearch: document.querySelector("#favorites-search"),
   favoritesList: document.querySelector("#favorites-list"),
   markYear: document.querySelector("#mark-year"),
   markConference: document.querySelector("#mark-conference"),
@@ -449,11 +451,20 @@ function renderCurrentTalk() {
 
 function renderHistory() {
   ui.historyList.innerHTML = "";
-  const items = state.studiedIds.map((id) => getTalkById(id)).filter(Boolean).reverse();
+  const query = ui.historySearch.value.trim().toLowerCase();
+  let items = state.studiedIds.map((id) => getTalkById(id)).filter(Boolean).reverse();
+  if (query) items = items.filter((t) => t.title.toLowerCase().includes(query) || t.speaker.toLowerCase().includes(query));
+
+  if (state.studiedIds.length === 0) {
+    const listItem = document.createElement("li");
+    listItem.textContent = "No talks studied yet.";
+    ui.historyList.appendChild(listItem);
+    return;
+  }
 
   if (items.length === 0) {
     const listItem = document.createElement("li");
-    listItem.textContent = "No talks studied yet.";
+    listItem.textContent = "No results match your search.";
     ui.historyList.appendChild(listItem);
     return;
   }
@@ -505,11 +516,20 @@ function renderHistory() {
 
 function renderFavorites() {
   ui.favoritesList.innerHTML = "";
-  const items = state.favoriteIds.map((id) => getTalkById(id)).filter(Boolean).reverse();
+  const query = ui.favoritesSearch.value.trim().toLowerCase();
+  let items = state.favoriteIds.map((id) => getTalkById(id)).filter(Boolean).reverse();
+  if (query) items = items.filter((t) => t.title.toLowerCase().includes(query) || t.speaker.toLowerCase().includes(query));
+
+  if (state.favoriteIds.length === 0) {
+    const listItem = document.createElement("li");
+    listItem.textContent = "No favorite talks yet.";
+    ui.favoritesList.appendChild(listItem);
+    return;
+  }
 
   if (items.length === 0) {
     const listItem = document.createElement("li");
-    listItem.textContent = "No favorite talks yet.";
+    listItem.textContent = "No results match your search.";
     ui.favoritesList.appendChild(listItem);
     return;
   }
@@ -781,6 +801,9 @@ ui.markTalk.addEventListener("change", (event) => {
 });
 
 ui.markStudiedButton.addEventListener("click", markTalkAsStudied);
+
+ui.historySearch.addEventListener("input", renderHistory);
+ui.favoritesSearch.addEventListener("input", renderFavorites);
 
 ui.clearFiltersButton.addEventListener("click", () => {
   state.selectedYear = "all";
