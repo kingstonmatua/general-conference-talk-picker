@@ -52,6 +52,8 @@ const ui = {
   authSubmit: document.querySelector("#auth-submit"),
   userBar: document.querySelector("#user-bar"),
   userEmail: document.querySelector("#user-email"),
+  syncButton: document.querySelector("#sync-button"),
+  syncLabel: document.querySelector("#sync-label"),
   signoutButton: document.querySelector("#signout-button")
 };
 
@@ -955,6 +957,19 @@ ui.authForm.addEventListener("submit", async (e) => {
     ui.authSubmit.disabled = false;
     ui.authSubmit.textContent = authMode === "signin" ? "Sign In" : authMode === "signup" ? "Create Account" : "Send Reset Link";
   }
+});
+
+ui.syncButton.addEventListener("click", async () => {
+  ui.syncButton.disabled = true;
+  ui.syncButton.classList.add("syncing");
+  ui.syncLabel.textContent = "Syncing…";
+  await loadStateFromSupabase();
+  ui.syncButton.classList.remove("syncing");
+  ui.syncLabel.textContent = "Synced";
+  setTimeout(() => {
+    ui.syncLabel.textContent = "Sync";
+    ui.syncButton.disabled = false;
+  }, 2000);
 });
 
 ui.signoutButton.addEventListener("click", () => supabaseClient.auth.signOut());

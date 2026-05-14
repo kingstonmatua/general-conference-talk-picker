@@ -15,6 +15,13 @@
     <main class="app-shell">
       <div id="user-bar" class="user-bar hidden">
         <span id="user-email" class="user-email"></span>
+        <button id="sync-button" class="signout-button sync-button" type="button" aria-label="Sync progress">
+          <svg id="sync-icon" class="sync-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9h13a5 5 0 0 1 0 10H7"/>
+            <polyline points="7 5 3 9 7 13"/>
+          </svg>
+          <span id="sync-label">Sync</span>
+        </button>
         <button id="signout-button" class="signout-button" type="button">Sign out</button>
       </div>
 

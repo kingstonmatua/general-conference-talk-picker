@@ -778,6 +778,26 @@ button:active:not(:disabled) {
   box-shadow: none;
 }
 
+.sync-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.sync-icon {
+  width: 0.85rem;
+  height: 0.85rem;
+  flex-shrink: 0;
+}
+
+.sync-button.syncing .sync-icon {
+  animation: spin-sync 700ms linear infinite;
+}
+
+@keyframes spin-sync {
+  to { transform: rotate(-360deg); }
+}
+
 .tab-panel {
   display: none;
 }
