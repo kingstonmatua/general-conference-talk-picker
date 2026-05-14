@@ -1023,3 +1023,9 @@ switchTab(initialTab);
 
 render();
 initAuth();
+
+// Re-sync from Supabase whenever the user returns to this tab/app window,
+// so the bag stays consistent across devices without a manual Sync click.
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) loadStateFromSupabase();
+});
