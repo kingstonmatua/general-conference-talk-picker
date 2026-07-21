@@ -40468,5 +40468,35 @@ window.TALKS = [
     "session": "Sunday Afternoon Session",
     "reference": "April 2026 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/59oaks?lang=eng"
+  },
+  {
+    "id": "4051-2026-4-solemn-assembly",
+    "title": "Solemn Assembly",
+    "speaker": "D. Todd Christofferson",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Morning Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/12christofferson?lang=eng"
+  },
+  {
+    "id": "4052-2026-4-sustaining-of-general-authorities-area-seventies-and-general",
+    "title": "Sustaining of General Authorities, Area Seventies, and General Officers",
+    "speaker": "D. Todd Christofferson",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/21christofferson?lang=eng"
+  },
+  {
+    "id": "4053-2026-4-church-auditing-department-report-2025",
+    "title": "Church Auditing Department Report, 2025",
+    "speaker": "Jared B. Larson",
+    "year": "2026",
+    "month": "April",
+    "session": "Saturday Afternoon Session",
+    "reference": "April 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/22larson?lang=eng"
   }
 ];
