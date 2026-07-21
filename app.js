@@ -222,7 +222,7 @@ function populateConferenceFilter(year) {
   if (year === "all") {
     const option = document.createElement("option");
     option.value = "all";
-    option.textContent = "Select a year first";
+    option.textContent = "Pick a year";
     ui.conferenceFilter.appendChild(option);
     ui.conferenceFilter.disabled = true;
     return;
@@ -278,7 +278,7 @@ function populateMarkConference() {
   if (markState.year === "all") {
     const option = document.createElement("option");
     option.value = "all";
-    option.textContent = "Select a year first";
+    option.textContent = "Pick a year";
     ui.markConference.appendChild(option);
     ui.markConference.disabled = true;
     return;
