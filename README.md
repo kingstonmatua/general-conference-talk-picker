@@ -32,13 +32,18 @@ http://localhost:8000
 - `index.html` — page structure
 - `styles.css` — design
 - `app.js` — draw logic, state management, Supabase sync, auth
-- `talks-data.js` — full talk dataset (4,050 talks, April 1971 – April 2026)
+- `talks-data.js` — full talk dataset, generated from the CSV (4,050 talks, April 1971 – April 2026)
 - `config.js` — Supabase project URL and anon key
 - `confirm.html` — email confirmation landing page
+- `reset-password.html` — password reset landing page
+- `General Conference Database FINAL - Sheet1.csv` — source of truth for talk data
+- `append_gc_talks.py` — fetches a new conference and updates the dataset (see below)
 
 ## Talk data
 
-`talks-data.js` contains the full General Conference dataset sourced from the Gospel Library. Each talk looks like this:
+`General Conference Database FINAL - Sheet1.csv` is the source of truth for the General Conference dataset, sourced from the Gospel Library. `talks-data.js` is generated from it — don't hand-edit `talks-data.js` directly, since the next regeneration will overwrite it.
+
+Each talk in `talks-data.js` looks like this:
 
 ```js
 {
@@ -53,11 +58,17 @@ http://localhost:8000
 }
 ```
 
-The source CSV is `General Conference Database FINAL - Sheet1.csv`. To update the dataset after a new conference, add rows to the CSV and regenerate `talks-data.js` from it.
+To update the dataset after a new conference is posted:
+
+```bash
+pip install requests beautifulsoup4
+# edit YEAR and MONTH at the top of append_gc_talks.py, then:
+python3 append_gc_talks.py
+```
+
+This appends any new talks to the CSV (skipping ones already present, matched by URL) and regenerates `talks-data.js` from the full CSV in one step.
 
 ## What's next
 
 - Fix cloud sync: new talks added to `talks-data.js` don't get added to the remaining bag for users who already have Supabase data saved
-- Add a forgot password link to the auth modal
 - Topic/theme filter
-- Search within history and favorites
