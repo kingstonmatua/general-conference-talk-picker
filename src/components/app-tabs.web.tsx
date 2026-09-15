@@ -1,128 +1,147 @@
-import {
-  Tabs,
-  TabList,
-  TabTrigger,
-  TabSlot,
-  TabTriggerSlotProps,
-  TabListProps,
-} from 'expo-router/ui';
-import { SymbolView } from 'expo-symbols';
-import { Pressable, useColorScheme, View, StyleSheet } from 'react-native';
+import { Image } from 'expo-image';
+import { Link } from 'expo-router';
+import { TabList, TabListProps, TabSlot, Tabs, TabTrigger, TabTriggerSlotProps } from 'expo-router/ui';
+import { Pressable, StyleSheet, View } from 'react-native';
 
-import { ExternalLink } from './external-link';
-import { Icon, type AppIconName } from './ui/icon';
+import { Button } from './ui/button';
+import { Icon, Ionicons, type AppIconName } from './ui/icon';
 import { ThemedText } from './themed-text';
-import { ThemedView } from './themed-view';
 
-import { Colors, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
+import { Palette, Spacing } from '@/constants/theme';
 
+/**
+ * Web nav shell — a persistent left sidebar (logo, a standing "Draw a
+ * Random Talk" action, the four nav items), per brand board §07:
+ * "Home · Browse · Progress · Saved. Active item uses purple ink, bold
+ * label and gold chevron."
+ *
+ * Note: this sidebar is desktop-oriented and not yet responsive for a
+ * phone browser hitting the web build (as opposed to the native app,
+ * which has its own proper bottom tab bar in app-tabs.tsx). A narrow-web
+ * bottom-bar variant was attempted here but expo-router/ui's <Tabs>
+ * requires its <TabTrigger> children to stay static/always-mounted —
+ * conditionally swapping between two <TabList> trees broke tab
+ * registration at runtime ("Couldn't find any screens for the
+ * navigator"). Left as a known follow-up rather than shipped broken.
+ */
 export default function AppTabs() {
   return (
-    <Tabs>
-      <TabSlot style={{ height: '100%' }} />
-      <TabList asChild>
-        <CustomTabList>
-          <TabTrigger name="home" href="/" asChild>
-            <TabButton icon="home">Home</TabButton>
-          </TabTrigger>
-          <TabTrigger name="explore" href="/explore" asChild>
-            <TabButton icon="browse">Explore</TabButton>
-          </TabTrigger>
-          <TabTrigger name="design-system" href="/design-system" asChild>
-            <TabButton icon="progress">Design System</TabButton>
-          </TabTrigger>
-        </CustomTabList>
-      </TabList>
+    <Tabs style={{ flex: 1 }}>
+      <View style={styles.root}>
+        <TabList asChild>
+          <Sidebar>
+            <TabTrigger name="home" href="/" asChild>
+              <SidebarNavItem icon="home">Home</SidebarNavItem>
+            </TabTrigger>
+            <TabTrigger name="browse" href="/browse" asChild>
+              <SidebarNavItem icon="browse">Browse</SidebarNavItem>
+            </TabTrigger>
+            <TabTrigger name="progress" href="/progress" asChild>
+              <SidebarNavItem icon="progress">Progress</SidebarNavItem>
+            </TabTrigger>
+            <TabTrigger name="saved" href="/saved" asChild>
+              <SidebarNavItem icon="saved">Saved</SidebarNavItem>
+            </TabTrigger>
+          </Sidebar>
+        </TabList>
+
+        <TabSlot style={styles.slot} />
+      </View>
     </Tabs>
   );
 }
 
-export function TabButton({
-  children,
-  isFocused,
-  icon,
-  ...props
-}: TabTriggerSlotProps & { icon: AppIconName }) {
+function Sidebar(props: TabListProps) {
   return (
-    <Pressable {...props} style={({ pressed }) => pressed && styles.pressed}>
-      <ThemedView
-        type={isFocused ? 'backgroundSelected' : 'backgroundElement'}
-        style={styles.tabButtonView}>
-        <Icon name={icon} size={16} color={isFocused ? Palette.purpleInk : Palette.secondaryInk} />
-        <ThemedText type="small" themeColor={isFocused ? 'text' : 'textSecondary'}>
-          {children}
+    <View style={styles.sidebar}>
+      <Image
+        source={require('@/assets/images/brand/main-logo.png')}
+        style={styles.logo}
+        contentFit="contain"
+      />
+
+      <Link href="/" asChild>
+        <Button label="Draw a Random Talk" variant="primary" style={styles.drawButton} />
+      </Link>
+
+      <View style={styles.navList}>{props.children}</View>
+
+      <View style={styles.sidebarFooter}>
+        <ThemedText type="metadata" themeColor="textSecondary">
+          Pick a talk. Make space for daily study.
         </ThemedText>
-      </ThemedView>
-    </Pressable>
-  );
-}
-
-export function CustomTabList(props: TabListProps) {
-  const scheme = useColorScheme();
-  const colors = Colors[scheme === 'unspecified' ? 'light' : scheme];
-
-  return (
-    <View {...props} style={styles.tabListContainer}>
-      <ThemedView type="backgroundElement" style={styles.innerContainer}>
-        <ThemedText type="smallBold" style={styles.brandText}>
-          Expo Starter
-        </ThemedText>
-
-        {props.children}
-
-        <ExternalLink href="https://docs.expo.dev" asChild>
-          <Pressable style={styles.externalPressable}>
-            <ThemedText type="link">Docs</ThemedText>
-            <SymbolView
-              tintColor={colors.text}
-              name={{ ios: 'arrow.up.right.square', web: 'link' }}
-              size={12}
-            />
-          </Pressable>
-        </ExternalLink>
-      </ThemedView>
+      </View>
     </View>
   );
 }
 
+function SidebarNavItem({
+  children,
+  isFocused,
+  icon,
+  ...pressableProps
+}: TabTriggerSlotProps & { icon: AppIconName }) {
+  return (
+    <Pressable {...pressableProps} style={({ pressed }) => pressed && styles.pressed}>
+      <View style={styles.sidebarItem}>
+        <Icon name={icon} size={20} color={isFocused ? Palette.purpleInk : Palette.secondaryInk} />
+        <ThemedText
+          type="control"
+          style={[styles.sidebarItemLabel, { color: isFocused ? Palette.purpleInk : Palette.secondaryInk }]}>
+          {children}
+        </ThemedText>
+        {isFocused && <Ionicons name="chevron-down" size={14} color={Palette.goldInk} />}
+      </View>
+    </Pressable>
+  );
+}
+
 const styles = StyleSheet.create({
-  tabListContainer: {
-    position: 'absolute',
+  root: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: Palette.canvas,
+  },
+  slot: {
+    flex: 1,
+  },
+  sidebar: {
+    width: 240,
+    paddingHorizontal: Spacing.lg,
+    paddingVertical: Spacing.xl,
+    borderRightWidth: 1,
+    borderRightColor: Palette.warmBorder,
+    backgroundColor: Palette.surface,
+    gap: Spacing.lg,
+  },
+  logo: {
     width: '100%',
-    padding: Spacing.three,
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
+    height: 56,
   },
-  innerContainer: {
-    paddingVertical: Spacing.two,
-    paddingHorizontal: Spacing.five,
-    borderRadius: Spacing.five,
+  drawButton: {
+    alignSelf: 'stretch',
+    alignItems: 'center',
+  },
+  navList: {
+    gap: Spacing.xs,
+  },
+  sidebarItem: {
     flexDirection: 'row',
     alignItems: 'center',
-    flexGrow: 1,
-    gap: Spacing.two,
-    maxWidth: MaxContentWidth,
+    gap: Spacing.sm,
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.sm,
   },
-  brandText: {
-    marginRight: 'auto',
+  sidebarItemLabel: {
+    flex: 1,
+  },
+  sidebarFooter: {
+    marginTop: 'auto',
+    paddingTop: Spacing.lg,
+    borderTopWidth: 1,
+    borderTopColor: Palette.warmBorder,
   },
   pressed: {
     opacity: 0.7,
-  },
-  tabButtonView: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: Spacing.xs,
-    paddingVertical: Spacing.one,
-    paddingHorizontal: Spacing.three,
-    borderRadius: Spacing.three,
-  },
-  externalPressable: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: Spacing.one,
-    marginLeft: Spacing.three,
   },
 });
