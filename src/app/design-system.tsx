@@ -5,6 +5,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { ThemedText } from '@/components/themed-text';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { AppIconNames, Icon, type AppIconName } from '@/components/ui/icon';
+import { PageFoldIcon } from '@/components/ui/page-fold-icon';
 import { SessionTag, Tag } from '@/components/ui/tag';
 import {
   BottomTabInset,
@@ -14,6 +16,8 @@ import {
   Spacing,
   type SessionCategory,
 } from '@/constants/theme';
+
+const ALL_ICON_NAMES = Object.keys(AppIconNames) as AppIconName[];
 
 const PALETTE_SWATCHES: { name: string; token: keyof typeof Palette; usage: string }[] = [
   { name: 'Canvas', token: 'canvas', usage: 'Primary background' },
@@ -185,6 +189,38 @@ export default function DesignSystemScreen() {
             </View>
           </Card>
 
+          {/* 07 — Icons & signature motif */}
+          <SectionHeading eyebrow="07 · Icons & signature" title="24px grid, rounded stroke" />
+          <Card>
+            <View style={styles.iconGrid}>
+              {ALL_ICON_NAMES.map((name) => (
+                <View key={name} style={styles.iconItem}>
+                  <Icon name={name} size={24} />
+                  <ThemedText type="metadata" themeColor="textSecondary">
+                    {name}
+                  </ThemedText>
+                </View>
+              ))}
+            </View>
+          </Card>
+
+          <Card style={styles.stack}>
+            <ThemedText type="body" themeColor="textSecondary">
+              Open-book / page-fold signature motif — decoration only, one moment per module, never
+              a replacement for the logo:
+            </ThemedText>
+            <View style={styles.motifRow}>
+              {[16, 24, 32, 48].map((size) => (
+                <View key={size} style={styles.motifItem}>
+                  <PageFoldIcon size={size} />
+                  <ThemedText type="metadata" themeColor="textSecondary">
+                    {size}px
+                  </ThemedText>
+                </View>
+              ))}
+            </View>
+          </Card>
+
           <ThemedText type="metadata" themeColor="textSecondary" style={styles.footnote}>
             Source: Design/GPT Mock Images/talk-picker-v2-brand-board.pdf — this screen is a living
             reference, not a final app screen.
@@ -283,6 +319,26 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: Spacing.sm,
+  },
+  iconGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.xl,
+  },
+  iconItem: {
+    alignItems: 'center',
+    gap: Spacing.xs,
+    width: 72,
+  },
+  motifRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    gap: Spacing.xl,
+    flexWrap: 'wrap',
+  },
+  motifItem: {
+    alignItems: 'center',
+    gap: Spacing.xs,
   },
   navPreview: {
     flexDirection: 'row',

@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import { NativeTabs } from 'expo-router/unstable-native-tabs';
 import { useColorScheme } from 'react-native';
 
@@ -15,25 +16,21 @@ export default function AppTabs() {
       <NativeTabs.Trigger name="index">
         <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/home.png')}
-          renderingMode="template"
+          src={<NativeTabs.Trigger.VectorIcon family={Ionicons} name="home-outline" />}
         />
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger name="explore">
         <NativeTabs.Trigger.Label>Explore</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/explore.png')}
-          renderingMode="template"
+          src={<NativeTabs.Trigger.VectorIcon family={Ionicons} name="compass-outline" />}
         />
       </NativeTabs.Trigger>
 
-      {/* Placeholder icon reused from "explore" — swap for a dedicated one later */}
       <NativeTabs.Trigger name="design-system">
         <NativeTabs.Trigger.Label>Design System</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/explore.png')}
-          renderingMode="template"
+          src={<NativeTabs.Trigger.VectorIcon family={Ionicons} name="color-palette-outline" />}
         />
       </NativeTabs.Trigger>
     </NativeTabs>
