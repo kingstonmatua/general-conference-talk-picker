@@ -33,10 +33,13 @@ export function HeroBanner({ source, children }: { source: number; children: Rea
   );
 }
 
+const IMAGE_ASPECT_RATIO = 1774 / 887;
+
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    aspectRatio: 1774 / 887,
+    // Half the source image's natural height for a given width.
+    aspectRatio: IMAGE_ASPECT_RATIO * 2,
     backgroundColor: Palette.canvas,
     overflow: 'hidden',
     justifyContent: 'flex-end',
