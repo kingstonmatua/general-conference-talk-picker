@@ -98,9 +98,9 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: MaxContentWidth,
     paddingHorizontal: Spacing.xl,
-    // Pulls the daily-moment card up to overlap the hero's faded lower
-    // edge, so the image reads as bleeding behind it.
-    marginTop: -56,
+    // Pulls the daily-moment card up so the image bleeds behind roughly
+    // the top half of the card, not just its edge.
+    marginTop: -104,
     gap: Spacing.lg,
   },
   heroWrap: {
