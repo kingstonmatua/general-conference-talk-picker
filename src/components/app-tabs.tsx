@@ -27,6 +27,15 @@ export default function AppTabs() {
           renderingMode="template"
         />
       </NativeTabs.Trigger>
+
+      {/* Placeholder icon reused from "explore" — swap for a dedicated one later */}
+      <NativeTabs.Trigger name="design-system">
+        <NativeTabs.Trigger.Label>Design System</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          src={require('@/assets/images/tabIcons/explore.png')}
+          renderingMode="template"
+        />
+      </NativeTabs.Trigger>
     </NativeTabs>
   );
 }
