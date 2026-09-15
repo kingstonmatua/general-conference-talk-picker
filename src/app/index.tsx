@@ -4,10 +4,11 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { ThemedText } from '@/components/themed-text';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { HeroBanner } from '@/components/ui/hero-banner';
 import { PageFoldIcon } from '@/components/ui/page-fold-icon';
 import { StatTile } from '@/components/ui/stat-tile';
 import { TalkCard } from '@/components/ui/talk-card';
-import { BottomTabInset, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, Palette, Radii, Spacing } from '@/constants/theme';
 
 // Placeholder content — there is no data layer wired up yet (no talks
 // dataset, no Supabase, no streak/event log). This is the real screen
@@ -36,15 +37,19 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <View style={styles.content}>
-          <View style={styles.hero}>
-            <ThemedText type="display">A little study. A lasting difference.</ThemedText>
-            <ThemedText type="body" themeColor="textSecondary">
+        <View style={styles.heroWrap}>
+          <HeroBanner source={require('@/assets/images/hero/san-diego-temple.png')}>
+            <ThemedText type="display" style={styles.heroHeadline}>
+              A little study. A lasting difference.
+            </ThemedText>
+            <ThemedText type="body" style={styles.heroSubhead}>
               Make room for an inspired message today.
             </ThemedText>
             <PageFoldIcon size={28} />
-          </View>
+          </HeroBanner>
+        </View>
 
+        <View style={styles.content}>
           <Card style={styles.dailyMomentCard}>
             <ThemedText type="eyebrow" style={{ color: Palette.goldInk }}>
               Your daily moment
@@ -96,9 +101,17 @@ const styles = StyleSheet.create({
     paddingTop: Spacing.xl,
     gap: Spacing.lg,
   },
-  hero: {
-    gap: Spacing.xs,
-    marginBottom: Spacing.sm,
+  heroWrap: {
+    width: '100%',
+    maxWidth: MaxContentWidth,
+    borderRadius: Radii.card,
+    overflow: 'hidden',
+  },
+  heroHeadline: {
+    color: '#FFFFFF',
+  },
+  heroSubhead: {
+    color: 'rgba(255,255,255,0.85)',
   },
   dailyMomentCard: {
     gap: Spacing.sm,
