@@ -8,7 +8,7 @@ import { HeroBanner } from '@/components/ui/hero-banner';
 import { PageFoldIcon } from '@/components/ui/page-fold-icon';
 import { StatTile } from '@/components/ui/stat-tile';
 import { TalkCard } from '@/components/ui/talk-card';
-import { BottomTabInset, MaxContentWidth, Palette, Radii, Spacing } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 
 // Placeholder content — there is no data layer wired up yet (no talks
 // dataset, no Supabase, no streak/event log). This is the real screen
@@ -37,7 +37,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <View style={styles.heroWrap}>
+        <View style={styles.content}>
           <HeroBanner source={require('@/assets/images/hero/san-diego-temple.png')}>
             <ThemedText type="display" style={styles.heroHeadline}>
               A little study. A lasting difference.
@@ -47,9 +47,7 @@ export default function HomeScreen() {
             </ThemedText>
             <PageFoldIcon size={28} />
           </HeroBanner>
-        </View>
 
-        <View style={styles.content}>
           <Card style={styles.dailyMomentCard}>
             <ThemedText type="eyebrow" style={{ color: Palette.goldInk }}>
               Your daily moment
@@ -100,12 +98,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.xl,
     paddingTop: Spacing.xl,
     gap: Spacing.lg,
-  },
-  heroWrap: {
-    width: '100%',
-    maxWidth: MaxContentWidth,
-    borderRadius: Radii.card,
-    overflow: 'hidden',
   },
   heroHeadline: {
     color: '#FFFFFF',
