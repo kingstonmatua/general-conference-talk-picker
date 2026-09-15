@@ -103,7 +103,6 @@ const styles = StyleSheet.create({
   },
   heroWrap: {
     width: '100%',
-    maxWidth: MaxContentWidth,
   },
   heroHeadline: {
     color: '#FFFFFF',
