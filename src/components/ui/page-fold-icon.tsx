@@ -25,7 +25,7 @@ export function PageFoldIcon({
   return (
     <Svg width={size} height={size * 0.42} viewBox="0 0 48 20" fill="none">
       <Path
-        d="M4 4 C 12 4, 18 16, 24 16 C 30 16, 36 4, 44 4"
+        d="M4 4 C 10 4, 16 11, 24 18 C 32 11, 38 4, 44 4"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
