@@ -6,24 +6,22 @@ import { StyleSheet, View } from 'react-native';
 import { Palette, Spacing } from '@/constants/theme';
 
 /**
- * Photo hero, per the mobile mockups' Home treatment (image behind the
- * headline, fading to a dark scrim for text contrast). Runs edge to edge
+ * Photo hero, per the mobile mockups' Home treatment. Runs edge to edge
  * (full-bleed, no side margins, no rounded corners) and fades to the
- * canvas color at top and bottom only — a left/right fade doesn't make
- * sense in full-bleed mode, since there's no surrounding cream to blend
- * into, it would just show as unwanted stripes over the photo. Brand
- * board §08 itself is more cautious here — "Keep text off busy
- * imagery... avoid... dramatic dark overlays" — so the scrim is kept soft
- * rather than heavy, as a middle ground between what was asked for and
- * that caution.
+ * canvas color at top and bottom — a left/right fade doesn't make sense
+ * in full-bleed mode, since there's no surrounding cream to blend into,
+ * it would just show as unwanted stripes over the photo. The bottom fade
+ * is deliberately generous (not just a thin edge) since the overlaid text
+ * is dark ink, not white — it needs a solid light patch behind it for
+ * contrast, not just a photo with dark text floating directly on it.
  */
 export function HeroBanner({ source, children }: { source: number; children: ReactNode }) {
   return (
     <View style={styles.container}>
       <Image source={source} style={StyleSheet.absoluteFill} contentFit="cover" />
       <LinearGradient
-        colors={[Palette.canvas, 'transparent', 'rgba(38,24,69,0.5)', Palette.canvas]}
-        locations={[0, 0.14, 0.62, 1]}
+        colors={[Palette.canvas, 'transparent', 'transparent', Palette.canvas]}
+        locations={[0, 0.14, 0.55, 1]}
         start={{ x: 0, y: 0 }}
         end={{ x: 0, y: 1 }}
         style={StyleSheet.absoluteFill}

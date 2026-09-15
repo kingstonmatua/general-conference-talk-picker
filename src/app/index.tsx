@@ -105,10 +105,10 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   heroHeadline: {
-    color: '#FFFFFF',
+    color: Palette.purpleInk,
   },
   heroSubhead: {
-    color: 'rgba(255,255,255,0.85)',
+    color: Palette.secondaryInk,
   },
   dailyMomentCard: {
     gap: Spacing.sm,
