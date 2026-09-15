@@ -37,7 +37,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <View style={styles.content}>
+        <View style={styles.heroWrap}>
           <HeroBanner source={require('@/assets/images/hero/san-diego-temple.png')}>
             <ThemedText type="display" style={styles.heroHeadline}>
               A little study. A lasting difference.
@@ -47,7 +47,9 @@ export default function HomeScreen() {
             </ThemedText>
             <PageFoldIcon size={28} />
           </HeroBanner>
+        </View>
 
+        <View style={styles.content}>
           <Card style={styles.dailyMomentCard}>
             <ThemedText type="eyebrow" style={{ color: Palette.goldInk }}>
               Your daily moment
@@ -98,6 +100,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.xl,
     paddingTop: Spacing.xl,
     gap: Spacing.lg,
+  },
+  heroWrap: {
+    width: '100%',
+    maxWidth: MaxContentWidth,
   },
   heroHeadline: {
     color: '#FFFFFF',

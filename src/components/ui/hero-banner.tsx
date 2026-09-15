@@ -3,17 +3,19 @@ import { Image } from 'expo-image';
 import type { ReactNode } from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import { Palette, Radii, Spacing } from '@/constants/theme';
+import { Palette, Spacing } from '@/constants/theme';
 
 /**
  * Photo hero, per the mobile mockups' Home treatment (image behind the
- * headline, fading to a dark scrim for text contrast). Inset from the
- * page edges (not full-bleed) and faded to the canvas color on all four
- * sides, so it reads as floating on the page rather than a hard-edged
- * banner. Brand board §08 itself is more cautious here — "Keep text off
- * busy imagery... avoid... dramatic dark overlays" — so the scrim is kept
- * soft rather than heavy, as a middle ground between what was asked for
- * and that caution.
+ * headline, fading to a dark scrim for text contrast). Runs edge to edge
+ * (full-bleed, no side margins, no rounded corners) and fades to the
+ * canvas color at top and bottom only — a left/right fade doesn't make
+ * sense in full-bleed mode, since there's no surrounding cream to blend
+ * into, it would just show as unwanted stripes over the photo. Brand
+ * board §08 itself is more cautious here — "Keep text off busy
+ * imagery... avoid... dramatic dark overlays" — so the scrim is kept soft
+ * rather than heavy, as a middle ground between what was asked for and
+ * that caution.
  */
 export function HeroBanner({ source, children }: { source: number; children: ReactNode }) {
   return (
@@ -26,13 +28,6 @@ export function HeroBanner({ source, children }: { source: number; children: Rea
         end={{ x: 0, y: 1 }}
         style={StyleSheet.absoluteFill}
       />
-      <LinearGradient
-        colors={[Palette.canvas, 'transparent', 'transparent', Palette.canvas]}
-        locations={[0, 0.1, 0.9, 1]}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={StyleSheet.absoluteFill}
-      />
       <View style={styles.content}>{children}</View>
     </View>
   );
@@ -43,7 +38,6 @@ const styles = StyleSheet.create({
     width: '100%',
     aspectRatio: 1774 / 887,
     backgroundColor: Palette.canvas,
-    borderRadius: Radii.card,
     overflow: 'hidden',
     justifyContent: 'flex-end',
   },
