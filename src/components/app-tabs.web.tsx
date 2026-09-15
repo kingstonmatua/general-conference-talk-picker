@@ -26,27 +26,25 @@ import { Palette, Spacing } from '@/constants/theme';
  */
 export default function AppTabs() {
   return (
-    <Tabs style={{ flex: 1 }}>
-      <View style={styles.root}>
-        <TabList asChild>
-          <Sidebar>
-            <TabTrigger name="home" href="/" asChild>
-              <SidebarNavItem icon="home">Home</SidebarNavItem>
-            </TabTrigger>
-            <TabTrigger name="browse" href="/browse" asChild>
-              <SidebarNavItem icon="browse">Browse</SidebarNavItem>
-            </TabTrigger>
-            <TabTrigger name="progress" href="/progress" asChild>
-              <SidebarNavItem icon="progress">Progress</SidebarNavItem>
-            </TabTrigger>
-            <TabTrigger name="saved" href="/saved" asChild>
-              <SidebarNavItem icon="saved">Saved</SidebarNavItem>
-            </TabTrigger>
-          </Sidebar>
-        </TabList>
+    <Tabs style={styles.root}>
+      <TabList asChild>
+        <Sidebar>
+          <TabTrigger name="home" href="/" asChild>
+            <SidebarNavItem icon="home">Home</SidebarNavItem>
+          </TabTrigger>
+          <TabTrigger name="browse" href="/browse" asChild>
+            <SidebarNavItem icon="browse">Browse</SidebarNavItem>
+          </TabTrigger>
+          <TabTrigger name="progress" href="/progress" asChild>
+            <SidebarNavItem icon="progress">Progress</SidebarNavItem>
+          </TabTrigger>
+          <TabTrigger name="saved" href="/saved" asChild>
+            <SidebarNavItem icon="saved">Saved</SidebarNavItem>
+          </TabTrigger>
+        </Sidebar>
+      </TabList>
 
-        <TabSlot style={styles.slot} />
-      </View>
+      <TabSlot style={styles.slot} />
     </Tabs>
   );
 }
