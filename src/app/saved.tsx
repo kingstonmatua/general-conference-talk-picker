@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
-import { PageFoldIcon } from '@/components/ui/page-fold-icon';
+import { HeroBanner } from '@/components/ui/hero-banner';
 import { Pill } from '@/components/ui/pill';
 import { SearchField } from '@/components/ui/search-field';
 import { TalkCard } from '@/components/ui/talk-card';
@@ -72,15 +72,18 @@ export default function SavedScreen() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <View style={styles.content}>
-          <View style={styles.hero}>
-            <ThemedText type="display">Words to return to.</ThemedText>
-            <ThemedText type="body" themeColor="textSecondary">
+        <View style={styles.heroWrap}>
+          <HeroBanner source={require('@/assets/images/hero/laie-hawaii-temple.png')}>
+            <ThemedText type="display" style={styles.heroHeadline}>
+              Words to return to.
+            </ThemedText>
+            <ThemedText type="body" style={styles.heroSubhead}>
               Your saved messages, ready when you need them.
             </ThemedText>
-            <PageFoldIcon size={28} />
-          </View>
+          </HeroBanner>
+        </View>
 
+        <View style={styles.content}>
           <SearchField value={query} onChangeText={setQuery} placeholder="Search your saved talks" />
 
           <View style={styles.pillRow}>
@@ -133,9 +136,14 @@ const styles = StyleSheet.create({
     paddingTop: Spacing.xl,
     gap: Spacing.lg,
   },
-  hero: {
-    gap: Spacing.xs,
-    marginBottom: Spacing.sm,
+  heroWrap: {
+    width: '100%',
+  },
+  heroHeadline: {
+    color: Palette.purpleInk,
+  },
+  heroSubhead: {
+    color: Palette.secondaryInk,
   },
   pillRow: {
     flexDirection: 'row',

@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
 import { Card } from '@/components/ui/card';
-import { PageFoldIcon } from '@/components/ui/page-fold-icon';
+import { HeroBanner } from '@/components/ui/hero-banner';
 import { Pill } from '@/components/ui/pill';
 import { StatTile } from '@/components/ui/stat-tile';
 import { BottomTabInset, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
@@ -34,15 +34,18 @@ export default function ProgressScreen() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <View style={styles.content}>
-          <View style={styles.hero}>
-            <ThemedText type="display">Steady Progress Brings Light.</ThemedText>
-            <ThemedText type="body" themeColor="textSecondary">
+        <View style={styles.heroWrap}>
+          <HeroBanner source={require('@/assets/images/hero/salt-lake-temple.png')}>
+            <ThemedText type="display" style={styles.heroHeadline}>
+              Steady Progress Brings Light.
+            </ThemedText>
+            <ThemedText type="body" style={styles.heroSubhead}>
               Small moments of study add up to meaningful progress.
             </ThemedText>
-            <PageFoldIcon size={28} />
-          </View>
+          </HeroBanner>
+        </View>
 
+        <View style={styles.content}>
           <View style={styles.scopeRow}>
             <ThemedText type="eyebrow" style={{ color: Palette.goldInk }}>
               Progress scope
@@ -127,9 +130,14 @@ const styles = StyleSheet.create({
     paddingTop: Spacing.xl,
     gap: Spacing.lg,
   },
-  hero: {
-    gap: Spacing.xs,
-    marginBottom: Spacing.sm,
+  heroWrap: {
+    width: '100%',
+  },
+  heroHeadline: {
+    color: Palette.purpleInk,
+  },
+  heroSubhead: {
+    color: Palette.secondaryInk,
   },
   scopeRow: {
     gap: Spacing.sm,
