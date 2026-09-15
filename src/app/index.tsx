@@ -1,98 +1,123 @@
-import * as Device from 'expo-device';
-import { Platform, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AnimatedIcon } from '@/components/animated-icon';
-import { HintRow } from '@/components/hint-row';
 import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { WebBadge } from '@/components/web-badge';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { PageFoldIcon } from '@/components/ui/page-fold-icon';
+import { StatTile } from '@/components/ui/stat-tile';
+import { TalkCard } from '@/components/ui/talk-card';
+import { BottomTabInset, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 
-function getDevMenuHint() {
-  if (Platform.OS === 'web') {
-    return <ThemedText type="small">use browser devtools</ThemedText>;
-  }
-  if (Device.isDevice) {
-    return (
-      <ThemedText type="small">
-        shake device or press <ThemedText type="code">m</ThemedText> in terminal
-      </ThemedText>
-    );
-  }
-  const shortcut = Platform.OS === 'android' ? 'cmd+m (or ctrl+m)' : 'cmd+d';
-  return (
-    <ThemedText type="small">
-      press <ThemedText type="code">{shortcut}</ThemedText>
-    </ThemedText>
-  );
-}
+// Placeholder content — there is no data layer wired up yet (no talks
+// dataset, no Supabase, no streak/event log). This is the real screen
+// layout with representative sample values, not live state. Buttons and
+// links here are not yet wired to any behavior.
+const CONTINUE_STUDYING = [
+  {
+    category: 'SUNDAY_AFTERNOON' as const,
+    title: 'Think Celestial!',
+    meta: 'Russell M. Nelson · October 2023',
+    progressPercent: 72,
+    statusLabel: 'In progress',
+    actionLabel: 'Continue study →',
+  },
+  {
+    category: 'SATURDAY_AFTERNOON' as const,
+    title: 'Nourish the Roots, and the Branches Will Grow',
+    meta: 'Dieter F. Uchtdorf · October 2024',
+    progressPercent: 36,
+    statusLabel: 'In progress',
+    actionLabel: 'Continue study →',
+  },
+];
 
 export default function HomeScreen() {
   return (
-    <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea}>
-        <ThemedView style={styles.heroSection}>
-          <AnimatedIcon />
-          <ThemedText type="title" style={styles.title}>
-            Welcome to&nbsp;Expo
-          </ThemedText>
-        </ThemedView>
+    <SafeAreaView style={styles.safeArea}>
+      <ScrollView contentContainerStyle={styles.scrollContent}>
+        <View style={styles.content}>
+          <View style={styles.hero}>
+            <ThemedText type="display">A little study. A lasting difference.</ThemedText>
+            <ThemedText type="body" themeColor="textSecondary">
+              Make room for an inspired message today.
+            </ThemedText>
+            <PageFoldIcon size={28} />
+          </View>
 
-        <ThemedText type="code" style={styles.code}>
-          get started
-        </ThemedText>
+          <Card style={styles.dailyMomentCard}>
+            <ThemedText type="eyebrow" style={{ color: Palette.goldInk }}>
+              Your daily moment
+            </ThemedText>
+            <ThemedText type="section">What will you discover today?</ThemedText>
+            <ThemedText type="body" themeColor="textSecondary">
+              Draw a General Conference talk and find something to carry with you.
+            </ThemedText>
+            <Button label="Draw a Random Talk" variant="primary" />
+          </Card>
 
-        <ThemedView type="backgroundElement" style={styles.stepContainer}>
-          <HintRow
-            title="Try editing"
-            hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
-          />
-          <HintRow title="Dev tools" hint={getDevMenuHint()} />
-          <HintRow
-            title="Fresh start"
-            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
-          />
-        </ThemedView>
+          <View style={styles.statsRow}>
+            <StatTile icon="studied" color="sage" value="12" label="Talks studied" />
+            <StatTile icon="streak" color="terracotta" value="7" label="Day streak" />
+            <StatTile icon="saved" color="lavender" value="8" label="Saved talks" />
+          </View>
 
-        {Platform.OS === 'web' && <WebBadge />}
-      </SafeAreaView>
-    </ThemedView>
+          <View style={styles.sectionHeader}>
+            <ThemedText type="section">Continue Studying</ThemedText>
+            <ThemedText type="control" style={{ color: Palette.conferencePurple }}>
+              Browse all talks →
+            </ThemedText>
+          </View>
+
+          <View style={styles.talkCardStack}>
+            {CONTINUE_STUDYING.map((talk) => (
+              <TalkCard key={talk.title} {...talk} />
+            ))}
+          </View>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    flexDirection: 'row',
-  },
   safeArea: {
     flex: 1,
-    paddingHorizontal: Spacing.four,
+    backgroundColor: Palette.canvas,
+  },
+  scrollContent: {
     alignItems: 'center',
-    gap: Spacing.three,
-    paddingBottom: BottomTabInset + Spacing.three,
+    paddingBottom: BottomTabInset + Spacing.xxxl,
+  },
+  content: {
+    width: '100%',
     maxWidth: MaxContentWidth,
+    paddingHorizontal: Spacing.xl,
+    paddingTop: Spacing.xl,
+    gap: Spacing.lg,
   },
-  heroSection: {
+  hero: {
+    gap: Spacing.xs,
+    marginBottom: Spacing.sm,
+  },
+  dailyMomentCard: {
+    gap: Spacing.sm,
+    alignItems: 'flex-start',
+    backgroundColor: Palette.softLavender,
+    borderColor: Palette.softLavender,
+  },
+  statsRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.md,
+  },
+  sectionHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-    paddingHorizontal: Spacing.four,
-    gap: Spacing.four,
+    marginTop: Spacing.md,
   },
-  title: {
-    textAlign: 'center',
-  },
-  code: {
-    textTransform: 'uppercase',
-  },
-  stepContainer: {
-    gap: Spacing.three,
-    alignSelf: 'stretch',
-    paddingHorizontal: Spacing.three,
-    paddingVertical: Spacing.four,
-    borderRadius: Spacing.four,
+  talkCardStack: {
+    gap: Spacing.md,
   },
 });
