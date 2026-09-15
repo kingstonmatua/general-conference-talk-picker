@@ -98,7 +98,9 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: MaxContentWidth,
     paddingHorizontal: Spacing.xl,
-    paddingTop: Spacing.xl,
+    // Pulls the daily-moment card up to overlap the hero's faded lower
+    // edge, so the image reads as bleeding behind it.
+    marginTop: -56,
     gap: Spacing.lg,
   },
   heroWrap: {
@@ -115,6 +117,13 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     backgroundColor: Palette.softLavender,
     borderColor: Palette.softLavender,
+    // Brand board §03: "Default shadow: none; overlays only, 0 4 16 at
+    // 6% ink" — this card now overlaps the hero image, so it qualifies.
+    shadowColor: Palette.purpleInk,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.06,
+    shadowRadius: 16,
+    elevation: 3,
   },
   statsRow: {
     flexDirection: 'row',
