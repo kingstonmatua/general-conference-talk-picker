@@ -5,7 +5,6 @@ import { ThemedText } from '@/components/themed-text';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { HeroBanner } from '@/components/ui/hero-banner';
-import { PageFoldIcon } from '@/components/ui/page-fold-icon';
 import { StatTile } from '@/components/ui/stat-tile';
 import { TalkCard } from '@/components/ui/talk-card';
 import { BottomTabInset, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
@@ -45,7 +44,6 @@ export default function HomeScreen() {
             <ThemedText type="body" style={styles.heroSubhead}>
               Make room for an inspired message today.
             </ThemedText>
-            <PageFoldIcon size={28} />
           </HeroBanner>
         </View>
 
