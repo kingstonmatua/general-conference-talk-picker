@@ -18,8 +18,10 @@ export function TalkCard({
   progressPercent,
   statusLabel,
   actionLabel,
+  onPressAction,
   favorite,
   onToggleFavorite,
+  onPress,
 }: {
   category: SessionCategory;
   title: string;
@@ -27,15 +29,24 @@ export function TalkCard({
   progressPercent?: number;
   statusLabel?: string;
   actionLabel?: string;
+  /** Makes actionLabel tappable. Omit to render it as a static label. */
+  onPressAction?: () => void;
   favorite?: boolean;
   onToggleFavorite?: () => void;
+  /** Makes the whole card tappable (e.g. to open the talk's detail screen). */
+  onPress?: () => void;
 }) {
-  return (
+  const content = (
     <Card style={styles.card}>
       <View style={styles.header}>
         <SessionTag category={category} />
         {typeof favorite === 'boolean' && (
-          <Pressable onPress={onToggleFavorite} hitSlop={8}>
+          <Pressable
+            onPress={(e) => {
+              e.stopPropagation();
+              onToggleFavorite?.();
+            }}
+            hitSlop={8}>
             <Icon
               name={favorite ? 'savedFilled' : 'saved'}
               size={18}
@@ -65,15 +76,31 @@ export function TalkCard({
           ) : (
             <View />
           )}
-          {actionLabel && (
-            <ThemedText type="control" style={styles.action}>
-              {actionLabel}
-            </ThemedText>
+          {actionLabel && onPressAction ? (
+            <Pressable
+              onPress={(e) => {
+                e.stopPropagation();
+                onPressAction();
+              }}
+              hitSlop={8}>
+              <ThemedText type="control" style={styles.action}>
+                {actionLabel}
+              </ThemedText>
+            </Pressable>
+          ) : (
+            actionLabel && (
+              <ThemedText type="control" style={styles.action}>
+                {actionLabel}
+              </ThemedText>
+            )
           )}
         </View>
       )}
     </Card>
   );
+
+  if (!onPress) return content;
+  return <Pressable onPress={onPress}>{content}</Pressable>;
 }
 
 const styles = StyleSheet.create({

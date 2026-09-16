@@ -1,5 +1,4 @@
 import { Image } from 'expo-image';
-import { Link } from 'expo-router';
 import { TabList, TabListProps, TabSlot, Tabs, TabTrigger, TabTriggerSlotProps } from 'expo-router/ui';
 import { Pressable, StyleSheet, View } from 'react-native';
 
@@ -8,6 +7,8 @@ import { Icon, Ionicons, type AppIconName } from './ui/icon';
 import { ThemedText } from './themed-text';
 
 import { Palette, Spacing } from '@/constants/theme';
+import { useAuth } from '@/hooks/use-auth';
+import { useDrawRandomTalk } from '@/hooks/use-draw-random-talk';
 
 /**
  * Web nav shell — a persistent left sidebar (logo, a standing "Draw a
@@ -50,6 +51,7 @@ export default function AppTabs() {
 }
 
 function Sidebar(props: TabListProps) {
+  const drawRandomTalk = useDrawRandomTalk();
   return (
     <View style={styles.sidebar}>
       <Image
@@ -58,16 +60,17 @@ function Sidebar(props: TabListProps) {
         contentFit="contain"
       />
 
-      <Link href="/" asChild>
-        <Button label="Draw a Random Talk" variant="primary" style={styles.drawButton} />
-      </Link>
+      <Button
+        label="Draw a Random Talk"
+        variant="primary"
+        style={styles.drawButton}
+        onPress={drawRandomTalk}
+      />
 
       <View style={styles.navList}>{props.children}</View>
 
       <View style={styles.sidebarFooter}>
-        <ThemedText type="metadata" themeColor="textSecondary">
-          Pick a talk. Make space for daily study.
-        </ThemedText>
+        <AccountRow />
       </View>
     </View>
   );
@@ -91,6 +94,33 @@ function SidebarNavItem({
         {isFocused && <Ionicons name="chevron-down" size={14} color={Palette.goldInk} />}
       </View>
     </Pressable>
+  );
+}
+
+function AccountRow() {
+  const { user, promptSignIn, signOut } = useAuth();
+
+  if (!user) {
+    return (
+      <Pressable onPress={promptSignIn} hitSlop={8}>
+        <ThemedText type="control" style={{ color: Palette.conferencePurple }}>
+          Sign in to track progress
+        </ThemedText>
+      </Pressable>
+    );
+  }
+
+  return (
+    <View style={{ gap: Spacing.xs }}>
+      <ThemedText type="metadata" themeColor="textSecondary" numberOfLines={1}>
+        {user.email}
+      </ThemedText>
+      <Pressable onPress={() => signOut()} hitSlop={8}>
+        <ThemedText type="control" style={{ color: Palette.conferencePurple }}>
+          Sign out
+        </ThemedText>
+      </Pressable>
+    </View>
   );
 }
 
