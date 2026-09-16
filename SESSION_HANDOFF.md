@@ -1,8 +1,8 @@
 # General Conference Talk Picker V2 — Session Handoff
 
-Last updated: 2026-09-15, end of session (moving to another machine).
+Last updated: 2026-09-16, end of session.
 
-**Read this first if you're a fresh Claude Code session picking this up.** Claude's persistent memory lives in the local user's home directory on the machine it was created on — it does **not** travel with this removable drive. On a new machine this project will look completely unfamiliar to Claude even though the git history and this file are right here. Point Claude at this file first thing.
+**Read this first if you're a fresh Claude Code session picking this up.** Claude's persistent memory lives in the local user's home directory on the machine it was created on — it does **not** travel with this removable drive. On a new machine this project will look completely unfamiliar to Claude even though the git history and this file are right here. Point Claude at this file first thing. The user is **not a coder** — give slow, numbered, plain-language steps for anything that requires them to click through a UI (Supabase dashboard, terminal, etc.) rather than assuming familiarity.
 
 ## Quick start
 
@@ -13,7 +13,7 @@ npx expo start --web
 # open http://localhost:8081
 ```
 
-Four real routes: Home (`/`), Browse (`/browse`), Progress (`/progress`), Saved (`/saved`), plus a living design-system reference at `/design-system` (not in the nav, direct URL only).
+Four real routes, now wired to a live Supabase backend: Home (`/`), Browse (`/browse`), Progress (`/progress`), Saved (`/saved`) — all under the `(tabs)` route group now, see "Routing structure" below — plus a talk detail screen at `/talk/[id]` (tap any talk card) and a living design-system reference at `/design-system` (not in the nav, direct URL only, still placeholder/decorative — not wired to real data).
 
 ## Where the code actually lives (this matters)
 
@@ -25,10 +25,33 @@ This repo uses a **git worktree**, not a separate repo:
 - `v2` branched off `develop` at commit `c01f0a5`, tagged **`v1-final`** as a permanent marker of where V2 began.
 - **Nothing has been pushed to GitHub yet.** `v2` and `v1-final` exist only in this local `.git` — which does travel with the drive, so history/branches are fine to resume from any machine that has this drive mounted. Just don't expect `git fetch`/`git pull` to show anything until someone pushes.
 - Run git commands for V2 from inside `Design/APP V2` specifically, not from `app/` — they're different working trees of the same repo.
+- **None of this session's work (talks import, Supabase wiring, screen rewiring) has been committed yet** — it's sitting as uncommitted changes in the working tree. Commit when the user asks, not before.
 
 ## Stack
 
-Expo SDK 57, Expo Router, React 19.2 / React Native 0.86, TypeScript, typed routes, React Compiler enabled. Routes live under `src/app/` (not root-level `app/`, to avoid confusion with the sibling V1 folder). No backend wired up yet — everything below is UI/layout only.
+Expo SDK 57, Expo Router, React 19.2 / React Native 0.86, TypeScript, typed routes, React Compiler enabled. Routes live under `src/app/` (not root-level `app/`, to avoid confusion with the sibling V1 folder). **Supabase is now wired up** — see below.
+
+## Routing structure (changed this session, 2026-09-16 — read before adding any new screen)
+
+```
+src/app/
+  _layout.tsx          Root Stack. Providers (Auth/TalkStatus) + AuthSheet live HERE.
+  (tabs)/
+    _layout.tsx        Just renders <AppTabs/> (the sidebar/bottom-tabs chrome).
+    index.tsx          Home        — same URLs as before: (tabs) doesn't appear in the path.
+    browse.tsx          Browse
+    progress.tsx        Progress
+    saved.tsx            Saved
+  talk/
+    [id].tsx           Talk detail — sibling of (tabs), NOT nested under it.
+  design-system.tsx     Sibling of (tabs) too.
+```
+
+**Why this exists — a real bug, not a style choice:** `expo-router/ui`'s `<Tabs>`/`<TabSlot>` (used inside `(tabs)/_layout.tsx` via `AppTabs`) only renders routes that are registered as a `<TabTrigger>`. Before this session, `_layout.tsx` rendered `<AppTabs/>` directly at the root with no `<Stack>` around it, and **any route that wasn't one of the 4 tabs silently fell back to rendering Home instead** — confirmed broken for both the new `talk/[id]` route and the pre-existing `/design-system` (which the handoff previously, incorrectly, described as "direct URL only" — it wasn't actually working). Wrapping `(tabs)` in a root `<Stack>` alongside sibling screens fixes both.
+
+**If you add another screen that shouldn't live in the tab bar** (a settings screen, an onboarding flow, etc.), it MUST go as a sibling `Stack.Screen` in root `_layout.tsx` — do not just drop a new file directly under `(tabs)/` expecting it to be reachable outside the tab set, and do not assume a bare file under `src/app/` will "just work" the way normal Expo Router docs imply, because this project's custom tab setup breaks that assumption.
+
+`AuthProvider`/`TalkStatusProvider`/`AuthSheet` live in the ROOT layout (not inside `(tabs)`) specifically so `talk/[id]` and `design-system` also get auth/talk-status context — if they'd stayed inside `(tabs)/_layout.tsx`, sibling screens outside the tab group wouldn't have access to them.
 
 ## Design source of truth
 
@@ -36,33 +59,56 @@ Expo SDK 57, Expo Router, React 19.2 / React Native 0.86, TypeScript, typed rout
 
 **Standing rule, confirmed by the user: when the PDF and a mockup disagree, the PDF always wins.** This came up concretely with the primary button color — the PDF's own example art shows a champagne-filled primary button + purple-outline secondary, while the mockups show a solid purple CTA. Champagne/purple-outline is what's built. Don't re-litigate this or similar conflicts; just follow the PDF.
 
+**A full Figma port of the design system also exists now** — see "Figma file" section below.
+
 ## What's built so far
 
-All on the `v2` branch, one focused commit per change (`git log` tells the story in order):
-
+### Visual/design system (prior sessions)
 1. **Scaffold** — stock `create-expo-app` output, renamed from generic defaults.
-2. **Design-system tokens** (`src/constants/theme.ts`) — full brand palette, session-tag color tints, Georgia/Arial type scale (`ThemedText` types: `display`/`section`/`body`/`control`/`metadata`/`eyebrow`), the 4/8/12/16/24/32/48 spacing scale, card/button/tag radii. Primitives: `Card`, `Button` (primary=champagne, secondary=purple outline), `SessionTag`/`Tag`, `StatTile`, `TalkCard`, `Pill`, `SearchField`. All viewable live at `/design-system`.
-3. **Icon system** — `src/components/ui/icon.tsx` wraps Ionicons' outline set (one consistent family, used natively via `NativeTabs.Trigger.VectorIcon` too, no exported PNGs needed). `src/components/ui/page-fold-icon.tsx` is a hand-drawn SVG of the brand's signature open-book/"V" motif, sharpened to match the actual logo's book shape.
-4. **Nav shell** — exactly four items (Home/Browse/Progress/Saved), matching the PDF's §07 spec, not the mockups' 5-item FAB layout. Web: persistent left sidebar (`app-tabs.web.tsx`). Native: real bottom tabs (`app-tabs.tsx`). **Known gap:** the web sidebar isn't responsive for a narrow/phone browser — a bottom-bar fallback was attempted and reverted because `expo-router/ui`'s `<Tabs>` broke when `<TabTrigger>` children weren't static (see the git log message on that commit for the exact failure and what to avoid retrying). Low priority since the native app already covers phones properly.
-5. **Four real screens** — Home, Browse, Progress, Saved. Each has a real layout using the primitives above. **All of it is placeholder data** — small hardcoded sample arrays. Search/filter/favorite-toggle interactions are genuinely functional (real client-side state), just not backed by anything real.
-6. **Hero images** — every page has a full-bleed photo (user-supplied temple watercolor art, `assets/images/hero/`) with a dark-ink headline/subhead faded into the canvas color. Home additionally has its "daily moment" card pulled up to overlap/bleed behind the bottom of its hero image (a treatment unique to Home; not replicated on the other three pages since they don't have an equivalent first element).
+2. **Design-system tokens** (`src/constants/theme.ts`) — full brand palette, session-tag color tints, Georgia/Arial type scale (`ThemedText` types: `display`/`section`/`body`/`control`/`metadata`/`eyebrow`), the 4/8/12/16/24/32/48 spacing scale, card/button/tag radii. Primitives: `Card`, `Button` (primary=champagne, secondary=purple outline), `SessionTag`/`Tag`, `StatTile`, `TalkCard`, `Pill`, `SearchField`. All viewable live at `/design-system` (still placeholder content).
+3. **Icon system** — `src/components/ui/icon.tsx` wraps Ionicons' outline set. `src/components/ui/page-fold-icon.tsx` is a hand-drawn SVG of the brand's signature open-book/"V" motif.
+4. **Nav shell** — exactly four items (Home/Browse/Progress/Saved). Web: persistent left sidebar (`app-tabs.web.tsx`), now also shows the signed-in user's email + Sign out (or a "Sign in to track progress" link) in the footer. Native: real bottom tabs (`app-tabs.tsx`), **not yet given the same account footer**. **Known gap:** the web sidebar isn't responsive for a narrow/phone browser (low priority, native app covers phones).
+5. **Hero images** — every page has a full-bleed photo (`assets/images/hero/`) with a dark-ink headline/subhead faded into the canvas color. Home's "daily moment" card overlaps/bleeds behind the bottom of its hero image.
+
+### Data layer (this session, 2026-09-16)
+6. **Real talks dataset imported** — `scripts/generate-talks-data.js` parses `app/General Conference Database FINAL - Sheet1.csv` (4,050 rows, quote-safe CSV parsing, no dependency) into `src/data/talks.json` (minified, generated — don't hand-edit) + typed `src/data/talks.ts` (`Talk` type, `TALKS` array, `getTalkById`, `getTalksByCategory`, `searchTalks`, `formatTalkMeta`). Session-taxonomy mapping lives in `src/constants/session-taxonomy.ts` (`RAW_SESSION_TO_CATEGORY`, `mapRawSessionToCategory`) — all 21 raw session strings mapped, throws loudly on any unmapped value so a future CSV update can't silently miscategorize talks. Re-run the generator after the CSV changes: `node scripts/generate-talks-data.js`.
+7. **Supabase wired up** — `src/lib/supabase.ts` is the client (same project/keys as V1, see `app/config.js` — **V1 and V2 share one user base**). Guards against a real bug: Expo Router's web server-render pass runs in Node with no `window`, and AsyncStorage's web shim crashes if used there — the client falls back to a no-op storage during that SSR pass and only uses real `AsyncStorage` in an actual browser/native runtime.
+8. **`src/hooks/use-auth.tsx`** (`AuthProvider`/`useAuth`) — session state via `onAuthStateChange`, plus a `promptSignIn()`/`promptVisible` pair that any screen can call to pop the sign-in sheet without needing to render its own modal.
+9. **`src/components/auth-sheet.tsx`** — the actual sign-in/sign-up modal (email + password, toggles between modes), mounted once at the root in `_layout.tsx`. **Email confirmation is required** on this Supabase project (real signup sends a real confirmation email) — there is no "skip confirmation" path.
+10. **`src/hooks/use-talk-status.tsx`** (`TalkStatusProvider`/`useTalkStatus`) — fetches all `talk_status` rows for the signed-in user into memory, exposes `getStatus(talkId)`, `markStudied`/`unmarkStudied`/`setFavorite` (call the RPCs below, optimistic-update then reconcile on error), `studiedCount`, `favoriteIds`, `studiedIdsByRecency`, `currentStreak`/`longestStreak` (via `get_study_streaks()` RPC, refreshed after every `markStudied`). All three mutators call `promptSignIn()` instead of writing if there's no user.
+11. **All four screens rewired to real data + real state**:
+    - **Browse**: all 4,050 real talks, real search/category filter, favorite toggle wired to Supabase. Rendered via `FlatList` (not `ScrollView`+`.map`, which would try to mount 4,050 cards at once) — **note a real layout bug that had to be worked around**: `FlatList`'s per-item cell wrapper on react-native-web doesn't resolve `width:'100%'`/`alignSelf:'stretch'` against the list's actual width (cards were shrink-wrapping to their own content instead of filling the column). Fixed by measuring the real slot width via `onLayout` on the screen's root `SafeAreaView` and passing an explicit pixel width to each card wrapper — see the `slotWidth`/`contentWidth` pattern in `browse.tsx`. **If any other screen ever needs a `FlatList` with centered/max-width content, reuse this pattern, don't reach for `width:'100%'` again.**
+    - **Saved**: real favorited talks (via `favoriteIds` → `getTalkById`), real status filter, unsave = `setFavorite(id, false)`. Sign-in prompt card shown when signed out.
+    - **Home**: real stats row (studied count, current streak, favorite count). "Continue Studying" was **redefined** from the old fake-progress-bar placeholder to: favorited-but-not-yet-studied talks (up to 2), each with a real "Mark as studied →" action — there's no partial in-progress-within-a-talk concept in this app (no duration/reading-time field, a locked decision), so a progress bar never made sense here once real data was wired in. Sign-in prompt card shown when signed out.
+    - **Progress**: real overall %, real studied/streak/longest-streak stats, real "Recently Studied Conferences"/"Recently Studied Speakers" (grouped from `TALKS` + `talk_status`, sorted by actual `studied_at` recency, not conference date). Progress Scope's "Last 5/10 Years" pills actually filter the year range now; "Custom Range" is shown but disabled (no date-picker UI exists) rather than faked.
+    - `TalkCard`'s `actionLabel` gained an optional `onPressAction` prop (backward compatible — Browse/Saved don't pass it, so their action labels stay static) so Home's "Mark as studied →" can actually do something.
+12. **End-to-end verified working** (2026-09-16, via a disposable `@mailinator.com` test account signed up and confirmed through the real flow, then deleted from the account's perspective by signing out — **the test user itself was NOT deleted from Supabase Auth, see below**): favoriting persists across reloads, marking studied updates Home/Progress stats and the streak (day streak went 0→1 immediately), Saved/Continue Studying correctly react to status changes.
+13. **Talk detail screen** (`src/app/talk/[id].tsx`) — required the routing restructure above. Shows the tapped talk's session tag/title/speaker/date, a favorite toggle, "Mark as studied"/"Mark as not studied", "Save for later"/"Remove from Saved", and "Read on churchofjesuschrist.org →" (opens `talk.url` via `expo-web-browser`'s `openBrowserAsync` — verified wired correctly with no console errors, but the actual tab-opening wasn't visually confirmed through the automated browser testing used this session; worth a real click to double check). `TalkCard` gained an `onPress` prop (wraps the card in a `Pressable`; the existing favorite/action-label inner `Pressable`s now call `e.stopPropagation()` so tapping those doesn't also trigger navigation) — wired up from Browse, Saved, and Home's "Continue Studying" cards, all navigating via `router.push({ pathname: '/talk/[id]', params: { id } })`.
+14. **"Draw a Random Talk" is real** — `src/hooks/use-draw-random-talk.ts`. "Remaining bag" for V2 is defined as *not-yet-studied talks* (derived from `talk_status` already wired up, not a separate drawn/remaining table like V1's `remaining_ids` array); once everything is studied the bag refills from the full 4,050 rather than drawing nothing. Unfiltered for now — no Draw-specific filter UI exists (Progress Scope's "Browse filters = find, Draw filters = choose, Progress Scope = measure" framing implies Draw should eventually get its own filters, but that's not built). Wired to both the Home daily-moment button and the web sidebar's button (which used to just `<Link href="/">`, now actually draws). Verified live: draws a genuine random unstudied talk each time, from both entry points.
+
+## Figma file
+
+A full design-system port exists in Figma: **General Conference Talk Picker — V2 Design System** (file key `sEK1hrocXl4qeYXM6hTDbx`). 17 pages: Cover, Foundations (colors/type/spacing/radius/elevation, all bound to real Figma variables), one page per component (Button/Card/Tag & SessionTag/Pill/StatTile/TalkCard/SearchField/HeroBanner/Icons), and all 4 screens composed from real component instances with your actual hero photos uploaded. Known simplifications: Georgia/Arial aren't available in that rendering environment so text uses **Noto Serif** (for Georgia) and **Arimo** (for Arial — metrically identical, not just a random substitute) instead; icons are simplified line-art stand-ins for the real Ionicons, not pixel-perfect redraws.
 
 ## Locked product decisions (don't re-litigate these; if genuinely stuck, ask, don't guess)
 
-- **Session taxonomy**: full mapping of all 21 raw `session` values in the real dataset (`app/General Conference Database FINAL - Sheet1.csv`) to 10 normalized categories — see `src/constants/theme.ts`'s `SessionCategoryTag`/`SessionCategory` for the implemented version. Notably: `RELIEF_SOCIETY` (not `WOMEN`) absorbs "General Women's Session/Meeting" + "General Relief Society Meeting"; `YOUNG_WOMEN` is kept separate (currently unused, zero matches in the data, kept for future-proofing); there's no `GENERAL_SESSION` catch-all.
-- **Speaker headshots: IN**, but sourcing is unresolved — open questions are (a) current photo vs. era-correct photo per talk, (b) hotlink vs. download-and-self-host, (c) quick sanity-check on churchofjesuschrist.org's terms before treating their imagery as freely reusable. Nothing built yet.
-- **No duration/reading-time field** — decided against, no reliable source data exists.
-- **Day streak**: a "study day" = a calendar day with ≥1 talk marked studied (not drawn, not opened, not just app-launched). Requires an append-only study-event log (`user_id`, `talk_id`, `completed_at`) — `currentStreak`/`longestStreak` are derived from it, never stored as a raw counter, and unmarking a talk must NOT delete its historical event (or past streaks would retroactively change). Not built yet — no backend at all currently.
-- **Progress Scope** (renamed from "Study Range"): reporting-only, fully independent from Draw/Browse filters — changing it never affects what Random Talk draws or what Browse shows. Default: "All Conferences", not an arbitrary recent-years window. Mental model: *Browse filters = find, Draw filters = choose, Progress Scope = measure.* Implemented as pill UI on `/progress`, not yet wired to real numbers.
+- **Session taxonomy**: full mapping of all 21 raw `session` values to 10 normalized categories — now implemented in **both** `src/constants/theme.ts` (`SessionCategoryTag`/`SessionCategory`, the UI-facing labels/colors) **and** `src/constants/session-taxonomy.ts` (`RAW_SESSION_TO_CATEGORY`, the actual raw-string mapping used by the data import). `RELIEF_SOCIETY` absorbs "General Women's Session/Meeting" + "General Relief Society Meeting"; `YOUNG_WOMEN` has zero real matches (kept for future-proofing); historical weekday sessions (Tue/Thu/Fri — conference ran those days in earlier decades) → `OTHER_HISTORICAL`; no `GENERAL_SESSION` catch-all.
+- **Speaker headshots: IN**, but sourcing is unresolved — open questions are (a) current photo vs. era-correct photo per talk, (b) hotlink vs. download-and-self-host, (c) quick sanity-check on churchofjesuschrist.org's terms. Nothing built yet.
+- **No duration/reading-time field** — decided against, no reliable source data exists. (This is why "Continue Studying" is a to-do list, not a progress bar — see above.)
+- **Day streak**: a "study day" = a calendar day with ≥1 talk marked studied. **Now fully implemented and verified**: append-only `study_events` table (never updated/deleted by the app), `get_study_streaks()` Postgres function derives current/longest streak live via date-gap grouping — see `supabase/schema.sql`. Unmarking a talk flips `talk_status.is_studied` back to false but never touches `study_events`, so past streaks can't retroactively change.
+- **Progress Scope** (renamed from "Study Range"): reporting-only, fully independent from Draw/Browse filters. Default: "All Conferences". **Now implemented for real** on `/progress` — Last 5/10 Years filter the year range client-side; Custom Range is a known gap (disabled pill), not built.
 - **Git/worktree strategy** — see "Where the code actually lives" above.
+- **Supabase project is shared with V1** — same URL/anon key (`app/config.js`), same `auth.users`. V2 added `talk_status` + `study_events` tables (RLS-scoped to `auth.uid()`) alongside V1's existing `user_progress` table (left untouched). Full schema + the three write RPCs (`mark_talk_studied`/`unmark_talk_studied`/`set_talk_favorite`) are in `supabase/schema.sql` — there's no Supabase CLI project set up, so that file is meant to be pasted into the Supabase SQL Editor (in small chunks — bare `$$` dollar-quoting broke on paste once already in that editor; the file uses named `$body$` tags instead, which is safer to paste as one block if starting fresh).
+- **A surprise, already resolved**: the Supabase project also had pre-existing, empty (0 rows), undocumented `talks` and `user_talks` tables from some earlier, unreferenced backend attempt (not used by V1's `app.js`, not mentioned anywhere before this session). Confirmed empty and dropped with user approval on 2026-09-16. If anything like this turns up again, check `information_schema.columns` and row counts before building on top of it — don't assume the project only contains what's referenced in code.
+- **A disposable test account** (`gctp-v2-test-verify@mailinator.com`) exists in Supabase Auth with 1 studied talk / 1 favorite, used to verify the whole pipeline end-to-end on 2026-09-16. Harmless, but the user may want to delete it from the Supabase dashboard's Authentication tab at some point — it was never cleaned up.
 
 ## Not yet built (the big next chunk)
 
-- No talks dataset imported into the app at all (the real ~4,050-talk CSV lives at `app/General Conference Database FINAL - Sheet1.csv`, untouched by V2 so far).
-- No Supabase client in V2 (V1's auth/sync code in `app/app.js` is the reference for what existed before, but V2's schema needs to change — see the streak note above, plus the session-taxonomy fields).
-- No real "remaining bag" / draw logic ported over yet.
+- Draw has no filters of its own yet (see item 14 above) — Progress Scope's framing implies it eventually should.
 - Browse's combined "Relief Society & Young Women" filter label was proposed but never explicitly confirmed by the user.
+- Native app (iOS/Android tab bar) doesn't have an account/sign-in affordance yet — only the web sidebar does. The `AuthSheet` modal itself is cross-platform and should work fine on native once something triggers `promptSignIn()` there.
+- `/design-system` reference page is still fully placeholder/decorative, not wired to anything (though it does render correctly now — see routing fix above).
 
 ## Suggested next steps
 
-Pick up wherever makes sense, but in rough priority order: (1) import the real talks dataset with the session-taxonomy fields applied, (2) stand up the Supabase schema (study-event log, not just status arrays), (3) wire Home's draw button and the four screens' placeholder data to real state. Or keep doing visual/UX passes on what's there — both are reasonable; ask the user which they want to do first rather than assuming.
+In rough priority order: (1) add the sign-in affordance to the native tab bar, (2) decide on speaker headshots sourcing, (3) consider Draw-specific filters if the user wants them. Or keep doing visual/UX passes — ask the user which they want rather than assuming.
