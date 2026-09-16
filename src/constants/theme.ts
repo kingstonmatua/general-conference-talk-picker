@@ -159,5 +159,13 @@ export const Radii = {
 
 export const MinTouchTarget = 44;
 
-export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
+// Clearance for the floating rounded tab bar (app-tabs.tsx) — taller than
+// a plain edge-to-edge native tab bar since it floats above the safe-area
+// inset with its own margin, plus the center FAB rising above that.
+export const BottomTabInset = Platform.select({ ios: 130, android: 150 }) ?? 0;
 export const MaxContentWidth = 960;
+
+// Web's persistent left sidebar (app-tabs.web.tsx) — shared so anything
+// that needs to center itself over the actual content column (not the
+// full browser window a full-screen Modal overlays) can offset by it.
+export const WebSidebarWidth = 240;

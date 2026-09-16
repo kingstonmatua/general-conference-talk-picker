@@ -16,7 +16,7 @@ import { MinTouchTarget, Palette, Radii, Spacing } from '@/constants/theme';
  * implementation follows the board's explicit example over the mockups.
  * Flag to revisit if the purple-CTA look from the mockups is preferred.
  */
-export type ButtonVariant = 'primary' | 'secondary';
+export type ButtonVariant = 'primary' | 'secondary' | 'accent';
 
 type Props = PressableProps & {
   label: string;
@@ -24,22 +24,20 @@ type Props = PressableProps & {
 };
 
 export function Button({ label, variant = 'primary', style, disabled, ...rest }: Props) {
+  const v = VARIANT_STYLES[variant];
   return (
     <Pressable
       accessibilityRole="button"
       disabled={disabled}
       style={(state) => [
         styles.base,
-        variant === 'primary' ? styles.primary : styles.secondary,
-        state.pressed && !disabled && (variant === 'primary' ? styles.primaryPressed : styles.secondaryPressed),
+        v.container,
+        state.pressed && !disabled && v.containerPressed,
         disabled && styles.disabled,
         typeof style === 'function' ? style(state) : style,
       ]}
       {...rest}>
-      <ThemedText
-        type="control"
-        themeColor={variant === 'primary' ? undefined : 'text'}
-        style={variant === 'primary' ? styles.primaryLabel : styles.secondaryLabel}>
+      <ThemedText type="control" style={v.label}>
         {label}
       </ThemedText>
     </Pressable>
@@ -58,10 +56,6 @@ const styles = StyleSheet.create({
   primary: {
     backgroundColor: Palette.champagne,
   },
-  primaryPressed: {
-    borderWidth: 2,
-    borderColor: Palette.goldInk,
-  },
   primaryLabel: {
     color: Palette.purpleInk,
   },
@@ -70,14 +64,29 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: Palette.conferencePurple,
   },
-  secondaryPressed: {
-    borderWidth: 2,
-    borderColor: Palette.goldInk,
-  },
   secondaryLabel: {
     color: Palette.conferencePurple,
+  },
+  // Solid purple fill + white text — not part of the brand board's own
+  // example art (that shows champagne/purple-outline only), added for a
+  // specific case that explicitly wanted this exact look.
+  accent: {
+    backgroundColor: Palette.purpleInk,
+  },
+  accentLabel: {
+    color: '#FFFFFF',
+  },
+  pressedGoldBorder: {
+    borderWidth: 2,
+    borderColor: Palette.goldInk,
   },
   disabled: {
     opacity: 0.45,
   },
 });
+
+const VARIANT_STYLES: Record<ButtonVariant, { container: object; containerPressed: object; label: object }> = {
+  primary: { container: styles.primary, containerPressed: styles.pressedGoldBorder, label: styles.primaryLabel },
+  secondary: { container: styles.secondary, containerPressed: styles.pressedGoldBorder, label: styles.secondaryLabel },
+  accent: { container: styles.accent, containerPressed: styles.pressedGoldBorder, label: styles.accentLabel },
+};

@@ -1,4 +1,5 @@
 import { Image } from 'expo-image';
+import { Link } from 'expo-router';
 import { TabList, TabListProps, TabSlot, Tabs, TabTrigger, TabTriggerSlotProps } from 'expo-router/ui';
 import { Pressable, StyleSheet, View } from 'react-native';
 
@@ -6,7 +7,7 @@ import { Button } from './ui/button';
 import { Icon, Ionicons, type AppIconName } from './ui/icon';
 import { ThemedText } from './themed-text';
 
-import { Palette, Spacing } from '@/constants/theme';
+import { Palette, Spacing, WebSidebarWidth } from '@/constants/theme';
 import { useAuth } from '@/hooks/use-auth';
 import { useDrawRandomTalk } from '@/hooks/use-draw-random-talk';
 
@@ -98,7 +99,7 @@ function SidebarNavItem({
 }
 
 function AccountRow() {
-  const { user, promptSignIn, signOut } = useAuth();
+  const { user, avatarUrl, promptSignIn, signOut } = useAuth();
 
   if (!user) {
     return (
@@ -111,10 +112,21 @@ function AccountRow() {
   }
 
   return (
-    <View style={{ gap: Spacing.xs }}>
-      <ThemedText type="metadata" themeColor="textSecondary" numberOfLines={1}>
-        {user.email}
-      </ThemedText>
+    <View style={{ gap: Spacing.sm }}>
+      <Link href="/account" asChild>
+        <Pressable style={styles.accountLink} hitSlop={8}>
+          <View style={styles.accountAvatar}>
+            {avatarUrl ? (
+              <Image source={{ uri: avatarUrl }} style={styles.accountAvatarImage} contentFit="cover" />
+            ) : (
+              <Icon name="account" size={22} color={Palette.purpleInk} />
+            )}
+          </View>
+          <ThemedText type="metadata" themeColor="textSecondary" numberOfLines={1} style={{ flex: 1 }}>
+            {user.email}
+          </ThemedText>
+        </Pressable>
+      </Link>
       <Pressable onPress={() => signOut()} hitSlop={8}>
         <ThemedText type="control" style={{ color: Palette.conferencePurple }}>
           Sign out
@@ -134,7 +146,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   sidebar: {
-    width: 240,
+    width: WebSidebarWidth,
     paddingHorizontal: Spacing.lg,
     paddingVertical: Spacing.xl,
     borderRightWidth: 1,
@@ -171,5 +183,25 @@ const styles = StyleSheet.create({
   },
   pressed: {
     opacity: 0.7,
+  },
+  accountLink: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.sm,
+  },
+  accountAvatar: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    backgroundColor: Palette.canvas,
+    borderWidth: 1,
+    borderColor: Palette.warmBorder,
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden',
+  },
+  accountAvatarImage: {
+    width: 28,
+    height: 28,
   },
 });

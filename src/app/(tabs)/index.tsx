@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { ThemedText } from '@/components/themed-text';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { HeroBanner } from '@/components/ui/hero-banner';
+import { HeroBanner, HeroTextGlow } from '@/components/ui/hero-banner';
 import { StatTile } from '@/components/ui/stat-tile';
 import { TalkCard } from '@/components/ui/talk-card';
 import { BottomTabInset, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
@@ -57,7 +57,7 @@ export default function HomeScreen() {
             <ThemedText type="body" themeColor="textSecondary">
               Draw a General Conference talk and find something to carry with you.
             </ThemedText>
-            <Button label="Draw a Random Talk" variant="primary" onPress={drawRandomTalk} />
+            <Button label="Draw a Random Talk" variant="accent" onPress={drawRandomTalk} />
           </Card>
 
           {!user ? (
@@ -134,15 +134,19 @@ const styles = StyleSheet.create({
   },
   heroHeadline: {
     color: Palette.purpleInk,
+    ...HeroTextGlow,
   },
   heroSubhead: {
-    color: Palette.secondaryInk,
+    // Darker than the app's usual secondaryInk gray — scoped to just
+    // the hero subhead, not the shared token used elsewhere.
+    color: '#47444B',
+    ...HeroTextGlow,
   },
   dailyMomentCard: {
     gap: Spacing.sm,
     alignItems: 'flex-start',
-    backgroundColor: Palette.softLavender,
-    borderColor: Palette.softLavender,
+    // No more lavender override — matches the plain Card look the other
+    // cards on this screen use (surface fill, warm border).
     // Brand board §03: "Default shadow: none; overlays only, 0 4 16 at
     // 6% ink" — this card now overlaps the hero image, so it qualifies.
     shadowColor: Palette.purpleInk,

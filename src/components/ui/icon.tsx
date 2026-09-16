@@ -23,6 +23,8 @@ export const AppIconNames = {
   favoriteFilled: 'star',
   streak: 'flame-outline',
   streakFilled: 'flame',
+  account: 'person-circle-outline',
+  draw: 'shuffle-outline',
 } as const satisfies Record<string, ComponentProps<typeof Ionicons>['name']>;
 
 export type AppIconName = keyof typeof AppIconNames;

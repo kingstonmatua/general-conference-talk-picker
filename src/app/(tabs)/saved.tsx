@@ -5,7 +5,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
 import { Button } from '@/components/ui/button';
-import { HeroBanner } from '@/components/ui/hero-banner';
+import { ConferenceFilterBar, ConferenceFilterModal, useConferenceFilters } from '@/components/ui/conference-filters';
+import { HeroBanner, HeroTextGlow } from '@/components/ui/hero-banner';
 import { Pill } from '@/components/ui/pill';
 import { SearchField } from '@/components/ui/search-field';
 import { TalkCard } from '@/components/ui/talk-card';
@@ -28,16 +29,18 @@ export default function SavedScreen() {
     [favoriteIds],
   );
 
+  const conferenceFilters = useConferenceFilters(savedTalks);
+
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return savedTalks.filter((talk) => {
+    return conferenceFilters.filteredTalks.filter((talk) => {
       const isStudied = getStatus(talk.id).isStudied;
       if (status === 'Not studied' && isStudied) return false;
       if (status === 'Studied' && !isStudied) return false;
       if (!q) return true;
       return talk.title.toLowerCase().includes(q) || talk.speaker.toLowerCase().includes(q);
     });
-  }, [savedTalks, query, status, getStatus]);
+  }, [conferenceFilters.filteredTalks, query, status, getStatus]);
 
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -71,6 +74,8 @@ export default function SavedScreen() {
                 ))}
               </View>
 
+              <ConferenceFilterBar state={conferenceFilters} />
+
               <ThemedText type="metadata" themeColor="textSecondary">
                 {results.length} saved
               </ThemedText>
@@ -103,6 +108,7 @@ export default function SavedScreen() {
           )}
         </View>
       </ScrollView>
+      <ConferenceFilterModal state={conferenceFilters} />
     </SafeAreaView>
   );
 }
@@ -128,9 +134,13 @@ const styles = StyleSheet.create({
   },
   heroHeadline: {
     color: Palette.purpleInk,
+    ...HeroTextGlow,
   },
   heroSubhead: {
-    color: Palette.secondaryInk,
+    // Darker than the app's usual secondaryInk gray — scoped to just
+    // the hero subhead, not the shared token used elsewhere.
+    color: '#47444B',
+    ...HeroTextGlow,
   },
   pillRow: {
     flexDirection: 'row',

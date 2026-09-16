@@ -1,51 +1,125 @@
-import { Ionicons } from '@expo/vector-icons';
-import { NativeTabs } from 'expo-router/unstable-native-tabs';
-import { useColorScheme } from 'react-native';
+import { TabList, TabListProps, TabSlot, Tabs, TabTrigger, TabTriggerSlotProps } from 'expo-router/ui';
+import { Pressable, StyleSheet, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { Colors } from '@/constants/theme';
+import { ThemedText } from './themed-text';
+import { Icon, type AppIconName } from './ui/icon';
+
+import { Palette, Spacing } from '@/constants/theme';
+import { useDrawRandomTalk } from '@/hooks/use-draw-random-talk';
 
 /**
- * Brand board §07: "Home · Browse · Progress · Saved." Exactly four items —
- * the mobile mockups show a fifth, center "Random Talk" FAB tab, but per
- * the standing rule (PDF over mockups), the PDF's four-item nav is what's
- * implemented, kept identical to the web tab list below.
+ * Native nav shell — a floating rounded tab bar with a docked "Draw a
+ * Random Talk" button rising out of its center, per the user's reference
+ * screenshot (a fitness-app tab bar with the same silhouette). This
+ * replaced expo-router/unstable-native-tabs' true OS-native tab bar,
+ * which can't be restyled into a floating/rounded shape or take an
+ * overlapping center button — its props are limited to colors and
+ * label-visibility, not layout. Switched to expo-router/ui's Tabs
+ * primitives instead (the same ones app-tabs.web.tsx already uses for
+ * the desktop sidebar), which are plain React components and give full
+ * layout control at the cost of the OS's own native tab-bar chrome.
+ *
+ * The draw button is a plain Pressable, not a <TabTrigger> — per a
+ * standing decision, "Random Talk" is an action (draw + navigate to the
+ * talk), not a fifth nav destination. Exactly four real tabs.
  */
 export default function AppTabs() {
-  const scheme = useColorScheme();
-  const colors = Colors[scheme === 'unspecified' ? 'light' : scheme];
+  const drawRandomTalk = useDrawRandomTalk();
+  const insets = useSafeAreaInsets();
 
   return (
-    <NativeTabs
-      backgroundColor={colors.background}
-      indicatorColor={colors.backgroundElement}
-      labelStyle={{ selected: { color: colors.text } }}>
-      <NativeTabs.Trigger name="index">
-        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={<NativeTabs.Trigger.VectorIcon family={Ionicons} name="home-outline" />}
-        />
-      </NativeTabs.Trigger>
+    <Tabs style={styles.root}>
+      <TabSlot />
 
-      <NativeTabs.Trigger name="browse">
-        <NativeTabs.Trigger.Label>Browse</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={<NativeTabs.Trigger.VectorIcon family={Ionicons} name="search-outline" />}
-        />
-      </NativeTabs.Trigger>
+      <TabList asChild>
+        <FloatingBar bottomInset={insets.bottom}>
+          <TabTrigger name="home" href="/" asChild>
+            <BarItem icon="home">Home</BarItem>
+          </TabTrigger>
+          <TabTrigger name="browse" href="/browse" asChild>
+            <BarItem icon="browse">Browse</BarItem>
+          </TabTrigger>
 
-      <NativeTabs.Trigger name="progress">
-        <NativeTabs.Trigger.Label>Progress</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={<NativeTabs.Trigger.VectorIcon family={Ionicons} name="stats-chart-outline" />}
-        />
-      </NativeTabs.Trigger>
+          <Pressable
+            onPress={drawRandomTalk}
+            hitSlop={8}
+            style={({ pressed }) => [styles.fab, pressed && styles.fabPressed]}>
+            <Icon name="draw" size={26} color="#FFFFFF" />
+          </Pressable>
 
-      <NativeTabs.Trigger name="saved">
-        <NativeTabs.Trigger.Label>Saved</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={<NativeTabs.Trigger.VectorIcon family={Ionicons} name="bookmark-outline" />}
-        />
-      </NativeTabs.Trigger>
-    </NativeTabs>
+          <TabTrigger name="progress" href="/progress" asChild>
+            <BarItem icon="progress">Progress</BarItem>
+          </TabTrigger>
+          <TabTrigger name="saved" href="/saved" asChild>
+            <BarItem icon="saved">Saved</BarItem>
+          </TabTrigger>
+        </FloatingBar>
+      </TabList>
+    </Tabs>
   );
 }
+
+function FloatingBar({ bottomInset, ...props }: TabListProps & { bottomInset: number }) {
+  return <View {...props} style={[styles.bar, { bottom: bottomInset + Spacing.md }]} />;
+}
+
+function BarItem({
+  children,
+  isFocused,
+  icon,
+  ...pressableProps
+}: TabTriggerSlotProps & { icon: AppIconName }) {
+  const color = isFocused ? Palette.purpleInk : Palette.secondaryInk;
+  return (
+    <Pressable {...pressableProps} style={styles.barItem}>
+      <Icon name={icon} size={22} color={color} />
+      <ThemedText type="metadata" style={[styles.barItemLabel, { color }]}>
+        {children}
+      </ThemedText>
+    </Pressable>
+  );
+}
+
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+    backgroundColor: Palette.canvas,
+  },
+  bar: {
+    position: 'absolute',
+    left: Spacing.lg,
+    right: Spacing.lg,
+    height: 68,
+    borderRadius: 34,
+    backgroundColor: Palette.surface,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    paddingHorizontal: Spacing.sm,
+    boxShadow: '0px 8px 24px rgba(38, 24, 69, 0.16)',
+  },
+  barItem: {
+    alignItems: 'center',
+    gap: 2,
+    flex: 1,
+  },
+  barItemLabel: {
+    fontSize: 11,
+  },
+  fab: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    marginTop: -28,
+    backgroundColor: Palette.purpleInk,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 4,
+    borderColor: Palette.canvas,
+    boxShadow: '0px 4px 16px rgba(38, 24, 69, 0.35)',
+  },
+  fabPressed: {
+    opacity: 0.85,
+  },
+});

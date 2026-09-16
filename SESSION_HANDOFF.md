@@ -110,6 +110,7 @@ A full design-system port exists in Figma: **General Conference Talk Picker — 
 - Browse's combined "Relief Society & Young Women" filter label was proposed but never explicitly confirmed by the user.
 - Native app (iOS/Android tab bar) doesn't have an account/sign-in affordance yet — only the web sidebar does. The `AuthSheet` modal itself is cross-platform and should work fine on native once something triggers `promptSignIn()` there.
 - `/design-system` reference page is still fully placeholder/decorative, not wired to anything (though it does render correctly now — see routing fix above).
+- **New idea, not designed yet (flagged 2026-09-16, end of a later same-day session):** a social/sharing aspect — the user wants people to be able to share their progress, day streaks, and overall study stats (the same numbers already surfaced via `useTalkStatus()` — `studiedCount`, `currentStreak`, `longestStreak`, `favoriteIds.length` — and shown on Home/Progress/the new Account screen). Nothing about *how* is decided: not whether this means a native share-sheet image/card (`expo-sharing` / a rendered share graphic), an in-app social feed, deep links to specific stats, or posting to external platforms; not whether it's opt-in/public by default; not whether it needs any new backend (a public shareable URL would need one, a pure "share sheet with a generated image" would not). Ask the user for their mental model of this before building anything — don't assume the shape.
 
 ## Suggested next steps
 

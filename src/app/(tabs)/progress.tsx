@@ -1,21 +1,18 @@
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { HeroBanner } from '@/components/ui/hero-banner';
-import { Pill } from '@/components/ui/pill';
+import { ConferenceFilterBar, ConferenceFilterModal, useConferenceFilters } from '@/components/ui/conference-filters';
+import { HeroBanner, HeroTextGlow } from '@/components/ui/hero-banner';
 import { StatTile } from '@/components/ui/stat-tile';
 import { BottomTabInset, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 import { TALKS } from '@/data/talks';
 import { useAuth } from '@/hooks/use-auth';
 import { useTalkStatus } from '@/hooks/use-talk-status';
 
-// "Custom Range" has no date-picker UI yet, so it's shown but disabled
-// rather than faked — see project decisions on Progress Scope.
-const SCOPE_OPTIONS = ['All Conferences', 'Last 5 Years', 'Last 10 Years', 'Custom Range'] as const;
 const MONTH_NAMES: Record<number, string> = { 4: 'April', 10: 'October' };
 const RECENT_GROUP_LIMIT = 3;
 
@@ -24,14 +21,13 @@ type GroupAgg = { label: string; studied: number; total: number; latestStudiedAt
 export default function ProgressScreen() {
   const { user, promptSignIn } = useAuth();
   const { studiedCount, currentStreak, longestStreak, getStatus, studiedIdsByRecency } = useTalkStatus();
-  const [scope, setScope] = useState<(typeof SCOPE_OPTIONS)[number]>('All Conferences');
-
-  const currentYear = new Date().getFullYear();
-  const scopedTalks = useMemo(() => {
-    if (scope === 'Last 5 Years') return TALKS.filter((t) => t.year >= currentYear - 5);
-    if (scope === 'Last 10 Years') return TALKS.filter((t) => t.year >= currentYear - 10);
-    return TALKS;
-  }, [scope, currentYear]);
+  // Replaces the old preset-based Scope (All Conferences/Last 5 Years/
+  // Last 10 Years/Custom Range-disabled) with the same Year → Conference
+  // → Session dropdowns Browse and Saved use — this instance is its own
+  // independent state, so it stays true to the locked "Progress Scope
+  // only changes this page" rule without any extra wiring.
+  const conferenceFilters = useConferenceFilters(TALKS);
+  const scopedTalks = conferenceFilters.filteredTalks;
 
   const overallStudiedInScope = useMemo(
     () => scopedTalks.reduce((n, t) => n + (getStatus(t.id).isStudied ? 1 : 0), 0),
@@ -109,20 +105,7 @@ export default function ProgressScreen() {
                 <ThemedText type="eyebrow" style={{ color: Palette.goldInk }}>
                   Progress scope
                 </ThemedText>
-                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.pillRow}>
-                  {SCOPE_OPTIONS.map((option) => {
-                    const disabled = option === 'Custom Range';
-                    return (
-                      <View key={option} style={disabled && styles.disabledPill}>
-                        <Pill
-                          label={disabled ? `${option} (soon)` : option}
-                          selected={scope === option}
-                          onPress={() => !disabled && setScope(option)}
-                        />
-                      </View>
-                    );
-                  })}
-                </ScrollView>
+                <ConferenceFilterBar state={conferenceFilters} />
                 <ThemedText type="metadata" themeColor="textSecondary">
                   Changes the statistics on this page only — Draw and Browse keep their own filters.
                 </ThemedText>
@@ -178,6 +161,7 @@ export default function ProgressScreen() {
           )}
         </View>
       </ScrollView>
+      <ConferenceFilterModal state={conferenceFilters} />
     </SafeAreaView>
   );
 }
@@ -223,9 +207,13 @@ const styles = StyleSheet.create({
   },
   heroHeadline: {
     color: Palette.purpleInk,
+    ...HeroTextGlow,
   },
   heroSubhead: {
-    color: Palette.secondaryInk,
+    // Darker than the app's usual secondaryInk gray — scoped to just
+    // the hero subhead, not the shared token used elsewhere.
+    color: '#47444B',
+    ...HeroTextGlow,
   },
   signInCard: {
     gap: Spacing.sm,
@@ -233,14 +221,6 @@ const styles = StyleSheet.create({
   },
   scopeRow: {
     gap: Spacing.sm,
-  },
-  pillRow: {
-    flexDirection: 'row',
-    gap: Spacing.sm,
-    paddingRight: Spacing.xl,
-  },
-  disabledPill: {
-    opacity: 0.45,
   },
   overallCard: {
     gap: Spacing.sm,

@@ -15,6 +15,10 @@ type AuthContextValue = {
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signUp: (email: string, password: string) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
+  /** From auth user_metadata — no separate profiles table, just this field. */
+  avatarUrl: string | null;
+  /** Uploads to the "avatars" Storage bucket, then saves the public URL onto user_metadata. */
+  updateAvatar: (localUri: string) => Promise<{ error: string | null }>;
 };
 
 const AuthContext = createContext<AuthContextValue | null>(null);
@@ -52,6 +56,38 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await supabase.auth.signOut();
   }, []);
 
+  const updateAvatar = useCallback(async (localUri: string) => {
+    const userId = (await supabase.auth.getUser()).data.user?.id;
+    if (!userId) return { error: 'Not signed in' };
+
+    try {
+      // React Native has no Blob-from-file-path shortcut — fetching the
+      // local file URI and reading its arrayBuffer is the standard way
+      // to get bytes Supabase Storage's upload() will accept here.
+      const response = await fetch(localUri);
+      const arrayBuffer = await response.arrayBuffer();
+      const path = `${userId}.jpg`;
+
+      const { error: uploadError } = await supabase.storage
+        .from('avatars')
+        .upload(path, arrayBuffer, { contentType: 'image/jpeg', upsert: true });
+      if (uploadError) return { error: uploadError.message };
+
+      const { data: publicUrlData } = supabase.storage.from('avatars').getPublicUrl(path);
+      // Cache-busted so the new photo shows immediately — same path as
+      // the old photo, and image caches (both device and CDN) would
+      // otherwise keep serving the previous one at that exact URL.
+      const avatarUrl = `${publicUrlData.publicUrl}?updated=${Date.now()}`;
+
+      const { error: updateError } = await supabase.auth.updateUser({ data: { avatar_url: avatarUrl } });
+      if (updateError) return { error: updateError.message };
+
+      return { error: null };
+    } catch (e) {
+      return { error: e instanceof Error ? e.message : 'Upload failed' };
+    }
+  }, []);
+
   const value = useMemo<AuthContextValue>(
     () => ({
       session,
@@ -63,8 +99,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       signIn,
       signUp,
       signOut,
+      avatarUrl: (session?.user?.user_metadata?.avatar_url as string | undefined) ?? null,
+      updateAvatar,
     }),
-    [session, loading, promptVisible, promptSignIn, dismissPrompt, signIn, signUp, signOut],
+    [session, loading, promptVisible, promptSignIn, dismissPrompt, signIn, signUp, signOut, updateAvatar],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
