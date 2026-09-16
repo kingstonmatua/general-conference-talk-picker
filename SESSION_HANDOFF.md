@@ -2,7 +2,7 @@
 
 Last updated: 2026-09-16, end of session.
 
-**Read this first if you're a fresh Claude Code session picking this up.** Claude's persistent memory lives in the local user's home directory on the machine it was created on — it does **not** travel with this removable drive. On a new machine this project will look completely unfamiliar to Claude even though the git history and this file are right here. Point Claude at this file first thing. The user is **not a coder** — give slow, numbered, plain-language steps for anything that requires them to click through a UI (Supabase dashboard, terminal, etc.) rather than assuming familiarity.
+**Read this first if you're a fresh Claude Code session picking this up.** Claude's persistent memory lives in the local user's home directory on the machine it was created on — it does **not** travel with this removable drive. On a new machine this project will look completely unfamiliar to Claude even though the git history and this file are right here. Point Claude at this file first thing — and also read **`CLAUDE_MEMORY.md`** in this same folder, which covers how to work with Kingston specifically (short version: not a coder, give slow numbered steps for anything hands-on).
 
 ## Quick start
 
