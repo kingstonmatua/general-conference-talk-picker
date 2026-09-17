@@ -199,3 +199,47 @@ as $body$
     )::integer as current_streak,
     coalesce((select max(streak_length) from streaks), 0)::integer as longest_streak;
 $body$;
+
+-- ─── Account deletion ───────────────────────────────────────────────────────
+-- Required by Apple (Guideline 5.1.1(v)): an app that supports account
+-- creation must also let a user delete their account from inside the app,
+-- not just "email us". `security definer` is required here (unlike the
+-- RPCs above) because deleting from auth.users needs privileges an
+-- ordinary authenticated client role doesn't have — this function runs
+-- as its owner (whichever role pastes this into the SQL Editor, normally
+-- the project's postgres/admin role) instead, but it can only ever act
+-- on auth.uid()'s own row, so a client still can't delete anyone else.
+--
+-- Deletes V2's own tables explicitly rather than relying solely on their
+-- `on delete cascade` FK to auth.users, and also deletes V1's
+-- `user_progress` row (that table predates this schema file and its FK
+-- behavior toward auth.users isn't documented/managed here) — so this
+-- stays correct even if either assumption changes later. Also removes
+-- the user's uploaded avatar object from Storage, since that isn't
+-- covered by any Postgres foreign key at all.
+
+create or replace function public.delete_own_account()
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $body$
+declare
+  v_uid uuid := auth.uid();
+begin
+  if v_uid is null then
+    raise exception 'Not authenticated';
+  end if;
+
+  delete from storage.objects where bucket_id = 'avatars' and name = v_uid::text || '.jpg';
+
+  delete from public.user_progress where user_id = v_uid;
+  delete from public.study_events where user_id = v_uid;
+  delete from public.talk_status where user_id = v_uid;
+
+  delete from auth.users where id = v_uid;
+end;
+$body$;
+
+revoke all on function public.delete_own_account() from public;
+grant execute on function public.delete_own_account() to authenticated;

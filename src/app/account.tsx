@@ -31,9 +31,22 @@ import { useTalkStatus } from '@/hooks/use-talk-status';
  */
 export default function AccountScreen() {
   const router = useRouter();
-  const { user, avatarUrl, updateAvatar, signOut, promptSignIn } = useAuth();
+  const { user, avatarUrl, updateAvatar, signOut, promptSignIn, deleteAccount } = useAuth();
   const { studiedCount, currentStreak, longestStreak, favoriteIds } = useTalkStatus();
   const [uploading, setUploading] = useState(false);
+  const [confirmingDelete, setConfirmingDelete] = useState(false);
+  const [deleting, setDeleting] = useState(false);
+
+  const confirmDeleteAccount = async () => {
+    setDeleting(true);
+    const { error } = await deleteAccount();
+    setDeleting(false);
+    if (error) {
+      Alert.alert('Couldn’t delete account', error);
+      return;
+    }
+    router.replace('/');
+  };
 
   const pickAndUploadAvatar = async () => {
     const permission = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -122,6 +135,41 @@ export default function AccountScreen() {
                   }}
                   style={styles.fullWidthButton}
                 />
+              </Card>
+
+              <Card style={styles.actionsCard}>
+                <ThemedText type="control" themeColor="textSecondary">
+                  Danger zone
+                </ThemedText>
+                {!confirmingDelete ? (
+                  <Button
+                    label="Delete account"
+                    variant="secondary"
+                    onPress={() => setConfirmingDelete(true)}
+                    style={styles.fullWidthButton}
+                  />
+                ) : (
+                  <>
+                    <ThemedText type="body" themeColor="textSecondary">
+                      This permanently deletes your account and all your data — studied talks, favorites, streaks,
+                      and your profile picture. This can't be undone.
+                    </ThemedText>
+                    <Button
+                      label={deleting ? 'Deleting…' : 'Yes, delete my account'}
+                      variant="secondary"
+                      onPress={confirmDeleteAccount}
+                      disabled={deleting}
+                      style={styles.fullWidthButton}
+                    />
+                    <Button
+                      label="Cancel"
+                      variant="secondary"
+                      onPress={() => setConfirmingDelete(false)}
+                      disabled={deleting}
+                      style={styles.fullWidthButton}
+                    />
+                  </>
+                )}
               </Card>
             </>
           )}

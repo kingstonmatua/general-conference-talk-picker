@@ -19,6 +19,8 @@ type AuthContextValue = {
   avatarUrl: string | null;
   /** Uploads to the "avatars" Storage bucket, then saves the public URL onto user_metadata. */
   updateAvatar: (localUri: string) => Promise<{ error: string | null }>;
+  /** Permanently deletes the signed-in user's account and all their data (see delete_own_account() in schema.sql). */
+  deleteAccount: () => Promise<{ error: string | null }>;
 };
 
 const AuthContext = createContext<AuthContextValue | null>(null);
@@ -88,6 +90,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
+  const deleteAccount = useCallback(async () => {
+    const { error } = await supabase.rpc('delete_own_account');
+    if (error) return { error: error.message };
+    // The row backing this session no longer exists server-side; clear the
+    // local session too so the app doesn't keep treating the client as
+    // signed in off a stale (but not-yet-expired) token.
+    await supabase.auth.signOut();
+    return { error: null };
+  }, []);
+
   const value = useMemo<AuthContextValue>(
     () => ({
       session,
@@ -101,8 +113,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       signOut,
       avatarUrl: (session?.user?.user_metadata?.avatar_url as string | undefined) ?? null,
       updateAvatar,
+      deleteAccount,
     }),
-    [session, loading, promptVisible, promptSignIn, dismissPrompt, signIn, signUp, signOut, updateAvatar],
+    [session, loading, promptVisible, promptSignIn, dismissPrompt, signIn, signUp, signOut, updateAvatar, deleteAccount],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
