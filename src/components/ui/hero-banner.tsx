@@ -24,7 +24,11 @@ import { Palette, Spacing } from '@/constants/theme';
 export function HeroBanner({ source, children }: { source: number; children: ReactNode }) {
   return (
     <View style={styles.container}>
-      <Image source={source} style={StyleSheet.absoluteFill} resizeMode="cover" />
+      <Image
+        source={source}
+        style={[StyleSheet.absoluteFill, styles.image]}
+        resizeMode="cover"
+      />
       <LinearGradient
         colors={[Palette.canvas, 'transparent', 'transparent', Palette.canvas]}
         locations={[0, 0.4, 0.7, 1]}
@@ -67,5 +71,15 @@ const styles = StyleSheet.create({
   content: {
     padding: Spacing.xl,
     gap: Spacing.xs,
+  },
+  // react-native-web's core Image defaults an unstyled dimension to the
+  // source asset's own intrinsic pixel size (1774x887) rather than
+  // stretching to the absoluteFill box, which left resizeMode="cover"
+  // with nothing to scale against — the photo rendered pinned at its raw
+  // size instead of scaled to cover the banner. Forcing width/height to
+  // 100% here is what makes "cover" actually cover.
+  image: {
+    width: '100%',
+    height: '100%',
   },
 });
