@@ -47,7 +47,7 @@
     "web": "expo start --web",
     "lint": "expo lint",
     "build:web": "expo export --platform web && node ./scripts/patch-web-export-for-cloudflare.js",
-    "deploy:web": "npm run build:web && wrangler pages deploy dist --project-name=general-conference-talk-picker --branch=main"
+    "deploy:web": "npm run build:web && npx wrangler pages deploy dist --project-name=general-conference-talk-picker --branch=main"
   },
   "private": true
 }
