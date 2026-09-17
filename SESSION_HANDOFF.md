@@ -140,6 +140,12 @@ A full design-system port exists in Figma: **General Conference Talk Picker — 
 - **A surprise, already resolved**: the Supabase project also had pre-existing, empty (0 rows), undocumented `talks` and `user_talks` tables from some earlier, unreferenced backend attempt (not used by V1's `app.js`, not mentioned anywhere before this session). Confirmed empty and dropped with user approval on 2026-09-16. If anything like this turns up again, check `information_schema.columns` and row counts before building on top of it — don't assume the project only contains what's referenced in code.
 - **A disposable test account** (`gctp-v2-test-verify@mailinator.com`) exists in Supabase Auth with 1 studied talk / 1 favorite, used to verify the whole pipeline end-to-end on 2026-09-16. Harmless, but the user may want to delete it from the Supabase dashboard's Authentication tab at some point — it was never cleaned up.
 
+## App Store submission prep (started 2026-09-17)
+
+**In-app account deletion: DONE.** Apple requires apps with account creation to also support in-app account deletion (Guideline 5.1.1(v)) — the only path before this was "email us" (in `privacy.tsx`), which wouldn't pass full App Store review even though it didn't block the lighter TestFlight beta review. Now: Account screen has a "Danger zone" → "Delete account" → inline two-step confirm (not `Alert.alert`'s multi-button support, which isn't reliable on the web build) → calls `deleteAccount()` in `use-auth.tsx` → `public.delete_own_account()` RPC (`supabase/schema.sql`, pasted into the SQL Editor and run successfully 2026-09-17). That RPC is `security definer` (needed to delete from `auth.users`, which the normal authenticated client role can't do), scoped to `auth.uid()` only, and explicitly deletes the user's `talk_status`/`study_events`/`user_progress` (V1's table) rows plus their avatar Storage object before deleting the `auth.users` row itself.
+
+Full App Store submission still needs (see "Not yet built" below, now reorganized): screenshots, listing metadata (name/subtitle/description/keywords/category/age rating/copyright), a support URL, and then the actual App Store Connect version-creation/submit flow — none of that started yet.
+
 ## Not yet built (the big next chunk)
 
 - Draw has no filters of its own yet (see item 14 above) — Progress Scope's framing implies it eventually should.
