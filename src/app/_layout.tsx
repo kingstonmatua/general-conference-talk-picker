@@ -34,6 +34,7 @@ export default function RootLayout() {
             <Stack.Screen name="talk/[id]" />
             <Stack.Screen name="account" />
             <Stack.Screen name="privacy" />
+            <Stack.Screen name="support" />
             <Stack.Screen name="design-system" />
           </Stack>
           <AuthSheet />

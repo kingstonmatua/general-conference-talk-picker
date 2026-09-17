@@ -6,7 +6,7 @@ import { ThemedText } from '@/components/themed-text';
 import { Ionicons } from '@/components/ui/icon';
 import { MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 
-const LAST_UPDATED = 'September 16, 2026';
+const LAST_UPDATED = 'September 17, 2026';
 const CONTACT_EMAIL = 'kingstonmatua9@gmail.com';
 
 /**
@@ -87,8 +87,8 @@ export default function PrivacyScreen() {
             Deleting your data
           </ThemedText>
           <ThemedText type="body" style={styles.paragraph}>
-            To delete your account and all associated data, email us at {CONTACT_EMAIL} and
-            we'll remove it.
+            You can permanently delete your account and all associated data at any time from
+            Account → Danger zone → Delete account, right inside the app.
           </ThemedText>
 
           <ThemedText type="section" style={styles.heading}>
