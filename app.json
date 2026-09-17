@@ -8,7 +8,10 @@
     "scheme": "gctp",
     "userInterfaceStyle": "light",
     "ios": {
-      "bundleIdentifier": "app.gctalkpicker.ios"
+      "bundleIdentifier": "app.gctalkpicker.ios",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
