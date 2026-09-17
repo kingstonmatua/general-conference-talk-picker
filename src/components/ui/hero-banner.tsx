@@ -1,7 +1,6 @@
 import { LinearGradient } from 'expo-linear-gradient';
-import { Image } from 'expo-image';
 import type { ReactNode } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 
 import { BrandedHeaderRow } from './branded-header';
 
@@ -25,7 +24,7 @@ import { Palette, Spacing } from '@/constants/theme';
 export function HeroBanner({ source, children }: { source: number; children: ReactNode }) {
   return (
     <View style={styles.container}>
-      <Image source={source} style={StyleSheet.absoluteFill} contentFit="cover" />
+      <Image source={source} style={StyleSheet.absoluteFill} resizeMode="cover" />
       <LinearGradient
         colors={[Palette.canvas, 'transparent', 'transparent', Palette.canvas]}
         locations={[0, 0.4, 0.7, 1]}

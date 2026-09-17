@@ -31,7 +31,7 @@ import { useTalkStatus } from '@/hooks/use-talk-status';
  */
 export default function AccountScreen() {
   const router = useRouter();
-  const { user, avatarUrl, updateAvatar, signOut } = useAuth();
+  const { user, avatarUrl, updateAvatar, signOut, promptSignIn } = useAuth();
   const { studiedCount, currentStreak, longestStreak, favoriteIds } = useTalkStatus();
   const [uploading, setUploading] = useState(false);
 
@@ -69,51 +69,62 @@ export default function AccountScreen() {
 
           <ThemedText type="display">Account</ThemedText>
 
-          <Pressable onPress={pickAndUploadAvatar} disabled={uploading} style={styles.avatarRow}>
-            <View style={styles.avatarCircle}>
-              {avatarUrl ? (
-                <Image source={{ uri: avatarUrl }} style={styles.avatarImage} contentFit="cover" />
-              ) : (
-                <Icon name="account" size={56} color={Palette.purpleInk} />
-              )}
-              {uploading && (
-                <View style={styles.avatarLoadingOverlay}>
-                  <ActivityIndicator color="#FFFFFF" />
+          {!user ? (
+            <Card style={styles.actionsCard}>
+              <ThemedText type="body" themeColor="textSecondary">
+                Sign in to manage your account.
+              </ThemedText>
+              <Button label="Sign in" variant="primary" onPress={promptSignIn} style={styles.fullWidthButton} />
+            </Card>
+          ) : (
+            <>
+              <Pressable onPress={pickAndUploadAvatar} disabled={uploading} style={styles.avatarRow}>
+                <View style={styles.avatarCircle}>
+                  {avatarUrl ? (
+                    <Image source={{ uri: avatarUrl }} style={styles.avatarImage} contentFit="cover" />
+                  ) : (
+                    <Icon name="account" size={56} color={Palette.purpleInk} />
+                  )}
+                  {uploading && (
+                    <View style={styles.avatarLoadingOverlay}>
+                      <ActivityIndicator color="#FFFFFF" />
+                    </View>
+                  )}
                 </View>
-              )}
-            </View>
-            <ThemedText type="control" style={styles.avatarActionLabel}>
-              {avatarUrl ? 'Change profile picture' : 'Add profile picture'}
-            </ThemedText>
-          </Pressable>
+                <ThemedText type="control" style={styles.avatarActionLabel}>
+                  {avatarUrl ? 'Change profile picture' : 'Add profile picture'}
+                </ThemedText>
+              </Pressable>
 
-          <ThemedText type="body" themeColor="textSecondary">
-            {user?.email ?? 'Signed in'}
-          </ThemedText>
+              <ThemedText type="body" themeColor="textSecondary">
+                {user.email}
+              </ThemedText>
 
-          <View style={styles.statsRow}>
-            <StatTile icon="studied" color="sage" value={String(studiedCount)} label="Talks studied" />
-            <StatTile icon="streak" color="terracotta" value={String(currentStreak)} label="Day streak" />
-            <StatTile
-              icon="streakFilled"
-              color="champagne"
-              value={String(longestStreak)}
-              label="Longest streak"
-            />
-            <StatTile icon="saved" color="lavender" value={String(favoriteIds.length)} label="Saved talks" />
-          </View>
+              <View style={styles.statsRow}>
+                <StatTile icon="studied" color="sage" value={String(studiedCount)} label="Talks studied" />
+                <StatTile icon="streak" color="terracotta" value={String(currentStreak)} label="Day streak" />
+                <StatTile
+                  icon="streakFilled"
+                  color="champagne"
+                  value={String(longestStreak)}
+                  label="Longest streak"
+                />
+                <StatTile icon="saved" color="lavender" value={String(favoriteIds.length)} label="Saved talks" />
+              </View>
 
-          <Card style={styles.actionsCard}>
-            <Button
-              label="Sign out"
-              variant="secondary"
-              onPress={() => {
-                signOut();
-                router.back();
-              }}
-              style={styles.fullWidthButton}
-            />
-          </Card>
+              <Card style={styles.actionsCard}>
+                <Button
+                  label="Sign out"
+                  variant="secondary"
+                  onPress={() => {
+                    signOut();
+                    router.back();
+                  }}
+                  style={styles.fullWidthButton}
+                />
+              </Card>
+            </>
+          )}
         </View>
       </ScrollView>
     </SafeAreaView>
