@@ -144,7 +144,20 @@ A full design-system port exists in Figma: **General Conference Talk Picker — 
 
 **In-app account deletion: DONE.** Apple requires apps with account creation to also support in-app account deletion (Guideline 5.1.1(v)) — the only path before this was "email us" (in `privacy.tsx`), which wouldn't pass full App Store review even though it didn't block the lighter TestFlight beta review. Now: Account screen has a "Danger zone" → "Delete account" → inline two-step confirm (not `Alert.alert`'s multi-button support, which isn't reliable on the web build) → calls `deleteAccount()` in `use-auth.tsx` → `public.delete_own_account()` RPC (`supabase/schema.sql`, pasted into the SQL Editor and run successfully 2026-09-17). That RPC is `security definer` (needed to delete from `auth.users`, which the normal authenticated client role can't do), scoped to `auth.uid()` only, and explicitly deletes the user's `talk_status`/`study_events`/`user_progress` (V1's table) rows plus their avatar Storage object before deleting the `auth.users` row itself.
 
-Full App Store submission still needs (see "Not yet built" below, now reorganized): screenshots, listing metadata (name/subtitle/description/keywords/category/age rating/copyright), a support URL, and then the actual App Store Connect version-creation/submit flow — none of that started yet.
+**Support page: DONE.** `src/app/support.tsx`, live at `https://gctalkpicker.app/support` — Apple requires a support URL separate from the privacy policy URL. Also fixed `privacy.tsx`'s stale "email us to delete your data" line while in there (now correctly points at Account → Danger zone).
+
+**Screenshots: captured, likely usable.** User took 5 real device screenshots (not simulator/web — genuine iPhone captures, confirmed via file dimensions): Home, Browse, Progress, Saved, Talk detail, all signed in with real data. All exactly **1179×2556** (the "6.1-inch" iPhone bucket — standard iPhone 15/16, not Pro Max). **Not yet confirmed** whether App Store Connect's current screenshot requirements accept this size alone or also want a 6.7"/6.9" (Pro Max-class) set — its upload screen will say definitively; check there before assuming these are sufficient. Saved on the user's Mac in `~/Downloads/` as of 2026-09-17, not yet uploaded anywhere.
+
+**Listing copy: locked, drafted 2026-09-17, not yet pasted into App Store Connect.**
+- App Name: `General Conference Talk Picker`
+- Subtitle: `Daily General Conference talks`
+- Category: Reference (primary), Lifestyle (secondary)
+- Keywords (95/100 chars): `general conference,LDS,Latter-day Saint,scripture study,gospel,devotional,daily study,streak` — deliberately uses "Latter-day Saint" over "mormon" per user preference (no longer the Church's preferred term); "church" was trimmed to fit the 100-char limit after that swap, since LDS/Latter-day Saint already cover that ground.
+- Copyright: `© 2026 General Conference Talk Picker` (user chose the app name over their personal name)
+- Age Rating: answer "None" to every content question in Apple's questionnaire → lands at 4+
+- Description: see the draft this session produced (short feature-bullet style covering Draw/Browse/Track/Save/no-login-required) — user didn't request changes, treat as approved.
+
+Full App Store submission still needs: the actual App Store Connect version-creation/submit flow (pasting the above metadata in, uploading screenshots, confirming screenshot-size requirements, answering App Review's questions) — not started yet.
 
 ## Not yet built (the big next chunk)
 
