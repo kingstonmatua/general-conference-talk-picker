@@ -8,7 +8,7 @@
     "scheme": "gctp",
     "userInterfaceStyle": "light",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "bundleIdentifier": "app.gctalkpicker.ios"
     },
     "android": {
       "adaptiveIcon": {
@@ -28,15 +28,22 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#F7F4EF",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 180
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "fd3170ce-63e8-4a62-bedc-c8e2a001c964"
+      }
+    },
+    "owner": "kingston.matua"
   }
 }
