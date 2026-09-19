@@ -231,8 +231,6 @@ begin
     raise exception 'Not authenticated';
   end if;
 
-  delete from storage.objects where bucket_id = 'avatars' and name = v_uid::text || '.jpg';
-
   delete from public.user_progress where user_id = v_uid;
   delete from public.study_events where user_id = v_uid;
   delete from public.talk_status where user_id = v_uid;

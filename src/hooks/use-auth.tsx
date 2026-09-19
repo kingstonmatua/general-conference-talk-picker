@@ -91,6 +91,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const deleteAccount = useCallback(async () => {
+    const userId = (await supabase.auth.getUser()).data.user?.id;
+    if (userId) {
+      // Storage doesn't allow deleting the metadata row via raw SQL (the
+      // RPC used to try this and always failed) — has to go through the
+      // Storage API, which also frees the underlying file. Ignore errors
+      // here: a missing avatar file shouldn't block account deletion.
+      await supabase.storage.from('avatars').remove([`${userId}.jpg`]);
+    }
+
     const { error } = await supabase.rpc('delete_own_account');
     if (error) return { error: error.message };
     // The row backing this session no longer exists server-side; clear the
