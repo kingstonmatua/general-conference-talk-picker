@@ -57,7 +57,7 @@ export default function HomeScreen() {
             <ThemedText type="body" themeColor="textSecondary">
               Draw a General Conference talk and find something to carry with you.
             </ThemedText>
-            <Button label="Draw a Random Talk" variant="accent" onPress={drawRandomTalk} />
+            <Button label="Draw a Random Talk" variant="accent" onPress={() => drawRandomTalk()} />
           </Card>
 
           {!user ? (
@@ -166,8 +166,10 @@ const styles = StyleSheet.create({
   },
   sectionHeader: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     justifyContent: 'space-between',
     alignItems: 'center',
+    rowGap: Spacing.xs,
     marginTop: Spacing.md,
   },
   talkCardStack: {
