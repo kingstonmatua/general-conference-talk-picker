@@ -42,7 +42,7 @@ export default function AppTabs() {
           </TabTrigger>
 
           <Pressable
-            onPress={drawRandomTalk}
+            onPress={() => drawRandomTalk()}
             hitSlop={8}
             style={({ pressed }) => [styles.fab, pressed && styles.fabPressed]}>
             <Icon name="draw" size={26} color="#FFFFFF" />

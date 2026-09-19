@@ -1,6 +1,5 @@
-import * as WebBrowser from 'expo-web-browser';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Linking, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
@@ -10,12 +9,14 @@ import { Icon, Ionicons } from '@/components/ui/icon';
 import { SessionTag } from '@/components/ui/tag';
 import { MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 import { formatTalkMeta, getTalkById } from '@/data/talks';
+import { useDrawRandomTalk } from '@/hooks/use-draw-random-talk';
 import { useTalkStatus } from '@/hooks/use-talk-status';
 
 export default function TalkDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const { getStatus, markStudied, unmarkStudied, setFavorite } = useTalkStatus();
+  const drawRandomTalk = useDrawRandomTalk();
 
   const talk = id ? getTalkById(id) : undefined;
 
@@ -63,6 +64,13 @@ export default function TalkDetailScreen() {
           </ThemedText>
 
           <Card style={styles.actionsCard}>
+            <Button
+              label="Read the talk →"
+              variant="primary"
+              onPress={() => Linking.openURL(talk.url)}
+              style={styles.fullWidthButton}
+            />
+
             {status.isStudied ? (
               <Button
                 label="Studied ✓ — Mark as not studied"
@@ -85,14 +93,17 @@ export default function TalkDetailScreen() {
               onPress={() => setFavorite(talk.id, !status.isFavorite)}
               style={styles.fullWidthButton}
             />
-
-            <Button
-              label="Read on churchofjesuschrist.org →"
-              variant="primary"
-              onPress={() => WebBrowser.openBrowserAsync(talk.url)}
-              style={styles.fullWidthButton}
-            />
           </Card>
+
+          <Pressable
+            onPress={() => drawRandomTalk({ replace: true })}
+            hitSlop={8}
+            style={styles.drawAnotherRow}>
+            <Icon name="draw" size={18} color={Palette.conferencePurple} />
+            <ThemedText type="control" style={{ color: Palette.conferencePurple }}>
+              Draw another talk
+            </ThemedText>
+          </Pressable>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -136,5 +147,12 @@ const styles = StyleSheet.create({
   fullWidthButton: {
     alignSelf: 'stretch',
     alignItems: 'center',
+  },
+  drawAnotherRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.xs,
+    alignSelf: 'center',
+    marginTop: Spacing.md,
   },
 });

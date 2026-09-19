@@ -65,7 +65,7 @@ function Sidebar(props: TabListProps) {
         label="Draw a Random Talk"
         variant="primary"
         style={styles.drawButton}
-        onPress={drawRandomTalk}
+        onPress={() => drawRandomTalk()}
       />
 
       <View style={styles.navList}>{props.children}</View>
