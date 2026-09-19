@@ -5,8 +5,14 @@ import { Dimensions, StyleSheet, View } from 'react-native';
 import Animated, { Easing, Keyframe } from 'react-native-reanimated';
 import { scheduleOnRN } from 'react-native-worklets';
 
+import { Palette } from '@/constants/theme';
+
 const INITIAL_SCALE_FACTOR = Dimensions.get('screen').height / 90;
 const DURATION = 600;
+// How long the splash overlay holds fully visible + fades, once the app
+// underneath is actually ready — separate from DURATION (used elsewhere in
+// this file for the decorative, currently-unused AnimatedIcon).
+const SPLASH_HOLD_DURATION = 1600;
 
 export function AnimatedSplashOverlay() {
   const [animate, setAnimate] = useState(false);
@@ -19,12 +25,8 @@ export function AnimatedSplashOverlay() {
       transform: [{ scale: 1 }],
       opacity: 1,
     },
-    20: {
+    65: {
       opacity: 1,
-    },
-    70: {
-      opacity: 0,
-      easing: Easing.elastic(0.7),
     },
     100: {
       opacity: 0,
@@ -33,11 +35,17 @@ export function AnimatedSplashOverlay() {
     },
   });
 
-  const image = <Image style={styles.image} source={require('@/assets/images/expo-logo.png')} />;
+  // Same source and pixel size as app.json's native expo-splash-screen config
+  // (splash-icon.png at 180px wide) — this overlay has to look identical to
+  // that native splash and sit on the same background color, otherwise the
+  // handoff from native splash to this JS-driven fade-out reads as two
+  // different splash screens flashing (it used to be the Expo template's
+  // own logo on Expo's blue, never swapped for the real brand mark).
+  const image = <Image style={styles.image} source={require('@/assets/images/splash-icon.png')} />;
 
   return animate ? (
     <Animated.View
-      entering={splashKeyframe.duration(DURATION).withCallback((finished) => {
+      entering={splashKeyframe.duration(SPLASH_HOLD_DURATION).withCallback((finished) => {
         'worklet';
         if (finished) {
           scheduleOnRN(setVisible, false);
@@ -128,8 +136,8 @@ const styles = StyleSheet.create({
     zIndex: 100,
   },
   image: {
-    width: 76,
-    height: 71,
+    width: 180,
+    height: 180,
   },
   background: {
     borderRadius: 40,
@@ -140,7 +148,7 @@ const styles = StyleSheet.create({
   },
   splashOverlay: {
     ...StyleSheet.absoluteFill,
-    backgroundColor: '#208AEF',
+    backgroundColor: Palette.canvas,
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 1000,
