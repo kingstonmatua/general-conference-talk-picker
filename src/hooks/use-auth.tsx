@@ -15,6 +15,10 @@ type AuthContextValue = {
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signUp: (email: string, password: string) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
+  /** Emails a password-reset link that opens the web reset page (see src/app/reset-password.tsx). */
+  requestPasswordReset: (email: string) => Promise<{ error: string | null }>;
+  /** Sets a new password for the current (recovery) session. */
+  updatePassword: (newPassword: string) => Promise<{ error: string | null }>;
   /** From auth user_metadata — no separate profiles table, just this field. */
   avatarUrl: string | null;
   /** Uploads to the "avatars" Storage bucket, then saves the public URL onto user_metadata. */
@@ -51,6 +55,21 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signUp = useCallback(async (email: string, password: string) => {
     const { error } = await supabase.auth.signUp({ email, password });
+    return { error: error?.message ?? null };
+  }, []);
+
+  const requestPasswordReset = useCallback(async (email: string) => {
+    // Always the web page, even when requested from the native app — the
+    // emailed link opens in the browser, so no deep-link setup is needed.
+    // This URL must be in Supabase → Authentication → URL Configuration → Redirect URLs.
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: 'https://gctalkpicker.app/reset-password',
+    });
+    return { error: error?.message ?? null };
+  }, []);
+
+  const updatePassword = useCallback(async (newPassword: string) => {
+    const { error } = await supabase.auth.updateUser({ password: newPassword });
     return { error: error?.message ?? null };
   }, []);
 
@@ -120,11 +139,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       signIn,
       signUp,
       signOut,
+      requestPasswordReset,
+      updatePassword,
       avatarUrl: (session?.user?.user_metadata?.avatar_url as string | undefined) ?? null,
       updateAvatar,
       deleteAccount,
     }),
-    [session, loading, promptVisible, promptSignIn, dismissPrompt, signIn, signUp, signOut, updateAvatar, deleteAccount],
+    [session, loading, promptVisible, promptSignIn, dismissPrompt, signIn, signUp, signOut, requestPasswordReset, updatePassword, updateAvatar, deleteAccount],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

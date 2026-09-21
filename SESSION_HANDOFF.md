@@ -1,6 +1,23 @@
 # General Conference Talk Picker V2 — Session Handoff
 
-Last updated: 2026-09-19, end of session (Apple sent "Guideline 2.1 - Information Needed" on the first App Store submission; real account-deletion bug found + fixed; a new Draw "reveal" feature built; a splash-screen bug fixed; build 1.0.0 (4) built and resubmitted to Apple — awaiting their decision).
+Last updated: 2026-09-20, end of session (build 1.0.0 (4) still awaiting Apple's decision; password show/hide + confirm-password + forgot-password work written but NOT yet committed, deployed, or tested — see the first section below).
+
+## Password UX work — written 2026-09-20, UNCOMMITTED, UNTESTED, NOT DEPLOYED
+
+Requested by the user while Apple's review of build (4) is pending. `npx tsc --noEmit` passes; nothing has been run in the app or browser yet.
+
+**Files:** new `src/components/ui/password-field.tsx` (TextInput + eye icon toggle, per-field reveal state) and new `src/app/reset-password.tsx` (registered as a sibling `Stack.Screen` in root `_layout.tsx`); edited `src/components/auth-sheet.tsx` and `src/hooks/use-auth.tsx`.
+- **Show/hide password** on every password field (sign-in, sign-up, reset page).
+- **Confirm password** field on sign-up; mismatch shows "Passwords don't match" and blocks submit.
+- **Forgot password**: auth sheet now has 3 modes (`signin` / `signup` / `forgot`). "Forgot password?" on sign-in → email box → `requestPasswordReset(email)` → `supabase.auth.resetPasswordForEmail` with `redirectTo: https://gctalkpicker.app/reset-password`. Deliberately always the **web** page, even from the native app, so no iOS deep-link/Universal Link setup is needed (user was told and didn't object; ask before changing to in-app).
+- **Reset page** parses `access_token`/`refresh_token`/`type=recovery` from the URL hash **manually** because `src/lib/supabase.ts` sets `detectSessionInUrl: false`; calls `setSession`, clears the hash, asks for new password twice, `updatePassword`, then `signOut()` so they sign in fresh. Shows an "invalid or expired link" state otherwise.
+- Sign-up success and reset-request messages now use a neutral `notice` line instead of the red `error` style.
+
+**Open steps, in order:**
+1. **User must add `https://gctalkpicker.app/reset-password` to Supabase → Authentication → URL Configuration → Redirect URLs** (numbered steps were given in chat). Reset emails will fail/redirect wrongly until this is done. Not yet confirmed done.
+2. Test locally (`npx expo start --web`): sign-up mismatch, eye toggles, then a real reset email end-to-end (use the `+applereview` alias only if absolutely needed — that demo account must stay alive; **do not change its password**, Apple's reviewer uses `ReviewMe2026!`. Prefer a fresh `+alias` test account).
+3. Commit locally on `v2` (not pushed — usual rule), then `npm run deploy:web`.
+4. **iOS**: these changes only reach the phone via a new EAS build + resubmission. Recommended to wait for Apple's decision on build (4) first, then bundle these into the next update (user runs `eas build`/`eas submit` in their own Terminal, as always).
 
 ## Second App Store submission cycle + new features (2026-09-18/19)
 
@@ -216,4 +233,4 @@ A full design-system port exists in Figma: **General Conference Talk Picker — 
 
 ## Suggested next steps
 
-In rough priority order: (1) check App Store Connect for Apple's decision on the resubmitted 1.0 (build 4), and manually click Release once approved (release is set to manual — see the iOS section above), (2) decide on speaker headshots sourcing, (3) consider Draw-specific filters if the user wants them, (4) Android, whenever the user wants to start that. Or keep doing visual/UX passes — ask the user which they want rather than assuming.
+In rough priority order: (0) finish the password UX work above (Supabase redirect URL → test → commit → deploy web; iOS after Apple decides), (1) check App Store Connect for Apple's decision on the resubmitted 1.0 (build 4), and manually click Release once approved (release is set to manual — see the iOS section above), (2) decide on speaker headshots sourcing, (3) consider Draw-specific filters if the user wants them, (4) Android, whenever the user wants to start that. Or keep doing visual/UX passes — ask the user which they want rather than assuming.

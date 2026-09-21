@@ -4,6 +4,7 @@ import { Modal, Pressable, StyleSheet, TextInput, View } from 'react-native';
 import { ThemedText } from '@/components/themed-text';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { PasswordField } from '@/components/ui/password-field';
 import { useAuth } from '@/hooks/use-auth';
 import { Palette, Radii, Spacing } from '@/constants/theme';
 
@@ -14,18 +15,30 @@ import { Palette, Radii, Spacing } from '@/constants/theme';
  * V1 account signs in here too.
  */
 export function AuthSheet() {
-  const { promptVisible, dismissPrompt, signIn, signUp } = useAuth();
-  const [mode, setMode] = useState<'signin' | 'signup'>('signin');
+  const { promptVisible, dismissPrompt, signIn, signUp, requestPasswordReset } = useAuth();
+  const [mode, setMode] = useState<'signin' | 'signup' | 'forgot'>('signin');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
   const reset = () => {
     setEmail('');
     setPassword('');
+    setConfirmPassword('');
     setError(null);
+    setNotice(null);
     setMode('signin');
+  };
+
+  const switchMode = (next: 'signin' | 'signup' | 'forgot') => {
+    setMode(next);
+    setError(null);
+    setNotice(null);
+    setPassword('');
+    setConfirmPassword('');
   };
 
   const handleClose = () => {
@@ -35,16 +48,33 @@ export function AuthSheet() {
 
   const handleSubmit = async () => {
     setError(null);
+    setNotice(null);
+
+    if (mode === 'signup' && password !== confirmPassword) {
+      setError("Passwords don't match. Please re-enter them.");
+      return;
+    }
+
     setSubmitting(true);
-    const result = mode === 'signin' ? await signIn(email, password) : await signUp(email, password);
+    const result =
+      mode === 'forgot'
+        ? await requestPasswordReset(email.trim())
+        : mode === 'signin'
+          ? await signIn(email, password)
+          : await signUp(email, password);
     setSubmitting(false);
     if (result.error) {
       setError(result.error);
       return;
     }
+    if (mode === 'forgot') {
+      switchMode('signin');
+      setNotice('If an account exists for that email, a reset link is on its way. Open it, choose a new password, then sign in here.');
+      return;
+    }
     if (mode === 'signup') {
-      setError('Check your email to confirm your account, then sign in.');
-      setMode('signin');
+      switchMode('signin');
+      setNotice('Check your email to confirm your account, then sign in.');
       return;
     }
     reset();
@@ -55,11 +85,15 @@ export function AuthSheet() {
     <Modal visible={promptVisible} transparent animationType="fade" onRequestClose={handleClose}>
       <View style={styles.overlay}>
         <Card style={styles.card}>
-          <ThemedText type="section">{mode === 'signin' ? 'Sign in' : 'Create account'}</ThemedText>
+          <ThemedText type="section">
+            {mode === 'signin' ? 'Sign in' : mode === 'signup' ? 'Create account' : 'Reset password'}
+          </ThemedText>
           <ThemedText type="body" themeColor="textSecondary">
             {mode === 'signin'
               ? 'Sign in to track studied talks, favorites, and your streak.'
-              : 'Create an account to start tracking your study progress.'}
+              : mode === 'signup'
+                ? 'Create an account to start tracking your study progress.'
+                : "Enter your account email and we'll send you a link to choose a new password."}
           </ThemedText>
 
           <TextInput
@@ -71,15 +105,30 @@ export function AuthSheet() {
             keyboardType="email-address"
             style={styles.input}
           />
-          <TextInput
-            value={password}
-            onChangeText={setPassword}
-            placeholder="Password"
-            placeholderTextColor={Palette.secondaryInk}
-            secureTextEntry
-            style={styles.input}
-          />
+          {mode !== 'forgot' && (
+            <PasswordField value={password} onChangeText={setPassword} placeholder="Password" />
+          )}
+          {mode === 'signup' && (
+            <PasswordField
+              value={confirmPassword}
+              onChangeText={setConfirmPassword}
+              placeholder="Confirm password"
+            />
+          )}
 
+          {mode === 'signin' && (
+            <Pressable onPress={() => switchMode('forgot')} hitSlop={8} style={styles.forgotLink}>
+              <ThemedText type="metadata" style={styles.forgotText}>
+                Forgot password?
+              </ThemedText>
+            </Pressable>
+          )}
+
+          {notice && (
+            <ThemedText type="metadata" themeColor="textSecondary">
+              {notice}
+            </ThemedText>
+          )}
           {error && (
             <ThemedText type="metadata" style={styles.error}>
               {error}
@@ -87,16 +136,28 @@ export function AuthSheet() {
           )}
 
           <Button
-            label={submitting ? 'Please wait…' : mode === 'signin' ? 'Sign in' : 'Create account'}
+            label={
+              submitting
+                ? 'Please wait…'
+                : mode === 'signin'
+                  ? 'Sign in'
+                  : mode === 'signup'
+                    ? 'Create account'
+                    : 'Send reset link'
+            }
             variant="primary"
-            disabled={submitting || !email || !password}
+            disabled={submitting || !email || (mode !== 'forgot' && !password) || (mode === 'signup' && !confirmPassword)}
             onPress={handleSubmit}
             style={styles.fullWidthButton}
           />
 
-          <Pressable onPress={() => setMode(mode === 'signin' ? 'signup' : 'signin')} hitSlop={8}>
+          <Pressable onPress={() => switchMode(mode === 'signin' ? 'signup' : 'signin')} hitSlop={8}>
             <ThemedText type="control" style={styles.switchModeLink}>
-              {mode === 'signin' ? "Don't have an account? Create one" : 'Already have an account? Sign in'}
+              {mode === 'signin'
+                ? "Don't have an account? Create one"
+                : mode === 'signup'
+                  ? 'Already have an account? Sign in'
+                  : 'Back to sign in'}
             </ThemedText>
           </Pressable>
 
@@ -136,6 +197,12 @@ const styles = StyleSheet.create({
   },
   error: {
     color: Palette.terracotta,
+  },
+  forgotLink: {
+    alignSelf: 'flex-end',
+  },
+  forgotText: {
+    color: Palette.conferencePurple,
   },
   fullWidthButton: {
     alignSelf: 'stretch',
