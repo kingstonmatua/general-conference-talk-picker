@@ -1,8 +1,8 @@
 # General Conference Talk Picker V2 — Session Handoff
 
-Last updated: 2026-09-20, end of session (build 1.0.0 (4) still awaiting Apple's decision; password show/hide + confirm-password + forgot-password work written but NOT yet committed, deployed, or tested — see the first section below).
+Last updated: 2026-09-21, end of session. Build 1.0.0 (4) still awaiting Apple's decision. Web (gctalkpicker.app) is live with the password UX changes AND the new Draw scope page; iOS has neither until the next EAS build (run by the user in their own Terminal, after Apple decides on build (4)). `v2` is ~9 commits ahead of `origin/v2` — nothing pushed.
 
-## Draw scope page — built 2026-09-21 on branch `feature/draw-page` (not yet merged into `v2`, not deployed)
+## Draw scope page — built 2026-09-21, merged into `v2` (`f8c0dd5`) and deployed to web
 
 Full plan/decisions in `DRAW_PAGE_PLAN.md`. Every Draw button (Home CTA, web sidebar, native center tab button) now opens **`/draw`**, where the user picks a scope, sees a live match count, and taps **Draw**. Tested by the user on web (dev server) and on a real iPhone via Expo Go — all working.
 
@@ -15,7 +15,8 @@ Full plan/decisions in `DRAW_PAGE_PLAN.md`. Every Draw button (Home CTA, web sid
 - **Deliberately unchanged:** drawing does NOT mark a talk studied (only "Mark as studied" does, via `mark_talk_studied`). V1's `user_progress`/`remaining_ids` is not used in V2.
 - **Known small gap:** if "Draw another talk" leaves only the current talk in scope, it opens `/draw` showing "1 talk matches" with no explanation.
 - **Not done:** no "Last 10 years" preset (single-year model can't express it — user chose single year); the pre-existing web sidebar still leaves the sidebar when opening `/draw` (same as talk screens).
-- **Next:** merge `feature/draw-page` into `v2`, `npm run deploy:web`; iOS gets it (plus the password changes) only in the next EAS build after Apple decides on build (4).
+- **Status:** merged and live on web. iOS gets it (plus the password changes) only in the next EAS build after Apple decides on build (4). Branch `feature/draw-page` still exists locally and can be deleted.
+- **Possible follow-ups:** explain the "1 talk matches" case after "Draw another talk"; give Speaker the same "All speakers" exclusive behavior as Session; a quick pick like "This year"; point Cloudflare's Git connection at `v2` (see the deploy section).
 
 ## Password UX work — written 2026-09-20, committed + deployed to web 2026-09-21 (`6cabfd6`)
 
