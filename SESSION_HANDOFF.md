@@ -2,7 +2,7 @@
 
 Last updated: 2026-09-20, end of session (build 1.0.0 (4) still awaiting Apple's decision; password show/hide + confirm-password + forgot-password work written but NOT yet committed, deployed, or tested — see the first section below).
 
-## Password UX work — written 2026-09-20, UNCOMMITTED, UNTESTED, NOT DEPLOYED
+## Password UX work — written 2026-09-20, committed + deployed to web 2026-09-21 (`6cabfd6`)
 
 Requested by the user while Apple's review of build (4) is pending. `npx tsc --noEmit` passes; nothing has been run in the app or browser yet.
 
@@ -18,6 +18,8 @@ Requested by the user while Apple's review of build (4) is pending. `npx tsc --n
 2. Test locally (`npx expo start --web`): sign-up mismatch, eye toggles, then a real reset email end-to-end (use the `+applereview` alias only if absolutely needed — that demo account must stay alive; **do not change its password**, Apple's reviewer uses `ReviewMe2026!`. Prefer a fresh `+alias` test account).
 3. Commit locally on `v2` (not pushed — usual rule), then `npm run deploy:web`.
 4. **iOS**: these changes only reach the phone via a new EAS build + resubmission. Recommended to wait for Apple's decision on build (4) first, then bundle these into the next update (user runs `eas build`/`eas submit` in their own Terminal, as always).
+
+**Status 2026-09-21:** Supabase redirect URL added; eye toggles + confirm-password tested locally; committed as `6cabfd6` (local `v2`, not pushed) and deployed to gctalkpicker.app. Reset email confirmed arriving on a fresh `+resettest` account. (Earlier 'no email' was because the main `kingstonmatua9@gmail.com` account had been deleted in testing — Supabase returns 200 on `/recover` for unknown emails and sends nothing.) **iOS still needs a new EAS build + resubmission** after Apple decides on build (4).
 
 ## Second App Store submission cycle + new features (2026-09-18/19)
 
