@@ -19,7 +19,8 @@ Year (single year picker with "All years", user chose this over a from/to range)
 
 ## Progress (2026-09-21)
 Done + user-verified in the dev server: `/draw` page with dropdowns (Year single-select incl. All years, Conference Both/April/October, Session multi with All-exclusive behavior, Speaker searchable multi), live match count, saved scope (`src/hooks/use-draw-scope.tsx`, AsyncStorage `gctp.drawScope.v1`), scope in URL params (`year, conf, sessions, speakers, unstudied, saved`, helpers in `src/lib/draw-scope.ts`), all Draw buttons (Home, web sidebar, native center tab) open `/draw`, `/draw` Draw + talk-screen "Draw another talk" draw from the saved scope (excluding the current talk; empty pool opens `/draw`), "Change scope" link on talk screen.
-Still to do: "everything in scope is studied" message with Include studied / Widen scope; guest studied list on device for Unstudied only; talk screen "Draw again"/"Change scope" polish; remove now-unused unscoped path in `use-draw-random-talk.tsx`; test on native (Expo Go); update SESSION_HANDOFF.md.
+Also done + verified: empty-scope card on `/draw` (all studied → Include studied talks / Widen scope; no saved talks; filters don't overlap).
+Still to do: guest studied list on device for Unstudied only; talk screen "Draw again"/"Change scope" polish; remove now-unused unscoped path in `use-draw-random-talk.tsx`; test on native (Expo Go); update SESSION_HANDOFF.md.
 
 ## Build steps (original order)
 1. `/draw` route + scope model + filter controls + live match count (no drawing yet).

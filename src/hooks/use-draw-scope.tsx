@@ -18,6 +18,12 @@ type DrawScopeContextValue = {
   apply: (scope: Partial<DrawScope>) => void;
   /** Talks that match the current scope, right now. */
   matches: Talk[];
+  /**
+   * Only computed when nothing matches while "unstudied only" is on: how many
+   * talks the scope WOULD match if studied ones were included. Non-zero means
+   * "you've studied everything here" rather than "this scope is empty".
+   */
+  studiedInScopeCount: number;
 };
 
 const DrawScopeContext = createContext<DrawScopeContextValue | null>(null);
@@ -110,6 +116,14 @@ export function DrawScopeProvider({ children }: { children: ReactNode }) {
     [effectiveScope, studiedIdsByRecency, favoriteIds],
   );
 
+  const studiedInScopeCount = useMemo(() => {
+    if (matches.length > 0 || !effectiveScope.unstudiedOnly) return 0;
+    return talksInScope(
+      { ...effectiveScope, unstudiedOnly: false },
+      { studiedIds: new Set(studiedIdsByRecency), savedIds: new Set(favoriteIds) },
+    ).length;
+  }, [matches, effectiveScope, studiedIdsByRecency, favoriteIds]);
+
   const update = useCallback((partial: Partial<DrawScope>) => {
     changedRef.current = true;
     const { unstudiedOnly, ...rest } = partial;
@@ -131,8 +145,8 @@ export function DrawScopeProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const value = useMemo(
-    () => ({ scope: effectiveScope, update, reset, apply, matches }),
-    [effectiveScope, update, reset, apply, matches],
+    () => ({ scope: effectiveScope, update, reset, apply, matches, studiedInScopeCount }),
+    [effectiveScope, update, reset, apply, matches, studiedInScopeCount],
   );
 
   return <DrawScopeContext.Provider value={value}>{children}</DrawScopeContext.Provider>;

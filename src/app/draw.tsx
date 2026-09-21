@@ -13,6 +13,7 @@ import { MaxContentWidth, Palette, Radii, SessionCategoryTag, SessionTagColors, 
 import { useAuth } from '@/hooks/use-auth';
 import { useDrawRandomTalk } from '@/hooks/use-draw-random-talk';
 import { useDrawScope } from '@/hooks/use-draw-scope';
+import { useTalkStatus } from '@/hooks/use-talk-status';
 import {
   ALL_CATEGORIES,
   ALL_YEARS,
@@ -46,7 +47,8 @@ const SPEAKERS_BY_TALK_COUNT = [...SPEAKER_OPTIONS].sort((a, b) => b.count - a.c
 export default function DrawScreen() {
   const router = useRouter();
   const { user, promptSignIn } = useAuth();
-  const { scope, update, reset, apply, matches } = useDrawScope();
+  const { scope, update, reset, apply, matches, studiedInScopeCount } = useDrawScope();
+  const { favoriteIds } = useTalkStatus();
   const params = useLocalSearchParams<DrawScopeParams>();
   const [urlReady, setUrlReady] = useState(false);
   const drawRandomTalk = useDrawRandomTalk();
@@ -94,6 +96,21 @@ export default function DrawScreen() {
 
   const resetScope = () => {
     reset();
+    setSpeakerQuery('');
+  };
+
+  // Why is nothing matching? Three different situations, three different fixes.
+  const allStudied = matches.length === 0 && studiedInScopeCount > 0;
+  const noSavedTalks = matches.length === 0 && !allStudied && scope.savedOnly && favoriteIds.length === 0;
+
+  const widenScope = () => {
+    update({
+      year: 'ALL',
+      months: [4, 10],
+      categories: [...ALL_CATEGORIES],
+      speakers: [],
+      savedOnly: false,
+    });
     setSpeakerQuery('');
   };
 
@@ -184,6 +201,31 @@ export default function DrawScreen() {
               />
             </View>
           </View>
+
+          {matches.length === 0 && (
+            <Card style={styles.emptyCard}>
+              <ThemedText type="section">
+                {allStudied
+                  ? 'You’ve studied every talk in this scope.'
+                  : noSavedTalks
+                    ? 'You haven’t saved any talks yet.'
+                    : 'No talks match this scope.'}
+              </ThemedText>
+              <ThemedText type="body" themeColor="textSecondary">
+                {allStudied
+                  ? 'Include the ones you’ve already studied, or widen the scope to draw something new.'
+                  : noSavedTalks
+                    ? 'Save a talk from its page, or draw from everything instead.'
+                    : 'Try widening the scope — a filter or two is probably too narrow.'}
+              </ThemedText>
+              <View style={styles.emptyActions}>
+                {allStudied && (
+                  <Button label="Include studied talks" variant="primary" onPress={() => update({ unstudiedOnly: false })} />
+                )}
+                <Button label="Widen scope" variant={allStudied ? 'secondary' : 'primary'} onPress={widenScope} />
+              </View>
+            </Card>
+          )}
 
           <Pressable onPress={resetScope} hitSlop={8} style={styles.resetRow}>
             <ThemedText type="control" themeColor="textSecondary">
@@ -436,6 +478,14 @@ const styles = StyleSheet.create({
   },
   chevron: {
     color: Palette.secondaryInk,
+  },
+  emptyCard: {
+    gap: Spacing.md,
+  },
+  emptyActions: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.sm,
   },
   resetRow: {
     alignSelf: 'flex-start',
