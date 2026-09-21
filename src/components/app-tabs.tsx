@@ -1,3 +1,4 @@
+import { useRouter } from 'expo-router';
 import { TabList, TabListProps, TabSlot, Tabs, TabTrigger, TabTriggerSlotProps } from 'expo-router/ui';
 import { Pressable, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -6,7 +7,6 @@ import { ThemedText } from './themed-text';
 import { Icon, type AppIconName } from './ui/icon';
 
 import { Palette, Spacing } from '@/constants/theme';
-import { useDrawRandomTalk } from '@/hooks/use-draw-random-talk';
 
 /**
  * Native nav shell — a floating rounded tab bar with a docked "Draw a
@@ -22,10 +22,10 @@ import { useDrawRandomTalk } from '@/hooks/use-draw-random-talk';
  *
  * The draw button is a plain Pressable, not a <TabTrigger> — per a
  * standing decision, "Random Talk" is an action (draw + navigate to the
- * talk), not a fifth nav destination. Exactly four real tabs.
+ * talk), not a fifth nav destination. It opens the /draw scope picker. Exactly four real tabs.
  */
 export default function AppTabs() {
-  const drawRandomTalk = useDrawRandomTalk();
+  const router = useRouter();
   const insets = useSafeAreaInsets();
 
   return (
@@ -42,7 +42,7 @@ export default function AppTabs() {
           </TabTrigger>
 
           <Pressable
-            onPress={() => drawRandomTalk()}
+            onPress={() => router.push('/draw')}
             hitSlop={8}
             style={({ pressed }) => [styles.fab, pressed && styles.fabPressed]}>
             <Icon name="draw" size={26} color="#FFFFFF" />

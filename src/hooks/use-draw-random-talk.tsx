@@ -3,6 +3,7 @@ import { createContext, useCallback, useContext, useMemo, useState, type ReactNo
 
 import { DRAW_REVEAL_MESSAGES, DrawRevealOverlay } from '@/components/draw-reveal-overlay';
 import { TALKS } from '@/data/talks';
+import { useDrawScope } from '@/hooks/use-draw-scope';
 import { useTalkStatus } from '@/hooks/use-talk-status';
 
 const REVEAL_DURATION_MS = 900;
@@ -12,6 +13,13 @@ type DrawOptions = {
    * when drawing again from the talk detail screen itself, so repeated
    * draws don't stack up a long "Back" history of every talk you've seen. */
   replace?: boolean;
+  /** Draw from the user's saved Draw scope (see use-draw-scope.tsx) instead
+   * of every unstudied talk. If nothing in scope is left to draw, opens
+   * /draw so they can widen it. */
+  useScope?: boolean;
+  /** Never draw this talk — used so "draw another" can't hand back the
+   * talk you're already looking at. */
+  excludeId?: string;
 };
 
 type DrawContextValue = {
@@ -38,18 +46,24 @@ const DrawContext = createContext<DrawContextValue | null>(null);
  */
 export function DrawRevealProvider({ children }: { children: ReactNode }) {
   const { studiedIdsByRecency } = useTalkStatus();
+  const { matches: scopeMatches } = useDrawScope();
   const router = useRouter();
   const [isDrawing, setIsDrawing] = useState(false);
   const [revealMessage, setRevealMessage] = useState(DRAW_REVEAL_MESSAGES[0]);
 
   const draw = useCallback(
     (options?: DrawOptions) => {
+      const scopedPool = options?.useScope ? scopeMatches.filter((t) => t.id !== options.excludeId) : null;
+      if (scopedPool && scopedPool.length === 0) {
+        router.push('/draw');
+        return;
+      }
       setRevealMessage(DRAW_REVEAL_MESSAGES[Math.floor(Math.random() * DRAW_REVEAL_MESSAGES.length)]);
       setIsDrawing(true);
       setTimeout(() => {
         const studiedIds = new Set(studiedIdsByRecency);
         const pool = TALKS.filter((t) => !studiedIds.has(t.id));
-        const bag = pool.length > 0 ? pool : TALKS;
+        const bag = scopedPool ?? (pool.length > 0 ? pool : TALKS);
         const pick = bag[Math.floor(Math.random() * bag.length)];
         setIsDrawing(false);
         const target = { pathname: '/talk/[id]', params: { id: pick.id } } as const;
@@ -60,7 +74,7 @@ export function DrawRevealProvider({ children }: { children: ReactNode }) {
         }
       }, REVEAL_DURATION_MS);
     },
-    [studiedIdsByRecency, router],
+    [studiedIdsByRecency, scopeMatches, router],
   );
 
   const value = useMemo<DrawContextValue>(() => ({ draw }), [draw]);

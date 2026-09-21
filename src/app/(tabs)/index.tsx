@@ -12,14 +12,12 @@ import { TalkCard } from '@/components/ui/talk-card';
 import { BottomTabInset, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 import { formatTalkMeta, getTalkById } from '@/data/talks';
 import { useAuth } from '@/hooks/use-auth';
-import { useDrawRandomTalk } from '@/hooks/use-draw-random-talk';
 import { useTalkStatus } from '@/hooks/use-talk-status';
 
 export default function HomeScreen() {
   const { user, promptSignIn } = useAuth();
   const { studiedCount, favoriteIds, currentStreak, getStatus, markStudied } = useTalkStatus();
   const router = useRouter();
-  const drawRandomTalk = useDrawRandomTalk();
 
   // "Continue Studying" = talks you've saved but haven't studied yet.
   // There's no partial in-progress-within-a-talk concept in this app (no
@@ -57,7 +55,7 @@ export default function HomeScreen() {
             <ThemedText type="body" themeColor="textSecondary">
               Draw a General Conference talk and find something to carry with you.
             </ThemedText>
-            <Button label="Draw a Random Talk" variant="accent" onPress={() => drawRandomTalk()} />
+            <Button label="Draw a Random Talk" variant="accent" onPress={() => router.push('/draw')} />
           </Card>
 
           {!user ? (

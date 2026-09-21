@@ -15,9 +15,13 @@ Branch: `feature/draw-page` (off `v2`). Written 2026-09-21. Product spec came fr
 - Guest storage: must work on web AND native (not raw `localStorage`).
 
 ## Scope controls
-Years from/to · April/October toggles · session chips (9) · searchable multi-select speakers · "Unstudied only" (default on when signed in) · "From my Saved" · presets: Last 10 years, Unstudied, Saved. Live match count; Draw disabled at 0. Pre-fill last-used scope (first visit: everything). Scope encoded in URL params (`from`, `to`, `speaker`, ...). Works signed out (guest studied list on device until sign-in). If everything in scope is studied: say so, offer "Include studied talks" / "Widen scope".
+Year (single year picker with "All years", user chose this over a from/to range) · April/October toggles · session chips (9) · searchable multi-select speakers · "Unstudied only" (default on when signed in) · "From my Saved" · presets: Unstudied, Saved ("Last 10 years" dropped — can't be expressed with a single year). Live match count; Draw disabled at 0. Pre-fill last-used scope (first visit: everything). Scope encoded in URL params (`from`, `to`, `speaker`, ...). Works signed out (guest studied list on device until sign-in). If everything in scope is studied: say so, offer "Include studied talks" / "Widen scope".
 
-## Build steps (check in with user after each)
+## Progress (2026-09-21)
+Done + user-verified in the dev server: `/draw` page with dropdowns (Year single-select incl. All years, Conference Both/April/October, Session multi with All-exclusive behavior, Speaker searchable multi), live match count, saved scope (`src/hooks/use-draw-scope.tsx`, AsyncStorage `gctp.drawScope.v1`), scope in URL params (`year, conf, sessions, speakers, unstudied, saved`, helpers in `src/lib/draw-scope.ts`), all Draw buttons (Home, web sidebar, native center tab) open `/draw`, `/draw` Draw + talk-screen "Draw another talk" draw from the saved scope (excluding the current talk; empty pool opens `/draw`), "Change scope" link on talk screen.
+Still to do: "everything in scope is studied" message with Include studied / Widen scope; guest studied list on device for Unstudied only; talk screen "Draw again"/"Change scope" polish; remove now-unused unscoped path in `use-draw-random-talk.tsx`; test on native (Expo Go); update SESSION_HANDOFF.md.
+
+## Build steps (original order)
 1. `/draw` route + scope model + filter controls + live match count (no drawing yet).
 2. Presets, remembered last scope, URL params, speaker normalization.
 3. Draw + result (Draw again / Change scope), reroute all entry points, all-studied edge case, guest handling.
