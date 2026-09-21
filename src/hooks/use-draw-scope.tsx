@@ -103,7 +103,15 @@ export function DrawScopeProvider({ children }: { children: ReactNode }) {
   }, [hydrated, scope, unstudiedOverride]);
 
   const effectiveScope = useMemo<DrawScope>(
-    () => ({ ...scope, unstudiedOnly: unstudiedOverride ?? !!user }),
+    () => ({
+      ...scope,
+      // Guests have no studied or saved talks, so these filters don't apply
+      // to them (the /draw screen hides the controls) — this also stops a
+      // scope saved while signed in from leaving a signed-out user stuck
+      // on an empty "Saved" list they can't switch off.
+      unstudiedOnly: user ? (unstudiedOverride ?? true) : false,
+      savedOnly: user ? scope.savedOnly : false,
+    }),
     [scope, unstudiedOverride, user],
   );
 

@@ -89,11 +89,6 @@ export default function DrawScreen() {
       speakers: scope.speakers.includes(key) ? scope.speakers.filter((k) => k !== key) : [...scope.speakers, key],
     });
 
-  const toggleSaved = () => {
-    if (!user && !scope.savedOnly) return promptSignIn();
-    update({ savedOnly: !scope.savedOnly });
-  };
-
   const resetScope = () => {
     reset();
     setSpeakerQuery('');
@@ -127,7 +122,7 @@ export default function DrawScreen() {
 
   const draw = () => {
     if (matches.length === 0) return;
-    drawRandomTalk({ useScope: true });
+    drawRandomTalk();
   };
 
   const conferenceLabel = scope.months.length === 2 ? 'Both' : MONTH_LABELS[scope.months[0]];
@@ -165,8 +160,15 @@ export default function DrawScreen() {
           <View style={styles.section}>
             <ThemedText type="section">Quick picks</ThemedText>
             <View style={styles.chips}>
-              <Pill label="Unstudied" selected={unstudiedOnly} onPress={() => update({ unstudiedOnly: !unstudiedOnly })} />
-              <Pill label="Saved" selected={scope.savedOnly} onPress={toggleSaved} />
+              {user ? (
+                <>
+                  <Pill label="Unstudied" selected={unstudiedOnly} onPress={() => update({ unstudiedOnly: !unstudiedOnly })} />
+                  <Pill label="Saved" selected={scope.savedOnly} onPress={() => update({ savedOnly: !scope.savedOnly })} />
+                </>
+              ) : (
+                // Guests have no studied or saved talks to filter by — offer sign-up instead.
+                <Button label="Sign up to track studies and save talks" variant="secondary" onPress={promptSignIn} />
+              )}
             </View>
           </View>
 

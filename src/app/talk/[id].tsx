@@ -96,7 +96,7 @@ export default function TalkDetailScreen() {
           </Card>
 
           <Pressable
-            onPress={() => drawRandomTalk({ replace: true, useScope: true, excludeId: talk.id })}
+            onPress={() => drawRandomTalk({ replace: true, excludeId: talk.id })}
             hitSlop={8}
             style={styles.drawAnotherRow}>
             <Icon name="draw" size={18} color={Palette.conferencePurple} />
