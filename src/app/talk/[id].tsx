@@ -96,12 +96,17 @@ export default function TalkDetailScreen() {
           </Card>
 
           <Pressable
-            onPress={() => drawRandomTalk({ replace: true })}
+            onPress={() => drawRandomTalk({ replace: true, excludeId: talk.id })}
             hitSlop={8}
             style={styles.drawAnotherRow}>
             <Icon name="draw" size={18} color={Palette.conferencePurple} />
             <ThemedText type="control" style={{ color: Palette.conferencePurple }}>
               Draw another talk
+            </ThemedText>
+          </Pressable>
+          <Pressable onPress={() => router.push('/draw')} hitSlop={8} style={styles.drawAnotherRow}>
+            <ThemedText type="control" themeColor="textSecondary">
+              Change scope
             </ThemedText>
           </Pressable>
         </View>

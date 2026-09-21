@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Link } from 'expo-router';
+import { Link, useRouter } from 'expo-router';
 import { TabList, TabListProps, TabSlot, Tabs, TabTrigger, TabTriggerSlotProps } from 'expo-router/ui';
 import { Pressable, StyleSheet, View } from 'react-native';
 
@@ -9,7 +9,6 @@ import { ThemedText } from './themed-text';
 
 import { Palette, Spacing, WebSidebarWidth } from '@/constants/theme';
 import { useAuth } from '@/hooks/use-auth';
-import { useDrawRandomTalk } from '@/hooks/use-draw-random-talk';
 
 /**
  * Web nav shell — a persistent left sidebar (logo, a standing "Draw a
@@ -52,7 +51,7 @@ export default function AppTabs() {
 }
 
 function Sidebar(props: TabListProps) {
-  const drawRandomTalk = useDrawRandomTalk();
+  const router = useRouter();
   return (
     <View style={styles.sidebar}>
       <Image
@@ -65,7 +64,7 @@ function Sidebar(props: TabListProps) {
         label="Draw a Random Talk"
         variant="primary"
         style={styles.drawButton}
-        onPress={() => drawRandomTalk()}
+        onPress={() => router.push('/draw')}
       />
 
       <View style={styles.navList}>{props.children}</View>

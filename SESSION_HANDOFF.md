@@ -2,6 +2,21 @@
 
 Last updated: 2026-09-20, end of session (build 1.0.0 (4) still awaiting Apple's decision; password show/hide + confirm-password + forgot-password work written but NOT yet committed, deployed, or tested — see the first section below).
 
+## Draw scope page — built 2026-09-21 on branch `feature/draw-page` (not yet merged into `v2`, not deployed)
+
+Full plan/decisions in `DRAW_PAGE_PLAN.md`. Every Draw button (Home CTA, web sidebar, native center tab button) now opens **`/draw`**, where the user picks a scope, sees a live match count, and taps **Draw**. Tested by the user on web (dev server) and on a real iPhone via Expo Go — all working.
+
+- **Screen:** `src/app/draw.tsx` (sibling `Stack.Screen` in root `_layout.tsx`). Dropdowns like Browse's: Year (single, incl. All years), Conference (Both/April/October), Session (multi; "All sessions" is exclusive of the individual chips; last chip removed falls back to All), Speaker (searchable multi, checkmarks; empty search shows the 20 speakers with most talks). Quick picks: Unstudied + Saved for signed-in users; **guests instead see one "Sign up to track studies and save talks" button** and those two filters never apply to them.
+- **Logic:** `src/lib/draw-scope.ts` — scope type, `talksInScope`, speaker-name normalization (one entry per person: strips titles/periods/case; found 555 raw strings, only 1 real duplicate pair), URL param encode/decode.
+- **Shared state:** `src/hooks/use-draw-scope.tsx` (`DrawScopeProvider` in root layout) holds the scope for the whole app, remembers it on the device (AsyncStorage key `gctp.drawScope.v1`), and exposes `matches`. "Unstudied only" follows sign-in state until the user touches it.
+- **URL params:** `/draw?year=2015&conf=april&sessions=PRIESTHOOD,...&speakers=<normalized keys>&unstudied=0|1&saved=1` — only non-default parts appear; a link with params overrides the remembered scope; the URL is kept in sync as filters change (via `router.setParams`, verified that cleared values disappear).
+- **Drawing:** `src/hooks/use-draw-random-talk.tsx` now always draws from the saved scope (with the reveal overlay), excluding `excludeId`. Talk screen: "Draw another talk" stays in scope (uses `router.replace`), plus a "Change scope" link. Empty pool → opens `/draw`.
+- **Empty scope card on `/draw`:** "studied every talk in this scope" (Include studied talks / Widen scope), "haven't saved any talks yet", or "no talks match".
+- **Deliberately unchanged:** drawing does NOT mark a talk studied (only "Mark as studied" does, via `mark_talk_studied`). V1's `user_progress`/`remaining_ids` is not used in V2.
+- **Known small gap:** if "Draw another talk" leaves only the current talk in scope, it opens `/draw` showing "1 talk matches" with no explanation.
+- **Not done:** no "Last 10 years" preset (single-year model can't express it — user chose single year); the pre-existing web sidebar still leaves the sidebar when opening `/draw` (same as talk screens).
+- **Next:** merge `feature/draw-page` into `v2`, `npm run deploy:web`; iOS gets it (plus the password changes) only in the next EAS build after Apple decides on build (4).
+
 ## Password UX work — written 2026-09-20, committed + deployed to web 2026-09-21 (`6cabfd6`)
 
 Requested by the user while Apple's review of build (4) is pending. `npx tsc --noEmit` passes; nothing has been run in the app or browser yet.

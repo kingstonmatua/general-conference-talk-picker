@@ -2,8 +2,7 @@ import { useRouter } from 'expo-router';
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react';
 
 import { DRAW_REVEAL_MESSAGES, DrawRevealOverlay } from '@/components/draw-reveal-overlay';
-import { TALKS } from '@/data/talks';
-import { useTalkStatus } from '@/hooks/use-talk-status';
+import { useDrawScope } from '@/hooks/use-draw-scope';
 
 const REVEAL_DURATION_MS = 900;
 
@@ -12,6 +11,9 @@ type DrawOptions = {
    * when drawing again from the talk detail screen itself, so repeated
    * draws don't stack up a long "Back" history of every talk you've seen. */
   replace?: boolean;
+  /** Never draw this talk — used so "draw another" can't hand back the
+   * talk you're already looking at. */
+  excludeId?: string;
 };
 
 type DrawContextValue = {
@@ -21,36 +23,34 @@ type DrawContextValue = {
 const DrawContext = createContext<DrawContextValue | null>(null);
 
 /**
- * "Remaining bag" for V2: the pool of not-yet-studied talks (using the real
- * talk_status data already wired up, rather than a separate drawn/remaining
- * table like V1's `remaining_ids` array). Once every talk is studied, the
- * bag refills from the full set rather than drawing nothing.
- *
- * Unfiltered for now — no Draw-specific filter UI exists yet (see
- * SESSION_HANDOFF.md's "Progress Scope" note: Browse filters = find, Draw
- * filters = choose, Progress Scope = measure — Draw's own filters are a
- * separate, not-yet-built decision).
+ * Draws a random talk from the user's saved Draw scope (see
+ * use-draw-scope.tsx), with the brief reveal overlay. If nothing in scope is
+ * left to draw, opens /draw instead so the empty-scope message can explain
+ * why and offer a way forward.
  *
  * Mounted once at the root (see _layout.tsx) rather than as a plain hook,
- * so the brief "drawing…" reveal overlay is shared across every entry
- * point — Home's CTA, the web sidebar, and the native tab bar's center
- * button — instead of each needing its own copy of the animation.
+ * so the "drawing…" reveal overlay is one shared instance — used by the
+ * /draw screen's Draw button and "Draw another talk" on the talk screen.
+ * (V1's `remaining_ids` bag has no equivalent here: the pool is derived
+ * from `talk_status` through the scope.)
  */
 export function DrawRevealProvider({ children }: { children: ReactNode }) {
-  const { studiedIdsByRecency } = useTalkStatus();
+  const { matches: scopeMatches } = useDrawScope();
   const router = useRouter();
   const [isDrawing, setIsDrawing] = useState(false);
   const [revealMessage, setRevealMessage] = useState(DRAW_REVEAL_MESSAGES[0]);
 
   const draw = useCallback(
     (options?: DrawOptions) => {
+      const pool = scopeMatches.filter((t) => t.id !== options?.excludeId);
+      if (pool.length === 0) {
+        router.push('/draw');
+        return;
+      }
       setRevealMessage(DRAW_REVEAL_MESSAGES[Math.floor(Math.random() * DRAW_REVEAL_MESSAGES.length)]);
       setIsDrawing(true);
       setTimeout(() => {
-        const studiedIds = new Set(studiedIdsByRecency);
-        const pool = TALKS.filter((t) => !studiedIds.has(t.id));
-        const bag = pool.length > 0 ? pool : TALKS;
-        const pick = bag[Math.floor(Math.random() * bag.length)];
+        const pick = pool[Math.floor(Math.random() * pool.length)];
         setIsDrawing(false);
         const target = { pathname: '/talk/[id]', params: { id: pick.id } } as const;
         if (options?.replace) {
@@ -60,7 +60,7 @@ export function DrawRevealProvider({ children }: { children: ReactNode }) {
         }
       }, REVEAL_DURATION_MS);
     },
-    [studiedIdsByRecency, router],
+    [scopeMatches, router],
   );
 
   const value = useMemo<DrawContextValue>(() => ({ draw }), [draw]);
