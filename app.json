@@ -39,7 +39,9 @@
       [
         "expo-image-picker",
         {
-          "photosPermission": "General Conference Talk Picker needs access to your photo library so you can choose a picture from it to use as your account avatar, shown on your Account screen."
+          "photosPermission": "General Conference Talk Picker needs access to your photo library so you can choose a picture from it to use as your account avatar, shown on your Account screen.",
+          "cameraPermission": false,
+          "microphonePermission": false
         }
       ]
     ],
