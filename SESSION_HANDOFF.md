@@ -1,6 +1,16 @@
 # General Conference Talk Picker V2 — Session Handoff
 
-Last updated: 2026-09-21, end of session. Build 1.0.0 (4) still awaiting Apple's decision. Web (gctalkpicker.app) is live with the password UX changes AND the new Draw scope page; iOS has neither until the next EAS build (run by the user in their own Terminal, after Apple decides on build (4)). `v2` is ~9 commits ahead of `origin/v2` — nothing pushed.
+Last updated: 2026-09-22. Build 1.0.0 (4) was **rejected** by Apple (Guideline 5.1.1(ii) — Legal: Privacy - Data Collection and Storage), reviewed 2026-09-22 on an iPad Air 11-inch (M3). Fixed same session, see "Second App Store rejection" below — a new build + resubmission is needed before anything else about this app version progresses. Web (gctalkpicker.app) is live with the password UX changes AND the new Draw scope page; iOS has neither until the next EAS build (run by the user in their own Terminal). `v2` is ~15 commits ahead of `origin/v2` — nothing pushed.
+
+## Second App Store rejection — fixed 2026-09-22, needs a new EAS build + resubmission
+
+**Apple's exact complaint**: "One or more purpose strings, also called usage description strings, in the app do not sufficiently explain the use of protected resources. Purpose strings must clearly and completely describe the app's use of data and, in most cases, provide an example of how the data will be used." Specifically the **photo library** purpose string, per their attached screenshot.
+
+**Root cause, confirmed by reading the library source** (`node_modules/expo-image-picker/plugin/build/withImagePicker.js`): the avatar-upload feature on the Account screen (`src/app/account.tsx`, uses `expo-image-picker`) was never given a custom permission string in `app.json`. `expo-image-picker`'s config plugin auto-applies via autolinking even when not listed in the `plugins` array, and its **default** `NSPhotoLibraryUsageDescription` is the literal generic string `"Allow $(PRODUCT_NAME) to access your photos"` — exactly the kind of vague string Apple's message describes as unacceptable.
+
+**Fix**: added an explicit `expo-image-picker` plugin entry to `app.json`'s `plugins` array with a specific `photosPermission` string: *"General Conference Talk Picker needs access to your photo library so you can choose a picture from it to use as your account avatar, shown on your Account screen."* Verified via `npx expo config --json --type prebuild` that the plugin is now picked up with this custom string (shows in `pluginHistory`/`plugins` in the resolved config) — the actual `Info.plist` value only gets generated at prebuild time inside an EAS build (this project has no checked-in native `ios/` folder), so it can't be verified further without running a real build.
+
+**Not yet done**: commit this change, then the user needs to run a new EAS build (`eas build --platform ios --profile production`) + `eas submit --platform ios --latest`, then re-fill/resubmit via App Store Connect's "Update Review" / "Resubmit to App Review" flow on the rejected 1.0 version. Same policy as always — EAS build/submit commands need the user's own Apple credentials, run in their own Terminal, not through an assistant Bash call.
 
 ## Draw scope page — built 2026-09-21, merged into `v2` (`f8c0dd5`) and deployed to web
 
@@ -251,4 +261,4 @@ A full design-system port exists in Figma: **General Conference Talk Picker — 
 
 ## Suggested next steps
 
-In rough priority order: (0) finish the password UX work above (Supabase redirect URL → test → commit → deploy web; iOS after Apple decides), (1) check App Store Connect for Apple's decision on the resubmitted 1.0 (build 4), and manually click Release once approved (release is set to manual — see the iOS section above), (2) decide on speaker headshots sourcing, (3) consider Draw-specific filters if the user wants them, (4) Android, whenever the user wants to start that. Or keep doing visual/UX passes — ask the user which they want rather than assuming.
+In rough priority order: (0) run a new EAS build + submit with the photo-library purpose-string fix above, then resubmit for App Review — this also bundles the password UX + Draw scope page onto iOS for the first time, (1) once approved, manually click Release (release is set to manual — see the iOS section above), (2) decide on speaker headshots sourcing, (3) Android, whenever the user wants to start that. Or keep doing visual/UX passes — ask the user which they want rather than assuming.

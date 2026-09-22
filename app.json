@@ -35,6 +35,12 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 180
         }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "General Conference Talk Picker needs access to your photo library so you can choose a picture from it to use as your account avatar, shown on your Account screen."
+        }
       ]
     ],
     "experiments": {
