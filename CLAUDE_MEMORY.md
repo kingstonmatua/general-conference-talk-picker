@@ -1,6 +1,6 @@
 # Claude Memory Export
 
-This file exists because Claude's persistent memory lives in `~/.claude/...` on whichever machine created it — it does **not** travel with this removable drive. Everything below was learned during 2026-09-16 and 2026-09-17 sessions and would otherwise be invisible to a fresh Claude session on a new machine. Project facts (what's built, schema decisions, known bugs) belong in `SESSION_HANDOFF.md`, not here — this file is specifically about **how to work with Kingston**, not the project itself.
+This file exists because Claude's persistent memory lives in `~/.claude/...` on whichever machine created it — it does **not** travel with this removable drive. Everything below was learned during sessions from 2026-09-16 to 2026-10-05 and would otherwise be invisible to a fresh Claude session on a new machine. Project facts (what's built, schema decisions, known bugs) belong in `SESSION_HANDOFF.md`, not here — this file is specifically about **how to work with Kingston**, not the project itself.
 
 ## About Kingston
 
@@ -12,11 +12,19 @@ This file exists because Claude's persistent memory lives in `~/.claude/...` on 
 - After giving steps, check in rather than assuming success — Kingston is more likely to get stuck on unfamiliar UI than a developer would be, and won't necessarily know how to describe what went wrong. Ask for the exact error text rather than a paraphrase.
 - This pattern showed up concretely once already: pasting a SQL block with bare `$$ ... $$` dollar-quoting into the Supabase SQL Editor got mangled (unclear whether by the editor's auto-bracket-matching or the paste itself) and threw a syntax error. The fix was switching to named `$body$` tags and splitting the script into small, separately-pasted chunks so any future failure is easy to localize. Default to that approach (small chunks, named dollar-quote tags) for any future SQL handoff to Kingston, rather than one large block.
 
-**Floats feature ideas at a conceptual level, not a spec'd-out one.** Concretely: raised a "let people share their progress/streaks/stats" idea (see `SESSION_HANDOFF.md`'s "Not yet built" section) with the *what* clear but every *how* question open — no share-sheet vs. feed vs. deep-link decision, no opt-in/public default, no call on whether it needs new backend.
+**Floats feature ideas at a conceptual level, not a spec'd-out one.** Concretely: raised a "let people share their progress/streaks/stats" idea with the *what* clear but every *how* question open. On 2026-10-05, asking for their mental model surfaced something much bigger than a share card: a friends leaderboard and a Facebook-style wall (now `SOCIAL_PLAN.md`). Asking first was clearly worth it.
 
 **How to apply this:**
 - Don't start building off a one-line feature idea. Ask what Kingston pictures it looking like (a native share sheet? a public link? something else?) before writing any code or making an implementation choice on his behalf.
 - This is the same instinct as the "not a coder" pattern above, one level up: he'll describe an outcome and expect Claude to drive the technical *how*, but still wants to be asked rather than have a shape assumed for him when it's genuinely open-ended.
+
+## How Kingston likes to make decisions (learned 2026-10-05)
+
+- **One decision at a time.** When handed a list of six open decisions at once, they said "let's take them one by one and I will tell you how I feel." Present a single decision per message: plain-language options, a recommendation with a one-line reason, then wait. When they answer only part of a multi-part question, say which parts you're taking as your recommendation and let them object.
+- **Plain-text questions, not the multiple-choice picker tool.** They rejected the AskUserQuestion picker mid-flow and wanted the questions as normal text. Ask in prose and markdown.
+- **Messages are sometimes voice-dictated** (run-on, with words repeated or garbled, e.g. "S do not need an account" meant "guests do not need an account"). Read for intent and restate the decision back in clean form when locking it in.
+- **Bold product instincts that grow scope** (e.g. adding national and global leaderboards on the spot). Spell out the concrete costs (privacy, cheating, Apple review) without lecturing; they often scale back sensibly ("let's just focus on private friend boards for now").
+- They say "go ahead" once the plan is clear, and expect real progress after that, not more questions.
 
 ## Project touches Figma, Expo/React Native, and Supabase
 
