@@ -201,6 +201,10 @@ as $body$
 $body$;
 
 -- ─── Account deletion ───────────────────────────────────────────────────────
+-- NOTE: superseded by the version in social.sql, which also deletes the
+-- social tables (profiles, friendships, friend_invites). Run social.sql
+-- after this file; keep the two in step if either changes.
+--
 -- Required by Apple (Guideline 5.1.1(v)): an app that supports account
 -- creation must also let a user delete their account from inside the app,
 -- not just "email us". `security definer` is required here (unlike the
