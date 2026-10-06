@@ -1,6 +1,6 @@
 # General Conference Talk Picker V2 — Session Handoff
 
-Last updated: 2026-10-05. **The active work is the social phase, on branch `feature/social`.** That's what this folder is checked out on, local only and not pushed; `v2` itself is unchanged. Read the section directly below plus `SOCIAL_PLAN.md` first. App Store build 1.0.0 (5) was resubmitted 2026-09-22 and its outcome was **not checked** this session. Check App Store Connect: if it's approved, Kingston still has to click Release by hand.
+Last updated: 2026-10-06. **The active work is the social phase, on branch `feature/social`.** That's what this folder is checked out on, local only and not pushed; `v2` itself is unchanged (and is exactly what's live on the App Store: build 1.0.0 (5), approved and released). Read the section directly below plus `SOCIAL_PLAN.md` (its Status list is the most detailed record) first.
 
 ## Social phase — started 2026-10-05 (branch `feature/social`)
 
@@ -18,7 +18,19 @@ Kingston chose social as the next phase (over Android, speaker headshots and pol
 
 **✅ `social.sql` was run in the real Supabase project on 2026-10-06** ("Success. No rows returned"). The first paste failed because the project already had an unrelated, empty `public.profiles` table, so ours is now `social_profiles` (`d023114`). That old `profiles` table was left alone.
 
-**Next step: build step 2** in `SOCIAL_PLAN.md`, the `use-social` hook (profile, friends, requests, leaderboard). Then the tab changes (step 3). **For tab changes, verify in a real browser and in Expo Go.** `<Tabs>` changes have broken at runtime before while tsc and export looked clean (see "Routing structure" below).
+**Done 2026-10-06 (all local commits on `feature/social`, see `SOCIAL_PLAN.md` Status for hashes):**
+- Step 2: `src/hooks/use-social.tsx` (`SocialProvider` in root `_layout.tsx`). Every action returns `{ error }` already as friendly copy.
+- Step 3: Social tab added; native bar is Home · Browse · (Draw) · Social · Progress; Saved is a hidden trigger reached by an "All talks | Saved" switch on Browse/Saved; web sidebar lists Home · Browse · Social · Progress · Saved. **Kingston checked web and Expo Go.**
+- Heroes: Progress = Laie, Saved = new Rome Italy Temple image, Social = Salt Lake. On **web only**, every hero grows with window width (380–640px) and crops 25% from the top so temples stay in view on wide screens (`hero-banner.tsx`). Native unchanged. Kingston approved how all five look.
+- Step 4 + most of step 7: first-time username setup on Social, Leaderboard/Friends/Wall pill switch, Username card on Account (change + 90-day message), shared `src/components/username-form.tsx`, `updateAvatar()` syncs `social_profiles.avatar_url`. **Tested by Kingston.**
+- Step 5: Friends section (invite link share/copy + regenerate, search, incoming/outgoing requests, remove) and `src/app/invite/[token].tsx`. **Tested by Kingston with a second account** `kingstonmatua9+friend@gmail.com` / username `testfriend`: search → Add → Accept works.
+
+**Pick up here:**
+1. Finish testing step 5: **Remove** a friend, then the **invite link**. The copied link points at gctalkpicker.app, which won't have `/invite` until the next web deploy, so swap in `http://localhost:8081` when testing locally. Kingston and testfriend are currently friends.
+2. Then **step 6: the Leaderboard UI** (three boards + Week/Month/All-time switch; data already comes from `useSocial().leaderboard` / `refreshLeaderboard()`; % of all talks computed in-app from `TALKS.length`). Replace the "coming soon" Leaderboard card in `src/app/(tabs)/social.tsx`.
+3. Still left after that: step 8 (guest sign-up prompts), step 9 (universal links + AASA, `/privacy` update, web deploy incl. checking the Cloudflare patch handles `/invite/[token]`, version bump, EAS build).
+
+**Dev server:** `cd "Design/APP V2" && npx expo start --web`, then http://localhost:8081. Expo Go: same server, `exp://<this Mac's LAN IP>:8081`. Testing two accounts at once: normal window + private window.
 
 ## Second App Store rejection — fixed 2026-09-22, needs a new EAS build + resubmission
 
