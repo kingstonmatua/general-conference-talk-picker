@@ -4,6 +4,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
+import { BrowseViewToggle } from '@/components/ui/browse-view-toggle';
 import { Button } from '@/components/ui/button';
 import { ConferenceFilterBar, ConferenceFilterModal, useConferenceFilters } from '@/components/ui/conference-filters';
 import { HeroBanner, HeroTextGlow } from '@/components/ui/hero-banner';
@@ -57,6 +58,8 @@ export default function SavedScreen() {
         </View>
 
         <View style={styles.content}>
+          <BrowseViewToggle current="saved" />
+
           {!user ? (
             <View style={styles.signedOutState}>
               <ThemedText type="body" themeColor="textSecondary">

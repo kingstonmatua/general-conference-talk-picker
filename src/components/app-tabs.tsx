@@ -1,4 +1,4 @@
-import { useRouter } from 'expo-router';
+import { usePathname, useRouter } from 'expo-router';
 import { TabList, TabListProps, TabSlot, Tabs, TabTrigger, TabTriggerSlotProps } from 'expo-router/ui';
 import { Pressable, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -22,11 +22,18 @@ import { Palette, Spacing } from '@/constants/theme';
  *
  * The draw button is a plain Pressable, not a <TabTrigger> — per a
  * standing decision, "Random Talk" is an action (draw + navigate to the
- * talk), not a fifth nav destination. It opens the /draw scope picker. Exactly four real tabs.
+ * talk), not a fifth nav destination. It opens the /draw scope picker.
+ *
+ * Visible tabs: Home · Browse · (Draw) · Social · Progress (SOCIAL_PLAN.md
+ * decision 7). Saved folded into Browse's "All | Saved" switch, but its
+ * route still needs a registered trigger — per the expo-router/ui docs,
+ * not rendering a TabTrigger removes that tab and its navigation state —
+ * so it's kept as a hidden trigger, and Browse stays lit while it shows.
  */
 export default function AppTabs() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const onSaved = usePathname() === '/saved';
 
   return (
     <Tabs style={styles.root}>
@@ -38,7 +45,9 @@ export default function AppTabs() {
             <BarItem icon="home">Home</BarItem>
           </TabTrigger>
           <TabTrigger name="browse" href="/browse" asChild>
-            <BarItem icon="browse">Browse</BarItem>
+            <BarItem icon="browse" forceFocused={onSaved}>
+              Browse
+            </BarItem>
           </TabTrigger>
 
           <Pressable
@@ -48,12 +57,13 @@ export default function AppTabs() {
             <Icon name="draw" size={26} color="#FFFFFF" />
           </Pressable>
 
+          <TabTrigger name="social" href="/social" asChild>
+            <BarItem icon="social">Social</BarItem>
+          </TabTrigger>
           <TabTrigger name="progress" href="/progress" asChild>
             <BarItem icon="progress">Progress</BarItem>
           </TabTrigger>
-          <TabTrigger name="saved" href="/saved" asChild>
-            <BarItem icon="saved">Saved</BarItem>
-          </TabTrigger>
+          <TabTrigger name="saved" href="/saved" style={styles.hidden} />
         </FloatingBar>
       </TabList>
     </Tabs>
@@ -68,9 +78,10 @@ function BarItem({
   children,
   isFocused,
   icon,
+  forceFocused,
   ...pressableProps
-}: TabTriggerSlotProps & { icon: AppIconName }) {
-  const color = isFocused ? Palette.purpleInk : Palette.secondaryInk;
+}: TabTriggerSlotProps & { icon: AppIconName; forceFocused?: boolean }) {
+  const color = isFocused || forceFocused ? Palette.purpleInk : Palette.secondaryInk;
   return (
     <Pressable {...pressableProps} style={styles.barItem}>
       <Icon name={icon} size={22} color={color} />
@@ -121,5 +132,8 @@ const styles = StyleSheet.create({
   },
   fabPressed: {
     opacity: 0.85,
+  },
+  hidden: {
+    display: 'none',
   },
 });

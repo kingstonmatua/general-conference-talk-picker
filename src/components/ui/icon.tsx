@@ -17,6 +17,7 @@ export const AppIconNames = {
   browse: 'search-outline',
   progress: 'stats-chart-outline',
   saved: 'bookmark-outline',
+  social: 'people-outline',
   savedFilled: 'bookmark', // brand board: "Filled bookmark only for saved"
   studied: 'checkmark-outline',
   favorite: 'star-outline',

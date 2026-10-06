@@ -4,6 +4,7 @@ import { FlatList, type LayoutChangeEvent, Modal, Platform, Pressable, ScrollVie
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
+import { BrowseViewToggle } from '@/components/ui/browse-view-toggle';
 import { Card } from '@/components/ui/card';
 import { HeroBanner, HeroTextGlow } from '@/components/ui/hero-banner';
 import { Pill } from '@/components/ui/pill';
@@ -122,6 +123,8 @@ export default function BrowseScreen() {
       </View>
 
       <View style={styles.controls}>
+        <BrowseViewToggle current="all" />
+
         <SearchField value={query} onChangeText={setQuery} placeholder="Search talk titles or speakers" />
 
         <View style={styles.dropdownRow}>

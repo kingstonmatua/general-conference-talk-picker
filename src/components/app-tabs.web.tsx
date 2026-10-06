@@ -12,9 +12,11 @@ import { useAuth } from '@/hooks/use-auth';
 
 /**
  * Web nav shell — a persistent left sidebar (logo, a standing "Draw a
- * Random Talk" action, the four nav items), per brand board §07:
- * "Home · Browse · Progress · Saved. Active item uses purple ink, bold
- * label and gold chevron."
+ * Random Talk" action, the nav items), per brand board §07: "Active item
+ * uses purple ink, bold label and gold chevron." The items are Home ·
+ * Browse · Social · Progress · Saved (SOCIAL_PLAN.md decision 7 added
+ * Social; Saved stays listed here even though it folds into Browse on
+ * native, since the sidebar has the room)."
  *
  * Note: this sidebar is desktop-oriented and not yet responsive for a
  * phone browser hitting the web build (as opposed to the native app,
@@ -35,6 +37,9 @@ export default function AppTabs() {
           </TabTrigger>
           <TabTrigger name="browse" href="/browse" asChild>
             <SidebarNavItem icon="browse">Browse</SidebarNavItem>
+          </TabTrigger>
+          <TabTrigger name="social" href="/social" asChild>
+            <SidebarNavItem icon="social">Social</SidebarNavItem>
           </TabTrigger>
           <TabTrigger name="progress" href="/progress" asChild>
             <SidebarNavItem icon="progress">Progress</SidebarNavItem>
