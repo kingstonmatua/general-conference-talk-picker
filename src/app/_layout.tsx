@@ -7,6 +7,7 @@ import { AuthSheet } from '@/components/auth-sheet';
 import { AuthProvider } from '@/hooks/use-auth';
 import { DrawRevealProvider } from '@/hooks/use-draw-random-talk';
 import { DrawScopeProvider } from '@/hooks/use-draw-scope';
+import { SocialProvider } from '@/hooks/use-social';
 import { TalkStatusProvider } from '@/hooks/use-talk-status';
 
 SplashScreen.preventAutoHideAsync();
@@ -30,6 +31,7 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <AuthProvider>
         <TalkStatusProvider>
+        <SocialProvider>
           <DrawScopeProvider>
           <DrawRevealProvider>
             <AnimatedSplashOverlay />
@@ -46,6 +48,7 @@ export default function RootLayout() {
             <AuthSheet />
           </DrawRevealProvider>
           </DrawScopeProvider>
+        </SocialProvider>
         </TalkStatusProvider>
       </AuthProvider>
     </ThemeProvider>
