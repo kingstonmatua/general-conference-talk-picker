@@ -16,7 +16,7 @@ Kingston chose social as the next phase (over Android, speaker headshots and pol
 1. `51b240c`: `SOCIAL_PLAN.md`.
 2. `0ea11cb`: **`supabase/social.sql`**, the whole Update 1 database: `social_profiles`, `friendships`, `friend_invites`, `blocked_terms` (the word filter, which can be edited in the Table Editor with no app release), all the RPCs, `get_friends_leaderboard()`, and a new `delete_own_account()` that also removes social data. It replaces the version in `schema.sql`, which now carries a pointer comment. It was tested in an in-memory Postgres (PGlite) with stand-ins for Supabase auth and roles: 52 behavior checks and 19 permission/RLS checks all passed, and the file is safe to re-run.
 
-**⚠️ Not done yet: `social.sql` has NOT been run in the real Supabase project.** Kingston was about to paste it when the session ended. Give them numbered, step-by-step instructions (see `CLAUDE_MEMORY.md`): Supabase dashboard → project → SQL Editor → New query → paste → Run, splitting at the `── section ──` dividers if the editor mangles it. Ask for the exact error text if anything fails. It must run **after** `schema.sql` and `avatars-storage.sql`, which are already live.
+**✅ `social.sql` was run in the real Supabase project on 2026-10-06** ("Success. No rows returned"). The first paste failed because the project already had an unrelated, empty `public.profiles` table, so ours is now `social_profiles` (`d023114`). That old `profiles` table was left alone.
 
 **Next step: build step 2** in `SOCIAL_PLAN.md`, the `use-social` hook (profile, friends, requests, leaderboard). Then the tab changes (step 3). **For tab changes, verify in a real browser and in Expo Go.** `<Tabs>` changes have broken at runtime before while tsc and export looked clean (see "Routing structure" below).
 
@@ -285,4 +285,4 @@ A full design-system port exists in Figma: **General Conference Talk Picker — 
 
 ## Suggested next steps
 
-In rough priority order: (0) check App Store Connect for Apple's decision on build (5), and if it's approved, Kingston clicks Release; (1) Kingston runs `supabase/social.sql` in the Supabase SQL Editor; (2) continue `SOCIAL_PLAN.md` Update 1 from build step 2 (`use-social` hook); (3) later: social Update 2 (the wall), national/global boards, speaker headshots, Android.
+In rough priority order: (0) check App Store Connect for Apple's decision on build (5), and if it's approved, Kingston clicks Release; (1) ~~run `supabase/social.sql`~~ done 2026-10-06; (2) continue `SOCIAL_PLAN.md` Update 1 from build step 2 (`use-social` hook); (3) later: social Update 2 (the wall), national/global boards, speaker headshots, Android.

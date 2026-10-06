@@ -59,7 +59,7 @@ Branch: `feature/social` (off `v2`). Written 2026-10-05. Every decision below wa
 **Update 2**: posts, hearts, report, block, filter, guidelines, email alerts. Plan in detail once Update 1 ships.
 
 ## Status
-- 2026-10-05: plan written (`51b240c`). **Step 1 done in code** (`0ea11cb`): `supabase/social.sql`, tested in PGlite (52 behavior + 19 RLS/grant checks passed). **Not yet run in the real Supabase project.** Kingston needs to paste it into the SQL Editor (after `schema.sql` / `avatars-storage.sql`).
+- 2026-10-05: plan written (`51b240c`). **Step 1 done in code** (`0ea11cb`): `supabase/social.sql`, tested in PGlite (52 behavior + 19 RLS/grant checks passed). **Run in the real Supabase project on 2026-10-06** (after renaming the table to `social_profiles`, `d023114`). Success.
 - **Next: step 2** (`use-social` hook). Error strings the hook should map to friendly copy: `username_invalid`, `username_not_allowed`, `username_taken`, `username_change_too_soon` (HINT = next allowed timestamp), `profile_required`, `cannot_friend_self`, `user_not_found`, `request_not_found`, `invite_not_found`, `own_invite`, `avatar_url_invalid`.
 - Also: `updateAvatar()` in `use-auth.tsx` must call `set_profile_avatar(url)` after uploading (step 7).
 - App Store build 1.0.0 (5) is awaiting Apple's decision (or the manual Release click). Check App Store Connect.
