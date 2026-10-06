@@ -18,7 +18,7 @@
 
 create extension if not exists pgcrypto;
 
--- ─── profiles ───────────────────────────────────────────────────────────────
+-- ─── social_profiles ──────────────────────────────────────────────────────────
 -- Public identity for social features. A row only exists once the user
 -- picks a username (required the first time they open the Social tab).
 -- Readable by every signed-in user (username search needs it); written
@@ -32,7 +32,7 @@ create extension if not exists pgcrypto;
 -- a typo in a brand-new username can be fixed right away; after that,
 -- one change per 90 days.
 
-create table if not exists public.profiles (
+create table if not exists public.social_profiles (
   user_id uuid primary key references auth.users (id) on delete cascade,
   username text not null unique
     check (username ~ '^[a-z0-9_][a-z0-9_.]{1,18}[a-z0-9_]$' and username not like '%..%'),
@@ -41,10 +41,10 @@ create table if not exists public.profiles (
   created_at timestamptz not null default now()
 );
 
-alter table public.profiles enable row level security;
+alter table public.social_profiles enable row level security;
 
-drop policy if exists "profiles: signed-in select" on public.profiles;
-create policy "profiles: signed-in select" on public.profiles
+drop policy if exists "social_profiles: signed-in select" on public.social_profiles;
+create policy "social_profiles: signed-in select" on public.social_profiles
   for select to authenticated using (true);
 
 -- ─── blocked_terms ──────────────────────────────────────────────────────────
@@ -103,8 +103,8 @@ revoke all on function public.is_username_allowed(text) from public, anon, authe
 
 create table if not exists public.friendships (
   id uuid primary key default gen_random_uuid(),
-  requester_id uuid not null references public.profiles (user_id) on delete cascade,
-  addressee_id uuid not null references public.profiles (user_id) on delete cascade,
+  requester_id uuid not null references public.social_profiles (user_id) on delete cascade,
+  addressee_id uuid not null references public.social_profiles (user_id) on delete cascade,
   status text not null default 'pending' check (status in ('pending', 'accepted', 'declined')),
   hidden_for_requester boolean not null default false,
   created_at timestamptz not null default now(),
@@ -130,7 +130,7 @@ create policy "friendships: participant select" on public.friendships
 -- regenerating replaces it, which kills every previously shared link.
 
 create table if not exists public.friend_invites (
-  user_id uuid primary key references public.profiles (user_id) on delete cascade,
+  user_id uuid primary key references public.social_profiles (user_id) on delete cascade,
   token text not null unique,
   created_at timestamptz not null default now()
 );
@@ -166,7 +166,7 @@ as $body$
 declare
   v_uid uuid := auth.uid();
   v_username text := lower(btrim(p_username));
-  v_existing public.profiles%rowtype;
+  v_existing public.social_profiles%rowtype;
 begin
   if v_uid is null then
     raise exception 'Not authenticated';
@@ -183,11 +183,11 @@ begin
     raise exception 'username_not_allowed';
   end if;
 
-  select * into v_existing from public.profiles where user_id = v_uid;
+  select * into v_existing from public.social_profiles where user_id = v_uid;
 
   if not found then
     begin
-      insert into public.profiles (user_id, username, avatar_url)
+      insert into public.social_profiles (user_id, username, avatar_url)
       select v_uid, v_username, u.raw_user_meta_data ->> 'avatar_url'
       from auth.users u where u.id = v_uid;
     exception when unique_violation then
@@ -207,7 +207,7 @@ begin
   end if;
 
   begin
-    update public.profiles
+    update public.social_profiles
     set username = v_username, username_changed_at = now()
     where user_id = v_uid;
   exception when unique_violation then
@@ -239,7 +239,7 @@ begin
     raise exception 'avatar_url_invalid';
   end if;
 
-  update public.profiles set avatar_url = p_url where user_id = v_uid;
+  update public.social_profiles set avatar_url = p_url where user_id = v_uid;
 end;
 $body$;
 
@@ -263,7 +263,7 @@ as $body$
       when f.addressee_id = auth.uid() and f.status = 'pending' then 'incoming'
       else 'none'
     end
-  from public.profiles p
+  from public.social_profiles p
   left join public.friendships f
     on least(f.requester_id, f.addressee_id) = least(p.user_id, auth.uid())
    and greatest(f.requester_id, f.addressee_id) = greatest(p.user_id, auth.uid())
@@ -293,7 +293,7 @@ begin
   if v_uid is null then
     raise exception 'Not authenticated';
   end if;
-  if not exists (select 1 from public.profiles where user_id = v_uid) then
+  if not exists (select 1 from public.social_profiles where user_id = v_uid) then
     raise exception 'profile_required';
   end if;
   return v_uid;
@@ -318,7 +318,7 @@ begin
   if p_user_id = v_uid then
     raise exception 'cannot_friend_self';
   end if;
-  if not exists (select 1 from public.profiles where user_id = p_user_id) then
+  if not exists (select 1 from public.social_profiles where user_id = p_user_id) then
     raise exception 'user_not_found';
   end if;
 
@@ -438,7 +438,7 @@ as $body$
     end,
     coalesce(f.responded_at, f.created_at)
   from public.friendships f
-  join public.profiles p
+  join public.social_profiles p
     on p.user_id = case when f.requester_id = auth.uid() then f.addressee_id else f.requester_id end
   where auth.uid() in (f.requester_id, f.addressee_id)
     and (
@@ -499,7 +499,7 @@ set search_path = public
 as $body$
   select p.username, p.avatar_url
   from public.friend_invites i
-  join public.profiles p on p.user_id = i.user_id
+  join public.social_profiles p on p.user_id = i.user_id
   where i.token = p_token;
 $body$;
 
@@ -529,7 +529,7 @@ begin
   do update set status = 'accepted', responded_at = now(), hidden_for_requester = false
   where public.friendships.status <> 'accepted';
 
-  return query select p.user_id, p.username from public.profiles p where p.user_id = v_owner;
+  return query select p.user_id, p.username from public.social_profiles p where p.user_id = v_owner;
 end;
 $body$;
 
@@ -564,7 +564,7 @@ security definer
 set search_path = public
 as $body$
   with members as (
-    select p.user_id from public.profiles p where p.user_id = auth.uid()
+    select p.user_id from public.social_profiles p where p.user_id = auth.uid()
     union
     select case when f.requester_id = auth.uid() then f.addressee_id else f.requester_id end
     from public.friendships f
@@ -625,7 +625,7 @@ as $body$
     coalesce(ss.current_streak, 0),
     coalesce(ss.longest_streak, 0)
   from members m
-  join public.profiles p on p.user_id = m.user_id
+  join public.social_profiles p on p.user_id = m.user_id
   left join talk_counts tc on tc.user_id = m.user_id
   left join streak_stats ss on ss.user_id = m.user_id;
 $body$;
@@ -649,7 +649,7 @@ begin
 
   delete from public.friend_invites where user_id = v_uid;
   delete from public.friendships where v_uid in (requester_id, addressee_id);
-  delete from public.profiles where user_id = v_uid;
+  delete from public.social_profiles where user_id = v_uid;
 
   delete from public.user_progress where user_id = v_uid;
   delete from public.study_events where user_id = v_uid;

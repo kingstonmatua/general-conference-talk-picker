@@ -19,7 +19,7 @@ Branch: `feature/social` (off `v2`). Written 2026-10-05. Every decision below wa
 
 ## Implementation calls (mine; flag if wrong)
 
-- **Avatars must move to a readable place.** Today `avatar_url` lives in `auth.users.user_metadata`, which other users can't read. Add `profiles.avatar_url` and have `updateAvatar()` write to both.
+- **Avatars must move to a readable place.** Today `avatar_url` lives in `auth.users.user_metadata`, which other users can't read. Add `social_profiles.avatar_url` and have `updateAvatar()` write to both.
 - **Invite links use a token, not the username.** The link is `https://gctalkpicker.app/invite/<token>`. Redeeming it creates an **accepted** friendship straight away, since the inviter already chose to share it. That only works safely with an unguessable token; a username-based link would let anyone auto-friend anyone. There's one reusable token per user, regenerable from the Friends screen to revoke old links.
 - **Getting from an invite link into the app:** on web, `/invite/[token]` works directly. On iOS, opening the link inside the app needs **universal links**, which means `ios.associatedDomains` in `app.json` (and therefore a new EAS build) plus an `apple-app-site-association` file served from gctalkpicker.app. A brand-new install loses the token, because the App Store doesn't pass it through. The invite page will show "Get the app, then tap this link again." Paid deferred-deep-link services (Branch etc.) are out of scope.
 - **Weekly/monthly counts:** a talk counts toward the period when its **first-ever** `study_events` row falls inside it. That makes unmarking and re-marking a talk unable to inflate the count. Weeks start Monday. Periods and streaks are in **UTC** for now, which matches the existing `get_study_streaks()`. Local-timezone boundaries are a known follow-up.
@@ -32,14 +32,16 @@ Branch: `feature/social` (off `v2`). Written 2026-10-05. Every decision below wa
 
 ## Data model (Update 1)
 
-- `profiles` (user_id PK → auth.users, username unique, avatar_url, username_changed_at, created_at). Readable by any signed-in user (needed for search), writable only through RPCs.
+**Why `social_profiles`, not `profiles`:** the real Supabase project already has an empty, unused `public.profiles` table (columns `id`, `display_name`, `created_at`; not created by this app). The first paste failed on it on 2026-10-06, so ours was renamed rather than touching the existing one.
+
+- `social_profiles` (user_id PK → auth.users, username unique, avatar_url, username_changed_at, created_at). Readable by any signed-in user (needed for search), writable only through RPCs.
 - `friendships` (id, requester_id, addressee_id, status `pending|accepted|declined`, created_at, responded_at). One row per unordered pair. RLS: visible to both people.
 - `friend_invites` (token PK, user_id, created_at).
 - RPCs: `set_username`, `search_profiles`, `send_friend_request`, `respond_friend_request`, `cancel_friend_request`, `remove_friend`, `get_or_create_invite`, `redeem_invite`, `get_friends_leaderboard(period)`.
 
 ## Data model (Update 2, sketch)
 
-`posts` (id, user_id, talk_id, body, created_at, hidden_at); `post_hearts` (post_id, user_id); `post_reports` (post_id, reporter_id, reason, created_at) → a trigger hides the post, and a Database Webhook calls a Supabase Edge Function that sends the alert email (Resend free tier); `blocks` (blocker_id, blocked_id); `guidelines_accepted_at` on profiles. The insert RPC checks for a `study_events` row for (user, talk) and runs the word filter.
+`posts` (id, user_id, talk_id, body, created_at, hidden_at); `post_hearts` (post_id, user_id); `post_reports` (post_id, reporter_id, reason, created_at) → a trigger hides the post, and a Database Webhook calls a Supabase Edge Function that sends the alert email (Resend free tier); `blocks` (blocker_id, blocked_id); `guidelines_accepted_at` on social_profiles. The insert RPC checks for a `study_events` row for (user, talk) and runs the word filter.
 
 ## Build steps
 
@@ -50,7 +52,7 @@ Branch: `feature/social` (off `v2`). Written 2026-10-05. Every decision below wa
 4. Social tab: guest prompt → username setup → Leaderboard / Friends sections (Wall section shows "coming soon" until Update 2).
 5. Friends: search, requests in/out, accept/decline, remove, share invite link (native share sheet), `/invite/[token]` route.
 6. Leaderboard UI: three boards + Week/Month/All-time switch.
-7. Account screen: username + change (90-day rule shown). `updateAvatar()` also writes `profiles.avatar_url`.
+7. Account screen: username + change (90-day rule shown). `updateAvatar()` also writes `social_profiles.avatar_url`.
 8. Guest sign-up prompts across the app.
 9. Universal links config + AASA file; `/privacy` update; test web + Expo Go; update SESSION_HANDOFF.md; merge; EAS build.
 
