@@ -21,7 +21,7 @@ type AuthContextValue = {
   updatePassword: (newPassword: string) => Promise<{ error: string | null }>;
   /** From auth user_metadata — no separate profiles table, just this field. */
   avatarUrl: string | null;
-  /** Uploads to the "avatars" Storage bucket, then saves the public URL onto user_metadata. */
+  /** Uploads to the "avatars" Storage bucket, then saves the public URL onto user_metadata and the social profile. */
   updateAvatar: (localUri: string) => Promise<{ error: string | null }>;
   /** Permanently deletes the signed-in user's account and all their data (see delete_own_account() in schema.sql). */
   deleteAccount: () => Promise<{ error: string | null }>;
@@ -102,6 +102,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       const { error: updateError } = await supabase.auth.updateUser({ data: { avatar_url: avatarUrl } });
       if (updateError) return { error: updateError.message };
+
+      // Friends can't read user_metadata, so the social profile keeps its
+      // own copy (see set_profile_avatar() in supabase/social.sql). A no-op
+      // until the user has picked a username; set_username() copies it then.
+      await supabase.rpc('set_profile_avatar', { p_url: avatarUrl });
 
       return { error: null };
     } catch (e) {

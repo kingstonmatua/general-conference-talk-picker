@@ -1,19 +1,16 @@
 import { useState } from 'react';
-import { ScrollView, StyleSheet, TextInput, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
+import { UsernameForm } from '@/components/username-form';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { HeroBanner, HeroTextGlow } from '@/components/ui/hero-banner';
 import { Pill } from '@/components/ui/pill';
-import { BottomTabInset, MaxContentWidth, Palette, Radii, Spacing } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 import { useAuth } from '@/hooks/use-auth';
 import { useSocial } from '@/hooks/use-social';
-
-// Same rule as set_username() in supabase/social.sql, checked here too so
-// the Save button can explain the problem before a round trip.
-const USERNAME_PATTERN = /^[a-z0-9_][a-z0-9_.]{1,18}[a-z0-9_]$/;
 
 type SocialSection = 'leaderboard' | 'friends' | 'wall';
 
@@ -99,71 +96,14 @@ export default function SocialScreen() {
 }
 
 function UsernameSetup() {
-  const { setUsername } = useSocial();
-  const [value, setValue] = useState('');
-  const [saving, setSaving] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const username = value.trim().replace(/^@/, '');
-  const valid = USERNAME_PATTERN.test(username) && !username.includes('..');
-  const hint =
-    username.length === 0
-      ? '3–20 characters: lowercase letters, numbers, _ and .'
-      : username.length < 3
-        ? 'At least 3 characters.'
-        : username.length > 20
-          ? 'No more than 20 characters.'
-          : !valid
-            ? 'Only lowercase letters, numbers, _ and . (no ".." and no "." at the start or end).'
-            : `You'll be @${username}`;
-
-  const save = async () => {
-    if (!valid || saving) return;
-    setSaving(true);
-    setError(null);
-    const result = await setUsername(username);
-    // On success the provider reloads the profile and this screen swaps
-    // to the sections, so there's nothing more to do here.
-    if (result.error) {
-      setError(result.error);
-      setSaving(false);
-    }
-  };
-
   return (
     <Card style={styles.card}>
       <ThemedText type="section">Pick a username</ThemedText>
       <ThemedText type="body" themeColor="textSecondary">
-        Friends find you by your username, and it's what they see on the leaderboard. You can change it later.
+        Friends find you by your username, and it's what they see on the leaderboard. You can change it later on
+        your Account screen.
       </ThemedText>
-
-      <View style={styles.usernameField}>
-        <ThemedText type="control" themeColor="textSecondary">
-          @
-        </ThemedText>
-        <TextInput
-          value={value}
-          onChangeText={(text) => {
-            setValue(text.toLowerCase());
-            setError(null);
-          }}
-          onSubmitEditing={save}
-          placeholder="username"
-          placeholderTextColor={Palette.secondaryInk}
-          autoCapitalize="none"
-          autoCorrect={false}
-          autoComplete="username-new"
-          maxLength={21}
-          returnKeyType="done"
-          style={styles.usernameInput}
-        />
-      </View>
-
-      <ThemedText type="metadata" style={error ? styles.error : { color: Palette.secondaryInk }}>
-        {error ?? hint}
-      </ThemedText>
-
-      <Button label={saving ? 'Saving…' : 'Save username'} variant="primary" disabled={!valid || saving} onPress={save} />
+      <UsernameForm />
     </Card>
   );
 }
@@ -214,25 +154,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: Spacing.sm,
     flexWrap: 'wrap',
-  },
-  usernameField: {
-    alignSelf: 'stretch',
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: Spacing.xs,
-    borderWidth: 1,
-    borderColor: Palette.warmBorder,
-    borderRadius: Radii.button,
-    backgroundColor: Palette.surface,
-    paddingHorizontal: Spacing.md,
-    height: 48,
-  },
-  usernameInput: {
-    flex: 1,
-    fontSize: 15,
-    color: Palette.purpleInk,
-  },
-  error: {
-    color: Palette.terracotta,
   },
 });
