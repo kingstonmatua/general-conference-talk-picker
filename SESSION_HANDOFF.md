@@ -34,6 +34,8 @@ Kingston chose social as the next phase (over Android, speaker headshots and pol
 
 **Done, 2026-09-22**: user ran `eas build --platform ios --profile production` (build 1.0.0 (5), commit `a845bef`, `autoIncrement: true` in `eas.json` bumped the number automatically — no manual bump needed) then `eas submit --platform ios --latest`. **Note for next time**: the `eas submit` terminal command hung at "waiting for an available submitter" for 45+ minutes (vs. ~14 seconds for builds 3/4) even though the upload had actually already finished — confirmed via `npx eas-cli build:list`/`submit:list --non-interactive` (safe read-only commands, no fresh credentials needed) and by checking TestFlight directly, which showed 1.0.0 (5) as "Complete"/"Ready to Submit" well before the terminal caught up. If this happens again: check App Store Connect's TestFlight tab directly rather than trusting the terminal's hung output, and it's safe to `Ctrl+C` + rerun `eas submit` if genuinely stuck since it just re-uploads the same already-built binary.
 
+**✅ Build 1.0.0 (5) was approved by Apple and is LIVE on the App Store (confirmed by Kingston 2026-10-06).** That makes the App Store version = `v2` branch as of `a845bef`. The social work on `feature/social` will ship as a later update (version bump needed then).
+
 In App Store Connect, the rejected 1.0 version's Build section had to be changed from build 4 to build 5: there's no dropdown/selector when a build is already attached — instead, hover over the build row to reveal a red "remove" (minus) icon, click it to detach build 4, which then exposes an "add build" control to attach build 5. Saved, then clicked **Update Review** to resubmit — App Review Information (sign-in credentials, contact info) had already carried over from the prior submission and didn't need re-entering. **Status: resubmitted, awaiting Apple's decision.**
 
 ## Draw scope page — built 2026-09-21, merged into `v2` (`f8c0dd5`) and deployed to web
@@ -285,4 +287,4 @@ A full design-system port exists in Figma: **General Conference Talk Picker — 
 
 ## Suggested next steps
 
-In rough priority order: (0) check App Store Connect for Apple's decision on build (5), and if it's approved, Kingston clicks Release; (1) ~~run `supabase/social.sql`~~ done 2026-10-06; (2) continue `SOCIAL_PLAN.md` Update 1 from build step 2 (`use-social` hook); (3) later: social Update 2 (the wall), national/global boards, speaker headshots, Android.
+In rough priority order: (0) ~~build (5)~~ approved and live 2026-10-06; (1) ~~run `supabase/social.sql`~~ done 2026-10-06; (2) continue `SOCIAL_PLAN.md` Update 1 from build step 2 (`use-social` hook); (3) later: social Update 2 (the wall), national/global boards, speaker headshots, Android.
