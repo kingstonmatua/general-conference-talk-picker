@@ -1,6 +1,6 @@
 import { Image as ExpoImage } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { Image, Platform, StyleSheet, View } from 'react-native';
 
 import { BrandedHeaderRow } from './branded-header';
@@ -30,16 +30,25 @@ export function HeroBanner({
   source: number;
   children: ReactNode;
   /**
-   * Web only: crop from the bottom instead of evenly top and bottom, so a
-   * tall spire isn't cut off on the wide desktop banner. Native keeps the
-   * centered crop. Uses expo-image there because the core Image's web
-   * build has no way to set the crop position.
+   * Web only, for photos with a tall spire: crop from the bottom instead
+   * of evenly, and let the banner grow with the window. A fixed 380px
+   * banner on a very wide screen only showed a strip of sky, since
+   * "cover" scales the photo to the full width. Growing the height with
+   * the width (capped) keeps roughly the same view at every desktop size.
+   * Native keeps the centered crop and fixed height. Uses expo-image there
+   * because the core Image's web build has no way to set the crop position.
    */
   webAnchorTop?: boolean;
 }) {
+  const [width, setWidth] = useState(0);
+  const anchorTop = Platform.OS === 'web' && !!webAnchorTop;
+  const height = anchorTop ? Math.min(560, Math.max(380, width * 0.3)) : undefined;
+
   return (
-    <View style={styles.container}>
-      {Platform.OS === 'web' && webAnchorTop ? (
+    <View
+      style={[styles.container, height !== undefined && { height }]}
+      onLayout={anchorTop ? (e) => setWidth(e.nativeEvent.layout.width) : undefined}>
+      {anchorTop ? (
         <ExpoImage
           source={source}
           style={[StyleSheet.absoluteFill, styles.image]}
