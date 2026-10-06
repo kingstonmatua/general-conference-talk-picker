@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { FriendsSection } from '@/components/social/friends-section';
 import { ThemedText } from '@/components/themed-text';
 import { UsernameForm } from '@/components/username-form';
 import { Button } from '@/components/ui/button';
@@ -17,8 +18,8 @@ type SocialSection = 'leaderboard' | 'friends' | 'wall';
 /**
  * Social tab (SOCIAL_PLAN.md). Guests get a full sign-up prompt; signed-in
  * users pick a username the first time (decision 6), then switch between
- * Leaderboard · Friends · Wall. Friends (step 5) and Leaderboard (step 6)
- * are still placeholders; the Wall stays "coming" until Update 2.
+ * Leaderboard · Friends · Wall. Leaderboard (step 6) is still a
+ * placeholder; the Wall stays "coming" until Update 2.
  */
 export default function SocialScreen() {
   const { user, promptSignIn } = useAuth();
@@ -74,16 +75,7 @@ export default function SocialScreen() {
               {section === 'leaderboard' && (
                 <Section title="Leaderboard" body="Talks studied and streaks for you and your friends. Coming soon." />
               )}
-              {section === 'friends' && (
-                <Section
-                  title="Friends"
-                  body={
-                    incomingRequests.length > 0
-                      ? `${incomingRequests.length} friend ${incomingRequests.length === 1 ? 'request' : 'requests'} waiting. Coming soon.`
-                      : 'Find friends by username or share an invite link. Coming soon.'
-                  }
-                />
-              )}
+              {section === 'friends' && <FriendsSection />}
               {section === 'wall' && (
                 <Section title="Wall" body="Share thoughts on the talks you've studied. Coming in a later update." />
               )}

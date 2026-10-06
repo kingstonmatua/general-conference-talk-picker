@@ -38,6 +38,7 @@ export default function RootLayout() {
             <Stack screenOptions={{ headerShown: false }}>
               <Stack.Screen name="(tabs)" />
               <Stack.Screen name="talk/[id]" />
+              <Stack.Screen name="invite/[token]" />
               <Stack.Screen name="draw" />
               <Stack.Screen name="account" />
               <Stack.Screen name="privacy" />
