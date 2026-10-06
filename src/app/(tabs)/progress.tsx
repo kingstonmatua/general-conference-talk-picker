@@ -81,7 +81,7 @@ export default function ProgressScreen() {
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.heroWrap}>
-          <HeroBanner source={require('@/assets/images/hero/salt-lake-temple.png')}>
+          <HeroBanner source={require('@/assets/images/hero/laie-hawaii-temple.png')}>
             <ThemedText type="display" style={styles.heroHeadline}>
               Steady Progress Brings Light.
             </ThemedText>
