@@ -1,6 +1,7 @@
+import { Image as ExpoImage } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { ReactNode } from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { Image, Platform, StyleSheet, View } from 'react-native';
 
 import { BrandedHeaderRow } from './branded-header';
 
@@ -21,14 +22,37 @@ import { Palette, Spacing } from '@/constants/theme';
  * abandoned. Just the gradient fade above, plus HeroTextGlow (a soft
  * halo on the text itself, see below) for contrast.
  */
-export function HeroBanner({ source, children }: { source: number; children: ReactNode }) {
+export function HeroBanner({
+  source,
+  children,
+  webAnchorTop,
+}: {
+  source: number;
+  children: ReactNode;
+  /**
+   * Web only: crop from the bottom instead of evenly top and bottom, so a
+   * tall spire isn't cut off on the wide desktop banner. Native keeps the
+   * centered crop. Uses expo-image there because the core Image's web
+   * build has no way to set the crop position.
+   */
+  webAnchorTop?: boolean;
+}) {
   return (
     <View style={styles.container}>
-      <Image
-        source={source}
-        style={[StyleSheet.absoluteFill, styles.image]}
-        resizeMode="cover"
-      />
+      {Platform.OS === 'web' && webAnchorTop ? (
+        <ExpoImage
+          source={source}
+          style={[StyleSheet.absoluteFill, styles.image]}
+          contentFit="cover"
+          contentPosition="top"
+        />
+      ) : (
+        <Image
+          source={source}
+          style={[StyleSheet.absoluteFill, styles.image]}
+          resizeMode="cover"
+        />
+      )}
       <LinearGradient
         colors={[Palette.canvas, 'transparent', 'transparent', Palette.canvas]}
         locations={[0, 0.4, 0.7, 1]}

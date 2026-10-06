@@ -47,7 +47,7 @@ export default function SavedScreen() {
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.heroWrap}>
-          <HeroBanner source={require('@/assets/images/hero/rome-italy-temple.png')}>
+          <HeroBanner source={require('@/assets/images/hero/rome-italy-temple.png')} webAnchorTop>
             <ThemedText type="display" style={styles.heroHeadline}>
               Words to return to.
             </ThemedText>
