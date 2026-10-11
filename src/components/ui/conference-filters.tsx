@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Modal, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Modal, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
 import { Card } from '@/components/ui/card';
@@ -10,10 +10,10 @@ import {
   SessionCategoryTag,
   SessionTagColors,
   Spacing,
-  WebSidebarWidth,
   type SessionCategory,
 } from '@/constants/theme';
 import { TALKS, type Talk } from '@/data/talks';
+import { useSidebarOffset } from '@/hooks/use-web-layout';
 
 /**
  * Shared Year → Conference → Session cascading-dropdown filter, factored
@@ -137,6 +137,7 @@ export function ConferenceFilterModal({ state }: { state: ConferenceFiltersState
     setConference,
     setCategory,
   } = state;
+  const sidebarOffset = useSidebarOffset();
 
   return (
     <Modal
@@ -144,7 +145,12 @@ export function ConferenceFilterModal({ state }: { state: ConferenceFiltersState
       transparent
       animationType="fade"
       onRequestClose={() => setOpenDropdown(null)}>
-      <Pressable style={styles.modalOverlay} onPress={() => setOpenDropdown(null)}>
+      <Pressable
+        // A full-screen Modal overlays the whole browser window, but on
+        // desktop web the content sits right of the sidebar — extra left
+        // padding equal to its width centers the dropdown over the content.
+        style={[styles.modalOverlay, { paddingLeft: Spacing.xl + sidebarOffset }]}
+        onPress={() => setOpenDropdown(null)}>
         <Pressable onPress={(e) => e.stopPropagation()}>
           <Card style={styles.dropdownCard}>
             {openDropdown === 'year' && (
@@ -279,14 +285,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: Spacing.xl,
     paddingRight: Spacing.xl,
-    // A full-screen Modal overlays the whole browser window on web, but
-    // the talk list actually sits to the right of the persistent
-    // sidebar — centering symmetrically (like native, which has no
-    // sidebar) put the dropdown noticeably left of what's on screen.
-    // Extra left padding equal to the sidebar's width shifts the
-    // effective center exactly enough to line back up with the content
-    // column, regardless of window width.
-    paddingLeft: Platform.OS === 'web' ? Spacing.xl + WebSidebarWidth : Spacing.xl,
   },
   dropdownCard: {
     width: '100%',

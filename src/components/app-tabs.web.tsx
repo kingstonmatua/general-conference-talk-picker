@@ -1,6 +1,7 @@
 import { Image } from 'expo-image';
 import { Link, useRouter } from 'expo-router';
 import { TabList, TabListProps, TabSlot, Tabs, TabTrigger, TabTriggerSlotProps } from 'expo-router/ui';
+import { Children } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import { Button } from './ui/button';
@@ -9,6 +10,7 @@ import { ThemedText } from './themed-text';
 
 import { Palette, Spacing, WebSidebarWidth } from '@/constants/theme';
 import { useAuth } from '@/hooks/use-auth';
+import { useIsPhoneWeb } from '@/hooks/use-web-layout';
 
 /**
  * Web nav shell — a persistent left sidebar (logo, a standing "Draw a
@@ -16,18 +18,18 @@ import { useAuth } from '@/hooks/use-auth';
  * "Home · Browse · Progress · Saved. Active item uses purple ink, bold
  * label and gold chevron."
  *
- * Note: this sidebar is desktop-oriented and not yet responsive for a
- * phone browser hitting the web build (as opposed to the native app,
- * which has its own proper bottom tab bar in app-tabs.tsx). A narrow-web
- * bottom-bar variant was attempted here but expo-router/ui's <Tabs>
- * requires its <TabTrigger> children to stay static/always-mounted —
- * conditionally swapping between two <TabList> trees broke tab
- * registration at runtime ("Couldn't find any screens for the
- * navigator"). Left as a known follow-up rather than shipped broken.
+ * In a phone-sized window the same shell restyles itself into a bottom
+ * tab bar with a center Draw button, like the native app's (app-tabs.tsx);
+ * the logo and account entry move to BrandedHeaderRow over each hero.
+ * It's one <TabList> tree restyled in place, not two trees swapped:
+ * expo-router/ui's <Tabs> needs its <TabTrigger>s to stay mounted, and
+ * swapping trees broke tab registration ("Couldn't find any screens for
+ * the navigator").
  */
 export default function AppTabs() {
+  const isPhoneWeb = useIsPhoneWeb();
   return (
-    <Tabs style={styles.root}>
+    <Tabs style={[styles.root, isPhoneWeb && styles.rootPhone]}>
       <TabList asChild>
         <Sidebar>
           <TabTrigger name="home" href="/" asChild>
@@ -52,6 +54,27 @@ export default function AppTabs() {
 
 function Sidebar(props: TabListProps) {
   const router = useRouter();
+  const isPhoneWeb = useIsPhoneWeb();
+
+  if (isPhoneWeb) {
+    // Same children in the same slots as the desktop branch below — the
+    // Draw button just fills the gap between Browse and Progress.
+    const items = Children.toArray(props.children);
+    return (
+      <View style={styles.bar}>
+        {items.slice(0, 2)}
+        <Pressable
+          onPress={() => router.push('/draw')}
+          hitSlop={8}
+          accessibilityLabel="Draw a Random Talk"
+          style={({ pressed }) => [styles.fab, pressed && styles.pressed]}>
+          <Icon name="draw" size={26} color="#FFFFFF" />
+        </Pressable>
+        {items.slice(2)}
+      </View>
+    );
+  }
+
   return (
     <View style={styles.sidebar}>
       <Image
@@ -82,13 +105,25 @@ function SidebarNavItem({
   icon,
   ...pressableProps
 }: TabTriggerSlotProps & { icon: AppIconName }) {
+  const isPhoneWeb = useIsPhoneWeb();
+  const color = isFocused ? Palette.purpleInk : Palette.secondaryInk;
+
+  if (isPhoneWeb) {
+    return (
+      <Pressable {...pressableProps} style={({ pressed }) => [styles.barItem, pressed && styles.pressed]}>
+        <Icon name={icon} size={22} color={color} />
+        <ThemedText type="metadata" style={[styles.barItemLabel, { color }]}>
+          {children}
+        </ThemedText>
+      </Pressable>
+    );
+  }
+
   return (
     <Pressable {...pressableProps} style={({ pressed }) => pressed && styles.pressed}>
       <View style={styles.sidebarItem}>
-        <Icon name={icon} size={20} color={isFocused ? Palette.purpleInk : Palette.secondaryInk} />
-        <ThemedText
-          type="control"
-          style={[styles.sidebarItemLabel, { color: isFocused ? Palette.purpleInk : Palette.secondaryInk }]}>
+        <Icon name={icon} size={20} color={color} />
+        <ThemedText type="control" style={[styles.sidebarItemLabel, { color }]}>
           {children}
         </ThemedText>
         {isFocused && <Ionicons name="chevron-down" size={14} color={Palette.goldInk} />}
@@ -141,8 +176,45 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: Palette.canvas,
   },
+  // The bar is TabList's first child, so reversing the column puts it at
+  // the bottom — in the flow, so it never covers the end of a page.
+  rootPhone: {
+    flexDirection: 'column-reverse',
+  },
   slot: {
     flex: 1,
+  },
+  bar: {
+    height: 68,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    paddingHorizontal: Spacing.sm,
+    backgroundColor: Palette.surface,
+    borderTopWidth: 1,
+    borderTopColor: Palette.warmBorder,
+    boxShadow: '0px -4px 16px rgba(38, 24, 69, 0.08)',
+    zIndex: 1,
+  },
+  barItem: {
+    alignItems: 'center',
+    gap: 2,
+    flex: 1,
+  },
+  barItemLabel: {
+    fontSize: 11,
+  },
+  fab: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    marginTop: -28,
+    backgroundColor: Palette.purpleInk,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 4,
+    borderColor: Palette.canvas,
+    boxShadow: '0px 4px 16px rgba(38, 24, 69, 0.35)',
   },
   sidebar: {
     width: WebSidebarWidth,

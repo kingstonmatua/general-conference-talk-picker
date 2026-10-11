@@ -1,6 +1,6 @@
 import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { FlatList, type LayoutChangeEvent, Modal, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { FlatList, type LayoutChangeEvent, Modal, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
@@ -17,11 +17,11 @@ import {
   SessionCategoryTag,
   SessionTagColors,
   Spacing,
-  WebSidebarWidth,
   type SessionCategory,
 } from '@/constants/theme';
 import { formatTalkMeta, TALKS } from '@/data/talks';
 import { useTalkStatus } from '@/hooks/use-talk-status';
+import { useSidebarOffset } from '@/hooks/use-web-layout';
 
 // Only offer categories that actually have talks in the real dataset —
 // YOUNG_WOMEN is defined in the taxonomy for future-proofing but has zero
@@ -47,6 +47,7 @@ export default function BrowseScreen() {
   const [openDropdown, setOpenDropdown] = useState<DropdownKind>(null);
   const { getStatus, setFavorite } = useTalkStatus();
   const router = useRouter();
+  const sidebarOffset = useSidebarOffset();
   // FlatList's per-item cell wrapper on react-native-web doesn't resolve
   // width:'100%' the way ScrollView content does, so cards shrink-wrap
   // instead of filling the column — measure the real slot width instead
@@ -157,7 +158,12 @@ export default function BrowseScreen() {
       transparent
       animationType="fade"
       onRequestClose={() => setOpenDropdown(null)}>
-      <Pressable style={styles.modalOverlay} onPress={() => setOpenDropdown(null)}>
+      <Pressable
+        // A full-screen Modal overlays the whole browser window, but on
+        // desktop web the content sits right of the sidebar — extra left
+        // padding equal to its width centers the dropdown over the content.
+        style={[styles.modalOverlay, { paddingLeft: Spacing.xl + sidebarOffset }]}
+        onPress={() => setOpenDropdown(null)}>
         <Pressable onPress={(e) => e.stopPropagation()}>
           <Card style={styles.dropdownCard}>
             {openDropdown === 'year' && (
@@ -371,14 +377,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: Spacing.xl,
     paddingRight: Spacing.xl,
-    // A full-screen Modal overlays the whole browser window on web, but
-    // the talk list actually sits to the right of the persistent
-    // sidebar — centering symmetrically (like native, which has no
-    // sidebar) put the dropdown noticeably left of what's on screen.
-    // Extra left padding equal to the sidebar's width shifts the
-    // effective center exactly enough to line back up with the content
-    // column, regardless of window width.
-    paddingLeft: Platform.OS === 'web' ? Spacing.xl + WebSidebarWidth : Spacing.xl,
   },
   dropdownCard: {
     width: '100%',
