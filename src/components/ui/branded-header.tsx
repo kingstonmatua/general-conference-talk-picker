@@ -7,18 +7,21 @@ import { ThemedText } from '../themed-text';
 
 import { Palette, Spacing } from '@/constants/theme';
 import { useAuth } from '@/hooks/use-auth';
+import { useIsPhoneWeb } from '@/hooks/use-web-layout';
 
 /**
  * Native-only header row — brand mark (icon + wordmark) on the left,
  * account entry point on the right, on the same line. Floats directly
- * over the hero photo, above the headline's own text backdrop. Web keeps
- * its own sidebar logo/account footer, so this renders nothing there.
+ * over the hero photo, above the headline's own text backdrop. Desktop web
+ * keeps its own sidebar logo/account footer, so this renders nothing there;
+ * phone-sized web has no sidebar, so it shows like native.
  */
 export function BrandedHeaderRow() {
   const { user, avatarUrl, promptSignIn } = useAuth();
   const router = useRouter();
+  const isPhoneWeb = useIsPhoneWeb();
 
-  if (Platform.OS === 'web') return null;
+  if (Platform.OS === 'web' && !isPhoneWeb) return null;
 
   const onPressAccount = () => {
     if (!user) {
