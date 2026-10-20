@@ -3,8 +3,8 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
-import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { GuestSignUpCard } from '@/components/ui/guest-sign-up-card';
 import { ConferenceFilterBar, ConferenceFilterModal, useConferenceFilters } from '@/components/ui/conference-filters';
 import { HeroBanner, HeroTextGlow } from '@/components/ui/hero-banner';
 import { StatTile } from '@/components/ui/stat-tile';
@@ -19,7 +19,7 @@ const RECENT_GROUP_LIMIT = 3;
 type GroupAgg = { label: string; studied: number; total: number; latestStudiedAt: string };
 
 export default function ProgressScreen() {
-  const { user, promptSignIn } = useAuth();
+  const { user } = useAuth();
   const { studiedCount, currentStreak, longestStreak, getStatus, studiedIdsByRecency } = useTalkStatus();
   // Replaces the old preset-based Scope (All Conferences/Last 5 Years/
   // Last 10 Years/Custom Range-disabled) with the same Year → Conference
@@ -93,12 +93,11 @@ export default function ProgressScreen() {
 
         <View style={styles.content}>
           {!user ? (
-            <Card style={styles.signInCard}>
-              <ThemedText type="body" themeColor="textSecondary">
-                Sign in to see your study progress.
-              </ThemedText>
-              <Button label="Sign in" variant="primary" onPress={promptSignIn} />
-            </Card>
+            <GuestSignUpCard
+              primary
+              title="See your progress"
+              body="Create a free account to see how many talks you've studied, keep your streak going, and pick up where you left off on any device."
+            />
           ) : (
             <>
               <View style={styles.scopeRow}>
@@ -214,10 +213,6 @@ const styles = StyleSheet.create({
     // the hero subhead, not the shared token used elsewhere.
     color: '#47444B',
     ...HeroTextGlow,
-  },
-  signInCard: {
-    gap: Spacing.sm,
-    alignItems: 'flex-start',
   },
   scopeRow: {
     gap: Spacing.sm,

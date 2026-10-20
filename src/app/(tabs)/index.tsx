@@ -6,6 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { ThemedText } from '@/components/themed-text';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { GuestSignUpCard } from '@/components/ui/guest-sign-up-card';
 import { HeroBanner, HeroTextGlow } from '@/components/ui/hero-banner';
 import { StatTile } from '@/components/ui/stat-tile';
 import { TalkCard } from '@/components/ui/talk-card';
@@ -15,7 +16,7 @@ import { useAuth } from '@/hooks/use-auth';
 import { useTalkStatus } from '@/hooks/use-talk-status';
 
 export default function HomeScreen() {
-  const { user, promptSignIn } = useAuth();
+  const { user } = useAuth();
   const { studiedCount, favoriteIds, currentStreak, getStatus, markStudied } = useTalkStatus();
   const router = useRouter();
 
@@ -59,12 +60,10 @@ export default function HomeScreen() {
           </Card>
 
           {!user ? (
-            <Card style={styles.signInCard}>
-              <ThemedText type="body" themeColor="textSecondary">
-                Sign in to track studied talks, saves, and your study streak.
-              </ThemedText>
-              <Button label="Sign in" variant="primary" onPress={promptSignIn} />
-            </Card>
+            <GuestSignUpCard
+              title="Make it a habit"
+              body="Create a free account to track the talks you study, build a daily streak, save talks for later, and see your friends on the leaderboard."
+            />
           ) : (
             <>
               <View style={styles.statsRow}>
@@ -152,10 +151,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.06,
     shadowRadius: 16,
     elevation: 3,
-  },
-  signInCard: {
-    gap: Spacing.sm,
-    alignItems: 'flex-start',
   },
   statsRow: {
     flexDirection: 'row',

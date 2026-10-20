@@ -46,7 +46,7 @@ const SPEAKERS_BY_TALK_COUNT = [...SPEAKER_OPTIONS].sort((a, b) => b.count - a.c
  */
 export default function DrawScreen() {
   const router = useRouter();
-  const { user, promptSignIn } = useAuth();
+  const { user, promptSignUp } = useAuth();
   const { scope, update, reset, apply, matches, studiedInScopeCount } = useDrawScope();
   const { favoriteIds } = useTalkStatus();
   const params = useLocalSearchParams<DrawScopeParams>();
@@ -167,7 +167,7 @@ export default function DrawScreen() {
                 </>
               ) : (
                 // Guests have no studied or saved talks to filter by — offer sign-up instead.
-                <Button label="Sign up to track studies and save talks" variant="secondary" onPress={promptSignIn} />
+                <Button label="Sign up to track studies and save talks" variant="secondary" onPress={promptSignUp} />
               )}
             </View>
           </View>

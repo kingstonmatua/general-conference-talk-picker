@@ -24,7 +24,7 @@ const EMPTY_STATUS: Status = { isStudied: false, isFavorite: false, studiedAt: n
 const TalkStatusContext = createContext<TalkStatusContextValue | null>(null);
 
 export function TalkStatusProvider({ children }: { children: ReactNode }) {
-  const { user, promptSignIn } = useAuth();
+  const { user, promptSignUp } = useAuth();
   const [statusByTalkId, setStatusByTalkId] = useState<Record<string, Status>>({});
   const [loading, setLoading] = useState(false);
   const [currentStreak, setCurrentStreak] = useState(0);
@@ -85,30 +85,30 @@ export function TalkStatusProvider({ children }: { children: ReactNode }) {
 
   const markStudied = useCallback(
     async (talkId: string) => {
-      if (!user) return promptSignIn();
+      if (!user) return promptSignUp();
       patch(talkId, { isStudied: true, studiedAt: new Date().toISOString() });
       const { error } = await supabase.rpc('mark_talk_studied', { p_talk_id: talkId });
       if (error) patch(talkId, { isStudied: false });
       else refreshStreaks();
     },
-    [user, promptSignIn, patch, refreshStreaks],
+    [user, promptSignUp, patch, refreshStreaks],
   );
 
   const unmarkStudied = useCallback(
     async (talkId: string) => {
-      if (!user) return promptSignIn();
+      if (!user) return promptSignUp();
       patch(talkId, { isStudied: false });
       // Unmarking never touches study_events, so streaks are unaffected —
       // no refreshStreaks() call needed here (see schema.sql).
       const { error } = await supabase.rpc('unmark_talk_studied', { p_talk_id: talkId });
       if (error) patch(talkId, { isStudied: true });
     },
-    [user, promptSignIn, patch],
+    [user, promptSignUp, patch],
   );
 
   const setFavorite = useCallback(
     async (talkId: string, favorite: boolean) => {
-      if (!user) return promptSignIn();
+      if (!user) return promptSignUp();
       patch(talkId, { isFavorite: favorite });
       const { error } = await supabase.rpc('set_talk_favorite', {
         p_talk_id: talkId,
@@ -116,7 +116,7 @@ export function TalkStatusProvider({ children }: { children: ReactNode }) {
       });
       if (error) patch(talkId, { isFavorite: !favorite });
     },
-    [user, promptSignIn, patch],
+    [user, promptSignUp, patch],
   );
 
   const studiedCount = useMemo(

@@ -11,6 +11,10 @@ type AuthContextValue = {
   promptVisible: boolean;
   /** Show the sign-in sheet — call this before any action that needs auth. */
   promptSignIn: () => void;
+  /** Same sheet, opened on "Create account" — for guest sign-up prompts. */
+  promptSignUp: () => void;
+  /** Which form the sheet opens on. */
+  promptMode: 'signin' | 'signup';
   dismissPrompt: () => void;
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signUp: (email: string, password: string) => Promise<{ error: string | null }>;
@@ -33,6 +37,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
   const [promptVisible, setPromptVisible] = useState(false);
+  const [promptMode, setPromptMode] = useState<'signin' | 'signup'>('signin');
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => {
@@ -45,7 +50,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => subscription.subscription.unsubscribe();
   }, []);
 
-  const promptSignIn = useCallback(() => setPromptVisible(true), []);
+  const promptSignIn = useCallback(() => {
+    setPromptMode('signin');
+    setPromptVisible(true);
+  }, []);
+  const promptSignUp = useCallback(() => {
+    setPromptMode('signup');
+    setPromptVisible(true);
+  }, []);
   const dismissPrompt = useCallback(() => setPromptVisible(false), []);
 
   const signIn = useCallback(async (email: string, password: string) => {
@@ -140,6 +152,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loading,
       promptVisible,
       promptSignIn,
+      promptSignUp,
+      promptMode,
       dismissPrompt,
       signIn,
       signUp,
@@ -150,7 +164,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       updateAvatar,
       deleteAccount,
     }),
-    [session, loading, promptVisible, promptSignIn, dismissPrompt, signIn, signUp, signOut, requestPasswordReset, updatePassword, updateAvatar, deleteAccount],
+    [session, loading, promptVisible, promptSignIn, promptSignUp, promptMode, dismissPrompt, signIn, signUp, signOut, requestPasswordReset, updatePassword, updateAvatar, deleteAccount],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

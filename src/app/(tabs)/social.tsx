@@ -6,8 +6,8 @@ import { FriendsSection } from '@/components/social/friends-section';
 import { LeaderboardSection } from '@/components/social/leaderboard-section';
 import { ThemedText } from '@/components/themed-text';
 import { UsernameForm } from '@/components/username-form';
-import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { GuestSignUpCard } from '@/components/ui/guest-sign-up-card';
 import { HeroBanner, HeroTextGlow } from '@/components/ui/hero-banner';
 import { Pill } from '@/components/ui/pill';
 import { BottomTabInset, MaxContentWidth, Palette, Spacing } from '@/constants/theme';
@@ -22,7 +22,7 @@ type SocialSection = 'leaderboard' | 'friends' | 'wall';
  * Leaderboard · Friends · Wall. The Wall stays "coming" until Update 2.
  */
 export default function SocialScreen() {
-  const { user, promptSignIn } = useAuth();
+  const { user } = useAuth();
   const { loading, profile, needsProfile, incomingRequests } = useSocial();
   const [section, setSection] = useState<SocialSection>('leaderboard');
 
@@ -42,14 +42,11 @@ export default function SocialScreen() {
 
         <View style={styles.content}>
           {!user ? (
-            <Card style={styles.card}>
-              <ThemedText type="section">Join your friends</ThemedText>
-              <ThemedText type="body" themeColor="textSecondary">
-                Create a free account to add friends, compare streaks and talks studied, and keep your progress on
-                every device.
-              </ThemedText>
-              <Button label="Sign up or sign in" variant="primary" onPress={promptSignIn} />
-            </Card>
+            <GuestSignUpCard
+              primary
+              title="Join your friends"
+              body="Create a free account to add friends, compare streaks and talks studied, and keep your progress on every device."
+            />
           ) : loading ? (
             <ThemedText type="body" themeColor="textSecondary">
               Loading…

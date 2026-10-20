@@ -31,9 +31,10 @@ Kingston chose social as the next phase (over Android, speaker headshots and pol
 
 Step 6 (Leaderboard) also done and checked on web 2026-10-20.
 
+Step 8 (guest sign-up prompts) also done and checked on web 2026-10-20.
+
 **Pick up here:**
-1. **Step 8: guest sign-up prompts** across the app (inline cards/buttons on Home, Progress, Saved, after a draw, on Mark as studied; no repeated blocking pop-ups).
-2. Then step 9 (universal links + AASA, `/privacy` update, web deploy incl. checking the Cloudflare patch handles `/invite/[token]`, version bump to 1.1.0, EAS build). Check the Leaderboard on Expo Go too.
+1. **Step 9:** universal links (`ios.associatedDomains` + `apple-app-site-association` on gctalkpicker.app), `/privacy` update (username, avatar and study stats visible to accepted friends), web deploy (check the Cloudflare patch serves `/invite/[token]`), check everything on Expo Go, version bump to 1.1.0, merge into `v2`, EAS build + submit.
 
 **Dev server:** `cd "Design/APP V2" && npx expo start --web`, then http://localhost:8081. Expo Go: same server, `exp://<this Mac's LAN IP>:8081`. Testing two accounts at once: normal window + private window.
 

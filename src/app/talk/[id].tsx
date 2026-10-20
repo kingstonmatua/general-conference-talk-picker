@@ -5,16 +5,19 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { ThemedText } from '@/components/themed-text';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { GuestSignUpCard } from '@/components/ui/guest-sign-up-card';
 import { Icon, Ionicons } from '@/components/ui/icon';
 import { SessionTag } from '@/components/ui/tag';
 import { MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 import { formatTalkMeta, getTalkById } from '@/data/talks';
+import { useAuth } from '@/hooks/use-auth';
 import { useDrawRandomTalk } from '@/hooks/use-draw-random-talk';
 import { useTalkStatus } from '@/hooks/use-talk-status';
 
 export default function TalkDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
+  const { user } = useAuth();
   const { getStatus, markStudied, unmarkStudied, setFavorite } = useTalkStatus();
   const drawRandomTalk = useDrawRandomTalk();
 
@@ -94,6 +97,10 @@ export default function TalkDetailScreen() {
               style={styles.fullWidthButton}
             />
           </Card>
+
+          {!user && (
+            <GuestSignUpCard body="Create a free account to mark this talk as studied, save it, and build your study streak." />
+          )}
 
           <Pressable
             onPress={() => drawRandomTalk({ replace: true, excludeId: talk.id })}
