@@ -36,7 +36,7 @@ Step 8 (guest sign-up prompts) also done and checked on web 2026-10-20.
 **Shipped 2026-10-20:** universal links (AASA at gctalkpicker.app/.well-known/apple-app-site-association, only `/invite/*`, Team ID `ZF46J65Y53`; `ios.associatedDomains`), privacy policy rewrite for social, invite page "Get the app" note. Merged `feature/social` → `v2` (`21f38eb`), version 1.1.0 (`8ba08c4`). Kingston deployed web (verified: AASA serves as JSON, `/invite/<token>` 200, privacy dated Oct 20) and ran the EAS build: **1.1.0 (6), commit `8ba08c4`**. Deploying web needs `npx wrangler login` once per machine in Kingston's own Terminal.
 
 **Pick up here:**
-1. `eas submit --platform ios --latest`, then in App Store Connect: new version 1.1, attach build 6, What's New, check App Privacy (friends can see username/avatar/study stats), submit.
+1. **1.1 (build 6) submitted for review 2026-10-20** after Kingston tested it on TestFlight (all good). App Privacy unchanged (already had User ID, Other User Content, Email, Photos). Age rating: messaging/UGC left No; **UGC must become Yes when the Wall ships.** Release set to automatic. The applereview demo account now needs to keep its username + friendship with testfriend. Check App Store Connect for Apple's decision.
 2. After approval: test an invite link on a real iPhone with 1.1 installed (it should open the app, not Safari).
 3. Then **Update 2: the wall** (posts, hearts, report, block, word filter, guidelines, email alerts) — plan it in detail in `SOCIAL_PLAN.md` first.
 
