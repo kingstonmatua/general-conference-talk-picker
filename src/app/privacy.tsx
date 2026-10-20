@@ -6,7 +6,7 @@ import { ThemedText } from '@/components/themed-text';
 import { Ionicons } from '@/components/ui/icon';
 import { MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 
-const LAST_UPDATED = 'September 17, 2026';
+const LAST_UPDATED = 'October 20, 2026';
 const CONTACT_EMAIL = 'kingstonmatua9@gmail.com';
 
 /**
@@ -50,13 +50,19 @@ export default function PrivacyScreen() {
           <ThemedText type="body" style={styles.paragraph}>
             If you create an account, we collect the email address and password you sign up
             with. Your password is handled entirely by our authentication provider, Supabase —
-            we never see or store it ourselves.
+            we never see or store it ourselves. Your email address is also used to send you
+            account emails, such as sign-up confirmation and password resets, through Supabase.
           </ThemedText>
           <ThemedText type="body" style={styles.paragraph}>
             Once signed in, the app stores the study activity you generate: which talks you've
             marked as studied or saved as a favorite, and the dates you studied them (used to
             calculate your study streak). If you add a profile picture, that image is stored on
             our behalf by Supabase.
+          </ThemedText>
+          <ThemedText type="body" style={styles.paragraph}>
+            If you use the Social tab, you choose a username. Other signed-in users can find
+            you by searching for it. We also store your friend requests and friendships, and
+            the invite link you can share.
           </ThemedText>
           <ThemedText type="body" style={styles.paragraph}>
             You can browse and draw talks without creating an account — in that case, none of
@@ -68,9 +74,20 @@ export default function PrivacyScreen() {
           </ThemedText>
           <ThemedText type="body" style={styles.paragraph}>
             This information is used only to run the app's core features for you: signing you
-            in, showing your saved and studied talks, and calculating your progress and study
-            streak. We don't sell your data, use it for advertising, or share it with anyone
+            in, showing your saved and studied talks, calculating your progress and study streak,
+            and showing you and your friends on the leaderboard. We don't sell your data, use it for advertising, or share it with anyone
             beyond the service providers below.
+          </ThemedText>
+
+          <ThemedText type="section" style={styles.heading}>
+            What other people can see
+          </ThemedText>
+          <ThemedText type="body" style={styles.paragraph}>
+            Anyone signed in can see your username and profile picture in search results, and
+            anyone you send your invite link to sees them on the invite page. Only
+            people you've accepted as friends can see your study stats on the leaderboard: talks
+            studied, your current and longest streaks. Your email address is never shown to
+            anyone. Removing a friend stops them seeing your stats.
           </ThemedText>
 
           <ThemedText type="section" style={styles.heading}>
@@ -84,10 +101,28 @@ export default function PrivacyScreen() {
           </ThemedText>
 
           <ThemedText type="section" style={styles.heading}>
+            Cookies and device storage
+          </ThemedText>
+          <ThemedText type="body" style={styles.paragraph}>
+            The app uses your browser's local storage (or your device's storage in the iPhone
+            app) to keep you signed in and to remember the filters you chose on the Draw page.
+            That's all it stores there. We don't use advertising or tracking cookies.
+          </ThemedText>
+
+          <ThemedText type="section" style={styles.heading}>
+            Data retention
+          </ThemedText>
+          <ThemedText type="body" style={styles.paragraph}>
+            We keep your data until you delete your account. After that, deleted data may remain
+            in our provider's backups for a short period before being permanently purged.
+          </ThemedText>
+
+          <ThemedText type="section" style={styles.heading}>
             Deleting your data
           </ThemedText>
           <ThemedText type="body" style={styles.paragraph}>
-            You can permanently delete your account and all associated data at any time from
+            You can permanently delete your account and all associated data, including your
+            username and friendships, at any time from
             Account → Danger zone → Delete account, right inside the app.
           </ThemedText>
 
@@ -96,7 +131,15 @@ export default function PrivacyScreen() {
           </ThemedText>
           <ThemedText type="body" style={styles.paragraph}>
             This app is not directed at children under 13, and we do not knowingly collect
-            information from children under 13.
+            information from children under 13. If you believe a child under 13 has created an
+            account, contact us and we'll delete it.
+          </ThemedText>
+
+          <ThemedText type="section" style={styles.heading}>
+            Changes to this policy
+          </ThemedText>
+          <ThemedText type="body" style={styles.paragraph}>
+            If this policy changes, we'll update the date at the top of this page.
           </ThemedText>
 
           <ThemedText type="section" style={styles.heading}>

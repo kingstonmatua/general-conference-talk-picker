@@ -9,6 +9,7 @@
     "userInterfaceStyle": "light",
     "ios": {
       "bundleIdentifier": "app.gctalkpicker.ios",
+      "associatedDomains": ["applinks:gctalkpicker.app"],
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }

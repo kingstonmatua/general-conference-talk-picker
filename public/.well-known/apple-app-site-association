@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["ZF46J65Y53.app.gctalkpicker.ios"],
+        "components": [{ "/": "/invite/*", "comment": "Friend invite links open in the app" }]
+      }
+    ]
+  }
+}

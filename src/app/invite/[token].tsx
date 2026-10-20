@@ -1,6 +1,6 @@
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { Linking, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
@@ -12,6 +12,8 @@ import { MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 import { useAuth } from '@/hooks/use-auth';
 import { useSocial, type Person } from '@/hooks/use-social';
 
+const APP_STORE_URL = 'https://apps.apple.com/app/general-conference-talk-picker/id6812966862';
+
 /**
  * Where a shared invite link lands: https://gctalkpicker.app/invite/<token>
  * (SOCIAL_PLAN.md). Shows whose invite it is (works for guests), then walks
@@ -21,7 +23,7 @@ import { useSocial, type Person } from '@/hooks/use-social';
 export default function InviteScreen() {
   const { token } = useLocalSearchParams<{ token: string }>();
   const router = useRouter();
-  const { user, promptSignIn } = useAuth();
+  const { user, promptSignIn, promptSignUp } = useAuth();
   const { loading, profile, getInviteOwner, redeemInvite } = useSocial();
   const [owner, setOwner] = useState<Person | null | undefined>(undefined);
   const [accepting, setAccepting] = useState(false);
@@ -90,7 +92,12 @@ export default function InviteScreen() {
             <ThemedText type="body" themeColor="textSecondary">
               Sign in or create a free account to accept.
             </ThemedText>
-            <Button label="Sign up or sign in" variant="primary" onPress={promptSignIn} />
+            <Button label="Create a free account" variant="primary" onPress={promptSignUp} />
+            <Pressable onPress={promptSignIn} hitSlop={8} accessibilityRole="button">
+              <ThemedText type="metadata" style={styles.link}>
+                Already have an account? Sign in
+              </ThemedText>
+            </Pressable>
           </>
         ) : loading ? null : !profile ? (
           <>
@@ -106,6 +113,17 @@ export default function InviteScreen() {
         {error && (
           <ThemedText type="metadata" style={styles.error}>
             {error}
+          </ThemedText>
+        )}
+
+        {Platform.OS === 'web' && (
+          // A fresh install loses the invite (SOCIAL_PLAN.md), so say so up front.
+          <ThemedText type="metadata" themeColor="textSecondary">
+            On iPhone?{' '}
+            <ThemedText type="metadata" style={styles.link} onPress={() => Linking.openURL(APP_STORE_URL)}>
+              Get the app
+            </ThemedText>
+            , then tap this link again to accept there.
           </ThemedText>
         )}
       </Card>
@@ -154,5 +172,8 @@ const styles = StyleSheet.create({
   },
   error: {
     color: Palette.terracotta,
+  },
+  link: {
+    color: Palette.conferencePurple,
   },
 });
