@@ -1,6 +1,6 @@
 # General Conference Talk Picker V2 — Session Handoff
 
-Last updated: 2026-10-20. **The active work is the social phase, on branch `feature/social`.** That's what this folder is checked out on, local only and not pushed; `v2` itself is unchanged (and is exactly what's live on the App Store: build 1.0.0 (5), approved and released). Read the section directly below plus `SOCIAL_PLAN.md` (its Status list is the most detailed record) first.
+Last updated: 2026-10-20. **Social Update 1 is merged into `v2`** (local only, not pushed) and this folder is checked out on `v2`. Web is live with it; iOS build 1.1.0 (6) is built and being submitted. Build 1.0.0 (5) is what's live on the App Store until 1.1 is approved. Read the section directly below plus `SOCIAL_PLAN.md` (its Status list is the most detailed record) first.
 
 ## Social phase — started 2026-10-05 (branch `feature/social`)
 
@@ -33,8 +33,12 @@ Step 6 (Leaderboard) also done and checked on web 2026-10-20.
 
 Step 8 (guest sign-up prompts) also done and checked on web 2026-10-20.
 
+**Shipped 2026-10-20:** universal links (AASA at gctalkpicker.app/.well-known/apple-app-site-association, only `/invite/*`, Team ID `ZF46J65Y53`; `ios.associatedDomains`), privacy policy rewrite for social, invite page "Get the app" note. Merged `feature/social` → `v2` (`21f38eb`), version 1.1.0 (`8ba08c4`). Kingston deployed web (verified: AASA serves as JSON, `/invite/<token>` 200, privacy dated Oct 20) and ran the EAS build: **1.1.0 (6), commit `8ba08c4`**. Deploying web needs `npx wrangler login` once per machine in Kingston's own Terminal.
+
 **Pick up here:**
-1. **Step 9:** universal links (`ios.associatedDomains` + `apple-app-site-association` on gctalkpicker.app), `/privacy` update (username, avatar and study stats visible to accepted friends), web deploy (check the Cloudflare patch serves `/invite/[token]`), check everything on Expo Go, version bump to 1.1.0, merge into `v2`, EAS build + submit.
+1. `eas submit --platform ios --latest`, then in App Store Connect: new version 1.1, attach build 6, What's New, check App Privacy (friends can see username/avatar/study stats), submit.
+2. After approval: test an invite link on a real iPhone with 1.1 installed (it should open the app, not Safari).
+3. Then **Update 2: the wall** (posts, hearts, report, block, word filter, guidelines, email alerts) — plan it in detail in `SOCIAL_PLAN.md` first.
 
 **Dev server:** `cd "Design/APP V2" && npx expo start --web`, then http://localhost:8081. Expo Go: same server, `exp://<this Mac's LAN IP>:8081`. Testing two accounts at once: normal window + private window.
 
