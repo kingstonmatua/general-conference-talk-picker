@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Modal, Pressable, StyleSheet, TextInput, View } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
@@ -15,7 +15,7 @@ import { Palette, Radii, Spacing } from '@/constants/theme';
  * V1 account signs in here too.
  */
 export function AuthSheet() {
-  const { promptVisible, dismissPrompt, signIn, signUp, requestPasswordReset } = useAuth();
+  const { promptVisible, promptMode, dismissPrompt, signIn, signUp, requestPasswordReset } = useAuth();
   const [mode, setMode] = useState<'signin' | 'signup' | 'forgot'>('signin');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,6 +23,11 @@ export function AuthSheet() {
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+
+  // Open on whichever form the caller asked for (sign-up prompts vs. sign in).
+  useEffect(() => {
+    if (promptVisible) setMode(promptMode);
+  }, [promptVisible, promptMode]);
 
   const reset = () => {
     setEmail('');

@@ -4,7 +4,8 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
-import { Button } from '@/components/ui/button';
+import { BrowseViewToggle } from '@/components/ui/browse-view-toggle';
+import { GuestSignUpCard } from '@/components/ui/guest-sign-up-card';
 import { ConferenceFilterBar, ConferenceFilterModal, useConferenceFilters } from '@/components/ui/conference-filters';
 import { HeroBanner, HeroTextGlow } from '@/components/ui/hero-banner';
 import { Pill } from '@/components/ui/pill';
@@ -18,7 +19,7 @@ import { useTalkStatus } from '@/hooks/use-talk-status';
 const STATUS_FILTERS = ['Any status', 'Not studied', 'Studied'] as const;
 
 export default function SavedScreen() {
-  const { user, promptSignIn } = useAuth();
+  const { user } = useAuth();
   const { favoriteIds, getStatus, setFavorite } = useTalkStatus();
   const router = useRouter();
   const [query, setQuery] = useState('');
@@ -46,7 +47,7 @@ export default function SavedScreen() {
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.heroWrap}>
-          <HeroBanner source={require('@/assets/images/hero/laie-hawaii-temple.png')}>
+          <HeroBanner source={require('@/assets/images/hero/rome-italy-temple.png')}>
             <ThemedText type="display" style={styles.heroHeadline}>
               Words to return to.
             </ThemedText>
@@ -57,13 +58,14 @@ export default function SavedScreen() {
         </View>
 
         <View style={styles.content}>
+          <BrowseViewToggle current="saved" />
+
           {!user ? (
-            <View style={styles.signedOutState}>
-              <ThemedText type="body" themeColor="textSecondary">
-                Sign in to save talks and see them here.
-              </ThemedText>
-              <Button label="Sign in" variant="primary" onPress={promptSignIn} />
-            </View>
+            <GuestSignUpCard
+              primary
+              title="Save talks for later"
+              body="Create a free account to save talks that speak to you and find them here whenever you need them."
+            />
           ) : (
             <>
               <SearchField value={query} onChangeText={setQuery} placeholder="Search your saved talks" />
@@ -149,9 +151,5 @@ const styles = StyleSheet.create({
   },
   list: {
     gap: Spacing.md,
-  },
-  signedOutState: {
-    gap: Spacing.md,
-    alignItems: 'flex-start',
   },
 });

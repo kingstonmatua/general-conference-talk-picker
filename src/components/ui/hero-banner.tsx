@@ -1,6 +1,7 @@
+import { Image as ExpoImage } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
-import type { ReactNode } from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { useState, type ReactNode } from 'react';
+import { Image, Platform, StyleSheet, View } from 'react-native';
 
 import { BrandedHeaderRow } from './branded-header';
 
@@ -22,13 +23,36 @@ import { Palette, Spacing } from '@/constants/theme';
  * halo on the text itself, see below) for contrast.
  */
 export function HeroBanner({ source, children }: { source: number; children: ReactNode }) {
+  // Web: crop mostly from the bottom (25% from the top, not centered), and let the banner grow
+  // with the window. A fixed 380px banner on a very wide screen only showed
+  // a strip of sky, since "cover" scales the photo to the full width, and
+  // the temple spires sit near the top of every hero photo. Growing the
+  // height with the width (capped) keeps roughly the same view at every
+  // desktop size. Native keeps the centered crop and fixed height. Uses
+  // expo-image on web because the core Image's web build has no way to set
+  // the crop position.
+  const [width, setWidth] = useState(0);
+  const anchorTop = Platform.OS === 'web';
+  const height = anchorTop ? Math.min(640, Math.max(380, width * 0.3)) : undefined;
+
   return (
-    <View style={styles.container}>
-      <Image
-        source={source}
-        style={[StyleSheet.absoluteFill, styles.image]}
-        resizeMode="cover"
-      />
+    <View
+      style={[styles.container, height !== undefined && { height }]}
+      onLayout={anchorTop ? (e) => setWidth(e.nativeEvent.layout.width) : undefined}>
+      {anchorTop ? (
+        <ExpoImage
+          source={source}
+          style={[StyleSheet.absoluteFill, styles.image]}
+          contentFit="cover"
+          contentPosition={{ top: '25%', left: '50%' }}
+        />
+      ) : (
+        <Image
+          source={source}
+          style={[StyleSheet.absoluteFill, styles.image]}
+          resizeMode="cover"
+        />
+      )}
       <LinearGradient
         colors={[Palette.canvas, 'transparent', 'transparent', Palette.canvas]}
         locations={[0, 0.4, 0.7, 1]}

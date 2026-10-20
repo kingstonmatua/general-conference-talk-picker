@@ -11,6 +11,10 @@ type AuthContextValue = {
   promptVisible: boolean;
   /** Show the sign-in sheet — call this before any action that needs auth. */
   promptSignIn: () => void;
+  /** Same sheet, opened on "Create account" — for guest sign-up prompts. */
+  promptSignUp: () => void;
+  /** Which form the sheet opens on. */
+  promptMode: 'signin' | 'signup';
   dismissPrompt: () => void;
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signUp: (email: string, password: string) => Promise<{ error: string | null }>;
@@ -21,7 +25,7 @@ type AuthContextValue = {
   updatePassword: (newPassword: string) => Promise<{ error: string | null }>;
   /** From auth user_metadata — no separate profiles table, just this field. */
   avatarUrl: string | null;
-  /** Uploads to the "avatars" Storage bucket, then saves the public URL onto user_metadata. */
+  /** Uploads to the "avatars" Storage bucket, then saves the public URL onto user_metadata and the social profile. */
   updateAvatar: (localUri: string) => Promise<{ error: string | null }>;
   /** Permanently deletes the signed-in user's account and all their data (see delete_own_account() in schema.sql). */
   deleteAccount: () => Promise<{ error: string | null }>;
@@ -33,6 +37,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
   const [promptVisible, setPromptVisible] = useState(false);
+  const [promptMode, setPromptMode] = useState<'signin' | 'signup'>('signin');
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => {
@@ -45,7 +50,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => subscription.subscription.unsubscribe();
   }, []);
 
-  const promptSignIn = useCallback(() => setPromptVisible(true), []);
+  const promptSignIn = useCallback(() => {
+    setPromptMode('signin');
+    setPromptVisible(true);
+  }, []);
+  const promptSignUp = useCallback(() => {
+    setPromptMode('signup');
+    setPromptVisible(true);
+  }, []);
   const dismissPrompt = useCallback(() => setPromptVisible(false), []);
 
   const signIn = useCallback(async (email: string, password: string) => {
@@ -103,6 +115,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const { error: updateError } = await supabase.auth.updateUser({ data: { avatar_url: avatarUrl } });
       if (updateError) return { error: updateError.message };
 
+      // Friends can't read user_metadata, so the social profile keeps its
+      // own copy (see set_profile_avatar() in supabase/social.sql). A no-op
+      // until the user has picked a username; set_username() copies it then.
+      await supabase.rpc('set_profile_avatar', { p_url: avatarUrl });
+
       return { error: null };
     } catch (e) {
       return { error: e instanceof Error ? e.message : 'Upload failed' };
@@ -135,6 +152,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loading,
       promptVisible,
       promptSignIn,
+      promptSignUp,
+      promptMode,
       dismissPrompt,
       signIn,
       signUp,
@@ -145,7 +164,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       updateAvatar,
       deleteAccount,
     }),
-    [session, loading, promptVisible, promptSignIn, dismissPrompt, signIn, signUp, signOut, requestPasswordReset, updatePassword, updateAvatar, deleteAccount],
+    [session, loading, promptVisible, promptSignIn, promptSignUp, promptMode, dismissPrompt, signIn, signUp, signOut, requestPasswordReset, updatePassword, updateAvatar, deleteAccount],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

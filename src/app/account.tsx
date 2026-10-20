@@ -6,12 +6,14 @@ import { ActivityIndicator, Alert, Pressable, ScrollView, StyleSheet, View } fro
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
+import { UsernameForm } from '@/components/username-form';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Icon, Ionicons } from '@/components/ui/icon';
 import { StatTile } from '@/components/ui/stat-tile';
 import { MaxContentWidth, Palette, Spacing } from '@/constants/theme';
 import { useAuth } from '@/hooks/use-auth';
+import { useSocial } from '@/hooks/use-social';
 import { useTalkStatus } from '@/hooks/use-talk-status';
 
 /**
@@ -113,6 +115,8 @@ export default function AccountScreen() {
                 {user.email}
               </ThemedText>
 
+              <UsernameCard />
+
               <View style={styles.statsRow}>
                 <StatTile icon="studied" color="sage" value={String(studiedCount)} label="Talks studied" />
                 <StatTile icon="streak" color="terracotta" value={String(currentStreak)} label="Day streak" />
@@ -152,7 +156,7 @@ export default function AccountScreen() {
                   <>
                     <ThemedText type="body" themeColor="textSecondary">
                       This permanently deletes your account and all your data — studied talks, favorites, streaks,
-                      and your profile picture. This can't be undone.
+                      your username and friends, and your profile picture. This can't be undone.
                     </ThemedText>
                     <Button
                       label={deleting ? 'Deleting…' : 'Yes, delete my account'}
@@ -176,6 +180,65 @@ export default function AccountScreen() {
         </View>
       </ScrollView>
     </SafeAreaView>
+  );
+}
+
+/**
+ * Username lives here (SOCIAL_PLAN.md decision 7). Changing it is allowed
+ * once every 90 days; the very first change after creation is free so a
+ * typo can be fixed right away (set_username() in supabase/social.sql).
+ */
+function UsernameCard() {
+  const { loading, profile, nextUsernameChangeAt } = useSocial();
+  const [editing, setEditing] = useState(false);
+
+  if (loading) return null;
+
+  if (!profile) {
+    return (
+      <Card style={styles.actionsCard}>
+        <ThemedText type="control" themeColor="textSecondary">
+          Username
+        </ThemedText>
+        <ThemedText type="body" themeColor="textSecondary">
+          Pick a username so friends can find you.
+        </ThemedText>
+        <UsernameForm />
+      </Card>
+    );
+  }
+
+  return (
+    <Card style={styles.actionsCard}>
+      <ThemedText type="control" themeColor="textSecondary">
+        Username
+      </ThemedText>
+      {editing ? (
+        <>
+          <ThemedText type="body" themeColor="textSecondary">
+            After this change, you won’t be able to change it again for 90 days.
+          </ThemedText>
+          <UsernameForm
+            initialValue={profile.username}
+            saveLabel="Save new username"
+            onSaved={() => setEditing(false)}
+            onCancel={() => setEditing(false)}
+          />
+        </>
+      ) : (
+        <>
+          <ThemedText type="section">@{profile.username}</ThemedText>
+          {nextUsernameChangeAt ? (
+            <ThemedText type="metadata" themeColor="textSecondary">
+              You can change it again on{' '}
+              {nextUsernameChangeAt.toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })}.
+            </ThemedText>
+          ) : (
+            <Button label="Change username" variant="secondary" onPress={() => setEditing(true)} />
+          )}
+        </>
+      )}
+    </Card>
   );
 }
 
