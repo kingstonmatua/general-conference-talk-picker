@@ -1,6 +1,6 @@
 # General Conference Talk Picker V2 — Session Handoff
 
-Last updated: 2026-10-20. **Social Update 1 is merged into `v2`** (local only, not pushed) and this folder is checked out on `v2`. Web is live with it; iOS build 1.1.0 (6) is built and being submitted. Build 1.0.0 (5) is what's live on the App Store until 1.1 is approved. Read the section directly below plus `SOCIAL_PLAN.md` (its Status list is the most detailed record) first.
+Last updated: 2026-10-20. **Social Update 1 is merged into `v2` and pushed to GitHub** (`origin/v2` = local `v2` as of 2026-10-20); this folder is checked out on `v2`. Web is live with it; iOS 1.1 (build 6) is **in App Review** (auto-release on approval). Build 1.0.0 (5) is what's live on the App Store until then. Next phase: Update 2 (the Wall). Read the section directly below plus `SOCIAL_PLAN.md` (its Status list is the most detailed record) first.
 
 ## Social phase — started 2026-10-05 (branch `feature/social`)
 
@@ -183,7 +183,8 @@ This repo uses a **git worktree**, not a separate repo:
 - V1 (the current live app) is untouched, on `develop`, checked out at `app/` (sibling folder).
 - V2 is on a branch called **`v2`**, checked out at *this* folder (`Design/APP V2`).
 - `v2` branched off `develop` at commit `c01f0a5`, tagged **`v1-final`** as a permanent marker of where V2 began.
-- **Push status (corrected 2026-10-05):** `v2` *has* since been pushed and matches `origin/v2` as of 2026-09-22. `feature/social` and `feature/draw-page` are local only. The local `.git` travels with the drive, so every branch can be resumed on any machine with the drive mounted. Push only when Kingston asks.
+- **Push status (2026-10-20):** `v2` pushed and matches `origin/v2` (includes all of `feature/social`). `feature/social`, `feature/draw-page` and `fix/mobile-web` are fully merged into `v2` and were not pushed separately. Push only when Kingston asks.
+- **Older push note (2026-10-05):** `v2` *has* since been pushed and matches `origin/v2` as of 2026-09-22. `feature/social` and `feature/draw-page` are local only. The local `.git` travels with the drive, so every branch can be resumed on any machine with the drive mounted. Push only when Kingston asks.
 - Run git commands for V2 from inside `Design/APP V2` specifically, not from `app/` — they're different working trees of the same repo.
 - **All work through 2026-09-17 IS committed** on `v2` — `git log` tells the story in order (talks import → Supabase → routing/screens/Draw → web go-live + Cloudflare/hero/account bug fixes → favicon → iOS build setup → privacy page). Working tree was clean at the end of each session. Still **not pushed to GitHub** — only commit locally unless the user explicitly asks to push. (Separately, GitHub involvement isn't required for any of what's live: the web deploy goes straight to Cloudflare Pages via Wrangler, and the iOS builds go straight to EAS — neither reads from GitHub.)
 - **Resolved, later the same day**: `gctalkpicker.app`'s deploy mechanism turned out to be a Cloudflare Pages project (`general-conference-talk-picker`, no config in-repo because it's all set up in the Cloudflare dashboard, DNS on Cloudflare's own nameservers). See "V2 is now the live site" at the top of this file for the full story — V2 replaced V1 there this session, via direct Wrangler upload, deliberately accepting the missing-features regression mentioned below.

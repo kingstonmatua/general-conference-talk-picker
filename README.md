@@ -10,7 +10,7 @@ Claude's memory doesn't travel with this drive. These files do, so read them fir
 |---|---|
 | [`SESSION_HANDOFF.md`](SESSION_HANDOFF.md) | Project state: what's built, what's live, locked decisions, gotchas, next steps |
 | [`CLAUDE_MEMORY.md`](CLAUDE_MEMORY.md) | How to work with Kingston (not a coder: numbered steps, one decision at a time) |
-| [`SOCIAL_PLAN.md`](SOCIAL_PLAN.md) | **Current phase:** friends, leaderboard and wall (branch `feature/social`) |
+| [`SOCIAL_PLAN.md`](SOCIAL_PLAN.md) | **Current phase:** Social. Update 1 (friends, leaderboard) is merged into `v2` and in App Review as 1.1; Update 2 (the Wall) is next |
 | [`DRAW_PAGE_PLAN.md`](DRAW_PAGE_PLAN.md) | The Draw scope page (shipped) |
 | `Design/GPT Mock Images/talk-picker-v2-brand-board.pdf` (outer project folder) | Binding visual spec; it overrides the mockups |
 
