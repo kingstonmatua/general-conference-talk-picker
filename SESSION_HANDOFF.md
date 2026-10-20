@@ -29,9 +29,11 @@ Kingston chose social as the next phase (over Android, speaker headshots and pol
 
 **Done 2026-10-20:** step 5 fully tested (Remove + invite link). Fixed the invite-token function in Supabase (pgcrypto lives in the `extensions` schema there) and the desktop-Chrome share glitch. Details in `SOCIAL_PLAN.md` Status. Kingston and testfriend are friends again. Tip: testfriend's password was reset; reset links work once only, so always click the newest email.
 
+Step 6 (Leaderboard) also done and checked on web 2026-10-20.
+
 **Pick up here:**
-1. **Step 6: the Leaderboard UI** (three boards + Week/Month/All-time switch; data already comes from `useSocial().leaderboard` / `refreshLeaderboard()`; % of all talks computed in-app from `TALKS.length`). Replace the "coming soon" Leaderboard card in `src/app/(tabs)/social.tsx`.
-2. Then step 8 (guest sign-up prompts), step 9 (universal links + AASA, `/privacy` update, web deploy incl. checking the Cloudflare patch handles `/invite/[token]`, version bump, EAS build).
+1. **Step 8: guest sign-up prompts** across the app (inline cards/buttons on Home, Progress, Saved, after a draw, on Mark as studied; no repeated blocking pop-ups).
+2. Then step 9 (universal links + AASA, `/privacy` update, web deploy incl. checking the Cloudflare patch handles `/invite/[token]`, version bump to 1.1.0, EAS build). Check the Leaderboard on Expo Go too.
 
 **Dev server:** `cd "Design/APP V2" && npx expo start --web`, then http://localhost:8081. Expo Go: same server, `exp://<this Mac's LAN IP>:8081`. Testing two accounts at once: normal window + private window.
 
