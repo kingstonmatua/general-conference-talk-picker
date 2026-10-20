@@ -78,7 +78,9 @@ function InviteCard() {
     // Browsers: the share sheet where there is one (phones), otherwise copy.
     try {
       if (typeof navigator !== 'undefined' && navigator.share) {
-        await navigator.share({ text, url: link });
+        // The link goes in `url` only: putting it in `text` too makes some
+        // share targets glue both into one broken link.
+        await navigator.share({ text: 'Study General Conference talks with me! Tap to add me as a friend:', url: link });
       } else {
         await navigator.clipboard.writeText(link);
         setMessage('Invite link copied. Paste it to a friend.');

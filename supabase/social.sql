@@ -145,6 +145,9 @@ create or replace function public.new_invite_token()
 returns text
 language sql
 volatile
+-- Supabase installs pgcrypto in the "extensions" schema, which isn't on the
+-- search_path of the security-definer RPCs that call this.
+set search_path = public, extensions
 as $body$
   select translate(encode(gen_random_bytes(12), 'base64'), '+/', '-_');
 $body$;
