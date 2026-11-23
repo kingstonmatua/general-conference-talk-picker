@@ -40498,5 +40498,375 @@ window.TALKS = [
     "session": "Saturday Afternoon Session",
     "reference": "April 2026 General Conference",
     "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/04/22larson?lang=eng"
+  },
+  {
+    "id": "4054-2026-10-come-to-the-lord-in-his-holy-house",
+    "title": "Come to the Lord in His Holy House",
+    "speaker": "Gerrit W. Gong",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/12gong?lang=eng"
+  },
+  {
+    "id": "4055-2026-10-the-sculpting-of-our-souls",
+    "title": "The Sculpting of Our Souls",
+    "speaker": "Tamara W. Runia",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/13runia?lang=eng"
+  },
+  {
+    "id": "4056-2026-10-the-gift-of-testimony",
+    "title": "The Gift of Testimony",
+    "speaker": "Gérald Caussé",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/14causse?lang=eng"
+  },
+  {
+    "id": "4057-2026-10-prophets-seers-and-revelators",
+    "title": "Prophets, Seers, and Revelators",
+    "speaker": "Vaiangina Sikahema",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/15sikahema?lang=eng"
+  },
+  {
+    "id": "4058-2026-10-jesus-christ-is-the-great-deliverer",
+    "title": "Jesus Christ Is the Great Deliverer!",
+    "speaker": "Kevin J. Hathaway",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/16hathaway?lang=eng"
+  },
+  {
+    "id": "4059-2026-10-a-higher-and-holier-fast",
+    "title": "A Higher and Holier Fast",
+    "speaker": "Ulisses Soares",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/17soares?lang=eng"
+  },
+  {
+    "id": "4060-2026-10-the-hour-of-your-mission-is-come",
+    "title": "The Hour of Your Mission Is Come",
+    "speaker": "Sean Douglas",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/18douglas?lang=eng"
+  },
+  {
+    "id": "4061-2026-10-o-be-wise",
+    "title": "O Be Wise",
+    "speaker": "D. Todd Christofferson",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/19christofferson?lang=eng"
+  },
+  {
+    "id": "4062-2026-10-how-long-will-it-be-ere-they-believe-me",
+    "title": "“How Long Will It Be Ere They Believe Me?”",
+    "speaker": "Dale G. Renlund",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/21renlund?lang=eng"
+  },
+  {
+    "id": "4063-2026-10-divine-appointments",
+    "title": "Divine Appointments",
+    "speaker": "Timothy L. Farnes",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/22farnes?lang=eng"
+  },
+  {
+    "id": "4064-2026-10-spiritual-immunity",
+    "title": "Spiritual Immunity",
+    "speaker": "Christian C. Chigbundu",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/23chigbundu?lang=eng"
+  },
+  {
+    "id": "4065-2026-10-trusting-the-lord-through-tithes-and-offerings",
+    "title": "Trusting the Lord Through Tithes and Offerings",
+    "speaker": "Patricio M. Giuffra",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/24giuffra?lang=eng"
+  },
+  {
+    "id": "4066-2026-10-the-infinite-power-of-god-in-our-covenants",
+    "title": "The Infinite Power of God in Our Covenants",
+    "speaker": "Jeremiah J. Morgan",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/25morgan?lang=eng"
+  },
+  {
+    "id": "4067-2026-10-i-am-a-child-of-god",
+    "title": "I Am a Child of God",
+    "speaker": "Hutch U. Fale",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/26fale?lang=eng"
+  },
+  {
+    "id": "4068-2026-10-jesus-lives-to-lift",
+    "title": "Jesus Lives to Lift",
+    "speaker": "Patrick Kearon",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/27kearon?lang=eng"
+  },
+  {
+    "id": "4069-2026-10-the-ninety-and-ten",
+    "title": "The Ninety and Ten",
+    "speaker": "Michael A. Dunn",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/28dunn?lang=eng"
+  },
+  {
+    "id": "4070-2026-10-comfort-from-the-holy-ghost",
+    "title": "Comfort from the Holy Ghost",
+    "speaker": "Matthew J. Eyring",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/29eyring?lang=eng"
+  },
+  {
+    "id": "4071-2026-10-love-like-jesus",
+    "title": "Love Like Jesus",
+    "speaker": "Ronald A. Rasband",
+    "year": "2026",
+    "month": "October",
+    "session": "Saturday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/210rasband?lang=eng"
+  },
+  {
+    "id": "4072-2026-10-fear-not-i-am-with-thee",
+    "title": "“Fear Not, I Am with Thee”",
+    "speaker": "Henry B. Eyring",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/41eyring?lang=eng"
+  },
+  {
+    "id": "4073-2026-10-a-child-of-god",
+    "title": "A Child of God",
+    "speaker": "Rosemary K. Chibota",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/42chibota?lang=eng"
+  },
+  {
+    "id": "4074-2026-10-courage-born-of-our-faith-in-jesus-christ",
+    "title": "Courage Born of Our Faith in Jesus Christ",
+    "speaker": "Neil L. Andersen",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/43andersen?lang=eng"
+  },
+  {
+    "id": "4075-2026-10-take-upon-us-his-name",
+    "title": "Take Upon Us His Name",
+    "speaker": "James G. O. Fantone",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/44fantone?lang=eng"
+  },
+  {
+    "id": "4076-2026-10-come-unto-christ",
+    "title": "Come unto Christ",
+    "speaker": "Edward Dube",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/45dube?lang=eng"
+  },
+  {
+    "id": "4077-2026-10-integrity-and-virtue-lead-to-happiness",
+    "title": "Integrity and Virtue Lead to Happiness",
+    "speaker": "Quentin L. Cook",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/46cook?lang=eng"
+  },
+  {
+    "id": "4078-2026-10-using-the-language-of-peacemakers",
+    "title": "Using the Language of Peacemakers",
+    "speaker": "Alfred Kyungu",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/47kyungu?lang=eng"
+  },
+  {
+    "id": "4079-2026-10-consider-your-ways-and-from-this-day-will-the-lord-bless-you",
+    "title": "Consider Your Ways, and from This Day Will the Lord Bless You",
+    "speaker": "Ciro Schmeil",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/48schmeil?lang=eng"
+  },
+  {
+    "id": "4080-2026-10-the-gospel-of-jesus-christ-is-for-all",
+    "title": "The Gospel of Jesus Christ Is for All",
+    "speaker": "Dallin H. Oaks",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Morning Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/49oaks?lang=eng"
+  },
+  {
+    "id": "4081-2026-10-christ-centered-unity",
+    "title": "Christ-Centered Unity",
+    "speaker": "Dieter F. Uchtdorf",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/51uchtdorf?lang=eng"
+  },
+  {
+    "id": "4082-2026-10-god-is-at-your-side",
+    "title": "God Is at Your Side",
+    "speaker": "Andrea Muñoz Spannaus",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/52munoz-spannaus?lang=eng"
+  },
+  {
+    "id": "4083-2026-10-prove-me-now-herewith",
+    "title": "“Prove Me Now Herewith”",
+    "speaker": "Moisés Villanueva",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/53villanueva?lang=eng"
+  },
+  {
+    "id": "4084-2026-10-sealed-by-the-holy-spirit-of-promise",
+    "title": "Sealed by the Holy Spirit of Promise",
+    "speaker": "David A. Bednar",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/54bednar?lang=eng"
+  },
+  {
+    "id": "4085-2026-10-jesus-christ-is-the-light-and-life-of-the-world",
+    "title": "Jesus Christ Is the Light and Life of the World",
+    "speaker": "Thabo Lebethoa",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/55lebethoa?lang=eng"
+  },
+  {
+    "id": "4086-2026-10-quick-to-help-slow-to-judge",
+    "title": "Quick to Help, Slow to Judge",
+    "speaker": "Paul H. Sinclair",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/56sinclair?lang=eng"
+  },
+  {
+    "id": "4087-2026-10-fruit-to-make-one-happy",
+    "title": "Fruit to Make One Happy",
+    "speaker": "Gary E. Stevenson",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/57stevenson?lang=eng"
+  },
+  {
+    "id": "4088-2026-10-you-are-good-enough-to-teach",
+    "title": "You Are Good Enough to Teach",
+    "speaker": "Gabriel W. Reid",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/58reid?lang=eng"
+  },
+  {
+    "id": "4089-2026-10-teach-truth-with-love",
+    "title": "Teach Truth with Love",
+    "speaker": "Clark G. Gilbert",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/59gilbert?lang=eng"
+  },
+  {
+    "id": "4090-2026-10-closing-remarks",
+    "title": "Closing Remarks",
+    "speaker": "Dallin H. Oaks",
+    "year": "2026",
+    "month": "October",
+    "session": "Sunday Afternoon Session",
+    "reference": "October 2026 General Conference",
+    "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/510oaks?lang=eng"
   }
 ];
