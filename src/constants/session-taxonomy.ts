@@ -1,6 +1,6 @@
 /**
  * Maps the 21 raw `session` strings found in the real talks dataset
- * (`app/General Conference Database FINAL - Sheet1.csv`, sibling V1 checkout)
+ * (`app/general-conference-talks.csv`, sibling V1 checkout)
  * to the 10 normalized `SessionCategory` values used throughout the UI.
  *
  * Locked mapping decisions (see project memory / SESSION_HANDOFF.md):

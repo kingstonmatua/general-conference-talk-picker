@@ -1,18 +1,34 @@
 #!/usr/bin/env node
 
 /**
- * One-time/dev-time codegen: reads the real talks CSV (checked into the V1
- * worktree at `app/General Conference Database FINAL - Sheet1.csv`, a sibling
- * of this V2 worktree in the same repo) and emits `src/data/talks.json` with
+ * Codegen: reads the master talks CSV and emits `src/data/talks.json` with
  * the session-taxonomy category applied to every row.
  *
- * Run with: node scripts/generate-talks-data.js
+ * The CSV lives on the V1 branch (`develop`) at
+ * `app/general-conference-talks.csv`. After each April/October conference,
+ * `app/append_gc_talks.py` adds the new talks to it and runs this script
+ * with `--csv` pointing at it, so you normally don't run this by hand.
+ *
+ * Run with:
+ *   node scripts/generate-talks-data.js --csv /path/to/general-conference-talks.csv
+ *   node scripts/generate-talks-data.js   # default: ../../app/ relative to this
+ *                                         # folder (the Design/APP V2 layout)
  */
 
 const fs = require("fs");
 const path = require("path");
 
-const CSV_PATH = path.join(__dirname, "..", "..", "..", "app", "General Conference Database FINAL - Sheet1.csv");
+function csvPathFromArgs() {
+  const i = process.argv.indexOf("--csv");
+  if (i !== -1) {
+    const value = process.argv[i + 1];
+    if (!value) throw new Error("--csv needs a path");
+    return path.resolve(value);
+  }
+  return path.join(__dirname, "..", "..", "..", "app", "general-conference-talks.csv");
+}
+
+const CSV_PATH = csvPathFromArgs();
 const OUT_PATH = path.join(__dirname, "..", "src", "data", "talks.json");
 
 // Minimal RFC4180-ish CSV parser: handles quoted fields, embedded commas,

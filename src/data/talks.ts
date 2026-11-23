@@ -4,7 +4,7 @@ import talksJson from './talks.json';
 
 /**
  * The real General Conference talks dataset, generated from
- * `app/General Conference Database FINAL - Sheet1.csv` (sibling V1 checkout)
+ * `app/general-conference-talks.csv` (sibling V1 checkout)
  * via `scripts/generate-talks-data.js`. Regenerate after the source CSV
  * changes — do not hand-edit `talks.json`.
  */
